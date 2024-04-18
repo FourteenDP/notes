@@ -1,6 +1,3 @@
-[submodule "拾肆"]
-path = ./private/拾肆
-url = git@github.com:FourteenDP/-.git
-[submodule "日志"]
-path = ./private/日志
-url = git@github.com:FourteenDP/--.git
+[submodule ".obsidian"]
+	path = .obsidian
+	url = git@github.com:fourteendp/.obsidian.git
