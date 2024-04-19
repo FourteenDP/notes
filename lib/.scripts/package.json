@@ -1,10 +1,9 @@
 {
   "name": "lib",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
-    "frontMatter": "node main.js"
+    "frontMatter": "node frontMatter.js"
   },
   "keywords": [],
   "author": "",
@@ -16,5 +15,6 @@
   },
   "devDependencies": {
     "tsx": "^4.7.2"
-  }
+  },
+  "description": ""
 }

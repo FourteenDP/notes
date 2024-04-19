@@ -15,8 +15,8 @@ cover: null
 cssclasses: null
 author: null
 originalLink: null
-createTime: '2024-04-19 14:12:12'
-updateTime: '2024-04-19 14:12:12'
+createTime: '2024-04-19 14:22:40'
+updateTime: '2024-04-19 14:22:40'
 ---
 
 # Windows 如何设置 WSL 开机启动并执行脚本以及向 Windows 桌面发送通知

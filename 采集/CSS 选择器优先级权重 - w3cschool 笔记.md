@@ -10,8 +10,8 @@ cover: null
 cssclasses: null
 author: w3cschool.cn
 originalLink: 'https://www.w3cschool.cn/article/67325175.html'
-createTime: '2024-04-19 14:14:49'
-updateTime: '2024-04-19 14:14:49'
+createTime: '2024-04-19 14:22:39'
+updateTime: '2024-04-19 14:22:39'
 ---
 
 # CSS 选择器优先级权重 - w3cschool 笔记
