@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "frontMatter": "node ./scripts/frontMatter.js"
+    "frontMatter": "node main.js"
   },
   "keywords": [],
   "author": "",
