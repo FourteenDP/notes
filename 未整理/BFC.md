@@ -1,6 +1,6 @@
 ---
 title: BFC
-uid: 20240123112806890
+uid: 912865623891
 aliases: []
 categories: null
 tags:
@@ -13,8 +13,8 @@ cssclasses: null
 author: null
 domain: null
 originalLink: null
-createTime: 2023-05-07T14:01:31.000Z
-updateTime: 2024-01-22T16:57:44.000Z
+createTime: '2024-04-19 13:37:45'
+updateTime: '2024-04-19 13:37:45'
 ---
 
 # BFC

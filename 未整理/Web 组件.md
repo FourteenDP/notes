@@ -1,6 +1,6 @@
 ---
 title: Web 组件
-uid: 20240123112807160
+uid: 273697041372
 aliases: []
 categories: null
 tags:
@@ -14,8 +14,8 @@ cssclasses: null
 author: null
 domain: null
 originalLink: null
-createTime: 2023-05-07T14:01:31.000Z
-updateTime: 2024-01-22T16:57:40.000Z
+createTime: '2024-04-19 13:37:45'
+updateTime: '2024-04-19 13:37:45'
 ---
 
 # Web 组件

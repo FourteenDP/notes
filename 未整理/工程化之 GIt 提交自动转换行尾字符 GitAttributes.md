@@ -1,6 +1,6 @@
 ---
 title: 工程化之 GIt 提交自动转换行尾字符 GitAttributes
-uid: 20240123112807356
+uid: 177856677184
 aliases: []
 categories: null
 tags:
@@ -15,8 +15,8 @@ cssclasses: null
 author: null
 domain: null
 originalLink: null
-createTime: 2023-05-14T10:40:09.000Z
-updateTime: 2024-01-22T16:57:32.000Z
+createTime: '2024-04-19 13:37:45'
+updateTime: '2024-04-19 13:37:45'
 ---
 
 # 工程化之 GIt 提交自动转换行尾字符 GitAttributes

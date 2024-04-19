@@ -1,6 +1,6 @@
 ---
 title: Linux 安装命令行工具 Oh My Zsh
-uid: 20240123112806936
+uid: 411152938019
 aliases: []
 categories: null
 tags:
@@ -15,8 +15,8 @@ cssclasses: null
 author: null
 domain: null
 originalLink: null
-createTime: 2023-05-07T14:01:31.000Z
-updateTime: 2024-01-22T16:57:43.000Z
+createTime: '2024-04-19 13:37:45'
+updateTime: '2024-04-19 13:37:45'
 ---
 
 # Linux 安装命令行工具 Oh My Zsh

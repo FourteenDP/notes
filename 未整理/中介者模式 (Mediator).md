@@ -1,6 +1,6 @@
 ---
 title: 中介者模式 (Mediator)
-uid: 20240123112807176
+uid: 499066855938
 aliases: null
 categories: null
 tags:
@@ -11,8 +11,8 @@ cssclasses: null
 author: null
 domain: null
 originalLink: null
-createTime: 2023-05-07T14:01:31.000Z
-updateTime: 2024-01-22T16:57:37.000Z
+createTime: '2024-04-19 13:37:45'
+updateTime: '2024-04-19 13:37:45'
 ---
 
 # 中介者模式 (Mediator)

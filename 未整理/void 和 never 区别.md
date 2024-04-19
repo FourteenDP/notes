@@ -1,6 +1,6 @@
 ---
 title: void 和 never 区别
-uid: 20240123112807170
+uid: 668305151993
 aliases: []
 categories: null
 tags:
@@ -12,8 +12,8 @@ cssclasses: null
 author: null
 domain: null
 originalLink: null
-createTime: 2023-05-07T14:01:32.000Z
-updateTime: 2024-01-22T16:57:40.000Z
+createTime: '2024-04-19 13:37:45'
+updateTime: '2024-04-19 13:37:45'
 ---
 
 # void 和 never 区别

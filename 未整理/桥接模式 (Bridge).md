@@ -1,6 +1,6 @@
 ---
 title: 桥接模式 (Bridge)
-uid: 20240123112807436
+uid: 115759729707
 aliases: null
 categories: null
 tags:
@@ -11,8 +11,8 @@ cssclasses: null
 author: null
 domain: null
 originalLink: null
-createTime: 2023-05-07T14:01:31.000Z
-updateTime: 2024-01-22T16:57:31.000Z
+createTime: '2024-04-19 13:37:45'
+updateTime: '2024-04-19 13:37:45'
 ---
 
 # 桥接模式 (Bridge)

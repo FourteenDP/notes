@@ -1,6 +1,6 @@
 ---
 title: Promise.all()
-uid: 20240123112807004
+uid: 1031241661636
 aliases: []
 categories: null
 tags:
@@ -17,8 +17,8 @@ cssclasses: null
 author: null
 domain: null
 originalLink: null
-createTime: 2023-05-07T14:01:32.000Z
-updateTime: 2024-01-22T16:57:42.000Z
+createTime: '2024-04-19 13:37:45'
+updateTime: '2024-04-19 13:37:45'
 ---
 
 # Promise.all()

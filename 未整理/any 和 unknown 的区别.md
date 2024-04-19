@@ -1,6 +1,6 @@
 ---
 title: any 和 unknown 的区别
-uid: 20240123112807160
+uid: 204568688753
 aliases: []
 categories: null
 tags:
@@ -11,8 +11,8 @@ cssclasses: null
 author: null
 domain: null
 originalLink: null
-createTime: 2023-05-07T14:01:32.000Z
-updateTime: 2024-01-23T09:06:33.000Z
+createTime: '2024-04-19 13:37:45'
+updateTime: '2024-04-19 13:37:45'
 ---
 
 # any 和 unknown 的区别

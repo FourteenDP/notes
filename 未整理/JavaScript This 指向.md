@@ -1,6 +1,6 @@
 ---
 title: JavaScript This 指向
-uid: 20240123112806930
+uid: 774592678496
 aliases: []
 categories: null
 tags:
@@ -14,8 +14,8 @@ cssclasses: null
 author: null
 domain: null
 originalLink: null
-createTime: 2023-05-07T14:01:32.000Z
-updateTime: 2024-01-22T16:57:43.000Z
+createTime: '2024-04-19 13:37:45'
+updateTime: '2024-04-19 13:37:45'
 ---
 
 # JavaScript This 指向

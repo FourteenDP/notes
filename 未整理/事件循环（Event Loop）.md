@@ -1,6 +1,6 @@
 ---
 title: 事件循环（Event Loop）
-uid: 20240123112807180
+uid: 69262626924
 aliases: []
 categories: null
 tags:
@@ -14,8 +14,8 @@ cssclasses: null
 author: null
 domain: null
 originalLink: null
-createTime: 2023-05-07T14:01:32.000Z
-updateTime: 2024-01-22T16:57:38.000Z
+createTime: '2024-04-19 13:37:45'
+updateTime: '2024-04-19 13:37:45'
 ---
 
 # 事件循环（Event Loop）

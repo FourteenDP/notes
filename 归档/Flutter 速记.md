@@ -1,6 +1,6 @@
 ---
 title: Flutter速记
-uid: 20240123112806916
+uid: 987369243489
 aliases:
   - null
 categories: null
@@ -12,8 +12,8 @@ cssclasses: null
 author: null
 domain: null
 originalLink: null
-createTime: 2024-01-23T11:28:06.000Z
-updateTime: 2024-02-04T01:07:47.000Z
+createTime: '2024-04-19 13:37:45'
+updateTime: '2024-04-19 13:37:45'
 ---
 
 # Flutter 速记

@@ -1,6 +1,6 @@
 ---
 title: 迭代器模式 (Iterator)
-uid: 20240123112807524
+uid: 377449265745
 aliases: null
 categories: null
 tags:
@@ -11,8 +11,8 @@ cssclasses: null
 author: null
 domain: null
 originalLink: null
-createTime: 2023-05-07T14:01:31.000Z
-updateTime: 2024-01-22T16:57:29.000Z
+createTime: '2024-04-19 13:37:44'
+updateTime: '2024-04-19 13:37:44'
 ---
 
 # 迭代器模式 (Iterator)

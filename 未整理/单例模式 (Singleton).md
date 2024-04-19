@@ -1,6 +1,6 @@
 ---
 title: 单例模式 (Singleton)
-uid: 20240123112807310
+uid: 1021016478141
 aliases: null
 categories: null
 tags:
@@ -11,8 +11,8 @@ cssclasses: null
 author: null
 domain: null
 originalLink: null
-createTime: 2023-05-07T14:01:31.000Z
-updateTime: 2024-01-22T16:57:36.000Z
+createTime: '2024-04-19 13:37:45'
+updateTime: '2024-04-19 13:37:45'
 ---
 
 # 单例模式 (Singleton)

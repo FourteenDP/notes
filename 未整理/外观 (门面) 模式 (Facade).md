@@ -1,6 +1,6 @@
 ---
 title: 外观 (门面) 模式 (Facade)
-uid: 20240123112807336
+uid: 444178345443
 aliases: null
 categories: null
 tags:
@@ -11,8 +11,8 @@ cssclasses: null
 author: null
 domain: null
 originalLink: null
-createTime: 2023-05-07T14:01:31.000Z
-updateTime: 2023-12-31T03:07:33.000Z
+createTime: '2024-04-19 13:37:45'
+updateTime: '2024-04-19 13:37:45'
 ---
 
 # 外观 (门面) 模式 (Facade)

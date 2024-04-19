@@ -1,6 +1,6 @@
 ---
 title: Vim速查
-uid: 20240123112806856
+uid: 88475608387
 aliases: []
 categories: null
 tags:
@@ -11,8 +11,8 @@ cssclasses: null
 author: null
 domain: null
 originalLink: null
-createTime: 2024-01-23T11:28:06.000Z
-updateTime: 2024-02-27T15:05:26.000Z
+createTime: '2024-04-19 13:37:45'
+updateTime: '2024-04-19 13:37:45'
 ---
 
 # Vim 速查

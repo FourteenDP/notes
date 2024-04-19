@@ -1,6 +1,6 @@
 ---
 title: Vite 全局样式注入
-uid: 20240123112807084
+uid: 878742334454
 aliases: []
 categories: null
 tags:
@@ -11,8 +11,8 @@ cssclasses: null
 author: null
 domain: null
 originalLink: null
-createTime: 2023-05-07T14:01:31.000Z
-updateTime: 2024-01-22T16:57:40.000Z
+createTime: '2024-04-19 13:37:45'
+updateTime: '2024-04-19 13:37:45'
 ---
 
 # Vite 全局样式注入

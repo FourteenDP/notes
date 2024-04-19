@@ -1,6 +1,6 @@
 ---
 title: 链模式 (Chain Of Responsibility)
-uid: 20240123112807530
+uid: 920085790416
 aliases: null
 categories: null
 tags:
@@ -11,8 +11,8 @@ cssclasses: null
 author: null
 domain: null
 originalLink: null
-createTime: 2023-05-07T14:01:31.000Z
-updateTime: 2024-01-22T16:57:29.000Z
+createTime: '2024-04-19 13:37:44'
+updateTime: '2024-04-19 13:37:44'
 ---
 
 # 链模式 (Chain Of Responsibility)

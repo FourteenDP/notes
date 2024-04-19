@@ -1,6 +1,6 @@
 ---
 title: 单一职责原则 SRP(Single Responsibility Principle)
-uid: 20240123112807304
+uid: 69174664543
 aliases: null
 categories: null
 tags:
@@ -11,8 +11,8 @@ cssclasses: null
 author: null
 domain: null
 originalLink: null
-createTime: 2023-05-07T14:01:31.000Z
-updateTime: 2024-01-22T16:57:28.000Z
+createTime: '2024-04-19 13:37:45'
+updateTime: '2024-04-19 13:37:45'
 ---
 
 # 单一职责原则 SRP(Single Responsibility Principle)

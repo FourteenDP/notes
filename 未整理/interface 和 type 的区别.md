@@ -1,6 +1,6 @@
 ---
 title: interface 和 type 的区别
-uid: 20240123112807170
+uid: 612482501667
 aliases: []
 categories: null
 tags:
@@ -15,8 +15,8 @@ cssclasses: null
 author: null
 domain: null
 originalLink: null
-createTime: 2023-05-07T14:01:32.000Z
-updateTime: 2024-01-22T16:57:43.000Z
+createTime: '2024-04-19 13:37:45'
+updateTime: '2024-04-19 13:37:45'
 ---
 
 # interface 和 type 的区别

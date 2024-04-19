@@ -1,6 +1,6 @@
 ---
 title: 如何给 node_module 下的库打补丁
-uid: 20240123112807336
+uid: 843960080022
 aliases: []
 categories: null
 tags:
@@ -17,8 +17,8 @@ cssclasses: null
 author: null
 domain: null
 originalLink: null
-createTime: 2023-05-07T14:01:31.000Z
-updateTime: 2024-01-22T16:57:33.000Z
+createTime: '2024-04-19 13:37:45'
+updateTime: '2024-04-19 13:37:45'
 ---
 
 # 如何给 node_module 下的库打补丁

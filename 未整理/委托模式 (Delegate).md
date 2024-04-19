@@ -1,6 +1,6 @@
 ---
 title: 委托模式 (Delegate)
-uid: 20240123112807350
+uid: 416544958943
 aliases: null
 categories: null
 tags:
@@ -11,8 +11,8 @@ cssclasses: null
 author: null
 domain: null
 originalLink: null
-createTime: 2023-05-07T14:01:31.000Z
-updateTime: 2024-01-22T16:57:33.000Z
+createTime: '2024-04-19 13:37:45'
+updateTime: '2024-04-19 13:37:45'
 ---
 
 # 委托模式 (Delegate)

@@ -1,6 +1,6 @@
 ---
 title: Linux 系统镜像源和更新
-uid: 20240123112806944
+uid: 279626906890
 aliases: []
 categories: null
 tags:
@@ -13,8 +13,8 @@ cssclasses: null
 author: null
 domain: null
 originalLink: null
-createTime: 2023-05-07T14:01:31.000Z
-updateTime: 2024-01-22T16:57:42.000Z
+createTime: '2024-04-19 13:37:45'
+updateTime: '2024-04-19 13:37:45'
 ---
 
 # Linux 系统镜像源和更新

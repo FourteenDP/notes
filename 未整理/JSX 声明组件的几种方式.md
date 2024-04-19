@@ -1,6 +1,6 @@
 ---
 title: JSX 声明组件的几种方式
-uid: 20240123112806930
+uid: 810129418666
 aliases: []
 categories: null
 tags:
@@ -15,8 +15,8 @@ cssclasses: null
 author: null
 domain: null
 originalLink: null
-createTime: 2023-05-07T14:01:31.000Z
-updateTime: 2024-01-22T16:57:43.000Z
+createTime: '2024-04-19 13:37:45'
+updateTime: '2024-04-19 13:37:45'
 ---
 
 # JSX 声明组件的几种方式

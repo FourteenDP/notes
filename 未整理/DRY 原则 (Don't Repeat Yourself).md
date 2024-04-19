@@ -1,6 +1,6 @@
 ---
 title: DRY 原则 (Don't Repeat Yourself)
-uid: 20240123112806910
+uid: 1054242790918
 aliases: null
 categories: null
 tags:
@@ -11,8 +11,8 @@ cssclasses: null
 author: null
 domain: null
 originalLink: null
-createTime: 2023-05-07T14:01:31.000Z
-updateTime: 2024-01-22T16:57:43.000Z
+createTime: '2024-04-19 13:37:45'
+updateTime: '2024-04-19 13:37:45'
 ---
 
 # DRY 原则 (Don't Repeat Yourself)

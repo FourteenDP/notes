@@ -1,6 +1,6 @@
 ---
 title: VSCode远程链接WSL1时无法安装插件
-uid: null
+uid: 802324346345
 aliases: []
 categories: null
 tags: []
@@ -10,8 +10,8 @@ cssclasses: null
 author: null
 domain: null
 originalLink: null
-createTime: 2024-03-19T16:13:22.000Z
-updateTime: 2024-03-19T16:13:42.000Z
+createTime: '2024-04-19 13:37:45'
+updateTime: '2024-04-19 13:37:45'
 ---
 
 # VSCode 远程链接 WSL1 时无法安装插件

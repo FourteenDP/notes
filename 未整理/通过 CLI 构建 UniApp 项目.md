@@ -1,6 +1,6 @@
 ---
 title: 通过 CLI 构建 UniApp 项目
-uid: 20240123112807530
+uid: 778290093831
 aliases: []
 categories: null
 tags:
@@ -13,8 +13,8 @@ cssclasses: null
 author: null
 domain: null
 originalLink: null
-createTime: 2023-05-14T10:40:09.000Z
-updateTime: 2024-01-22T16:57:29.000Z
+createTime: '2024-04-19 13:37:44'
+updateTime: '2024-04-19 13:37:44'
 ---
 
 # 通过 CLI 构建 UniApp 项目

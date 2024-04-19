@@ -1,6 +1,6 @@
 ---
 title: 解释器模式 (Interpreter)
-uid: 20240123112807460
+uid: 842308269099
 aliases: null
 categories: null
 tags:
@@ -11,8 +11,8 @@ cssclasses: null
 author: null
 domain: null
 originalLink: null
-createTime: 2023-05-07T14:01:31.000Z
-updateTime: 2024-01-22T16:57:30.000Z
+createTime: '2024-04-19 13:37:45'
+updateTime: '2024-04-19 13:37:45'
 ---
 
 # 解释器模式 (Interpreter)

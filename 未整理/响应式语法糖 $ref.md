@@ -1,6 +1,6 @@
 ---
 title: 响应式语法糖 $ref
-uid: 20240123112807330
+uid: 9447154223
 aliases: []
 categories: null
 tags:
@@ -13,8 +13,8 @@ cssclasses: null
 author: null
 domain: null
 originalLink: null
-createTime: 2023-05-07T14:01:31.000Z
-updateTime: 2024-01-22T16:57:35.000Z
+createTime: '2024-04-19 13:37:45'
+updateTime: '2024-04-19 13:37:45'
 ---
 
 # 响应式语法糖 $ref

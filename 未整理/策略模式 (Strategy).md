@@ -1,6 +1,6 @@
 ---
 title: 策略模式 (Strategy)
-uid: 20240123112807450
+uid: 833597292544
 aliases: null
 categories: null
 tags:
@@ -11,8 +11,8 @@ cssclasses: null
 author: null
 domain: null
 originalLink: null
-createTime: 2023-05-07T14:01:31.000Z
-updateTime: 2024-01-22T19:19:56.000Z
+createTime: '2024-04-19 13:37:45'
+updateTime: '2024-04-19 13:37:45'
 ---
 
 # 策略模式 (Strategy)

@@ -1,6 +1,6 @@
 ---
 title: uni-app $refs 初始化失败
-uid: 20240123112807170
+uid: 416381351111
 aliases: []
 categories: null
 tags:
@@ -12,8 +12,8 @@ cssclasses: null
 author: null
 domain: null
 originalLink: null
-createTime: 2023-05-07T14:01:31.000Z
-updateTime: 2024-01-22T16:57:41.000Z
+createTime: '2024-04-19 13:37:45'
+updateTime: '2024-04-19 13:37:45'
 ---
 
 # uni-app $refs 初始化失败
