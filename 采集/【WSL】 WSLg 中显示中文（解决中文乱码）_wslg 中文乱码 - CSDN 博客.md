@@ -1,17 +1,16 @@
 ---
-title: null
+标题: 【WSL】 WSLg 中显示中文（解决中文乱码）_wslg 中文乱码 - CSDN 博客
+描述: null
+封面: null
 uid: 20240123112809268
 aliases: null
-categories: null
 tags: []
-description: null
-cover: null
 cssclasses: null
-author: null
-domain: null
-originalLink: null
-createTime: null
-updateTime: null
+作者: blog.csdn.net
+域名: blog.csdn.net
+原文链接: 'https://blog.csdn.net/weixin_41714373/article/details/119519589'
+创建时间: 2023-12-31T00:22:19.000Z
+更新时间: 2024-01-22T16:56:21.000Z
 ---
 
 # 【WSL】 WSLg 中显示中文（解决中文乱码）_wslg 中文乱码 - CSDN 博客

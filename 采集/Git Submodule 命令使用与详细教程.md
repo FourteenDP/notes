@@ -1,19 +1,18 @@
 ---
-title: null
+标题: Git Submodule 命令使用与详细教程
+描述: null
+封面: null
 uid: 20240203222235210
 aliases: null
-categories: null
 tags:
   - 计算机/工程化/Git
   - 计算机/项目管理/Git
-description: null
-cover: null
 cssclasses: null
-author: null
-domain: null
-originalLink: null
-createTime: null
-updateTime: null
+作者: juejin.cn
+域名: juejin.cn
+原文链接: 'https://juejin.cn/post/6948251963133788196'
+创建时间: 2024-02-03T22:22:35.000Z
+更新时间: 2024-02-03T22:23:12.000Z
 ---
 
 # Git Submodule 命令使用与详细教程
