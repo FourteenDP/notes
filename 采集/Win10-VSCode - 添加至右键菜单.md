@@ -1,16 +1,16 @@
 ---
-title: Win10-VSCode - 添加至右键菜单
-uid: 1068647268673
+标题: Win10-VSCode - 添加至右键菜单
+描述: null
+封面: null
+uid: 20240123112809260
 aliases: null
-categories: null
 tags: []
-description: null
-cover: null
 cssclasses: null
-author: juejin.cn
-originalLink: null
-createTime: '2024-04-19 13:52:56'
-updateTime: '2024-04-19 13:52:56'
+作者: juejin.cn
+域名: juejin.cn
+原文链接: 'https://juejin.cn/post/7028823525125259272'
+创建时间: 2023-05-20T23:30:58.000Z
+更新时间: 2024-01-22T16:56:22.000Z
 ---
 
 # Win10-VSCode - 添加至右键菜单
