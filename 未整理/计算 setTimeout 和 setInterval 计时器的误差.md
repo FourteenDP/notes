@@ -1,6 +1,6 @@
 ---
 title: null
-uid: 1407374884383225
+uid: 3377699721128267
 aliases: []
 categories: null
 tags:
@@ -12,8 +12,8 @@ cover: null
 cssclasses: null
 author: null
 originalLink: null
-createTime: '2024-04-19 14:22:40'
-updateTime: '2024-04-19 14:22:40'
+createTime: '2024-04-19 14:44:21'
+updateTime: '2024-04-19 14:44:21'
 ---
 
 # 计算 setTimeout 和 setInterval 计时器的误差

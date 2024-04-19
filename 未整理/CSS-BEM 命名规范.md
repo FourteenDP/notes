@@ -1,6 +1,6 @@
 ---
 title: null
-uid: 4785074604906274
+uid: 1407374884046905
 aliases: []
 categories: null
 tags:
@@ -13,8 +13,8 @@ cover: null
 cssclasses: null
 author: null
 originalLink: null
-createTime: '2024-04-19 14:22:40'
-updateTime: '2024-04-19 14:22:40'
+createTime: '2024-04-19 14:44:21'
+updateTime: '2024-04-19 14:44:21'
 ---
 
 # CSS-BEM 命名规范

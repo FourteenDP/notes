@@ -1,6 +1,6 @@
 ---
 title: null
-uid: 2533274791220976
+uid: 1407374884046899
 aliases: []
 categories: null
 tags:
@@ -14,8 +14,8 @@ cover: null
 cssclasses: null
 author: null
 originalLink: null
-createTime: '2024-04-19 14:22:40'
-updateTime: '2024-04-19 14:22:40'
+createTime: '2024-04-19 14:44:21'
+updateTime: '2024-04-19 14:44:21'
 ---
 
 # CSS 选择器优先算法

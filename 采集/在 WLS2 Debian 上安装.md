@@ -1,6 +1,6 @@
 ---
 title: 在 WLS2 Debian 上安装
-uid: 2533274791218194
+uid: 7881299348690364
 aliases:
   - 在 WLS2 Debian 上安装 Docker
 categories: null
@@ -11,8 +11,8 @@ cover: null
 cssclasses: null
 author: null
 originalLink: 'https://blog.csdn.net/qq_50883920/article/details/120540509'
-createTime: '2024-04-19 14:22:39'
-updateTime: '2024-04-19 14:22:39'
+createTime: '2024-04-19 14:44:21'
+updateTime: '2024-04-19 14:44:21'
 ---
 
 # 在 WLS2 Debian 上安装 Docker

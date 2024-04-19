@@ -1,6 +1,6 @@
 ---
 title: 花了一天的时间，地板式扫盲了 Vue3 所有 API 盲点
-uid: 8725724278852673
+uid: 2814749767899243
 aliases: null
 categories: null
 tags:
@@ -11,8 +11,8 @@ cover: null
 cssclasses: null
 author: juejin.cn
 originalLink: 'https://juejin.cn/post/7164159759619194893'
-createTime: '2024-04-19 14:22:39'
-updateTime: '2024-04-19 14:22:39'
+createTime: '2024-04-19 14:44:21'
+updateTime: '2024-04-19 14:44:21'
 ---
 
 # 花了一天的时间，地板式扫盲了 vue3 所有 API 盲点

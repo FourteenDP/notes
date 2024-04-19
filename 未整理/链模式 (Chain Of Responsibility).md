@@ -1,6 +1,6 @@
 ---
 title: null
-uid: 2533274791225925
+uid: 4785074604837064
 aliases: null
 categories: null
 tags:
@@ -11,8 +11,8 @@ cover: null
 cssclasses: null
 author: null
 originalLink: null
-createTime: '2024-04-19 14:22:40'
-updateTime: '2024-04-19 14:22:40'
+createTime: '2024-04-19 14:44:21'
+updateTime: '2024-04-19 14:44:21'
 ---
 
 # 链模式 (Chain Of Responsibility)

@@ -1,6 +1,6 @@
 ---
 title: null
-uid: 2251799814515032
+uid: 1125899907442487
 aliases: null
 categories: null
 tags:
@@ -11,8 +11,8 @@ cover: null
 cssclasses: null
 author: null
 originalLink: null
-createTime: '2024-04-19 14:22:40'
-updateTime: '2024-04-19 14:22:40'
+createTime: '2024-04-19 14:44:21'
+updateTime: '2024-04-19 14:44:21'
 ---
 
 # 外观 (门面) 模式 (Facade)

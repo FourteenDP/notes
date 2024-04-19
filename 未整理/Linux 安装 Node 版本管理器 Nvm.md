@@ -1,6 +1,6 @@
 ---
 title: null
-uid: 1970324837800646
+uid: 2251799814178914
 aliases: []
 categories: null
 tags:
@@ -14,8 +14,8 @@ cover: null
 cssclasses: null
 author: null
 originalLink: null
-createTime: '2024-04-19 14:22:40'
-updateTime: '2024-04-19 14:22:40'
+createTime: '2024-04-19 14:44:21'
+updateTime: '2024-04-19 14:44:21'
 ---
 
 # Linux 安装 Node 版本管理器 Nvm

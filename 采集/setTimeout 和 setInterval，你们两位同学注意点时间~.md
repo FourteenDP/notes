@@ -1,6 +1,6 @@
 ---
 title: setTimeout 和 setInterval，你们两位同学注意点时间~
-uid: 2533274791218182
+uid: 2814749767898303
 aliases: null
 categories: null
 tags: []
@@ -10,8 +10,8 @@ cover: null
 cssclasses: null
 author: juejin.cn
 originalLink: 'https://juejin.cn/post/7028823525125259272'
-createTime: '2024-04-19 14:22:39'
-updateTime: '2024-04-19 14:22:39'
+createTime: '2024-04-19 14:44:21'
+updateTime: '2024-04-19 14:44:21'
 ---
 
 # Win10-VSCode - 添加至右键菜单

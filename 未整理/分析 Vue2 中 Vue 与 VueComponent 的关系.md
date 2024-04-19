@@ -1,6 +1,6 @@
 ---
 title: null
-uid: 1407374884383015
+uid: 1688849860861398
 aliases: []
 categories: null
 tags:
@@ -14,8 +14,8 @@ cover: null
 cssclasses: null
 author: null
 originalLink: null
-createTime: '2024-04-19 14:22:40'
-updateTime: '2024-04-19 14:22:40'
+createTime: '2024-04-19 14:44:21'
+updateTime: '2024-04-19 14:44:21'
 ---
 
 # 分析 Vue2 中 Vue 与 VueComponent 的关系

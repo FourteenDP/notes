@@ -1,6 +1,6 @@
 ---
 title: 坑：ssh： connect to host github-com port 22： Connection refused
-uid: 2251799814507539
+uid: 14918173766456800
 aliases: []
 categories: null
 tags: []
@@ -10,8 +10,8 @@ cover: null
 cssclasses: null
 author: zhuanlan.zhihu.com
 originalLink: 'https://zhuanlan.zhihu.com/p/521340971'
-createTime: '2024-04-19 14:22:39'
-updateTime: '2024-04-19 14:22:39'
+createTime: '2024-04-19 14:44:21'
+updateTime: '2024-04-19 14:44:21'
 ---
 
 # **问题现象**

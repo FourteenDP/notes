@@ -1,6 +1,6 @@
 ---
 title: null
-uid: 6755399441884917
+uid: 1407374884047035
 aliases: []
 categories: null
 tags:
@@ -13,8 +13,8 @@ cover: null
 cssclasses: null
 author: null
 originalLink: null
-createTime: '2024-04-19 14:22:40'
-updateTime: '2024-04-19 14:22:40'
+createTime: '2024-04-19 14:44:21'
+updateTime: '2024-04-19 14:44:21'
 ---
 
 # UniApp 和 WebView 双向通信

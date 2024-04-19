@@ -1,6 +1,6 @@
 ---
 title: Win10-VSCode - 添加至右键菜单
-uid: 3659174698060804
+uid: 7318349395268785
 aliases: null
 categories: null
 tags: []
@@ -10,8 +10,8 @@ cover: null
 cssclasses: null
 author: juejin.cn
 originalLink: 'https://juejin.cn/post/7028823525125259272'
-createTime: '2024-04-19 14:22:39'
-updateTime: '2024-04-19 14:22:39'
+createTime: '2024-04-19 14:44:21'
+updateTime: '2024-04-19 14:44:21'
 ---
 
 # Win10-VSCode - 添加至右键菜单

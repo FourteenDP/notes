@@ -1,6 +1,6 @@
 ---
 title: 【JS 原型 & 原型链】一张图说清楚 - 简书
-uid: 2251799814507527
+uid: 9570149208954064
 aliases: null
 categories: null
 tags: []
@@ -10,8 +10,8 @@ cover: null
 cssclasses: null
 author: jianshu.com
 originalLink: 'https://www.jianshu.com/p/423f72d502c2'
-createTime: '2024-04-19 14:22:39'
-updateTime: '2024-04-19 14:22:39'
+createTime: '2024-04-19 14:44:21'
+updateTime: '2024-04-19 14:44:21'
 ---
 
 # 【JS 原型 & 原型链】一张图说清楚 - 简书

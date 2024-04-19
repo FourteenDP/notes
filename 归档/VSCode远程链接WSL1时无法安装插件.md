@@ -1,6 +1,6 @@
 ---
 title: null
-uid: 1125899907673137
+uid: 2533274790889395
 aliases: []
 categories: null
 tags: []
@@ -10,8 +10,8 @@ cover: null
 cssclasses: null
 author: null
 originalLink: null
-createTime: '2024-04-19 14:22:40'
-updateTime: '2024-04-19 14:22:40'
+createTime: '2024-04-19 14:44:21'
+updateTime: '2024-04-19 14:44:21'
 ---
 
 # VSCode 远程链接 WSL1 时无法安装插件

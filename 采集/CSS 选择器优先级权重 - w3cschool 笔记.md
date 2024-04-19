@@ -1,6 +1,6 @@
 ---
 title: CSS 选择器优先级权重 - w3cschool 笔记
-uid: 2814749767897612
+uid: 2251799814476969
 aliases: null
 categories: null
 tags: []
@@ -10,8 +10,8 @@ cover: null
 cssclasses: null
 author: w3cschool.cn
 originalLink: 'https://www.w3cschool.cn/article/67325175.html'
-createTime: '2024-04-19 14:22:39'
-updateTime: '2024-04-19 14:22:39'
+createTime: '2024-04-19 14:44:21'
+updateTime: '2024-04-19 14:44:21'
 ---
 
 # CSS 选择器优先级权重 - w3cschool 笔记

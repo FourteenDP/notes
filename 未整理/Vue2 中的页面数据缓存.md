@@ -1,6 +1,6 @@
 ---
 title: null
-uid: 1688849861093588
+uid: 1407374884047099
 aliases: []
 categories: null
 tags:
@@ -14,8 +14,8 @@ cover: null
 cssclasses: null
 author: null
 originalLink: null
-createTime: '2024-04-19 14:22:40'
-updateTime: '2024-04-19 14:22:40'
+createTime: '2024-04-19 14:44:21'
+updateTime: '2024-04-19 14:44:21'
 ---
 
 # Vue2 中的页面数据缓存

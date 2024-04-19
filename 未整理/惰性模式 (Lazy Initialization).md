@@ -1,6 +1,6 @@
 ---
 title: null
-uid: 1407374884383087
+uid: 1125899907442640
 aliases: null
 categories: null
 tags:
@@ -11,8 +11,8 @@ cover: null
 cssclasses: null
 author: null
 originalLink: null
-createTime: '2024-04-19 14:22:40'
-updateTime: '2024-04-19 14:22:40'
+createTime: '2024-04-19 14:44:21'
+updateTime: '2024-04-19 14:44:21'
 ---
 
 # 惰性模式 (Lazy Initialization)

@@ -1,6 +1,6 @@
 ---
 title: null
-uid: 2533274791225594
+uid: 1688849860861308
 aliases: null
 categories: null
 tags:
@@ -11,8 +11,8 @@ cover: null
 cssclasses: null
 author: null
 originalLink: null
-createTime: '2024-04-19 14:22:40'
-updateTime: '2024-04-19 14:22:40'
+createTime: '2024-04-19 14:44:21'
+updateTime: '2024-04-19 14:44:21'
 ---
 
 # YAGNI 原则 (You Ain't Gonna Need It)

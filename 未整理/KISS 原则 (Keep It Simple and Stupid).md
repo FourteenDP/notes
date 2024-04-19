@@ -1,6 +1,6 @@
 ---
 title: null
-uid: 1970324837800574
+uid: 1688849860757596
 aliases: null
 categories: null
 tags:
@@ -11,8 +11,8 @@ cover: null
 cssclasses: null
 author: null
 originalLink: null
-createTime: '2024-04-19 14:22:40'
-updateTime: '2024-04-19 14:22:40'
+createTime: '2024-04-19 14:44:21'
+updateTime: '2024-04-19 14:44:21'
 ---
 
 # KISS 原则 (Keep It Simple and Stupid)
