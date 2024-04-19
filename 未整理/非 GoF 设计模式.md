@@ -1,6 +1,6 @@
 ---
-title: 非 GoF 设计模式
-uid: 574726279502
+title: null
+uid: 913970428374
 aliases: null
 categories: null
 tags:
@@ -9,10 +9,9 @@ description: null
 cover: null
 cssclasses: null
 author: null
-domain: null
 originalLink: null
-createTime: '2024-04-19 13:37:44'
-updateTime: '2024-04-19 13:37:44'
+createTime: '2024-04-19 13:56:22'
+updateTime: '2024-04-19 13:56:22'
 ---
 
 # 非 GoF 设计模式

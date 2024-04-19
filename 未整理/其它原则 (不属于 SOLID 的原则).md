@@ -1,6 +1,6 @@
 ---
-title: 其它原则 (不属于 SOLID 的原则)
-uid: 136404404013
+title: null
+uid: 445757261032
 aliases: null
 categories: null
 tags:
@@ -9,10 +9,9 @@ description: null
 cover: null
 cssclasses: null
 author: null
-domain: null
 originalLink: null
-createTime: '2024-04-19 13:37:45'
-updateTime: '2024-04-19 13:37:45'
+createTime: '2024-04-19 13:56:22'
+updateTime: '2024-04-19 13:56:22'
 ---
 
 # 其它原则 (不属于 SOLID 的原则)

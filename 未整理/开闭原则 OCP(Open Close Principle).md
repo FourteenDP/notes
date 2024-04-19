@@ -1,6 +1,6 @@
 ---
-title: 开闭原则 OCP(Open Close Principle)
-uid: 1027124866135
+title: null
+uid: 840037730082
 aliases: null
 categories: null
 tags:
@@ -9,10 +9,9 @@ description: null
 cover: null
 cssclasses: null
 author: null
-domain: null
 originalLink: null
-createTime: '2024-04-19 13:37:45'
-updateTime: '2024-04-19 13:37:45'
+createTime: '2024-04-19 13:56:22'
+updateTime: '2024-04-19 13:56:22'
 ---
 
 # 开闭原则 OCP(Open Close Principle)

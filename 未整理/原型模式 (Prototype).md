@@ -1,6 +1,6 @@
 ---
-title: 原型模式 (Prototype)
-uid: 230249689906
+title: null
+uid: 434051944675
 aliases: null
 categories: null
 tags:
@@ -9,10 +9,9 @@ description: null
 cover: null
 cssclasses: null
 author: null
-domain: null
 originalLink: null
-createTime: '2024-04-19 13:37:45'
-updateTime: '2024-04-19 13:37:45'
+createTime: '2024-04-19 13:56:22'
+updateTime: '2024-04-19 13:56:22'
 ---
 
 # 原型模式 (Prototype)

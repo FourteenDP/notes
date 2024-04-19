@@ -1,6 +1,6 @@
 ---
-title: WSL 登录 Root
-uid: 462241589195
+title: null
+uid: 681963210271
 aliases: []
 categories: null
 tags:
@@ -11,10 +11,9 @@ description: null
 cover: null
 cssclasses: null
 author: null
-domain: null
 originalLink: null
-createTime: '2024-04-19 13:37:45'
-updateTime: '2024-04-19 13:37:45'
+createTime: '2024-04-19 13:56:22'
+updateTime: '2024-04-19 13:56:22'
 ---
 
 # WSL 登录 Root

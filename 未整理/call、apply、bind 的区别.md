@@ -1,6 +1,6 @@
 ---
-title: call、apply、bind 的区别
-uid: 66966462199
+title: null
+uid: 905096316396
 aliases: []
 categories: null
 tags:
@@ -14,10 +14,9 @@ description: null
 cover: null
 cssclasses: null
 author: null
-domain: null
 originalLink: null
-createTime: '2024-04-19 13:37:45'
-updateTime: '2024-04-19 13:37:45'
+createTime: '2024-04-19 13:56:22'
+updateTime: '2024-04-19 13:56:22'
 ---
 
 # call、apply、bind 的区别

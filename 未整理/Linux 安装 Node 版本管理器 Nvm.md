@@ -1,6 +1,6 @@
 ---
-title: Linux 安装 Node 版本管理器 Nvm
-uid: 554801546206
+title: null
+uid: 359150469707
 aliases: []
 categories: null
 tags:
@@ -12,10 +12,9 @@ description: null
 cover: null
 cssclasses: null
 author: null
-domain: null
 originalLink: null
-createTime: '2024-04-19 13:37:45'
-updateTime: '2024-04-19 13:37:45'
+createTime: '2024-04-19 13:56:22'
+updateTime: '2024-04-19 13:56:22'
 ---
 
 # Linux 安装 Node 版本管理器 Nvm

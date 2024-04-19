@@ -1,6 +1,6 @@
 ---
-title: 备忘录模式 (Memento)
-uid: 155861578431
+title: null
+uid: 869121750046
 aliases: []
 categories: null
 tags:
@@ -9,10 +9,9 @@ description: null
 cover: null
 cssclasses: null
 author: null
-domain: null
 originalLink: null
-createTime: '2024-04-19 13:37:45'
-updateTime: '2024-04-19 13:37:45'
+createTime: '2024-04-19 13:56:22'
+updateTime: '2024-04-19 13:56:22'
 ---
 
 # 备忘录模式 (Memento)

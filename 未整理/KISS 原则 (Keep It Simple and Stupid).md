@@ -1,6 +1,6 @@
 ---
-title: KISS 原则 (Keep It Simple and Stupid)
-uid: 821168275800
+title: null
+uid: 446519771882
 aliases: null
 categories: null
 tags:
@@ -9,10 +9,9 @@ description: null
 cover: null
 cssclasses: null
 author: null
-domain: null
 originalLink: null
-createTime: '2024-04-19 13:37:45'
-updateTime: '2024-04-19 13:37:45'
+createTime: '2024-04-19 13:56:22'
+updateTime: '2024-04-19 13:56:22'
 ---
 
 # KISS 原则 (Keep It Simple and Stupid)

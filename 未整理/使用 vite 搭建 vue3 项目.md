@@ -1,6 +1,6 @@
 ---
-title: 使用 vite 搭建 vue3 项目
-uid: 915516756623
+title: null
+uid: 74477878419
 aliases: []
 categories: null
 tags:
@@ -13,10 +13,9 @@ description: null
 cover: null
 cssclasses: null
 author: null
-domain: null
 originalLink: null
-createTime: '2024-04-19 13:37:45'
-updateTime: '2024-04-19 13:37:45'
+createTime: '2024-04-19 13:56:22'
+updateTime: '2024-04-19 13:56:22'
 ---
 
 # 使用 vite 搭建 vue3 项目

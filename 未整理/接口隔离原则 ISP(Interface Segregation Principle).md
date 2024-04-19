@@ -1,6 +1,6 @@
 ---
-title: 接口隔离原则 ISP(Interface Segregation Principle)
-uid: 807793388680
+title: null
+uid: 420917397957
 aliases: null
 categories: null
 tags:
@@ -9,10 +9,9 @@ description: null
 cover: null
 cssclasses: null
 author: null
-domain: null
 originalLink: null
-createTime: '2024-04-19 13:37:45'
-updateTime: '2024-04-19 13:37:45'
+createTime: '2024-04-19 13:56:22'
+updateTime: '2024-04-19 13:56:22'
 ---
 
 # 接口隔离原则 ISP(Interface Segregation Principle)

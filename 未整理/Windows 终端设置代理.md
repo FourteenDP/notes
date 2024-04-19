@@ -1,6 +1,6 @@
 ---
-title: Windows 终端设置代理
-uid: 893323995766
+title: null
+uid: 934796815273
 aliases: []
 categories: null
 tags:
@@ -14,10 +14,9 @@ description: null
 cover: null
 cssclasses: null
 author: null
-domain: null
 originalLink: null
-createTime: '2024-04-19 13:37:45'
-updateTime: '2024-04-19 13:37:45'
+createTime: '2024-04-19 13:56:22'
+updateTime: '2024-04-19 13:56:22'
 ---
 
 # Windows 终端设置代理

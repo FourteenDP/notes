@@ -1,6 +1,6 @@
 ---
-title: CSS 函数
-uid: 729024923946
+title: null
+uid: 553782236831
 aliases: []
 categories: null
 tags:
@@ -10,10 +10,9 @@ description: null
 cover: null
 cssclasses: null
 author: null
-domain: null
 originalLink: null
-createTime: '2024-04-19 13:37:45'
-updateTime: '2024-04-19 13:37:45'
+createTime: '2024-04-19 13:56:22'
+updateTime: '2024-04-19 13:56:22'
 ---
 
 # CSS 函数

@@ -1,6 +1,6 @@
 ---
-title: Linux 目录结构和作用
-uid: 493958683471
+title: null
+uid: 69427853825
 aliases: null
 categories: null
 tags:
@@ -9,10 +9,9 @@ description: null
 cover: null
 cssclasses: null
 author: null
-domain: null
 originalLink: null
-createTime: '2024-04-19 13:37:45'
-updateTime: '2024-04-19 13:37:45'
+createTime: '2024-04-19 13:56:22'
+updateTime: '2024-04-19 13:56:22'
 ---
 
 # Linux 目录结构和作用
