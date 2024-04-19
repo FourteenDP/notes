@@ -1,18 +1,22 @@
 ---
-标题: interface 和 type 的区别
-描述: null
-封面: null
+title: interface 和 type 的区别
 uid: 20240123112807170
 aliases: []
+categories: null
 tags:
   - 计算机/技术
   - 计算机/语言
   - 计算机/语言/TypeScript
   - interface
   - type
+description: null
+cover: null
 cssclasses: null
-创建时间: 2023-05-07T14:01:32.000Z
-更新时间: 2024-01-22T16:57:43.000Z
+author: null
+domain: null
+originalLink: null
+createTime: 2023-05-07T14:01:32.000Z
+updateTime: 2024-01-22T16:57:43.000Z
 ---
 
 # interface 和 type 的区别

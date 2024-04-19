@@ -1,14 +1,18 @@
 ---
-标题: any 和 unknown 的区别
-描述: null
-封面: null
+title: any 和 unknown 的区别
 uid: 20240123112807160
 aliases: []
+categories: null
 tags:
   - 计算机/语言/TypeScript
+description: null
+cover: null
 cssclasses: null
-创建时间: 2023-05-07T14:01:32.000Z
-更新时间: 2024-01-23T09:06:33.000Z
+author: null
+domain: null
+originalLink: null
+createTime: 2023-05-07T14:01:32.000Z
+updateTime: 2024-01-23T09:06:33.000Z
 ---
 
 # any 和 unknown 的区别

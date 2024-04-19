@@ -1,16 +1,17 @@
 ---
-标题: CSS 选择器优先级权重 - w3cschool 笔记
-描述: CSS 的选择器是必学内容，多种选择器都有各自的用法，本篇文章来为您介绍选择器的优先级。
-封面: null
+title: null
 uid: 20240123112809260
 aliases: null
+categories: null
 tags: []
+description: null
+cover: null
 cssclasses: null
-作者: w3cschool.cn
-域名: www.w3cschool.cn
-原文链接: 'https://www.w3cschool.cn/article/67325175.html'
-创建时间: 2023-12-31T00:19:13.000Z
-更新时间: 2024-01-22T16:56:21.000Z
+author: null
+domain: null
+originalLink: null
+createTime: null
+updateTime: null
 ---
 
 # CSS 选择器优先级权重 - w3cschool 笔记

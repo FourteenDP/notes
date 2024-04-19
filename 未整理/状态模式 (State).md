@@ -1,14 +1,18 @@
 ---
-标题: 状态模式 (State)
-描述: null
-封面: null
+title: 状态模式 (State)
 uid: 20240123112807440
 aliases: null
+categories: null
 tags:
   - 计算机/设计模式/GoF设计模式/行为型模式
+description: null
+cover: null
 cssclasses: null
-创建时间: 2023-05-07T14:01:31.000Z
-更新时间: 2024-01-22T16:57:31.000Z
+author: null
+domain: null
+originalLink: null
+createTime: 2023-05-07T14:01:31.000Z
+updateTime: 2024-01-22T16:57:31.000Z
 ---
 
 # 状态模式 (State)

@@ -1,14 +1,18 @@
 ---
-标题: 抽象工厂模式 (Abstract Factory)
-描述: null
-封面: null
+title: 抽象工厂模式 (Abstract Factory)
 uid: 20240123112807370
 aliases: null
+categories: null
 tags:
   - 计算机/设计模式/GoF设计模式/创建型模式
+description: null
+cover: null
 cssclasses: null
-创建时间: 2023-05-07T14:01:31.000Z
-更新时间: 2023-12-31T03:52:41.000Z
+author: null
+domain: null
+originalLink: null
+createTime: 2023-05-07T14:01:31.000Z
+updateTime: 2023-12-31T03:52:41.000Z
 ---
 
 # 抽象工厂模式 (Abstract Factory)

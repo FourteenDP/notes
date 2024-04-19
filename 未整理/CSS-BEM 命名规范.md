@@ -1,16 +1,20 @@
 ---
-标题: CSS-BEM 命名规范
-描述: null
-封面: null
+title: CSS-BEM 命名规范
 uid: 20240123112806908
 aliases: []
+categories: null
 tags:
   - 计算机/前端/CSS
   - CSS-BEM
   - 计算机/前端/命名规范
+description: null
+cover: null
 cssclasses: null
-创建时间: 2023-05-07T14:01:31.000Z
-更新时间: 2024-01-22T16:57:44.000Z
+author: null
+domain: null
+originalLink: null
+createTime: 2023-05-07T14:01:31.000Z
+updateTime: 2024-01-22T16:57:44.000Z
 ---
 
 # CSS-BEM 命名规范

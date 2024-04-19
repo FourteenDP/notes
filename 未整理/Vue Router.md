@@ -1,17 +1,21 @@
 ---
-标题: Vue Router
-描述: null
-封面: null
+title: Vue Router
 uid: 20240123112807090
 aliases: []
+categories: null
 tags:
   - 计算机/前端/Vue
   - 计算机/前端/Vue3
   - 计算机/前端/JavaScript
   - 计算机/前端/Vue Router
+description: null
+cover: null
 cssclasses: null
-创建时间: 2023-05-07T14:01:31.000Z
-更新时间: 2024-01-22T16:57:40.000Z
+author: null
+domain: null
+originalLink: null
+createTime: 2023-05-07T14:01:31.000Z
+updateTime: 2024-01-22T16:57:40.000Z
 ---
 
 # Vue Router

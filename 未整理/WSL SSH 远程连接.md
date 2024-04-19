@@ -1,9 +1,8 @@
 ---
-标题: WSL SSH 远程连接
-描述: null
-封面: null
+title: WSL SSH 远程连接
 uid: 20240123112807100
 aliases: []
+categories: null
 tags:
   - 计算机/Linux/WSL
   - 计算机/Linux
@@ -11,9 +10,14 @@ tags:
   - 远程连接
   - 服务安装
   - 配置信息
+description: null
+cover: null
 cssclasses: null
-创建时间: 2023-05-07T14:01:31.000Z
-更新时间: 2024-01-22T16:57:39.000Z
+author: null
+domain: null
+originalLink: null
+createTime: 2023-05-07T14:01:31.000Z
+updateTime: 2024-01-22T16:57:39.000Z
 ---
 
 # WSL SSH 远程连接

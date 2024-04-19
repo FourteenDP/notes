@@ -1,14 +1,18 @@
 ---
-标题: 工程化之统一编辑器字符 EditorConfig
-描述: null
-封面: null
+title: 工程化之统一编辑器字符 EditorConfig
 uid: 20240123112807360
 aliases: []
+categories: null
 tags:
   - 计算机/工程化
+description: null
+cover: null
 cssclasses: null
-创建时间: 2023-05-14T10:40:09.000Z
-更新时间: 2024-01-22T16:57:31.000Z
+author: null
+domain: null
+originalLink: null
+createTime: 2023-05-14T10:40:09.000Z
+updateTime: 2024-01-22T16:57:31.000Z
 ---
 
 # 工程化之统一编辑器字符 EditorConfig

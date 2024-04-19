@@ -1,14 +1,18 @@
 ---
-标题: HelloWorld
-描述: null
-封面: null
+title: HelloWorld
 uid: 20240123112806930
 aliases: null
+categories: null
 tags:
   - 计算机/语言/CS
+description: null
+cover: null
 cssclasses: null
-创建时间: 2023-05-07T17:04:27.000Z
-更新时间: 2023-12-31T03:07:35.000Z
+author: null
+domain: null
+originalLink: null
+createTime: 2023-05-07T17:04:27.000Z
+updateTime: 2023-12-31T03:07:35.000Z
 ---
 
 # C# Hello World

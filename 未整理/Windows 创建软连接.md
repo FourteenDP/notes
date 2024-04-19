@@ -1,9 +1,8 @@
 ---
-标题: Windows 创建软连接
-描述: null
-封面: null
+title: Windows 创建软连接
 uid: 20240123112807160
 aliases: []
+categories: null
 tags:
   - 计算机/Windows
   - 创建软连接
@@ -12,9 +11,14 @@ tags:
   - 目录联接
   - nvm
   - pnpm
+description: null
+cover: null
 cssclasses: null
-创建时间: 2023-05-07T14:01:31.000Z
-更新时间: 2024-01-22T16:57:40.000Z
+author: null
+domain: null
+originalLink: null
+createTime: 2023-05-07T14:01:31.000Z
+updateTime: 2024-01-22T16:57:40.000Z
 ---
 
 # Windows 创建软连接

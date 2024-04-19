@@ -1,14 +1,18 @@
 ---
-标题: 策略模式 (Strategy)
-描述: null
-封面: null
+title: 策略模式 (Strategy)
 uid: 20240123112807450
 aliases: null
+categories: null
 tags:
   - 计算机/设计模式/GoF设计模式/行为型模式
+description: null
+cover: null
 cssclasses: null
-创建时间: 2023-05-07T14:01:31.000Z
-更新时间: 2024-01-22T19:19:56.000Z
+author: null
+domain: null
+originalLink: null
+createTime: 2023-05-07T14:01:31.000Z
+updateTime: 2024-01-22T19:19:56.000Z
 ---
 
 # 策略模式 (Strategy)

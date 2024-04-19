@@ -1,16 +1,17 @@
 ---
-标题: 坑：ssh： connect to host github-com port 22： Connection refused
-描述: null
-封面: null
+title: null
 uid: 20240123112809280
 aliases: []
+categories: null
 tags: []
+description: null
+cover: null
 cssclasses: null
-作者: zhuanlan.zhihu.com
-域名: zhuanlan.zhihu.com
-原文链接: 'https://zhuanlan.zhihu.com/p/521340971'
-创建时间: 2024-01-23T11:08:51.000Z
-更新时间: 2024-01-23T11:09:36.000Z
+author: null
+domain: null
+originalLink: null
+createTime: null
+updateTime: null
 ---
 
 # **问题现象**

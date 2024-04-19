@@ -1,14 +1,18 @@
 ---
-标题: node 的 process.nextTick
-描述: null
-封面: null
+title: node 的 process.nextTick
 uid: 20240123112807170
 aliases: null
+categories: null
 tags:
   - 计算机/前端/事件队列
+description: null
+cover: null
 cssclasses: null
-创建时间: 2023-05-07T14:01:31.000Z
-更新时间: 2023-12-31T03:07:34.000Z
+author: null
+domain: null
+originalLink: null
+createTime: 2023-05-07T14:01:31.000Z
+updateTime: 2023-12-31T03:07:34.000Z
 ---
 
 # node 的 process.nextTick

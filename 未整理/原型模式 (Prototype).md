@@ -1,14 +1,18 @@
 ---
-标题: 原型模式 (Prototype)
-描述: null
-封面: null
+title: 原型模式 (Prototype)
 uid: 20240123112807316
 aliases: null
+categories: null
 tags:
   - 计算机/设计模式/GoF设计模式/创建型模式
+description: null
+cover: null
 cssclasses: null
-创建时间: 2023-05-07T14:01:31.000Z
-更新时间: 2023-12-31T03:07:33.000Z
+author: null
+domain: null
+originalLink: null
+createTime: 2023-05-07T14:01:31.000Z
+updateTime: 2023-12-31T03:07:33.000Z
 ---
 
 # 原型模式 (Prototype)

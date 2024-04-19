@@ -1,15 +1,19 @@
 ---
-标题: WSL 修改默认安装目录到其他盘
-描述: null
-封面: null
+title: WSL 修改默认安装目录到其他盘
 uid: 20240123112807156
 aliases: []
+categories: null
 tags:
   - 计算机/Linux/WSL
   - 默认安装目录
+description: null
+cover: null
 cssclasses: null
-创建时间: 2023-05-07T14:01:31.000Z
-更新时间: 2024-01-22T16:57:39.000Z
+author: null
+domain: null
+originalLink: null
+createTime: 2023-05-07T14:01:31.000Z
+updateTime: 2024-01-22T16:57:39.000Z
 ---
 
 # WSL 修改默认安装目录到其他盘

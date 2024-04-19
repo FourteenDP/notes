@@ -1,15 +1,19 @@
 ---
-标题: Flutter速记
-描述: null
-封面: null
+title: Flutter速记
 uid: 20240123112806916
 aliases:
   - null
+categories: null
 tags:
   - 计算机/前端/Flutter
+description: null
+cover: null
 cssclasses: null
-创建时间: 2024-01-23 11:28:06
-更新时间: 2024-02-04 01:07:47
+author: null
+domain: null
+originalLink: null
+createTime: 2024-01-23T11:28:06.000Z
+updateTime: 2024-02-04T01:07:47.000Z
 ---
 
 # Flutter 速记

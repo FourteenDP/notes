@@ -1,18 +1,22 @@
 ---
-标题: Linux 安装命令行工具 Oh My Zsh
-描述: null
-封面: null
+title: Linux 安装命令行工具 Oh My Zsh
 uid: 20240123112806936
 aliases: []
+categories: null
 tags:
   - 计算机/Linux
   - 命令行工具
   - 计算机/Linux/安装
   - 计算机/Linux/Zsh
   - Oh My 计算机/Linux/Zsh
+description: null
+cover: null
 cssclasses: null
-创建时间: 2023-05-07T14:01:31.000Z
-更新时间: 2024-01-22T16:57:43.000Z
+author: null
+domain: null
+originalLink: null
+createTime: 2023-05-07T14:01:31.000Z
+updateTime: 2024-01-22T16:57:43.000Z
 ---
 
 # Linux 安装命令行工具 Oh My Zsh

@@ -1,20 +1,22 @@
 ---
-标题: 使用 vite 搭建 vue3 项目
-描述: null
-封面: null
+title: 使用 vite 搭建 vue3 项目
 uid: 20240123112807210
 aliases: []
+categories: null
 tags:
   - 计算机/前端/Vue
   - 计算机/前端/Vue3
   - 计算机/前端/JavaScript
   - 计算机/语言/TypeScript
   - 计算机/前端/工程化
+description: null
+cover: null
 cssclasses: null
-发布链接:
-  - 'https://juejin.cn/post/7231016319863521337'
-创建时间: 2023-05-07T14:01:31.000Z
-更新时间: 2024-01-22T16:57:37.000Z
+author: null
+domain: null
+originalLink: null
+createTime: 2023-05-07T14:01:31.000Z
+updateTime: 2024-01-22T16:57:37.000Z
 ---
 
 # 使用 vite 搭建 vue3 项目

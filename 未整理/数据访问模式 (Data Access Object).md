@@ -1,14 +1,18 @@
 ---
-标题: 数据访问模式 (Data Access Object)
-描述: null
-封面: null
+title: 数据访问模式 (Data Access Object)
 uid: 20240123112807430
 aliases: null
+categories: null
 tags:
   - 计算机/设计模式/非GoF设计模式
+description: null
+cover: null
 cssclasses: null
-创建时间: 2023-05-07T14:01:31.000Z
-更新时间: 2024-01-22T16:57:31.000Z
+author: null
+domain: null
+originalLink: null
+createTime: 2023-05-07T14:01:31.000Z
+updateTime: 2024-01-22T16:57:31.000Z
 ---
 
 # 数据访问模式 (Data Access Object)

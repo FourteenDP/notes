@@ -1,16 +1,20 @@
 ---
-标题: 响应式语法糖 $ref
-描述: null
-封面: null
+title: 响应式语法糖 $ref
 uid: 20240123112807330
 aliases: []
+categories: null
 tags:
   - 计算机/前端/Vue
   - 计算机/前端/Vue3
   - 计算机/前端/JavaScript
+description: null
+cover: null
 cssclasses: null
-创建时间: 2023-05-07T14:01:31.000Z
-更新时间: 2024-01-22T16:57:35.000Z
+author: null
+domain: null
+originalLink: null
+createTime: 2023-05-07T14:01:31.000Z
+updateTime: 2024-01-22T16:57:35.000Z
 ---
 
 # 响应式语法糖 $ref

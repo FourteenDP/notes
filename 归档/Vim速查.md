@@ -1,14 +1,18 @@
 ---
-标题: Vim速查
-描述: null
-封面: null
+title: Vim速查
 uid: 20240123112806856
 aliases: []
+categories: null
 tags:
   - 计算机/编辑器/Vim
+description: null
+cover: null
 cssclasses: null
-创建时间: 2024-01-23 11:28:06
-更新时间: 2024-02-27 15:05:26
+author: null
+domain: null
+originalLink: null
+createTime: 2024-01-23T11:28:06.000Z
+updateTime: 2024-02-27T15:05:26.000Z
 ---
 
 # Vim 速查

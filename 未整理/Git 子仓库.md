@@ -1,17 +1,19 @@
 ---
-标题: Git 子仓库
-描述: null
-封面: null
+title: Git 子仓库
 uid: 20240123112806924
 aliases: null
+categories: null
 tags:
   - 计算机/工程化/Git
   - 计算机/项目管理/Git
+description: null
+cover: null
 cssclasses: null
-发布链接:
-  - 'https://juejin.cn/post/7230656452497965117'
-创建时间: 2023-05-14T10:40:09.000Z
-更新时间: 2024-01-22T16:57:44.000Z
+author: null
+domain: null
+originalLink: null
+createTime: 2023-05-14T10:40:09.000Z
+updateTime: 2024-01-22T16:57:44.000Z
 ---
 
 # Git 子仓库

@@ -1,16 +1,20 @@
 ---
-标题: WSL 登录 Root
-描述: null
-封面: null
+title: WSL 登录 Root
 uid: 20240123112807156
 aliases: []
+categories: null
 tags:
   - 计算机/Linux/WSL
   - 登录
   - Root
+description: null
+cover: null
 cssclasses: null
-创建时间: 2023-05-07T14:01:31.000Z
-更新时间: 2024-01-22T19:02:53.000Z
+author: null
+domain: null
+originalLink: null
+createTime: 2023-05-07T14:01:31.000Z
+updateTime: 2024-01-22T19:02:53.000Z
 ---
 
 # WSL 登录 Root

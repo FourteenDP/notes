@@ -1,9 +1,8 @@
 ---
-标题: 工程化之忽略文件 GitIgnore 和提交空目录 GitKeep
-描述: null
-封面: null
+title: 工程化之忽略文件 GitIgnore 和提交空目录 GitKeep
 uid: 20240123112807356
 aliases: []
+categories: null
 tags:
   - 计算机/工程化
   - 计算机/工程化/Git
@@ -11,9 +10,14 @@ tags:
   - 提交空目录
   - .gitignore
   - .gitkeep
+description: null
+cover: null
 cssclasses: null
-创建时间: 2023-05-14T10:40:09.000Z
-更新时间: 2024-01-22T16:57:31.000Z
+author: null
+domain: null
+originalLink: null
+createTime: 2023-05-14T10:40:09.000Z
+updateTime: 2024-01-22T16:57:31.000Z
 ---
 
 # 工程化之忽略文件 GitIgnore 和提交空目录 GitKeep

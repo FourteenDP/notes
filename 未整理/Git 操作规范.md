@@ -1,15 +1,19 @@
 ---
-标题: Git 操作规范
-描述: null
-封面: null
+title: Git 操作规范
 uid: 20240123112806924
 aliases: []
+categories: null
 tags:
   - 计算机/工程化/Git
   - 计算机/项目管理/Git
+description: null
+cover: null
 cssclasses: null
-创建时间: 2024-01-23T11:28:06.000Z
-更新时间: 2024-02-03T22:25:31.000Z
+author: null
+domain: null
+originalLink: null
+createTime: 2024-01-23T11:28:06.000Z
+updateTime: 2024-02-03T22:25:31.000Z
 ---
 
 # Git 操作规范
