@@ -1,6 +1,6 @@
 ---
 title: null
-uid: 187066904036
+uid: 1970324837804171
 aliases: []
 categories: null
 tags:
@@ -10,12 +10,13 @@ tags:
   - 全局组件
   - 计算机/前端/JavaScript
 description: null
+original: null
 cover: null
 cssclasses: null
 author: null
 originalLink: null
-createTime: '2024-04-19 13:56:22'
-updateTime: '2024-04-19 13:56:22'
+createTime: '2024-04-19 14:12:12'
+updateTime: '2024-04-19 14:12:12'
 ---
 
 # Uniapp 全局消息提示及其组件的实现

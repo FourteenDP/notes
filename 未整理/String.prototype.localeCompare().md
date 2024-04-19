@@ -1,6 +1,6 @@
 ---
 title: null
-uid: 1040496349780
+uid: 4503599628196777
 aliases: []
 categories: null
 tags:
@@ -10,12 +10,13 @@ tags:
   - 计算机/语言/String
   - 计算机/语言/JavaScript/方法
 description: null
+original: null
 cover: null
 cssclasses: null
 author: null
 originalLink: null
-createTime: '2024-04-19 13:56:22'
-updateTime: '2024-04-19 13:56:22'
+createTime: '2024-04-19 14:12:12'
+updateTime: '2024-04-19 14:12:12'
 ---
 
 # String.prototype.localeCompare()

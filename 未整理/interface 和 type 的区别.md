@@ -1,6 +1,6 @@
 ---
 title: null
-uid: 90036969990
+uid: 1407374884382980
 aliases: []
 categories: null
 tags:
@@ -10,12 +10,13 @@ tags:
   - interface
   - type
 description: null
+original: null
 cover: null
 cssclasses: null
 author: null
 originalLink: null
-createTime: '2024-04-19 13:56:22'
-updateTime: '2024-04-19 13:56:22'
+createTime: '2024-04-19 14:12:12'
+updateTime: '2024-04-19 14:12:12'
 ---
 
 # interface 和 type 的区别

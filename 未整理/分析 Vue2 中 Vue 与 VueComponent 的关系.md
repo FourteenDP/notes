@@ -1,6 +1,6 @@
 ---
 title: null
-uid: 868409247355
+uid: 1407374884383015
 aliases: []
 categories: null
 tags:
@@ -9,12 +9,13 @@ tags:
   - 计算机/前端/源码
   - 计算机/前端/Vue/关系图
 description: null
+original: null
 cover: null
 cssclasses: null
 author: null
 originalLink: null
-createTime: '2024-04-19 13:56:22'
-updateTime: '2024-04-19 13:56:22'
+createTime: '2024-04-19 14:12:12'
+updateTime: '2024-04-19 14:12:12'
 ---
 
 # 分析 Vue2 中 Vue 与 VueComponent 的关系

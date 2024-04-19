@@ -1,17 +1,18 @@
 ---
 title: null
-uid: 317368611021
+uid: 1970324837804172
 aliases: []
 categories: null
 tags:
   - 计算机/前端/工程化
 description: null
+original: null
 cover: null
 cssclasses: null
 author: null
 originalLink: null
-createTime: '2024-04-19 13:56:22'
-updateTime: '2024-04-19 13:56:22'
+createTime: '2024-04-19 14:12:12'
+updateTime: '2024-04-19 14:12:12'
 ---
 
 # Vite 全局样式注入

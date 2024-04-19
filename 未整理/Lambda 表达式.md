@@ -1,6 +1,6 @@
 ---
 title: null
-uid: 363330643047
+uid: 1970324837800637
 aliases: null
 categories: null
 tags:
@@ -8,12 +8,13 @@ tags:
   - 计算机/语言
   - Lambda
 description: null
+original: null
 cover: null
 cssclasses: null
 author: null
 originalLink: null
-createTime: '2024-04-19 13:56:22'
-updateTime: '2024-04-19 13:56:22'
+createTime: '2024-04-19 14:12:12'
+updateTime: '2024-04-19 14:12:12'
 ---
 
 # Lambda 表达式

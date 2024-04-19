@@ -1,6 +1,6 @@
 ---
 title: null
-uid: 385671649557
+uid: 1407374884382966
 aliases: []
 categories: null
 tags:
@@ -10,12 +10,13 @@ tags:
   - 执行脚本
   - 发送通知
 description: null
+original: null
 cover: null
 cssclasses: null
 author: null
 originalLink: null
-createTime: '2024-04-19 13:56:22'
-updateTime: '2024-04-19 13:56:22'
+createTime: '2024-04-19 14:12:12'
+updateTime: '2024-04-19 14:12:12'
 ---
 
 # Windows 如何设置 WSL 开机启动并执行脚本以及向 Windows 桌面发送通知

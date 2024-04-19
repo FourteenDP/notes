@@ -1,6 +1,6 @@
 ---
 title: null
-uid: 628950842928
+uid: 4785074604906274
 aliases: []
 categories: null
 tags:
@@ -8,12 +8,13 @@ tags:
   - CSS-BEM
   - 计算机/前端/命名规范
 description: null
+original: null
 cover: null
 cssclasses: null
 author: null
 originalLink: null
-createTime: '2024-04-19 13:56:22'
-updateTime: '2024-04-19 13:56:22'
+createTime: '2024-04-19 14:12:12'
+updateTime: '2024-04-19 14:12:12'
 ---
 
 # CSS-BEM 命名规范

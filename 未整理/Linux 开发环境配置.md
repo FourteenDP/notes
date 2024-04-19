@@ -1,6 +1,6 @@
 ---
 title: null
-uid: 228579200584
+uid: 3377699721354039
 aliases: null
 categories: null
 tags:
@@ -15,12 +15,13 @@ tags:
   - 计算机/Linux/Neovim
   - 计算机/Linux/常用工具
 description: null
+original: null
 cover: null
 cssclasses: null
 author: null
 originalLink: null
-createTime: '2024-04-19 13:56:22'
-updateTime: '2024-04-19 13:56:22'
+createTime: '2024-04-19 14:12:12'
+updateTime: '2024-04-19 14:12:12'
 ---
 
 # Linux 开发环境配置

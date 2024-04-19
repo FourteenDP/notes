@@ -1,6 +1,6 @@
 ---
 title: null
-uid: 682533338797
+uid: 2251799814514887
 aliases: []
 categories: null
 tags:
@@ -9,12 +9,13 @@ tags:
   - 计算机/前端/JavaScript
   - 计算机/前端/Vue Router
 description: null
+original: null
 cover: null
 cssclasses: null
 author: null
 originalLink: null
-createTime: '2024-04-19 13:56:22'
-updateTime: '2024-04-19 13:56:22'
+createTime: '2024-04-19 14:12:12'
+updateTime: '2024-04-19 14:12:12'
 ---
 
 # Vue Router

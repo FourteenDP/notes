@@ -1,6 +1,6 @@
 ---
 title: null
-uid: 820343428571
+uid: 1688849861090066
 aliases: []
 categories: null
 tags:
@@ -11,12 +11,13 @@ tags:
   - 计算机/Linux/下载工具/Axel
   - aria2
 description: null
+original: null
 cover: null
 cssclasses: null
 author: null
 originalLink: null
-createTime: '2024-04-19 13:56:22'
-updateTime: '2024-04-19 13:56:22'
+createTime: '2024-04-19 14:12:12'
+updateTime: '2024-04-19 14:12:12'
 ---
 
 # Linux 常用下载器

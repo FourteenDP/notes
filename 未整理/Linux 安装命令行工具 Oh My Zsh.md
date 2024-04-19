@@ -1,6 +1,6 @@
 ---
 title: null
-uid: 954819957867
+uid: 1688849861090062
 aliases: []
 categories: null
 tags:
@@ -10,12 +10,13 @@ tags:
   - 计算机/Linux/Zsh
   - Oh My 计算机/Linux/Zsh
 description: null
+original: null
 cover: null
 cssclasses: null
 author: null
 originalLink: null
-createTime: '2024-04-19 13:56:22'
-updateTime: '2024-04-19 13:56:22'
+createTime: '2024-04-19 14:12:12'
+updateTime: '2024-04-19 14:12:12'
 ---
 
 # Linux 安装命令行工具 Oh My Zsh

@@ -1,6 +1,6 @@
 ---
 title: null
-uid: 740301106038
+uid: 2251799814515049
 aliases: []
 categories: null
 tags:
@@ -8,12 +8,13 @@ tags:
   - ERP系统
   - 管理系统
 description: null
+original: null
 cover: null
 cssclasses: null
 author: null
 originalLink: null
-createTime: '2024-04-19 13:56:22'
-updateTime: '2024-04-19 13:56:22'
+createTime: '2024-04-19 14:12:12'
+updateTime: '2024-04-19 14:12:12'
 ---
 
 # 开源 ERP 系统

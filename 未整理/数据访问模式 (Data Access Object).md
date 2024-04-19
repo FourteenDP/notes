@@ -1,17 +1,18 @@
 ---
 title: null
-uid: 638658265535
+uid: 1970324837804419
 aliases: null
 categories: null
 tags:
   - 计算机/设计模式/非GoF设计模式
 description: null
+original: null
 cover: null
 cssclasses: null
 author: null
 originalLink: null
-createTime: '2024-04-19 13:56:22'
-updateTime: '2024-04-19 13:56:22'
+createTime: '2024-04-19 14:12:12'
+updateTime: '2024-04-19 14:12:12'
 ---
 
 # 数据访问模式 (Data Access Object)

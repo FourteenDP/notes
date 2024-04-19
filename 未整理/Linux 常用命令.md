@@ -1,6 +1,6 @@
 ---
 title: null
-uid: 595097858173
+uid: 1688849861090067
 aliases: []
 categories: null
 tags:
@@ -12,12 +12,13 @@ tags:
   - 文件夹操作
   - 环境配置
 description: null
+original: null
 cover: null
 cssclasses: null
 author: null
 originalLink: null
-createTime: '2024-04-19 13:56:22'
-updateTime: '2024-04-19 13:56:22'
+createTime: '2024-04-19 14:12:12'
+updateTime: '2024-04-19 14:12:12'
 ---
 
 # Linux 常用命令

@@ -1,18 +1,19 @@
 ---
 title: null
-uid: 586633066159
+uid: 1407374884382993
 aliases: []
 categories: null
 tags:
   - 计算机/语言
   - 计算机/语言/TypeScript
 description: null
+original: null
 cover: null
 cssclasses: null
 author: null
 originalLink: null
-createTime: '2024-04-19 13:56:22'
-updateTime: '2024-04-19 13:56:22'
+createTime: '2024-04-19 14:12:12'
+updateTime: '2024-04-19 14:12:12'
 ---
 
 # void 和 never 区别

@@ -1,18 +1,19 @@
 ---
 title: null
-uid: 640097135687
+uid: 1407374884382963
 aliases: []
 categories: null
 tags:
   - 计算机/Linux/WSL
   - 计算机/Linux/系统代理
 description: null
+original: null
 cover: null
 cssclasses: null
 author: null
 originalLink: null
-createTime: '2024-04-19 13:56:22'
-updateTime: '2024-04-19 13:56:22'
+createTime: '2024-04-19 14:12:12'
+updateTime: '2024-04-19 14:12:12'
 ---
 
 # WSL 系统代理

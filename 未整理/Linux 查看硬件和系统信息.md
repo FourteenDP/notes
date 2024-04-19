@@ -1,6 +1,6 @@
 ---
 title: null
-uid: 279242455066
+uid: 2251799814511418
 aliases: []
 categories: null
 tags:
@@ -12,12 +12,13 @@ tags:
   - 发行版本
   - 计算机/Linux/硬件信息
 description: null
+original: null
 cover: null
 cssclasses: null
 author: null
 originalLink: null
-createTime: '2024-04-19 13:56:22'
-updateTime: '2024-04-19 13:56:22'
+createTime: '2024-04-19 14:12:12'
+updateTime: '2024-04-19 14:12:12'
 ---
 
 # Linux 查看硬件和系统信息

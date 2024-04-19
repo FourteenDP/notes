@@ -1,6 +1,6 @@
 ---
 title: null
-uid: 359150469707
+uid: 1970324837800646
 aliases: []
 categories: null
 tags:
@@ -9,12 +9,13 @@ tags:
   - 计算机/开发/版本管理
   - 计算机/Linux/Nvm
 description: null
+original: null
 cover: null
 cssclasses: null
 author: null
 originalLink: null
-createTime: '2024-04-19 13:56:22'
-updateTime: '2024-04-19 13:56:22'
+createTime: '2024-04-19 14:12:12'
+updateTime: '2024-04-19 14:12:12'
 ---
 
 # Linux 安装 Node 版本管理器 Nvm

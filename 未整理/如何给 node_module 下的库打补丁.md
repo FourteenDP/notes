@@ -1,6 +1,6 @@
 ---
 title: null
-uid: 467285613725
+uid: 1688849861093721
 aliases: []
 categories: null
 tags:
@@ -12,12 +12,13 @@ tags:
   - 计算机/前端/yarn
   - patch
 description: null
+original: null
 cover: null
 cssclasses: null
 author: null
 originalLink: null
-createTime: '2024-04-19 13:56:22'
-updateTime: '2024-04-19 13:56:22'
+createTime: '2024-04-19 14:12:12'
+updateTime: '2024-04-19 14:12:12'
 ---
 
 # 如何给 node_module 下的库打补丁

@@ -1,13 +1,17 @@
 ---
-标题 : WordPress Rest API 访问失败 404(访问 wp-json)_wp-json namespaces-CSDN 博客
-uid: 20240327093741261
-tags: 
-作者: blog.csdn.net
-描述: 
-域名: blog.csdn.net
-原文链接: https://blog.csdn.net/my466879168/article/details/107169245
-创建时间: 2024-03-27 09:37:41
-更新时间: 2024-03-27 09:37:41
+title: WordPress Rest API 访问失败 404(访问 wp-json)_wp-json namespaces-CSDN 博客
+uid: 2251799814507525
+aliases: null
+categories: null
+tags: null
+description: null
+original: null
+cover: null
+cssclasses: null
+author: blog.csdn.net
+originalLink: 'https://blog.csdn.net/my466879168/article/details/107169245'
+createTime: '2024-04-19 14:14:49'
+updateTime: '2024-04-19 14:14:49'
 ---
 
 ### 访问 / wp-json 报 404 错误

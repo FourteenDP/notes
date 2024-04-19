@@ -1,16 +1,17 @@
 ---
-标题: Visual Studio 完全重置的方法
-描述: 
-封面: 
-uid: 20240307094351796
+title: Visual Studio 完全重置的方法
+uid: 7599824372009978
 aliases: []
+categories: null
 tags: []
-cssclasses: 
-作者: cnblogs.com
-域名: www.cnblogs.com
-原文链接: https://www.cnblogs.com/purvis/p/15137565.html
-创建时间: 2024-03-07 09:43:51
-更新时间: 2024-03-07 09:44:10
+description: null
+original: null
+cover: null
+cssclasses: null
+author: cnblogs.com
+originalLink: 'https://www.cnblogs.com/purvis/p/15137565.html'
+createTime: '2024-04-19 14:14:49'
+updateTime: '2024-04-19 14:14:49'
 ---
 
 # Visual Studio 完全重置的方法

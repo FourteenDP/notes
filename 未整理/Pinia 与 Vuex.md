@@ -1,6 +1,6 @@
 ---
 title: null
-uid: 219376299281
+uid: 1688849861090169
 aliases: []
 categories: null
 tags:
@@ -9,12 +9,13 @@ tags:
   - 计算机/前端/JavaScript
   - 计算机/前端/状态管理
 description: null
+original: null
 cover: null
 cssclasses: null
 author: null
 originalLink: null
-createTime: '2024-04-19 13:56:22'
-updateTime: '2024-04-19 13:56:22'
+createTime: '2024-04-19 14:12:12'
+updateTime: '2024-04-19 14:12:12'
 ---
 
 # Pinia 与 Vuex

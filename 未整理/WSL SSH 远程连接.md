@@ -1,6 +1,6 @@
 ---
 title: null
-uid: 54064543935
+uid: 1688849861093594
 aliases: []
 categories: null
 tags:
@@ -11,12 +11,13 @@ tags:
   - 服务安装
   - 配置信息
 description: null
+original: null
 cover: null
 cssclasses: null
 author: null
 originalLink: null
-createTime: '2024-04-19 13:56:22'
-updateTime: '2024-04-19 13:56:22'
+createTime: '2024-04-19 14:12:12'
+updateTime: '2024-04-19 14:12:12'
 ---
 
 # WSL SSH 远程连接

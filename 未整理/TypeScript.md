@@ -1,18 +1,19 @@
 ---
 title: null
-uid: 202225272722
+uid: 1688849861090218
 aliases: []
 categories: null
 tags:
   - 计算机/语言/TypeScript
   - 简介
 description: null
+original: null
 cover: null
 cssclasses: null
 author: null
 originalLink: null
-createTime: '2024-04-19 13:56:22'
-updateTime: '2024-04-19 13:56:22'
+createTime: '2024-04-19 14:12:12'
+updateTime: '2024-04-19 14:12:12'
 ---
 
 # TypeScript

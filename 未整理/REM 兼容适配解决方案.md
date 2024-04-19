@@ -1,6 +1,6 @@
 ---
 title: null
-uid: 85335098253
+uid: 1970324837800860
 aliases: []
 categories: null
 tags:
@@ -10,12 +10,13 @@ tags:
   - 兼容适配
   - 计算机/前端/解决方案
 description: null
+original: null
 cover: null
 cssclasses: null
 author: null
 originalLink: null
-createTime: '2024-04-19 13:56:22'
-updateTime: '2024-04-19 13:56:22'
+createTime: '2024-04-19 14:12:12'
+updateTime: '2024-04-19 14:12:12'
 ---
 
 # REM 兼容适配解决方案

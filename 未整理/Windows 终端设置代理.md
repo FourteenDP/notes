@@ -1,6 +1,6 @@
 ---
 title: null
-uid: 934796815273
+uid: 1407374884382967
 aliases: []
 categories: null
 tags:
@@ -11,12 +11,13 @@ tags:
   - 长期生效
   - 测试
 description: null
+original: null
 cover: null
 cssclasses: null
 author: null
 originalLink: null
-createTime: '2024-04-19 13:56:22'
-updateTime: '2024-04-19 13:56:22'
+createTime: '2024-04-19 14:12:12'
+updateTime: '2024-04-19 14:12:12'
 ---
 
 # Windows 终端设置代理

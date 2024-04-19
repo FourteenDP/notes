@@ -1,6 +1,6 @@
 ---
 title: null
-uid: 945113519988
+uid: 1688849861093809
 aliases: []
 categories: null
 tags:
@@ -10,12 +10,13 @@ tags:
   - HTTP协议
   - RFC规范
 description: null
+original: null
 cover: null
 cssclasses: null
 author: null
 originalLink: null
-createTime: '2024-04-19 13:56:22'
-updateTime: '2024-04-19 13:56:22'
+createTime: '2024-04-19 14:12:12'
+updateTime: '2024-04-19 14:12:12'
 ---
 
 # 浏览器 URL 字符串长度限制

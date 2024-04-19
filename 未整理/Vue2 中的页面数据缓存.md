@@ -1,6 +1,6 @@
 ---
 title: null
-uid: 134355790621
+uid: 1688849861093588
 aliases: []
 categories: null
 tags:
@@ -9,12 +9,13 @@ tags:
   - 数据处理
   - 计算机/前端/JavaScript
 description: null
+original: null
 cover: null
 cssclasses: null
 author: null
 originalLink: null
-createTime: '2024-04-19 13:56:22'
-updateTime: '2024-04-19 13:56:22'
+createTime: '2024-04-19 14:12:12'
+updateTime: '2024-04-19 14:12:12'
 ---
 
 # Vue2 中的页面数据缓存

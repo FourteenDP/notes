@@ -1,6 +1,6 @@
 ---
 title: null
-uid: 447000461089
+uid: 1688849861093616
 aliases: []
 categories: null
 tags:
@@ -9,12 +9,13 @@ tags:
   - 计算机/Linux/安装
   - Linux发行版
 description: null
+original: null
 cover: null
 cssclasses: null
 author: null
 originalLink: null
-createTime: '2024-04-19 13:56:22'
-updateTime: '2024-04-19 13:56:22'
+createTime: '2024-04-19 14:12:12'
+updateTime: '2024-04-19 14:12:12'
 ---
 
 以下 WSL 命令以 PowerShell 或 Windows 命令提示符支持的格式列出。若要通过 Bash/Linux 发行版命令行运行这些命令，必须将 `wsl` 替换为 `wsl.exe`。

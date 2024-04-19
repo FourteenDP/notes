@@ -1,17 +1,18 @@
 ---
 title: null
-uid: 516176786314
+uid: 1407374884383164
 aliases: null
 categories: null
 tags:
   - 计算机/设计模式/非GoF设计模式
 description: null
+original: null
 cover: null
 cssclasses: null
 author: null
 originalLink: null
-createTime: '2024-04-19 13:56:22'
-updateTime: '2024-04-19 13:56:22'
+createTime: '2024-04-19 14:12:12'
+updateTime: '2024-04-19 14:12:12'
 ---
 
 # 空对象模式 (Null Object)
