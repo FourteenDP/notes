@@ -1,5 +1,5 @@
 ---
-title: null
+title: 依赖倒转原则 DIP(Dependence Inversion Principle)
 uid: 1688849860861379
 aliases: null
 categories: null
@@ -11,8 +11,8 @@ cover: null
 cssclasses: null
 author: null
 originalLink: null
-createTime: '2024-04-19 14:44:21'
-updateTime: '2024-04-19 14:44:21'
+createTime: '2024-04-17 09:55:17'
+updateTime: '2024-04-19 14:46:07'
 ---
 
 # 依赖倒转原则 DIP(Dependence Inversion Principle)

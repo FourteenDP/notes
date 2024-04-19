@@ -1,5 +1,5 @@
 ---
-title: null
+title: 里氏替换原则 LSP(Liskov Substitution Principle)
 uid: 5348024558258374
 aliases: null
 categories: null
@@ -11,8 +11,8 @@ cover: null
 cssclasses: null
 author: null
 originalLink: null
-createTime: '2024-04-19 14:44:21'
-updateTime: '2024-04-19 14:44:21'
+createTime: '2024-04-17 09:55:17'
+updateTime: '2024-04-19 14:46:07'
 ---
 
 # 里氏替换原则 LSP(Liskov Substitution Principle)

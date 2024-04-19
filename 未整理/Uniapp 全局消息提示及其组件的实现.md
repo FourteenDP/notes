@@ -1,5 +1,5 @@
 ---
-title: null
+title: Uniapp 全局消息提示及其组件的实现
 uid: 1407374884047056
 aliases: []
 categories: null
@@ -15,8 +15,8 @@ cover: null
 cssclasses: null
 author: null
 originalLink: null
-createTime: '2024-04-19 14:44:21'
-updateTime: '2024-04-19 14:44:21'
+createTime: '2024-04-17 09:55:17'
+updateTime: '2024-04-19 14:46:07'
 ---
 
 # Uniapp 全局消息提示及其组件的实现

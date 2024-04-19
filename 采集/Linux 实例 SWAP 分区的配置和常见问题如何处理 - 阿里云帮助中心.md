@@ -12,8 +12,8 @@ cssclasses: null
 author: help.aliyun.com
 originalLink: >-
   https://help.aliyun.com/zh/ecs/how-do-i-configure-a-swap-partition-on-a-linux-instance-and-resolve-frequently-asked-questions
-createTime: '2024-04-19 14:44:21'
-updateTime: '2024-04-19 14:44:21'
+createTime: '2024-04-17 09:55:17'
+updateTime: '2024-04-19 14:46:07'
 ---
 
 **免责声明：** 本文档可能包含第三方产品信息，该信息仅供参考。阿里云对第三方产品的性能、可靠性以及操作可能带来的潜在影响，不做任何暗示或其他形式的承诺。
