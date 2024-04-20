@@ -60,6 +60,7 @@ async function addMatter() {
     const newData = Object.assign({}, data, {
       title: data.title ? data.title : title,
       uid: data.uid ? data.uid : stats.ino,
+      archived: data.archived ? data.archived : false,
       tags: data.tags ? data.tags : [],
       aliases: data.aliases ? data.aliases : [],
       categories: data.categories ? data.categories : [],

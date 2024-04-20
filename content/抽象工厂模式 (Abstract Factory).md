@@ -26,5 +26,5 @@ updateTime: '2024-04-19 15:45:34'
 ## 代码示例
 
 ```preview
-path: /代码/抽象工厂模式(Abstract Factory).ts
+path: /code-snippet/抽象工厂模式(Abstract Factory).ts
 ```

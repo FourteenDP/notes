@@ -27,5 +27,5 @@ updateTime: '2024-04-19 15:45:34'
 ![[Pasted image 20230302212615.png]]
 
 ```preview
-path: /代码/单例模式(Singleton).ts
+path: /code-snippet/单例模式(Singleton).ts
 ```
