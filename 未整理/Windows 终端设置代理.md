@@ -2,7 +2,7 @@
 title: Windows 终端设置代理
 uid: 1688849860861301
 aliases: []
-categories: null
+categories: []
 tags:
   - 计算机/Windows
   - 终端
@@ -10,11 +10,6 @@ tags:
   - 临时代理
   - 长期生效
   - 测试
-description: null
-original: null
-cover: null
-cssclasses: null
-author: null
 createTime: '2024-04-17 09:55:17'
 updateTime: '2024-04-19 15:45:34'
 ---

@@ -1,14 +1,9 @@
 ---
 title: WSL中通过fs.stat获取文件的birthtime不正确的原因
 uid: 3377699721334530
-aliases: null
-categories: null
-tags: null
-description: null
-original: null
-cover: null
-cssclasses: null
-author: null
+aliases: []
+categories: []
+tags: []
 createTime: '2024-04-19 15:05:17'
 updateTime: '2024-04-19 15:45:34'
 ---

@@ -1,15 +1,10 @@
 ---
 title: 开闭原则 OCP(Open Close Principle)
 uid: 1125899907442617
-aliases: null
-categories: null
+aliases: []
+categories: []
 tags:
   - 计算机/设计模式/基本原则/五大原则SOLID
-description: null
-original: null
-cover: null
-cssclasses: null
-author: null
 createTime: '2024-04-17 09:55:17'
 updateTime: '2024-04-19 15:45:34'
 ---

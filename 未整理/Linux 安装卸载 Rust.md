@@ -2,17 +2,12 @@
 title: Linux 安装卸载 Rust
 uid: 2251799814178917
 aliases: []
-categories: null
+categories: []
 tags:
   - 计算机/Linux
   - 计算机/Linux/安装
   - 卸载
   - Rust
-description: null
-original: null
-cover: null
-cssclasses: null
-author: null
 createTime: '2024-04-17 09:55:17'
 updateTime: '2024-04-19 15:45:34'
 ---

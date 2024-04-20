@@ -2,17 +2,12 @@
 title: Linux 安装 Node 版本管理器 Nvm
 uid: 2251799814178914
 aliases: []
-categories: null
+categories: []
 tags:
   - 计算机/Linux
   - Node
   - 计算机/开发/版本管理
   - 计算机/Linux/Nvm
-description: null
-original: null
-cover: null
-cssclasses: null
-author: null
 createTime: '2024-04-17 09:55:17'
 updateTime: '2024-04-19 15:45:34'
 ---

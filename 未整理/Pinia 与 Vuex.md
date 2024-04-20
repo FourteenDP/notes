@@ -2,17 +2,12 @@
 title: Pinia 与 Vuex
 uid: 1407374884047007
 aliases: []
-categories: null
+categories: []
 tags:
   - 计算机/前端/Vue
   - 计算机/前端/Vue3
   - 计算机/前端/JavaScript
   - 计算机/前端/状态管理
-description: null
-original: null
-cover: null
-cssclasses: null
-author: null
 createTime: '2024-04-17 09:55:17'
 updateTime: '2024-04-19 15:45:34'
 ---

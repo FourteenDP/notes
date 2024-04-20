@@ -2,16 +2,11 @@
 title: WSL 登录 Root
 uid: 1688849860861113
 aliases: []
-categories: null
+categories: []
 tags:
   - 计算机/Linux/WSL
   - 登录
   - Root
-description: null
-original: null
-cover: null
-cssclasses: null
-author: null
 createTime: '2024-04-17 09:55:17'
 updateTime: '2024-04-19 15:45:34'
 ---

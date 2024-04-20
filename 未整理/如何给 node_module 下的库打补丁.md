@@ -2,7 +2,7 @@
 title: 如何给 node_module 下的库打补丁
 uid: 1125899907442507
 aliases: []
-categories: null
+categories: []
 tags:
   - node_module
   - 打补丁
@@ -11,11 +11,6 @@ tags:
   - 计算机/前端/yarn
   - 计算机/前端/yarn
   - patch
-description: null
-original: null
-cover: null
-cssclasses: null
-author: null
 createTime: '2024-04-17 09:55:17'
 updateTime: '2024-04-19 15:45:34'
 ---

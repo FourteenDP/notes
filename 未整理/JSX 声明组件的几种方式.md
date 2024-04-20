@@ -2,18 +2,13 @@
 title: JSX 声明组件的几种方式
 uid: 2251799814178901
 aliases: []
-categories: null
+categories: []
 tags:
   - 计算机/前端/Vue
   - 计算机/前端/Vue3
   - 计算机/前端/JavaScript
   - JSX
   - 计算机/前端/组件
-description: null
-original: null
-cover: null
-cssclasses: null
-author: null
 createTime: '2024-04-17 09:55:17'
 updateTime: '2024-04-19 15:45:34'
 ---

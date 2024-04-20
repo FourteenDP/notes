@@ -2,7 +2,7 @@
 title: Windows 创建软连接
 uid: 1688849860861299
 aliases: []
-categories: null
+categories: []
 tags:
   - 计算机/Windows
   - 创建软连接
@@ -11,11 +11,6 @@ tags:
   - 目录联接
   - nvm
   - pnpm
-description: null
-original: null
-cover: null
-cssclasses: null
-author: null
 createTime: '2024-04-17 09:55:17'
 updateTime: '2024-04-19 15:45:34'
 ---

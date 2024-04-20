@@ -2,7 +2,7 @@
 title: Linux 常用下载器
 uid: 1407374884046955
 aliases: []
-categories: null
+categories: []
 tags:
   - 计算机/Linux
   - 计算机/Linux/常用下载器
@@ -10,11 +10,6 @@ tags:
   - 计算机/Linux/下载工具/Curl
   - 计算机/Linux/下载工具/Axel
   - aria2
-description: null
-original: null
-cover: null
-cssclasses: null
-author: null
 createTime: '2024-04-17 09:55:17'
 updateTime: '2024-04-19 15:45:34'
 ---

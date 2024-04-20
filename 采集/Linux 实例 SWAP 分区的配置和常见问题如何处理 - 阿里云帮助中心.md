@@ -1,14 +1,11 @@
 ---
 title: Linux 实例 SWAP 分区的配置和常见问题如何处理 - 阿里云帮助中心
 uid: 1970324837766317
-aliases: null
-categories: null
+aliases: []
+categories: []
 tags:
   - 计算机/Linux
 description: 免责声明： 本文档可能包含第三方产品信息，该信息仅供参考。
-original: null
-cover: null
-cssclasses: null
 author: help.aliyun.com
 originalLink: >-
   https://help.aliyun.com/zh/ecs/how-do-i-configure-a-swap-partition-on-a-linux-instance-and-resolve-frequently-asked-questions

@@ -1,15 +1,10 @@
 ---
 title: 观察者模式 (Observer)
 uid: 11540474045737104
-aliases: null
-categories: null
+aliases: []
+categories: []
 tags:
   - 计算机/设计模式/GoF设计模式/行为型模式
-description: null
-original: null
-cover: null
-cssclasses: null
-author: null
 createTime: '2024-04-17 09:55:17'
 updateTime: '2024-04-19 15:45:34'
 ---

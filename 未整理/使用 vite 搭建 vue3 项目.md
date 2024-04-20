@@ -2,18 +2,13 @@
 title: 使用 vite 搭建 vue3 项目
 uid: 1688849860861375
 aliases: []
-categories: null
+categories: []
 tags:
   - 计算机/前端/Vue
   - 计算机/前端/Vue3
   - 计算机/前端/JavaScript
   - 计算机/语言/TypeScript
   - 计算机/前端/工程化
-description: null
-original: null
-cover: null
-cssclasses: null
-author: null
 createTime: '2024-04-17 09:55:17'
 updateTime: '2024-04-19 15:45:34'
 ---

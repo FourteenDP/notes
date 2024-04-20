@@ -1,15 +1,10 @@
 ---
 title: 1、HTML+CSS 面试题
 uid: 2251799814178787
-aliases: null
-categories: null
+aliases: []
+categories: []
 tags:
   - 面试/面试题/前端
-description: null
-original: null
-cover: null
-cssclasses: null
-author: null
 createTime: '2024-04-17 09:55:17'
 updateTime: '2024-04-19 15:45:34'
 ---

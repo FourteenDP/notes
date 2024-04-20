@@ -2,18 +2,13 @@
 title: Linux 安装命令行工具 Oh My Zsh
 uid: 1688849860757610
 aliases: []
-categories: null
+categories: []
 tags:
   - 计算机/Linux
   - 命令行工具
   - 计算机/Linux/安装
   - 计算机/Linux/Zsh
   - Oh My 计算机/Linux/Zsh
-description: null
-original: null
-cover: null
-cssclasses: null
-author: null
 createTime: '2024-04-17 09:55:17'
 updateTime: '2024-04-19 15:45:34'
 ---

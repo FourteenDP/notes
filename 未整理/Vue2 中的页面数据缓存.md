@@ -2,17 +2,12 @@
 title: Vue2 中的页面数据缓存
 uid: 1407374884047099
 aliases: []
-categories: null
+categories: []
 tags:
   - 计算机/前端/Vue
   - 数据缓存
   - 数据处理
   - 计算机/前端/JavaScript
-description: null
-original: null
-cover: null
-cssclasses: null
-author: null
 createTime: '2024-04-17 09:55:17'
 updateTime: '2024-04-19 15:45:34'
 ---

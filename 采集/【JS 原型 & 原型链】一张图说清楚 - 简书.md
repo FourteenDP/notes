@@ -1,13 +1,9 @@
 ---
 title: 【JS 原型 & 原型链】一张图说清楚 - 简书
 uid: 9570149208954064
-aliases: null
-categories: null
+aliases: []
+categories: []
 tags: []
-description: null
-original: null
-cover: null
-cssclasses: null
 author: jianshu.com
 originalLink: 'https://www.jianshu.com/p/423f72d502c2'
 createTime: '2024-04-17 09:55:17'

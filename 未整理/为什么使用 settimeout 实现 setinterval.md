@@ -2,15 +2,10 @@
 title: 为什么使用 settimeout 实现 setinterval
 uid: 1688849860861339
 aliases: []
-categories: null
+categories: []
 tags:
   - 计算机/前端/JavaScript
   - 计算机/前端/事件队列
-description: null
-original: null
-cover: null
-cssclasses: null
-author: null
 createTime: '2024-04-17 09:55:17'
 updateTime: '2024-04-19 15:45:34'
 ---

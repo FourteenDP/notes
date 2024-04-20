@@ -1,14 +1,10 @@
 ---
 title: 花了一天的时间，地板式扫盲了 Vue3 所有 API 盲点
 uid: 2814749767899243
-aliases: null
-categories: null
+aliases: []
+categories: []
 tags:
   - 计算机/前端/Vue3
-description: null
-original: null
-cover: null
-cssclasses: null
 author: juejin.cn
 originalLink: 'https://juejin.cn/post/7164159759619194893'
 createTime: '2024-04-17 09:55:17'

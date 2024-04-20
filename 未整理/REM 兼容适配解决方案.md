@@ -2,18 +2,13 @@
 title: REM 兼容适配解决方案
 uid: 2251799814178983
 aliases: []
-categories: null
+categories: []
 tags:
   - 计算机/前端/CSS
   - 计算机/前端/HTML
   - REM
   - 兼容适配
   - 计算机/前端/解决方案
-description: null
-original: null
-cover: null
-cssclasses: null
-author: null
 createTime: '2024-04-17 09:55:17'
 updateTime: '2024-04-19 15:45:34'
 ---

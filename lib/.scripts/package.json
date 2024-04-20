@@ -4,16 +4,18 @@
   "description": "",
   "main": "main.ts",
   "scripts": {
-    "start": "tsx main.ts"
+    "bootstrap": "pnpm tsx ./bootstrap.ts"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@tsconfig/node18": "^18.2.4",
-    "glob": "^10.3.12"
+    "commander": "^12.0.0",
+    "glob": "^10.3.12",
+    "gray-matter": "^4.0.3"
   },
   "devDependencies": {
+    "@tsconfig/node18": "^18.2.4",
     "@types/node": "^20.12.7",
     "tsx": "^4.7.2",
     "typescript": "^5.4.5"

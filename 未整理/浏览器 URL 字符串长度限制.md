@@ -2,18 +2,13 @@
 title: 浏览器 URL 字符串长度限制
 uid: 1125899907442715
 aliases: []
-categories: null
+categories: []
 tags:
   - 计算机/浏览器
   - 计算机/浏览器/URL
   - 字符串长度限制
   - HTTP协议
   - RFC规范
-description: null
-original: null
-cover: null
-cssclasses: null
-author: null
 createTime: '2024-04-17 09:55:17'
 updateTime: '2024-04-19 15:45:34'
 ---
