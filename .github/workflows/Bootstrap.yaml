@@ -21,16 +21,23 @@ jobs:
         with:
           node-version: 18
 
-      - name: Install Dependencies
-        run: npm install
+      - name: Cache dependencies
+              uses: actions/cache@v4
+              with:
+                path: ~/.npm
+                key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+                restore-keys: |
+                  ${{ runner.os }}-node-
+
+      - run: npm ci
 
       - name: Bootstrap
         run: npm run bootstrap
 
-      - name: Git Commit
+      - name: Commit
         run: |
           git config --global user.email "
           git config --global user.name "
           git add .
-          git commit -m "chore: lint"
+          git commit -m "chore: update"
           git push
