@@ -3,8 +3,10 @@
   "version": "1.0.0",
   "description": "",
   "main": "main.ts",
+  "type": "module",
   "scripts": {
-    "bootstrap": "npx tsx ./bootstrap.ts"
+    "bootstrap": "npx tsx ./bootstrap.ts",
+    "prettier": "prettier --write ./src/**/* ./content/**/*.md"
   },
   "keywords": [
     "node"
@@ -21,6 +23,7 @@
   "devDependencies": {
     "@tsconfig/node18": "^18.2.4",
     "@types/node": "^20.12.7",
+    "prettier": "^3.2.5",
     "typescript": "^5.4.5"
   }
 }

@@ -4,7 +4,7 @@ import matter from "gray-matter";
 import dayjs from "dayjs";
 import { simpleGit, SimpleGit, SimpleGitOptions } from "simple-git";
 
-export class handleMatter {
+export class handleMD {
   git: SimpleGit;
   files: string[];
   constructor() {
@@ -98,6 +98,7 @@ export class handleMatter {
     const updateTime = logs.all[0].date;
     return dayjs(updateTime).format("YYYY-MM-DD HH:mm:ss");
   }
+
   async run() {
     for (const file of this.files) {
       const fileContent = fs.readFileSync(file, "utf-8");
