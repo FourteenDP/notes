@@ -40,8 +40,7 @@ jobs:
 
       - name: Commit
         run: |
-          git config --global user.email "
-          git config --global user.name "
-          git add .
-          git commit -m "chore: update"
+          git config --global user.email "action@github.com"
+          git config --global user.name "GitHub Action"
+          git commit -m "lint fix" -a || echo "No changes to commit"
           git push
