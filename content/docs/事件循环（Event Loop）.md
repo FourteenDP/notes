@@ -9,8 +9,8 @@ tags:
   - 计算机/语言
   - 计算机/前端/JavaScript
   - 事件循环
-createTime: '2024-04-22 10:33:37'
-updateTime: '2024-04-22 10:33:37'
+createTime: '2024-04-22 10:39:52'
+updateTime: '2024-04-22 10:39:52'
 ---
 
 # 事件循环（Event Loop）

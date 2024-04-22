@@ -7,8 +7,8 @@ categories: []
 tags:
   - 计算机/语言
   - 计算机/语言/TypeScript
-createTime: '2024-04-22 10:33:37'
-updateTime: '2024-04-22 10:33:37'
+createTime: '2024-04-22 10:39:52'
+updateTime: '2024-04-22 10:39:52'
 ---
 
 # void 和 never 区别

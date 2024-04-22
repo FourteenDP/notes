@@ -10,8 +10,8 @@ tags:
   - 计算机/语言/JavaScript/内置对象
   - 计算机/语言/String
   - 计算机/语言/JavaScript/方法
-createTime: '2024-04-22 10:33:37'
-updateTime: '2024-04-22 10:33:37'
+createTime: '2024-04-22 10:39:52'
+updateTime: '2024-04-22 10:39:52'
 ---
 
 # String.prototype.localeCompare()
