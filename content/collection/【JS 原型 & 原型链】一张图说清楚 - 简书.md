@@ -7,8 +7,8 @@ archived: false
 aliases: []
 categories: []
 tags: []
-createTime: '2024-04-22 10:39:52'
-updateTime: '2024-04-22 10:39:52'
+createTime: '2024-04-22 10:42:23'
+updateTime: '2024-04-22 10:42:23'
 ---
 
 # 【JS 原型 & 原型链】一张图说清楚 - 简书

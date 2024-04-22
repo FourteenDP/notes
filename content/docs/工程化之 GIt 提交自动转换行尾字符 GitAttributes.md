@@ -10,8 +10,8 @@ tags:
   - 自动转换
   - 行尾字符
   - GitAttributes
-createTime: '2024-04-22 10:39:52'
-updateTime: '2024-04-22 10:39:52'
+createTime: '2024-04-22 10:42:23'
+updateTime: '2024-04-22 10:42:23'
 ---
 
 # 工程化之 GIt 提交自动转换行尾字符 GitAttributes

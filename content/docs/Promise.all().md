@@ -12,8 +12,8 @@ tags:
   - 计算机/语言/Promise
   - 计算机/语言/JavaScript/方法
   - Promise.all()
-createTime: '2024-04-22 10:39:52'
-updateTime: '2024-04-22 10:39:52'
+createTime: '2024-04-22 10:42:23'
+updateTime: '2024-04-22 10:42:23'
 ---
 
 # Promise.all()

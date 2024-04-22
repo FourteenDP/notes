@@ -8,8 +8,8 @@ tags:
   - 计算机/前端/JavaScript
   - 计算机/浏览器
   - 计算机/前端/事件队列
-createTime: '2024-04-22 10:39:52'
-updateTime: '2024-04-22 10:39:52'
+createTime: '2024-04-22 10:42:23'
+updateTime: '2024-04-22 10:42:23'
 ---
 
 # 浏览器休眠对 setTimeout 和 setInterval 的影响
