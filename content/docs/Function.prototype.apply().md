@@ -12,8 +12,8 @@ tags:
   - Function
   - 计算机/语言/JavaScript/方法
   - Function.prototype.apply()
-createTime: '2024-04-22 10:42:23'
-updateTime: '2024-04-22 10:42:23'
+createTime: '2024-04-22 10:48:19'
+updateTime: '2024-04-22 10:48:19'
 ---
 
 # Function.prototype.apply()

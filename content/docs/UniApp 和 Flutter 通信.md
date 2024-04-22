@@ -9,8 +9,8 @@ tags:
   - 计算机/前端/Flutter
   - 计算机/前端/UniApp
   - 计算机/前端/通信
-createTime: '2024-04-22 10:42:23'
-updateTime: '2024-04-22 10:42:23'
+createTime: '2024-04-22 10:48:19'
+updateTime: '2024-04-22 10:48:19'
 ---
 
 # UniApp 和 Flutter 通信

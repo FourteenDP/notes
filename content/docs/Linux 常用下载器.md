@@ -11,8 +11,8 @@ tags:
   - 计算机/Linux/下载工具/Curl
   - 计算机/Linux/下载工具/Axel
   - aria2
-createTime: '2024-04-22 10:42:23'
-updateTime: '2024-04-22 10:42:23'
+createTime: '2024-04-22 10:48:19'
+updateTime: '2024-04-22 10:48:19'
 ---
 
 # Linux 常用下载器

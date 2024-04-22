@@ -7,8 +7,8 @@ aliases:
   - 在 WLS2 Debian 上安装 Docker
 categories: []
 tags: []
-createTime: '2024-04-22 10:42:23'
-updateTime: '2024-04-22 10:42:23'
+createTime: '2024-04-22 10:48:19'
+updateTime: '2024-04-22 10:48:19'
 ---
 
 # 在 WLS2 Debian 上安装 Docker
