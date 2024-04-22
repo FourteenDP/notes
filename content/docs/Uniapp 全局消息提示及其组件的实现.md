@@ -1,6 +1,7 @@
 ---
 title: Uniapp 全局消息提示及其组件的实现
 uid: 1407374884047056
+archived: false
 aliases: []
 categories: []
 tags:
@@ -10,8 +11,7 @@ tags:
   - 全局组件
   - 计算机/前端/JavaScript
 createTime: '2024-04-17 09:55:17'
-updateTime: '2024-04-19 15:45:34'
-archived: false
+updateTime: '2024-04-22 09:58:23'
 ---
 
 # Uniapp 全局消息提示及其组件的实现

@@ -1,13 +1,14 @@
 ---
+author: jianshu.com
+originalLink: 'https://www.jianshu.com/p/423f72d502c2'
 title: 【JS 原型 & 原型链】一张图说清楚 - 简书
 uid: 9570149208954064
+archived: false
 aliases: []
 categories: []
 tags: []
-author: jianshu.com
-originalLink: 'https://www.jianshu.com/p/423f72d502c2'
 createTime: '2024-04-17 09:55:17'
-updateTime: '2024-04-19 14:46:07'
+updateTime: '2024-04-22 09:08:12'
 ---
 
 # 【JS 原型 & 原型链】一张图说清楚 - 简书

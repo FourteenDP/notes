@@ -1,6 +1,7 @@
 ---
 title: 开源 ERP 系统
 uid: 1125899907442598
+archived: false
 aliases: []
 categories: []
 tags:
@@ -8,8 +9,7 @@ tags:
   - ERP系统
   - 管理系统
 createTime: '2024-04-17 09:55:17'
-updateTime: '2024-04-19 15:45:34'
-archived: false
+updateTime: '2024-04-22 09:58:23'
 ---
 
 # 开源 ERP 系统

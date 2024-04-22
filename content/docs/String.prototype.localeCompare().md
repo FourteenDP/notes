@@ -1,6 +1,7 @@
 ---
 title: String.prototype.localeCompare()
 uid: 2251799814178990
+archived: false
 aliases: []
 categories: []
 tags:
@@ -10,8 +11,7 @@ tags:
   - 计算机/语言/String
   - 计算机/语言/JavaScript/方法
 createTime: '2024-04-17 09:55:17'
-updateTime: '2024-04-19 15:45:34'
-archived: false
+updateTime: '2024-04-22 09:58:23'
 ---
 
 # String.prototype.localeCompare()

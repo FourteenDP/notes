@@ -1,6 +1,7 @@
 ---
 title: Linux 安装命令行工具 Oh My Zsh
 uid: 1688849860757610
+archived: false
 aliases: []
 categories: []
 tags:
@@ -10,8 +11,7 @@ tags:
   - 计算机/Linux/Zsh
   - Oh My 计算机/Linux/Zsh
 createTime: '2024-04-17 09:55:17'
-updateTime: '2024-04-19 15:45:34'
-archived: false
+updateTime: '2024-04-22 09:58:23'
 ---
 
 # Linux 安装命令行工具 Oh My Zsh

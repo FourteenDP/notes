@@ -1,13 +1,14 @@
 ---
+author: cnblogs.com
+originalLink: 'https://www.cnblogs.com/purvis/p/15137565.html'
 title: Visual Studio 完全重置的方法
 uid: 3659174698030255
+archived: false
 aliases: []
 categories: []
 tags: []
-author: cnblogs.com
-originalLink: 'https://www.cnblogs.com/purvis/p/15137565.html'
 createTime: '2024-04-17 09:55:17'
-updateTime: '2024-04-19 14:46:07'
+updateTime: '2024-04-22 09:08:12'
 ---
 
 # Visual Studio 完全重置的方法

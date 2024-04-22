@@ -1,6 +1,7 @@
 ---
 title: CSS 选择器参考手册
 uid: 1688849860757556
+archived: false
 aliases: []
 categories: []
 tags:
@@ -8,8 +9,7 @@ tags:
   - CSS选择器
   - 手册
 createTime: '2024-04-17 09:55:17'
-updateTime: '2024-04-19 15:45:34'
-archived: false
+updateTime: '2024-04-22 09:58:23'
 ---
 
 # CSS 选择器参考手册

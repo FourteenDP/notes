@@ -1,6 +1,7 @@
 ---
 title: 浏览器休眠对 setTimeout 和 setInterval 的影响
 uid: 1125899907442724
+archived: false
 aliases: []
 categories: []
 tags:
@@ -8,8 +9,7 @@ tags:
   - 计算机/浏览器
   - 计算机/前端/事件队列
 createTime: '2024-04-17 09:55:17'
-updateTime: '2024-04-19 15:45:34'
-archived: false
+updateTime: '2024-04-22 09:58:23'
 ---
 
 # 浏览器休眠对 setTimeout 和 setInterval 的影响

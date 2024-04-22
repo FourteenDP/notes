@@ -1,14 +1,15 @@
 ---
+author: w3cschool.cn
+description: CSS 的选择器是必学内容，多种选择器都有各自的用法，本篇文章来为您介绍选择器的优先级。
+originalLink: 'https://www.w3cschool.cn/article/67325175.html'
 title: CSS 选择器优先级权重 - w3cschool 笔记
 uid: 2251799814476969
+archived: false
 aliases: []
 categories: []
 tags: []
-description: CSS 的选择器是必学内容，多种选择器都有各自的用法，本篇文章来为您介绍选择器的优先级。
-author: w3cschool.cn
-originalLink: 'https://www.w3cschool.cn/article/67325175.html'
 createTime: '2024-04-17 09:55:17'
-updateTime: '2024-04-19 14:46:07'
+updateTime: '2024-04-22 09:08:12'
 ---
 
 # CSS 选择器优先级权重 - w3cschool 笔记

@@ -1,6 +1,7 @@
 ---
 title: WSL SSH 远程连接
 uid: 2251799814267314
+archived: false
 aliases: []
 categories: []
 tags:
@@ -11,8 +12,7 @@ tags:
   - 服务安装
   - 配置信息
 createTime: '2024-04-17 09:55:17'
-updateTime: '2024-04-19 15:45:34'
-archived: false
+updateTime: '2024-04-22 09:58:23'
 ---
 
 # WSL SSH 远程连接

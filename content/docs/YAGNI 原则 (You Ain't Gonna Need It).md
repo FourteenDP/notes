@@ -1,13 +1,13 @@
 ---
 title: YAGNI 原则 (You Ain't Gonna Need It)
 uid: 1688849860861308
+archived: false
 aliases: []
 categories: []
 tags:
   - 计算机/设计模式/基本原则/其它原则
 createTime: '2024-04-17 09:55:17'
-updateTime: '2024-04-19 15:45:34'
-archived: false
+updateTime: '2024-04-22 09:58:23'
 ---
 
 # YAGNI 原则 (You Ain't Gonna Need It)

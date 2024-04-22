@@ -1,13 +1,14 @@
 ---
+author: juejin.cn
+originalLink: 'https://juejin.cn/post/7028823525125259272'
 title: setTimeout 和 setInterval，你们两位同学注意点时间~
 uid: 2814749767898303
+archived: false
 aliases: []
 categories: []
 tags: []
-author: juejin.cn
-originalLink: 'https://juejin.cn/post/7028823525125259272'
 createTime: '2024-04-17 09:55:17'
-updateTime: '2024-04-19 14:46:07'
+updateTime: '2024-04-22 09:08:12'
 ---
 
 # Win10-VSCode - 添加至右键菜单

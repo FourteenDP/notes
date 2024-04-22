@@ -1,6 +1,7 @@
 ---
 title: WSL 基本命令
 uid: 1407374884150398
+archived: false
 aliases: []
 categories: []
 tags:
@@ -9,8 +10,7 @@ tags:
   - 计算机/Linux/安装
   - Linux发行版
 createTime: '2024-04-17 09:55:17'
-updateTime: '2024-04-19 15:45:34'
-archived: false
+updateTime: '2024-04-22 09:58:23'
 ---
 
 以下 WSL 命令以 PowerShell 或 Windows 命令提示符支持的格式列出。若要通过 Bash/Linux 发行版命令行运行这些命令，必须将 `wsl` 替换为 `wsl.exe`。

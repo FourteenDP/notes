@@ -1,6 +1,7 @@
 ---
 title: Neovim 的安装和配置
 uid: 1407374884046988
+archived: false
 aliases: []
 categories: []
 tags:
@@ -9,8 +10,7 @@ tags:
   - 计算机/Linux/配置
   - 计算机/Linux/Debian
 createTime: '2024-04-17 09:55:17'
-updateTime: '2024-04-19 15:45:34'
-archived: false
+updateTime: '2024-04-22 09:58:23'
 ---
 
 # Neovim 的安装和配置

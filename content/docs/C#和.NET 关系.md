@@ -1,6 +1,7 @@
 ---
 title: C#和.NET 关系
 uid: 1407374884046892
+archived: false
 aliases: []
 categories: []
 tags:
@@ -8,8 +9,7 @@ tags:
   - 计算机/语言
   - .NET
 createTime: '2024-04-17 09:55:17'
-updateTime: '2024-04-19 15:45:34'
-archived: false
+updateTime: '2024-04-22 09:58:23'
 ---
 
 # C#和.NET 关系

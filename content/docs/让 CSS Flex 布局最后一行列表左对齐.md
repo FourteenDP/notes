@@ -1,6 +1,7 @@
 ---
 title: 让 CSS Flex 布局最后一行列表左对齐
 uid: 3659174697839241
+archived: false
 aliases: []
 categories: []
 tags:
@@ -9,8 +10,7 @@ tags:
   - 对齐
   - 左对齐
 createTime: '2024-04-17 09:55:17'
-updateTime: '2024-04-19 15:45:34'
-archived: false
+updateTime: '2024-04-22 09:58:23'
 ---
 
 # 让 CSS Flex 布局最后一行列表左对齐

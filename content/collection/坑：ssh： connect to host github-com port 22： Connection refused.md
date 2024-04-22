@@ -1,13 +1,14 @@
 ---
+author: zhuanlan.zhihu.com
+originalLink: 'https://zhuanlan.zhihu.com/p/521340971'
 title: 坑：ssh： connect to host github-com port 22： Connection refused
 uid: 14918173766456800
+archived: false
 aliases: []
 categories: []
 tags: []
-author: zhuanlan.zhihu.com
-originalLink: 'https://zhuanlan.zhihu.com/p/521340971'
 createTime: '2024-04-17 09:55:17'
-updateTime: '2024-04-19 14:46:07'
+updateTime: '2024-04-22 09:08:12'
 ---
 
 # **问题现象**

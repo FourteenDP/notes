@@ -12,8 +12,10 @@
   "license": "ISC",
   "dependencies": {
     "commander": "^12.0.0",
+    "dayjs": "^1.11.10",
     "glob": "^10.3.12",
-    "gray-matter": "^4.0.3"
+    "gray-matter": "^4.0.3",
+    "simple-git": "^3.24.0"
   },
   "devDependencies": {
     "@tsconfig/node18": "^18.2.4",

@@ -1,14 +1,14 @@
 ---
 title: 计算 setTimeout 和 setInterval 计时器的误差
 uid: 3377699721128267
+archived: false
 aliases: []
 categories: []
 tags:
   - 计算机/前端/JavaScript
   - 计算机/前端/事件队列
 createTime: '2024-04-17 09:55:17'
-updateTime: '2024-04-19 15:45:34'
-archived: false
+updateTime: '2024-04-22 09:58:23'
 ---
 
 # 计算 setTimeout 和 setInterval 计时器的误差

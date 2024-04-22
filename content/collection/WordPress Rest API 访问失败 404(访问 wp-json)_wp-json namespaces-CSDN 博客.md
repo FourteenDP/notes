@@ -1,13 +1,14 @@
 ---
+author: blog.csdn.net
+originalLink: 'https://blog.csdn.net/my466879168/article/details/107169245'
 title: WordPress Rest API 访问失败 404(访问 wp-json)_wp-json namespaces-CSDN 博客
 uid: 3377699721319602
+archived: false
 aliases: []
 categories: []
 tags: []
-author: blog.csdn.net
-originalLink: 'https://blog.csdn.net/my466879168/article/details/107169245'
 createTime: '2024-04-17 09:55:17'
-updateTime: '2024-04-19 14:46:07'
+updateTime: '2024-04-22 09:08:12'
 ---
 
 ### 访问 / wp-json 报 404 错误

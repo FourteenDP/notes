@@ -1,14 +1,14 @@
 ---
 title: Linux 常用工具
 uid: 2251799814178925
+archived: false
 aliases: []
 categories: []
 tags:
   - 计算机/Linux
   - 计算机/Linux/常用工具
 createTime: '2024-04-17 09:55:17'
-updateTime: '2024-04-19 15:45:34'
-archived: false
+updateTime: '2024-04-22 09:58:23'
 ---
 
 # Linux 常用工具

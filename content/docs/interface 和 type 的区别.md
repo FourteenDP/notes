@@ -1,6 +1,7 @@
 ---
 title: interface 和 type 的区别
 uid: 1688849860861317
+archived: false
 aliases: []
 categories: []
 tags:
@@ -10,8 +11,7 @@ tags:
   - interface
   - type
 createTime: '2024-04-17 09:55:17'
-updateTime: '2024-04-19 15:45:34'
-archived: false
+updateTime: '2024-04-22 09:58:23'
 ---
 
 # interface 和 type 的区别
