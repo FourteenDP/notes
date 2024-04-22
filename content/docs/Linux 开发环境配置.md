@@ -15,8 +15,8 @@ tags:
   - 计算机/Linux/常用下载器
   - 计算机/Linux/Neovim
   - 计算机/Linux/常用工具
-createTime: '2024-04-22 10:33:37'
-updateTime: '2024-04-22 10:33:37'
+createTime: '2024-04-22 10:39:52'
+updateTime: '2024-04-22 10:39:52'
 ---
 
 # Linux 开发环境配置

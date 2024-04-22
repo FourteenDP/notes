@@ -10,8 +10,8 @@ tags:
   - 计算机/语言/TypeScript
   - interface
   - type
-createTime: '2024-04-22 10:33:37'
-updateTime: '2024-04-22 10:33:37'
+createTime: '2024-04-22 10:39:52'
+updateTime: '2024-04-22 10:39:52'
 ---
 
 # interface 和 type 的区别

@@ -9,8 +9,8 @@ tags:
   - 计算机/前端/JavaScript
   - 计算机/前端/源码
   - 计算机/前端/Vue/关系图
-createTime: '2024-04-22 10:33:37'
-updateTime: '2024-04-22 10:33:37'
+createTime: '2024-04-22 10:39:52'
+updateTime: '2024-04-22 10:39:52'
 ---
 
 # 分析 Vue2 中 Vue 与 VueComponent 的关系

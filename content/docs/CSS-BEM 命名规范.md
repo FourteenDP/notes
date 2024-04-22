@@ -8,8 +8,8 @@ tags:
   - 计算机/前端/CSS
   - CSS-BEM
   - 计算机/前端/命名规范
-createTime: '2024-04-22 10:33:37'
-updateTime: '2024-04-22 10:33:37'
+createTime: '2024-04-22 10:39:52'
+updateTime: '2024-04-22 10:39:52'
 ---
 
 # CSS-BEM 命名规范
