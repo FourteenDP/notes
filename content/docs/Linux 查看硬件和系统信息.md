@@ -13,6 +13,7 @@ tags:
   - 计算机/Linux/硬件信息
 createTime: '2024-04-17 09:55:17'
 updateTime: '2024-04-19 15:45:34'
+archived: false
 ---
 
 # Linux 查看硬件和系统信息

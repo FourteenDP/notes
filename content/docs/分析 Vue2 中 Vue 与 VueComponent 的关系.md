@@ -10,6 +10,7 @@ tags:
   - 计算机/前端/Vue/关系图
 createTime: '2024-04-17 09:55:17'
 updateTime: '2024-04-19 15:45:34'
+archived: false
 ---
 
 # 分析 Vue2 中 Vue 与 VueComponent 的关系

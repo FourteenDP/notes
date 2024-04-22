@@ -1,8 +1,7 @@
 import * as glob from "glob";
 import fs from "fs";
 import matter from "gray-matter";
-const root = fs.realpathSync(process.cwd() + "/../..");
-__dirname = root;
+process.chdir("content");
 const files = glob.sync("**/*.md", {
   ignore: [
     "**/node_modules/**",

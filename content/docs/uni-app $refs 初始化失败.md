@@ -8,6 +8,7 @@ tags:
   - 初始化
 createTime: '1970-01-01 08:00:00'
 updateTime: '1970-01-01 08:00:00'
+archived: false
 ---
 
 # uni-app $refs 初始化失败

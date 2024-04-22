@@ -10,6 +10,7 @@ tags:
   - 计算机/Linux/Debian
 createTime: '2024-04-17 09:55:17'
 updateTime: '2024-04-19 15:45:34'
+archived: false
 ---
 
 # Neovim 的安装和配置

@@ -11,6 +11,7 @@ tags:
   - Oh My 计算机/Linux/Zsh
 createTime: '2024-04-17 09:55:17'
 updateTime: '2024-04-19 15:45:34'
+archived: false
 ---
 
 # Linux 安装命令行工具 Oh My Zsh

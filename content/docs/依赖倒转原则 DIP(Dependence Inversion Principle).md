@@ -7,6 +7,7 @@ tags:
   - 计算机/设计模式/基本原则/五大原则SOLID
 createTime: '2024-04-17 09:55:17'
 updateTime: '2024-04-19 15:45:34'
+archived: false
 ---
 
 # 依赖倒转原则 DIP(Dependence Inversion Principle)
