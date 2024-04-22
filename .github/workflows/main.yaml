@@ -7,7 +7,7 @@ on:
       - main
 
 jobs:
-  php-cs-fixer:
+  format:
     runs-on: ubuntu-latest
 
     permissions:
@@ -22,7 +22,7 @@ jobs:
       - name: Handle Markdown
         run: npm install
 
-      - name: Run
+      - name: Format Markdown Metadata
         run: npm run bootstrap
 
       - uses: stefanzweifel/git-auto-commit-action@v5
