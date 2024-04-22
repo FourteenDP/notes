@@ -31,7 +31,7 @@ updateTime: '2024-04-19 14:46:07'
 
 1.  以 root 用户身份，通过[远程连接](https://help.aliyun.com/zh/ecs/user-guide/connect-to-a-linux-instance-by-using-a-password-1)登录 Linux 实例，执行以下命令，创建用于交换分区的文件。
 
-    ```
+    ```plain
     dd if=/dev/zero of=/mnt/swap bs=block_size count=number_of_block
 
     ```
@@ -40,7 +40,7 @@ updateTime: '2024-04-19 14:46:07'
 
 2.  执行以下命令，设置交换分区文件。
 
-    ```
+    ```plain
     mkswap /mnt/swap
 
     ```
@@ -49,7 +49,7 @@ updateTime: '2024-04-19 14:46:07'
 
 3.  执行以下命令，启用交换分区文件。
 
-    ```
+    ```plain
     swapon /mnt/swap
 
     ```
@@ -62,7 +62,7 @@ updateTime: '2024-04-19 14:46:07'
 
 4.  设置开机时自启用 SWAP 分区，需要修改文件`/etc/fstab`中的 SWAP 行，添加以下代码。
 
-    ```
+    ```plain
     /mnt/swap swap swap defaults 0 0
 
     ```
@@ -73,7 +73,7 @@ updateTime: '2024-04-19 14:46:07'
 
 5.  执行以下命令，临时修改`swappiness`参数值，此处以空闲内存少于 10% 时才使用 SWAP 分区为例。 **提示：**在 Linux 系统中，可以通过查看`/proc/sys/vm/swappiness`内容的值来确定系统对 SWAP 分区的使用原则。当 `swappiness`内容的值为`0`时，表示最大限度地使用物理内存，物理内存使用完毕后，才会使用 SWAP 分区。当`swappiness`内容的值为`100`时，表示积极地使用 SWAP 分区，并且把内存中的数据及时地置换到 SWAP 分区。查看修改前为`0`，需要在物理内存使用完毕后才会使用 SWAP 分区。
 
-    ```
+    ```plain
     echo 10 >/proc/sys/vm/swappiness
 
     ```
@@ -82,14 +82,14 @@ updateTime: '2024-04-19 14:46:07'
 
 6.  若需要永久修改此配置，在系统重启之后也生效的话，通过 vim 命令编辑`/etc/sysctl.conf`文件，并增加以下内容。
 
-    ```
+    ```plain
     vm.swappiness = 10
 
     ```
 
 7.  执行以下命令，验证添加成功。
 
-    ```
+    ```plain
     sysctl -p
 
     ```
@@ -100,7 +100,7 @@ updateTime: '2024-04-19 14:46:07'
 
 2.  执行以下命令，查询 SWAP 分区设置。
 
-    ```
+    ```plain
     free -m
 
     ```
@@ -111,7 +111,7 @@ updateTime: '2024-04-19 14:46:07'
 
 3.  执行以下命令，关闭 SWAP 分区。
 
-    ```
+    ```plain
     swapoff [$SWAP_File]
 
     ```
@@ -126,7 +126,7 @@ updateTime: '2024-04-19 14:46:07'
 
 5.  执行以下命令，确认 SWAP 分区已经关闭。
 
-    ```
+    ```plain
     free -m
 
     ```
@@ -137,21 +137,21 @@ updateTime: '2024-04-19 14:46:07'
 
 6.  执行以下命令，临时修改 swappiness 参数值。此处以空闲内存为 0% 为例。
 
-    ```
+    ```plain
     echo 0 >/proc/sys/vm/swappiness   
 
     ```
 
 7.  若需要永久修改此配置，在系统重启之后也生效的话，通过 vim 命令编辑`/etc/sysctl.conf`文件，并增加以下内容。
 
-    ```
+    ```plain
     vm.swappiness = 0
 
     ```
 
 8.  执行以下命令，验证添加成功。
 
-    ```
+    ```plain
     sysctl -p
 
     ```
@@ -162,7 +162,7 @@ updateTime: '2024-04-19 14:46:07'
 
 使用 mkswap 创建 SWAP 时出现类似如下报错信息：
 
-```
+```plain
 mkswap: error: swap area needs to be at least 40 KiB
 
 ```

@@ -24,14 +24,14 @@ updateTime: '2024-04-19 14:46:07'
 
 ​ **1.2 如果你之前安装过其它版本，先卸载**
 
-```
+```plain
 sudo apt-get remove docker docker-engine docker.io containerd runc
 
 ```
 
 ​ **1.3 直接使用阿里云的脚本安装**
 
-```
+```plain
 curl -fsSL https://get.docker.com | bash -s docker --mirror Aliyun
 
 ```
@@ -46,7 +46,7 @@ curl -fsSL https://get.docker.com | bash -s docker --mirror Aliyun
 
 ![](https://img-blog.csdnimg.cn/67a3ea8e40b246b5bd308f591a9f8d03.jpg?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBA5pWW5LiZMTk2,size_20,color_FFFFFF,t_70,g_se,x_16#pic_center)
 
-```
+```plain
 [[启动docker]]
 sudo service docker start
 
@@ -77,7 +77,7 @@ sudo docker run hello-world
 
 无需翻墙，可以直接加快你的下速度
 
-```
+```plain
 [[进入/etc/docker目录]]
 cd /etc/docker
 

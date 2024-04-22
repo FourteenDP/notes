@@ -1,6 +1,6 @@
 ---
-title: Win10-VSCode - 添加至右键菜单
-uid: 7318349395268785
+title: setTimeout 和 setInterval，你们两位同学注意点时间~
+uid: 2814749767898303
 aliases: []
 categories: []
 tags: []
@@ -26,7 +26,7 @@ updateTime: '2024-04-19 14:46:07'
 
 ### （一）空白处右键菜单里显示 "Open with Code"
 
-```
+```plain
 Windows Registry Editor Version 5.00
  
 [HKEY_CLASSES_ROOT\Directory\Background\shell\VSCode]
@@ -41,7 +41,7 @@ Windows Registry Editor Version 5.00
 
 ### （二）选中文件右键菜单里显示 "Open with Code"
 
-```
+```plain
 Windows Registry Editor Version 5.00
  
 [HKEY_CLASSES_ROOT\*\shell\VSCode]
@@ -56,7 +56,7 @@ Windows Registry Editor Version 5.00
 
 ### （三）选中文件夹右键菜单里显示 "Open with Code"
 
-```
+```plain
 Windows Registry Editor Version 5.00
  
 [HKEY_CLASSES_ROOT\Directory\shell\VSCode]

@@ -29,7 +29,7 @@ updateTime: '2024-04-19 14:46:07'
   
 在 server 中插入以下几句话来进行[重定向](https://so.csdn.net/so/search?q=%E9%87%8D%E5%AE%9A%E5%90%91&spm=1001.2101.3001.7020)
 
-```
+```plain
 if (-f $request_filename/index.html){
 rewrite (.*) $1/index.html break;
 }

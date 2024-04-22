@@ -14,7 +14,7 @@ updateTime: '2024-04-19 14:46:07'
 
 - 生成 locale 配置文件
 
-```
+```plain
 sudo locale-gen
 locale
 
@@ -22,7 +22,7 @@ locale
 
 - Sharing Windows fonts with WSL
 
-```
+```plain
 sudo apt install fontconfig
 sudo vim /etc/fonts/local.conf
 
@@ -30,7 +30,7 @@ sudo vim /etc/fonts/local.conf
 
 - paste
 
-```
+```plain
 <?xml version="1.0"?>
 <!DOCTYPE fontconfig SYSTEM "fonts.dtd">
 <fontconfig>
@@ -41,7 +41,7 @@ sudo vim /etc/fonts/local.conf
 
 - 开启 WSL 下的图形界面编辑器 gedit，还有效果图：
 
-```
+```plain
 gedit cn.txt
 
 ```

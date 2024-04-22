@@ -14,7 +14,7 @@ updateTime: '2024-04-19 14:46:07'
 
 # Git Submodule 命令使用与详细教程
 
-欢迎任何形式的转载，转载请保留原文链接：[juejin.cn/post/694825…](https://juejin.cn/post/6948251963133788196/ "https://juejin.cn/post/6948251963133788196/")
+欢迎任何形式的转载，转载请保留原文链接：[juejin.cn/post/694825……](https://juejin.cn/post/6948251963133788196/ "https://juejin.cn/post/6948251963133788196/")
 
 ## 前言
 
@@ -50,7 +50,7 @@ updateTime: '2024-04-19 14:46:07'
 
 ## 常用操作以及对应命令
 
-```
+```plain
 # 查看 submodules
 # 结果的 hash 前不带符号说明该 module 正常且提交版本同步（提交版本同步指主项目记录提交版本与子模块当前提交版本一致）
 # 结果的 hash 前带 - 号说明该 module 未初始化
@@ -83,7 +83,7 @@ git submodule foreach ls -l
 
 复合命令
 
-```
+```plain
 # 重新 clone 项目（含 clone 所有子项目）方式一
 git clone --recursive https://github.com/ReactiveX/RxJava.git
 
@@ -127,7 +127,7 @@ git submodule update [submodule 名称]
 - 非必须步骤不做也行，但日后重复添加相同名称的 submodule 时，可能存在问题
 - 如果想反悔（不删了）的话，`git reset --hard HEAD` 即可，再次强调所有修改都已提交再操作
 
-```
+```plain
 # 1. 缓存清理：`git rm -r --cached subA`
 # 	- 执行前请保证所有修改都已提交
 # 	- 验证上述步骤是否成功：`git submodule` 的结果没有 subA
@@ -208,7 +208,7 @@ git submodule update [submodule 名称]
 
 - 影响远程仓库的也就只有这个文件了
 
-```
+```plain
 [submodule "subA"]
 	path = subA
 	url = /cygdrive/e/submodule/repo/subA.git
@@ -226,14 +226,14 @@ git submodule update [submodule 名称]
 3. 主项目【.git/config】文件多出 submodule 块，这个是 `git submodule init` 后更新
 4. 主项目【.git】目录多出【modules】目录，里面是子模块原【.git】目录内容，这个是 `git submodule update` 后出现
 
-```
+```plain
 # 【子模块/.git】文件
 gitdir: ../.git/modules/subA
 
 
 ```
 
-```
+```plain
 # 【.git/config】文件，下列[submodule "subA"]块是多出来的
 [core]
 	repositoryformatversion = 0
@@ -254,7 +254,7 @@ gitdir: ../.git/modules/subA
 
 ```
 
-```
+```plain
 $ ll .git/modules/
 总用量 8
 drwxrwxr-x+ 1 Administrator None 0 4月   2 15:41 subA/
@@ -280,7 +280,7 @@ drwxrwxr-x+ 1 Administrator None 0 4月   2 15:41 subB/
 
 创建（本地性质的）远程仓库
 
-```
+```plain
 # 创建（本地性质的）远程仓库与本地仓库目录
 $ mkdir repo
 $ mkdir project
@@ -311,7 +311,7 @@ $ pwd
 
 远程仓库初始提交，目的为了让每个远程仓库都有分支，以及提交记录
 
-```
+```plain
 # 在 repo 目录下 clone 代码
 $ cd ../
 $ pwd
@@ -357,7 +357,7 @@ $ rm -rf main
 
 从远程仓库 clone 到项目目录下的本地仓库
 
-```
+```plain
 # 主项目 clone，多 clone 一个是为了对比
 $ cd ../project
 $ git clone /cygdrive/e/submodule/repo/main.git
@@ -368,7 +368,7 @@ $ git clone /cygdrive/e/submodule/repo/main.git main_copy
 
 添加子 module（以下简称子模块）
 
-```
+```plain
 # 往主项目里添加 submodule，注：一个一个来，以便分开 commit，方便后续演示
 $ cd main
 $ git submodule add /cygdrive/e/submodule/repo/subA.git
@@ -428,7 +428,7 @@ $ git submodule
 3. 主项目【.git/config】文件多出 submodule 块，这个是 `git submodule init` 后更新
 4. 主项目【.git】目录多出【modules】目录，里面是子模块原【.git】目录内容，这个是 `git submodule update` 后出现
 
-```
+```plain
 $ cat .gitmodules
 [submodule "subA"]
         path = subA
@@ -488,7 +488,7 @@ drwxrwxr-x+ 1 Administrator None 0 4月   2 15:41 subB/
     3. 重新提交并推送远程仓库
     4. 使用 `git clone` 新开一个本地仓库
 
-```
+```plain
 # 原【.gitmodules】内容
 [submodule "subA"]
 	path = subA
@@ -517,7 +517,7 @@ drwxrwxr-x+ 1 Administrator None 0 4月   2 15:41 subB/
     - 不想删除，还原可以使用 `git reset --hard HEAD` 命令，再次强调所有修改都已提交再操作
     - 该步骤成功的验证方式：`git submodule` 结果没有要删除的
 
-    ```
+    ```plain
     $ git rm -r --cached subA
     rm 'subA'
     
@@ -530,7 +530,7 @@ drwxrwxr-x+ 1 Administrator None 0 4月   2 15:41 subB/
 
 2. 必须，删除 submodule 文件夹，即 subA 文件夹，对应命令如下，不过建议手动删除
 
-    ```
+    ```plain
     $ rm -rf subA/
     
     
@@ -538,7 +538,7 @@ drwxrwxr-x+ 1 Administrator None 0 4月   2 15:41 subB/
 
 3. 必须，修改【.gitmodules】文件内容：去除被删除的 submodule 内容
 
-    ```
+    ```plain
     # 原内容
     [submodule "subA"]
     	path = subA
@@ -559,7 +559,7 @@ drwxrwxr-x+ 1 Administrator None 0 4月   2 15:41 subB/
     
     - 不删除也行，只影响本地，不影响远程仓库。也就在重复添加相同 submodule 时，可能存在问题
 
-    ```
+    ```plain
     # 原内容
     [core]
     	repositoryformatversion = 0
@@ -627,7 +627,7 @@ drwxrwxr-x+ 1 Administrator None 0 4月   2 15:41 subB/
 - 第一个步骤只影响重新 clone 的结果
 - 其他人的本地仓库除了主项目更新外，还需要做第二步和第三步操作
 
-```
+```plain
 # 1. 修改【.gitmodules】文件对应仓库地址：只影响远程仓库
 # 2. 修改【.git/config】文件对应仓库地址：额，改不改无所谓
 # 3. 进入子模块，使用 `git remote` 命令，更新远程仓库地址
@@ -646,7 +646,7 @@ drwxrwxr-x+ 1 Administrator None 0 4月   2 15:41 subB/
 
 pull 主项目，并查看日志
 
-```
+```plain
 $ cd main_copy
 $ git pull
 $ git log --oneline
@@ -659,7 +659,7 @@ $ git log --oneline
 
 查看 submodule 记录、子模块内容、【.gitmodules】文件、【.git/config】文件、【.git/modules】目录、子模块日志
 
-```
+```plain
 $ git submodule
 -5ae8df5a1fd55d31b0fc7e8bdf7d02fb7591f4bd subA
 -6bf24b87a83ee2621e9b9aaf93b6d0f4f2b81638 subB
@@ -721,7 +721,7 @@ $ cd ..
 
 - `git submodule` 的结果前面带 [-] 号就是表示该 submodule 未初始化
 
-```
+```plain
 # 初始化全部 submodule，重复初始化无反应
 $ git submodule init
 子模组 'subA'（/cygdrive/e/submodule/repo/subA.git）已对路径 'subA' 注册
@@ -766,7 +766,7 @@ cd ..
 
 两种方式，一种是是直接 clone 项目，然后初始化、检出
 
-```
+```plain
 $ git clone /cygdrive/e/submodule/repo/main.git main_new
 正克隆到 'main_new'...
 完成。
@@ -788,7 +788,7 @@ Submodule path 'subB': checked out '6bf24b87a83ee2621e9b9aaf93b6d0f4f2b81638'
 
 另外一种是 clone 时添加 `--recursive` 选项直接一步到位
 
-```
+```plain
 $ git clone --recursive /cygdrive/e/submodule/repo/main.git main_new_02
 正克隆到 'main_new'...
 完成。
@@ -812,7 +812,7 @@ Submodule path 'subB': checked out '6bf24b87a83ee2621e9b9aaf93b6d0f4f2b81638'
 - 此时想要恢复，不能手动创建文件夹再手动 pull 代码。只能重新检出，也就是执行 `git submodule update`，但这种检出会创建一个临时分支
 - 从结果可知，主项目并不会记录子模块的对应的分支，只记录子模块的提交版本
 
-```
+```plain
 # 缺失子模块，不影响主项目 diff
 $ rm -rf subB/
 $ git status
@@ -868,7 +868,7 @@ $ cd ..
 
 进入子模块目录进行修改并提交
 
-```
+```plain
 $ cd main/subA
 $ touch first
 $ git add .
@@ -887,7 +887,7 @@ d8346a8 (HEAD -> master) subA：第一次修改
 - 主项目的 `git submodule` 的结果前面带 [+] 号，表示主项目记录的提交版本与对应 submodule 的提交记录不一致
 - 提交版本未同步，则主项目存在差异，可以重新提交来同步提交版本。如果已近同步，则不需要重新提交（也没法提交）
 
-```
+```plain
 # 子模块提交记录同步前
 $ git submodule
 +d8346a82a2ba13077d7f25124239ac0d3db5920c subA (heads/master)
@@ -932,7 +932,7 @@ $ git push
 - 一般来讲，子模块是单分支，使用方式二，多分支，看情况吧
 - 造成上述结果的原因在于主项目只记录子模块的提交版本，不记录子模块的提交分支
 
-```
+```plain
 # 更新前，主项目是无感知的
 cd ../main_copy
 $ git submodule
@@ -998,7 +998,7 @@ cd ..
 
 新建一个分支，使 master 分支含有两个 submodule，另一个分支只含有一个
 
-```
+```plain
 $ git branch
 * master
 
@@ -1036,7 +1036,7 @@ $ git submodule
 - 【.gitmodules】文件正确，没有多余的子模块信息
 - 【.git/config】文件、【.git/modules】依然保留另一个子模块信息。一方面说明这种切换分支不影响本地仓库，另一方也提高切换这种分支时的效率
 
-```
+```plain
 $ git branch
   master
 * onlySubA
@@ -1092,7 +1092,7 @@ drwxrwxr-x+ 1 Administrator None 0 4月   2 20:33 subB/
 - 误把不需要的子模块提交后，添加相同子模块的 submodule 操作失败（因为文件夹已存在）
 - 因为操作失败的原因是文件夹重名，所以一般建议添加 submodule 时不另指定名字
 
-```
+```plain
 # 背景
 $ git status
 位于分支 onlySubA
@@ -1127,7 +1127,7 @@ $ git submodule add /cygdrive/e/submodule/repo/subB.git
     - master 对应子模块的 master
     - other 对应子模块的 subOther
 
-```
+```plain
 # 背景：主项目两个分支，以及分支指向的提交记录（other 指向 31287e4）
 $ git branch
 * master
@@ -1159,7 +1159,7 @@ $ cd ..
 - 主项目切分支操作影响不到子模块
 - 同样的，子模块切分支也影响不到子模块，这个自行测试
 
-```
+```plain
 # 主项目切分支
 $ git branch
 * master
@@ -1186,7 +1186,7 @@ $ git branch
 
 参考文献：
 
-- Git Submodule 使用完整教程：[yq.aliyun.com/articles/27…](https://link.juejin.cn?target=https%3A%2F%2Fyq.aliyun.com%2Farticles%2F27002 "https://yq.aliyun.com/articles/27002")
+- Git Submodule 使用完整教程：[yq.aliyun.com/articles/27……](https://link.juejin.cn?target=https%3A%2F%2Fyq.aliyun.com%2Farticles%2F27002 "https://yq.aliyun.com/articles/27002")
 
 博客同步版本：
 

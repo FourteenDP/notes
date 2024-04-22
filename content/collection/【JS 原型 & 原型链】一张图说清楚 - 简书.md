@@ -30,7 +30,7 @@ js 的初学者一般很难理解原型和原型链的概念，但原型和原�
 - 其次你要知道 js 中对象和函数的关系，函数其实是对象的一种。
 - 最后你要知道函数、构造函数的区别，任何函数都可以作为构造函数，但是并不能将任意函数叫做构造函数，只有当一个函数通过 new 关键字调用的时候才可以成为构造函数。如：
 
-```
+```plain
 var Parent = function(){
 
 }
@@ -62,7 +62,7 @@ prototype 属性. png
 `prototype` 设计之初就是为了实现继承，让由特定函数创建的所有实例共享属性和方法，也可以说是让某一个构造函数实例化的所有对象可以找到公共的方法和属性。有了 `prototype` 我们不需要为每一个实例创建重复的属性方法，而是将属性方法创建在构造函数的原型对象上（prototype）。那些不需要共享的才创建在构造函数中。
 继续引用上面的代码，当我们想为通过 Parent 实例化的所有实例添加一个共享的属性时，
 
-```
+```plain
 Parent.prototype.name = "我是原型属性，所有实例都可以读取到我";
 
 
@@ -79,7 +79,7 @@ proto 属性. png
 `__proto__` 属性是对象（包括函数）独有的。`__proto__` 属性是从一个对象指向另一个对象，即从一个对象指向该对象的原型对象（也可以理解为父对象）。显然它的含义就是告诉我们一个对象的原型对象是谁。
 prototype 篇章我们说到，在上面添加的属性和方法叫做原型属性和原型方法，该构造函数的实例都可以访问调用。那这个构造函数的原型对象上的属性和方法，怎么能和构造函数的实例联系在一起呢，就是通过 `__proto__` 属性。每个对象都有 `__proto__` 属性，该属性指向的就是该对象的原型对象。
 
-```
+```plain
 p1.__proto__ === Parent.prototype; // true
 
 
@@ -88,7 +88,7 @@ p1.__proto__ === Parent.prototype; // true
 `__proto__` 通常称为隐式原型，`prototype` 通过成为显示原型，那我们可以说一个对象的隐式原型指向了该对象的构造函数的显示原型。那么我们在显示原型上定义的属性方法，通过隐式原型传递给了构造函数的实例。这样一来实例就能很容易的访问到构造函数原型上的方法和属性了。
 我们之前也说过 `__proto__` 属性是对象（包括函数）独有的，那么 `Parent.prototype` 也是对象，那它有隐式原型么？又指向谁？
 
-```
+```plain
 Parent.prototype.__proto__ === Object.prototype; //true
 
 
@@ -96,7 +96,7 @@ Parent.prototype.__proto__ === Object.prototype; //true
 
 可以看到，构造函数的原型对象上的隐式原型对象指向了 Object 的原型对象。那么 Parent 的原型对象就继承了 Object 的原型对象。由此我们可以验证一个结论，万物继承自 Object.prototype。这也就是为什么我们可以实例化一个对象，并且可以调用该对象上没有的属性和方法了。如：
 
-```
+```plain
 //我们并没有在Parent中定义任何方法属性，但是我们可以调用
 p1.toString();//hasOwnProperty 等等的一些方法
 
@@ -122,7 +122,7 @@ constructor 是对象才有的属性，它是从一个对象指向一个函数�
 
 的构造函数是谁呢？我们打印一下。
 
-```
+```plain
 console.log(p1.constructor); // ƒ Parent(){}
 
 
@@ -130,7 +130,7 @@ console.log(p1.constructor); // ƒ Parent(){}
 
 通过输出结果看到，很显然是 Parent 函数。我们有说过函数也是对象，那 Parent 函数是不是也有构造函数呢？显然是有的。再次打印下。
 
-```
+```plain
 console.log(Parent.constructor); // ƒ Function() { [native code] }
 
 
@@ -138,7 +138,7 @@ console.log(Parent.constructor); // ƒ Function() { [native code] }
 
 通过输出看到 Parent 函数的构造函数是 Function()，这点也不奇怪，因为我们每次定义函数其实都是调用了 new Function()，下面两种效果是一样的。
 
-```
+```plain
 var fn1 = new Function('msg','alert(msg)');
 function fn1(msg){
     alert(msg);
@@ -149,7 +149,7 @@ function fn1(msg){
 
 那么我们再回来看下，再次打印 Function.constructor
 
-```
+```plain
 console.log(Function.constructor); // ƒ Function() { [native code] }
 
 

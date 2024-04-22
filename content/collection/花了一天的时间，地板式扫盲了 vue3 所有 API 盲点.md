@@ -176,7 +176,7 @@ vue3 的全局 API 包含两个部分：应用实例和通用 API。那它们各
 
 # 🐣彩蛋 One More Thing
 
-思维导图 `github` 地址：[github.com/mondaylab/v…](https://link.juejin.cn?target=https%3A%2F%2Fgithub.com%2Fmondaylab%2Fvue3-api "https://github.com/mondaylab/vue3-api")
+思维导图 `github` 地址：[github.com/mondaylab/v……](https://link.juejin.cn?target=https%3A%2F%2Fgithub.com%2Fmondaylab%2Fvue3-api "https://github.com/mondaylab/vue3-api")
 
 `vue3` 入门指南文章推荐：[焕然一新的 Vue 3 中文文档要来了🎉](https://juejin.cn/post/7077701166397653028 "https://juejin.cn/post/7077701166397653028")
 

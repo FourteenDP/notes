@@ -14,7 +14,7 @@ updateTime: '2024-04-19 14:46:07'
 
 本文以 Windows 系统为例进行说明，在个人电脑上使用 Git 命令来操作 GitHub 上的项目，本来都很正常，突然某一天开始，会提示如下错误 `ssh: connect to host github.com port 22: Connection refused`。
 
-```
+```plain
 $ git pull
 ssh: connect to host github.com port 22: Connection refused
 fatal: Could not read from remote repository.
@@ -36,7 +36,7 @@ and the repository exists.
 
 22 端口可能被防火墙屏蔽了，可以尝试连接 GitHub 的 443 端口。
 
-```
+```plain
 $ vim ~/.ssh/config
 ```
 
@@ -48,7 +48,7 @@ Host github.com
 
   Port 443
 
-```
+```plain
 $ ssh -T git@github.com
 Hi xxxxx! You've successfully authenticated, but GitHub does not
 provide shell access.
@@ -57,7 +57,7 @@ provide shell access.
 
 这个解决方案的思路是：给 `~/.ssh/config` 文件里添加如下内容，这样 ssh 连接 GitHub 的时候就会使用 443 端口。
 
-```
+```plain
 Host github.com
   Hostname ssh.github.com
   Port 443
@@ -76,21 +76,21 @@ Host github.com
 
 在你的 GitHub 的本地 repo 目录，执行如下命令：
 
-```
+```plain
 $ git config --local -e
 
 ```
 
 然后把里面的 url 配置项从 git 格式
 
-```
+```plain
 url = git@github.com:username/repo.git
 
 ```
 
 修改为 https 格式
 
-```
+```plain
 url = https://github.com/username/repo.git
 
 ```
@@ -103,7 +103,7 @@ url = https://github.com/username/repo.git
 
 网上的招都没用，只能自力更生了。既然和 GitHub 建立 ssh 连接的时候提示 `connection refused`，那我们就详细看看建立 ssh 连接的过程中发生了什么，可以使用 `ssh -v` 命令，`-v` 表示 verbose，会打出详细日志。
 
-```
+```plain
 $ ssh -vT git@github.com
 OpenSSH_9.0p1, OpenSSL 1.1.1o  3 May 2022
 debug1: Reading configuration data /etc/ssh/ssh_config
@@ -121,21 +121,21 @@ ssh: connect to host github.com port 22: Connection refused
 
 Windows 下执行 `ipconfig /flushdns` 清楚 DNS 缓存后也没用，最后修改 hosts 文件，增加一条 github.com 的域名映射搞定。
 
-```
+```plain
 140.82.113.4 github.com
 
 ```
 
 查找 [http://github.com](http://github.com) 的 ip 地址可以使用 [https://www.ipaddress.com/](https://www.ipaddress.com/) 来查询，也可以使用 `nslookup` 命令
 
-```
+```plain
 nslookup github.com 8.8.8.8
 
 ```
 
 `nslookup` 是域名解析工具，`8.8.8.8` 是 Google 的 DNS 服务器地址。直接使用
 
-```
+```plain
 nslookup github.com
 
 ```
