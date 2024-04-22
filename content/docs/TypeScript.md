@@ -7,8 +7,8 @@ categories: []
 tags:
   - 计算机/语言/TypeScript
   - 简介
-createTime: '2024-04-22 10:39:52'
-updateTime: '2024-04-22 10:39:52'
+createTime: '2024-04-22 10:42:23'
+updateTime: '2024-04-22 10:42:23'
 ---
 
 # TypeScript

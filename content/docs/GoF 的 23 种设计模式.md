@@ -6,8 +6,8 @@ aliases: []
 categories: []
 tags:
   - 计算机/设计模式/GoF设计模式
-createTime: '2024-04-22 10:39:52'
-updateTime: '2024-04-22 10:39:52'
+createTime: '2024-04-22 10:42:23'
+updateTime: '2024-04-22 10:42:23'
 ---
 
 # GoF 的 23 种设计模式

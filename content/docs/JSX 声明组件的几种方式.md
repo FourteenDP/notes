@@ -10,8 +10,8 @@ tags:
   - 计算机/前端/JavaScript
   - JSX
   - 计算机/前端/组件
-createTime: '2024-04-22 10:39:52'
-updateTime: '2024-04-22 10:39:52'
+createTime: '2024-04-22 10:42:23'
+updateTime: '2024-04-22 10:42:23'
 ---
 
 # JSX 声明组件的几种方式

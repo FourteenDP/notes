@@ -9,8 +9,8 @@ tags:
   - 计算机/语言
   - 计算机/前端/JavaScript
   - This
-createTime: '2024-04-22 10:39:52'
-updateTime: '2024-04-22 10:39:52'
+createTime: '2024-04-22 10:42:23'
+updateTime: '2024-04-22 10:42:23'
 ---
 
 # JavaScript This 指向
