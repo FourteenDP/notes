@@ -4,7 +4,7 @@ import matter from "gray-matter";
 import dayjs from "dayjs";
 import { simpleGit, SimpleGit, SimpleGitOptions } from "simple-git";
 
-export class handleMD {
+export class handleMatter {
   git: SimpleGit;
   files: string[];
   constructor() {
@@ -107,9 +107,6 @@ export class handleMD {
       newData = await this.initMatter(newData, file);
       const newContent = matter.stringify(content, newData);
       fs.writeFileSync(file, newContent, "utf-8");
-      const index = this.files.indexOf(file);
-      const percent = ((index + 1) / this.files.length) * 100;
-      console.log(`\x1b[36m${percent.toFixed(2)}%\x1b[0m`);
     }
   }
 }
