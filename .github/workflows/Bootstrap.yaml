@@ -37,6 +37,12 @@ jobs:
       - name: Commit changes to the repository
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
-          commit_message: "Bootstrap"
-          commit_user_name: "fourteendp"
-          commit_user_email: "fourteendp@qq.com"
+          commit_message: "chore: 🤖 bootstrap"
+          commit_user_name: "github-actions[bot]"
+          commit_user_email: "github-actions[bot]@users.noreply.github.com"
+          commit_author: "github-actions[bot] <github-actions[bot]@users.noreply.github.com>"
+          commit_gpg_sign: "false"
+          commit_allow_empty: "true"
+          commit_push: "true"
+          commit_push_options: "--force"
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
