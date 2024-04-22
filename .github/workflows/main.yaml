@@ -1,4 +1,4 @@
-name: Bootstrap
+name: Main
 
 on:
   pull_request:
