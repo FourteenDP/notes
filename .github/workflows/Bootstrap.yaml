@@ -29,10 +29,6 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-node-
 
-      - name: Install pnpm
-        run: |
-          npm install -g pnpm
-
       - run: npm install
 
       - name: Bootstrap
