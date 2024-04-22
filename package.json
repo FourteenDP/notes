@@ -5,7 +5,6 @@
   "main": "main.ts",
   "scripts": {
     "bootstrap": "pnpm tsx ./bootstrap.ts",
-    "lint": "lint-md content/**/*.md -f -t 12"
   },
   "keywords": [],
   "author": "",
