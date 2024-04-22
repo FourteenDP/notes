@@ -34,15 +34,12 @@ jobs:
       - name: Bootstrap
         run: npm run bootstrap
 
-      - name: Commit changes to the repository
-        uses: stefanzweifel/git-auto-commit-action@v4
-        with:
-          commit_message: "chore: 🤖 bootstrap"
-          commit_user_name: "github-actions[bot]"
-          commit_user_email: "github-actions[bot]@users.noreply.github.com"
-          commit_author: "github-actions[bot] <github-actions[bot]@users.noreply.github.com>"
-          commit_gpg_sign: "false"
-          commit_allow_empty: "true"
-          commit_push: "true"
-          commit_push_options: "--force"
+      - name: Commit and push changes
+        env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          git config --local user.email ${{ secrets.EMAIL }}
+          git config --local user.name ${{ secrets.USERNAME }}
+          git add .
+          git commit -m "chore: lint"
+          git push

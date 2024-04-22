@@ -1,5 +1,5 @@
-node_modules
 .trash
+node_modules
 package-lock.json
 pnpm-lock.yaml
 yaml.lock
