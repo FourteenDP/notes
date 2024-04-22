@@ -4,11 +4,13 @@
   "description": "",
   "main": "main.ts",
   "scripts": {
-    "bootstrap": "pnpm tsx ./bootstrap.ts",
+    "bootstrap": "pnpm tsx ./bootstrap.ts"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "node"
+  ],
+  "author": "fourteendp@qq.com",
+  "license": "MIT",
   "dependencies": {
     "commander": "^12.0.0",
     "dayjs": "^1.11.10",
