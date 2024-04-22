@@ -1,3 +1,3 @@
-import { handleMD } from "@/main";
+import { handleMatter } from "@/main";
 
-new handleMD().run();
+new handleMatter().run();
