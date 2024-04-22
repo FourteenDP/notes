@@ -34,9 +34,9 @@ jobs:
       - name: Bootstrap
         run: npm run bootstrap
 
-      - name: Commit
-        run: |
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git config --global user.name "Github-Actions-Bot"
-          git commit -m "lint fix" -a || echo "No changes to commit"
-          git push
+      - name: Commit changes to the repository
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: "Bootstrap"
+          commit_user_name: "fourteendp"
+          commit_user_email: "fourteendp@qq.com"
