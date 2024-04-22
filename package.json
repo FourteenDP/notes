@@ -4,7 +4,7 @@
   "description": "",
   "main": "main.ts",
   "scripts": {
-    "bootstrap": "npm run tsx ./bootstrap.ts"
+    "bootstrap": "npx tsx ./bootstrap.ts"
   },
   "keywords": [
     "node"
@@ -21,7 +21,6 @@
   "devDependencies": {
     "@tsconfig/node18": "^18.2.4",
     "@types/node": "^20.12.7",
-    "tsx": "^4.7.2",
     "typescript": "^5.4.5"
   }
 }
