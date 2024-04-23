@@ -1,3 +1,3 @@
-import { handleMD } from "@/ci";
+import { HandleMD } from "@/ci";
 
-new handleMD().run();
+new HandleMD().run();

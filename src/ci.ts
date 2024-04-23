@@ -4,7 +4,7 @@ import matter from "gray-matter";
 import dayjs from "dayjs";
 import { simpleGit, SimpleGit, SimpleGitOptions } from "simple-git";
 
-export class handleMD {
+export class HandleMD {
   git: SimpleGit;
   files: string[];
   constructor() {
