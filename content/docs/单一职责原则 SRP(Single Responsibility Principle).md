@@ -6,8 +6,8 @@ aliases: []
 categories: []
 tags:
   - 计算机/设计模式/基本原则/五大原则SOLID
-createTime: "2024-04-23 07:08:20"
-updateTime: "2024-04-23 07:08:20"
+createTime: "2024-04-23 07:17:50"
+updateTime: "2024-04-23 07:17:50"
 ---
 
 # 单一职责原则 SRP(Single Responsibility Principle)

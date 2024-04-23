@@ -6,8 +6,8 @@ aliases: []
 categories: []
 tags:
   - 计算机/设计模式/GoF设计模式/结构型模式
-createTime: "2024-04-23 07:08:20"
-updateTime: "2024-04-23 07:08:20"
+createTime: "2024-04-23 07:17:50"
+updateTime: "2024-04-23 07:17:50"
 ---
 
 # 享元模式 (Flyweight)

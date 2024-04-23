@@ -6,8 +6,8 @@ aliases: []
 categories: []
 tags:
   - 计算机/Linux/文件系统
-createTime: "2024-04-23 07:08:20"
-updateTime: "2024-04-23 07:08:20"
+createTime: "2024-04-23 07:17:50"
+updateTime: "2024-04-23 07:17:50"
 ---
 
 # Linux 目录结构和作用

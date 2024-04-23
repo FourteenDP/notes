@@ -8,8 +8,8 @@ tags:
   - 计算机/前端/uni-app
   - 计算机/前端/通信
   - 计算机/跨平台
-createTime: "2024-04-23 07:08:20"
-updateTime: "2024-04-23 07:08:20"
+createTime: "2024-04-23 07:17:50"
+updateTime: "2024-04-23 07:17:50"
 ---
 
 # uniapp 和 flutter 通信相关资料
