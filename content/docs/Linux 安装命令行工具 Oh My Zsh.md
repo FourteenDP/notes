@@ -10,8 +10,8 @@ tags:
   - 计算机/Linux/安装
   - 计算机/Linux/Zsh
   - Oh My 计算机/Linux/Zsh
-createTime: '2024-04-22 10:42:23'
-updateTime: '2024-04-22 10:42:23'
+createTime: '2024-04-22 10:48:19'
+updateTime: '2024-04-22 10:48:19'
 ---
 
 # Linux 安装命令行工具 Oh My Zsh

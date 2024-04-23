@@ -7,8 +7,8 @@ categories: []
 tags:
   - 计算机/前端/HTML
   - 计算机/前端/CSS
-createTime: '2024-04-22 10:42:23'
-updateTime: '2024-04-22 10:42:23'
+createTime: '2024-04-22 10:48:19'
+updateTime: '2024-04-22 10:48:19'
 ---
 
 # image 标签图片的白边

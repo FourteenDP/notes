@@ -6,8 +6,8 @@ aliases: []
 categories: []
 tags:
   - 计算机/语言/TypeScript
-createTime: '2024-04-22 10:42:23'
-updateTime: '2024-04-22 10:42:23'
+createTime: '2024-04-22 10:48:19'
+updateTime: '2024-04-22 10:48:19'
 ---
 
 # any 和 unknown 的区别
