@@ -7,8 +7,8 @@ categories: []
 tags:
   - 计算机/Linux/WSL
   - 默认安装目录
-createTime: "2024-04-23 07:17:50"
-updateTime: "2024-04-23 07:17:50"
+createTime: "2024-04-17 09:55:17"
+updateTime: "2024-04-23 15:18:38"
 ---
 
 # WSL 修改默认安装目录到其他盘

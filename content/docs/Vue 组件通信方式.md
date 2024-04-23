@@ -8,8 +8,8 @@ tags:
   - 计算机/前端/Vue
   - 计算机/前端/JavaScript
   - 组件通信
-createTime: "2024-04-23 07:17:50"
-updateTime: "2024-04-23 07:17:50"
+createTime: "2024-04-17 09:55:17"
+updateTime: "2024-04-23 15:18:38"
 ---
 
 # Vue 组件通信方式

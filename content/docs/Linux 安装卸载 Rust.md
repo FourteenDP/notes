@@ -9,8 +9,8 @@ tags:
   - 计算机/Linux/安装
   - 卸载
   - Rust
-createTime: "2024-04-23 07:17:50"
-updateTime: "2024-04-23 07:17:50"
+createTime: "2024-04-17 09:55:17"
+updateTime: "2024-04-23 15:18:38"
 ---
 
 # Linux 安装卸载 Rust

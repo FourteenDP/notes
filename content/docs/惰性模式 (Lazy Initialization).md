@@ -6,8 +6,8 @@ aliases: []
 categories: []
 tags:
   - 计算机/设计模式/非GoF设计模式
-createTime: '2024-04-17 09:55:17'
-updateTime: '2024-04-23 15:18:38'
+createTime: "2024-04-17 09:55:17"
+updateTime: "2024-04-23 15:18:38"
 ---
 
 # 惰性模式 (Lazy Initialization)
