@@ -8,8 +8,8 @@ archived: false
 aliases: []
 categories: []
 tags: []
-createTime: "2024-04-23 00:07:33"
-updateTime: "2024-04-23 00:07:33"
+createTime: "2024-04-23 07:08:20"
+updateTime: "2024-04-23 07:08:20"
 ---
 
 # CSS 选择器优先级权重 - w3cschool 笔记

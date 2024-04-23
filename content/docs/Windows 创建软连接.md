@@ -12,8 +12,8 @@ tags:
   - 目录联接
   - nvm
   - pnpm
-createTime: "2024-04-23 00:07:33"
-updateTime: "2024-04-23 00:07:33"
+createTime: "2024-04-23 07:08:20"
+updateTime: "2024-04-23 07:08:20"
 ---
 
 # Windows 创建软连接

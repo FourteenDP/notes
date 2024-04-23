@@ -8,8 +8,8 @@ tags:
   - 计算机/前端/uni-app
   - 计算机/前端/通信
   - 计算机/前端/WebView
-createTime: "2024-04-23 00:07:33"
-updateTime: "2024-04-23 00:07:33"
+createTime: "2024-04-23 07:08:20"
+updateTime: "2024-04-23 07:08:20"
 ---
 
 # UniApp 和 WebView 双向通信

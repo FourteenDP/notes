@@ -6,8 +6,8 @@ aliases: []
 categories: []
 tags:
   - 计算机/设计模式/基本原则/五大原则SOLID
-createTime: "2024-04-23 00:07:33"
-updateTime: "2024-04-23 00:07:33"
+createTime: "2024-04-23 07:08:20"
+updateTime: "2024-04-23 07:08:20"
 ---
 
 # 接口隔离原则 ISP(Interface Segregation Principle)

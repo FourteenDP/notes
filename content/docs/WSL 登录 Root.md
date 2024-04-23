@@ -8,8 +8,8 @@ tags:
   - 计算机/Linux/WSL
   - 登录
   - Root
-createTime: "2024-04-23 00:07:33"
-updateTime: "2024-04-23 00:07:33"
+createTime: "2024-04-23 07:08:20"
+updateTime: "2024-04-23 07:08:20"
 ---
 
 # WSL 登录 Root

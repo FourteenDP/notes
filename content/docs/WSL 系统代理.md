@@ -7,8 +7,8 @@ categories: []
 tags:
   - 计算机/Linux/WSL
   - 计算机/Linux/系统代理
-createTime: "2024-04-23 00:07:33"
-updateTime: "2024-04-23 00:07:33"
+createTime: "2024-04-23 07:08:20"
+updateTime: "2024-04-23 07:08:20"
 ---
 
 # WSL 系统代理

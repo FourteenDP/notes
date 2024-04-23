@@ -9,8 +9,8 @@ tags:
   - Node
   - 计算机/开发/版本管理
   - 计算机/Linux/Nvm
-createTime: "2024-04-23 00:07:33"
-updateTime: "2024-04-23 00:07:33"
+createTime: "2024-04-23 07:08:20"
+updateTime: "2024-04-23 07:08:20"
 ---
 
 # Linux 安装 Node 版本管理器 Nvm
