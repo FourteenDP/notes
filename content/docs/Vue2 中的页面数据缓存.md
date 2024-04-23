@@ -9,8 +9,8 @@ tags:
   - 数据缓存
   - 数据处理
   - 计算机/前端/JavaScript
-createTime: '2024-04-22 10:48:19'
-updateTime: '2024-04-22 10:48:19'
+createTime: "2024-04-23 00:07:33"
+updateTime: "2024-04-23 00:07:33"
 ---
 
 # Vue2 中的页面数据缓存
@@ -49,21 +49,21 @@ updateTime: '2024-04-22 10:48:19'
 ### 示例
 
 ```javascript
-export default {
-  data() {
-    const dataStr = localStorage.getItem('data');
-    const data = JSON.parse(dataStr) || {}
-    return Object.assign(
-      {
-        text: '',
-      },
-      data,
-    )
-  },
-  methods: {
-    cache() {
-      localStorage.setItem('data', JSON.stringify(this.$data))
-    }
-  },
-}
+export default {
+  data() {
+    const dataStr = localStorage.getItem("data");
+    const data = JSON.parse(dataStr) || {};
+    return Object.assign(
+      {
+        text: "",
+      },
+      data,
+    );
+  },
+  methods: {
+    cache() {
+      localStorage.setItem("data", JSON.stringify(this.$data));
+    },
+  },
+};
 ```

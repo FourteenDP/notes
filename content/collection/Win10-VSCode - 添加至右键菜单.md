@@ -1,14 +1,14 @@
 ---
 author: juejin.cn
-originalLink: 'https://juejin.cn/post/7028823525125259272'
+originalLink: "https://juejin.cn/post/7028823525125259272"
 title: Win10-VSCode - 添加至右键菜单
 uid: 7318349395268785
 archived: false
 aliases: []
 categories: []
 tags: []
-createTime: '2024-04-22 10:48:19'
-updateTime: '2024-04-22 10:48:19'
+createTime: "2024-04-23 00:07:33"
+updateTime: "2024-04-23 00:07:33"
 ---
 
 # Win10-VSCode - 添加至右键菜单
@@ -18,7 +18,6 @@ updateTime: '2024-04-22 10:48:19'
 ## 教程
 
 1. 新建一个后缀是 `.reg` 的文件，例如: `vs.reg`
-    
 2. 用记事本或 `Notepad++` 打开上述 `.reg` 文件，按照自己的需要将下面的代码复制粘贴到 `.reg` 文件中，然后根据自己 `VSCode` 的安装目录修改路径，保存后双击运行即可
 
 ## 配置
@@ -29,11 +28,11 @@ updateTime: '2024-04-22 10:48:19'
 
 ```plain
 Windows Registry Editor Version 5.00
- 
+
 [HKEY_CLASSES_ROOT\Directory\Background\shell\VSCode]
 @="Open with Code"
 "Icon"="C:\\Program Files\\Microsoft VS Code\\Code.exe"
- 
+
 [HKEY_CLASSES_ROOT\Directory\Background\shell\VSCode\command]
 @="\"C:\\Program Files\\Microsoft VS Code\\Code.exe\" \"%V\""
 
@@ -44,11 +43,11 @@ Windows Registry Editor Version 5.00
 
 ```plain
 Windows Registry Editor Version 5.00
- 
+
 [HKEY_CLASSES_ROOT\*\shell\VSCode]
 @="Open with Code"
 "Icon"="C:\\Program Files\\Microsoft VS Code\\Code.exe"
- 
+
 [HKEY_CLASSES_ROOT\*\shell\VSCode\command]
 @="\"C:\\Program Files\\Microsoft VS Code\\Code.exe\" \"%1\""
 
@@ -59,11 +58,11 @@ Windows Registry Editor Version 5.00
 
 ```plain
 Windows Registry Editor Version 5.00
- 
+
 [HKEY_CLASSES_ROOT\Directory\shell\VSCode]
 @="Open with Code"
 "Icon"="C:\\Program Files\\Microsoft VS Code\\Code.exe"
- 
+
 [HKEY_CLASSES_ROOT\Directory\shell\VSCode\command]
 @="\"C:\\Program Files\\Microsoft VS Code\\Code.exe\" \"%V\""
 

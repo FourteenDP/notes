@@ -11,8 +11,8 @@ tags:
   - localeCompare
   - 踩坑
   - 纸板
-createTime: '2024-04-22 10:48:19'
-updateTime: '2024-04-22 10:48:19'
+createTime: "2024-04-23 00:07:33"
+updateTime: "2024-04-23 00:07:33"
 ---
 
 # UniApp-String.prototype.localeCompare() 踩坑
@@ -38,7 +38,7 @@ updateTime: '2024-04-22 10:48:19'
 
 ```js
 // 在APP端和小程序的结果不一致
-'张'.localeCompare('李') // MP => 1, APP => -2094
+"张".localeCompare("李"); // MP => 1, APP => -2094
 ```
 
 ## 解决
@@ -50,26 +50,27 @@ updateTime: '2024-04-22 10:48:19'
 ```js
 // 添加
 // [[ifdef]] APP-PLUS
-let py = pinyin(v[key], { // 李世民 => [['l'],['s'],['m']]
-  style: 'FIRST_LETTER',
-})
+let py = pinyin(v[key], {
+  // 李世民 => [['l'],['s'],['m']]
+  style: "FIRST_LETTER",
+});
 // L === L
 if (py[0][0].toUpperCase() == items) {
-  curr.child.push(v)
+  curr.child.push(v);
 }
 // [[endif]]
 
 // 排序
 // [[ifdef]] APP-PLUS
 pinyin(a[key], {
-  style: 'FIRST_LETTER',
+  style: "FIRST_LETTER",
 })[0][0].localeCompare(
   pinyin(b[key], {
-    style: 'FIRST_LETTER',
+    style: "FIRST_LETTER",
   })[0][0],
-)
+);
 // [[endif]]
 // [[ifdef]] MP
-a[key].localeCompare(b[key])
+a[key].localeCompare(b[key]);
 // [[endif]]
 ```

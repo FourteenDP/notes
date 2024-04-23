@@ -8,8 +8,8 @@ tags:
   - 计算机/前端/uni-app
   - 计算机/前端/通信
   - 计算机/前端/WebView
-createTime: '2024-04-22 10:48:19'
-updateTime: '2024-04-22 10:48:19'
+createTime: "2024-04-23 00:07:33"
+updateTime: "2024-04-23 00:07:33"
 ---
 
 # UniApp 和 WebView 双向通信
@@ -21,7 +21,10 @@ updateTime: '2024-04-22 10:48:19'
 - `index.html` 导入 UniApp-Sdk
 
 ```html
-<script type="text/javascript" src="https://js.cdn.aliyun.dcloud.net.cn/dev/uni-app/uni.webview.1.5.2.js"></script>
+<script
+  type="text/javascript"
+  src="https://js.cdn.aliyun.dcloud.net.cn/dev/uni-app/uni.webview.1.5.2.js"
+></script>
 ```
 
 - `App.vue`
@@ -42,10 +45,10 @@ mounted() {
 
 ```javascript
 uni.postMessage({
-  data: {
-     type: "data",
-     data: "message",
-  },
+  data: {
+    type: "data",
+    data: "message",
+  },
 });
 ```
 
@@ -54,7 +57,11 @@ uni.postMessage({
 ```html
 <template>
   <view>
-    <web-view :webview-styles="webviewStyles" src="http://192.168.3.140:8888/" @message="getMessage">
+    <web-view
+      :webview-styles="webviewStyles"
+      src="http://192.168.3.140:8888/"
+      @message="getMessage"
+    >
     </web-view>
   </view>
 </template>
@@ -64,17 +71,17 @@ uni.postMessage({
       return {
         webviewStyles: {
           progress: {
-            color: '#FF3333'
-          }
-        }
-      }
+            color: "#FF3333",
+          },
+        },
+      };
     },
     methods: {
       getMessage(e) {
         console.log(e);
-      }
-    }
-  }
+      },
+    },
+  };
 </script>
 ```
 
@@ -83,25 +90,25 @@ uni.postMessage({
 ## UniApp
 
 ```javascript
-let currentWebview = _this.$scope.$getAppWebview();
-let wv = currentWebview.children()[0];
-let params = JSON.stringify({
-  function: "handleLabelScanCode",
-  data,
+let currentWebview = _this.$scope.$getAppWebview();
+let wv = currentWebview.children()[0];
+let params = JSON.stringify({
+  function: "handleLabelScanCode",
+  data,
 });
-wv.evalJS("getUniAppMessage(" + params + ")");
+wv.evalJS("getUniAppMessage(" + params + ")");
 ```
 
 ## Vue
 
 ```javascript
-export default {
-  mounted() {
-    window.getUniAppMessage = (e) => {
-      if (e.function) {
-        this[e.function](e.data);
-      }
-    };
-  },
-}
+export default {
+  mounted() {
+    window.getUniAppMessage = (e) => {
+      if (e.function) {
+        this[e.function](e.data);
+      }
+    };
+  },
+};
 ```

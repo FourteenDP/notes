@@ -8,8 +8,8 @@ tags:
   - 计算机/前端/Vue
   - 计算机/前端/Vue3
   - 计算机/前端/JavaScript
-createTime: '2024-04-22 10:48:19'
-updateTime: '2024-04-22 10:48:19'
+createTime: "2024-04-23 00:07:33"
+updateTime: "2024-04-23 00:07:33"
 ---
 
 # 响应式语法糖 $ref
@@ -20,14 +20,16 @@ updateTime: '2024-04-22 10:48:19'
 
 ## Vite 开启响应式语法糖
 
-  ```js
-  // vite.config.js
-  export default {
-    plugins: [vue({
-      reactivityTransform: true
-    })],
-  }
-  ```
+```js
+// vite.config.js
+export default {
+  plugins: [
+    vue({
+      reactivityTransform: true,
+    }),
+  ],
+};
+```
 
 ## 参考
 

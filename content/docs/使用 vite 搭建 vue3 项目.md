@@ -10,8 +10,8 @@ tags:
   - 计算机/前端/JavaScript
   - 计算机/语言/TypeScript
   - 计算机/前端/工程化
-createTime: '2024-04-22 10:48:19'
-updateTime: '2024-04-22 10:48:19'
+createTime: "2024-04-23 00:07:33"
+updateTime: "2024-04-23 00:07:33"
 ---
 
 # 使用 vite 搭建 vue3 项目
@@ -62,26 +62,26 @@ pnpm add vue-router
 - 在 `src` 目录下创建 `router` 目录，创建 `index.ts` 文件。
 
 ```ts
-import { createRouter, createWebHistory } from 'vue-router'
+import { createRouter, createWebHistory } from "vue-router";
 
-const routes = []
+const routes = [];
 
 const router = createRouter({
   history: createWebHistory(),
   routes,
-})
+});
 
-export default router
+export default router;
 ```
 
 - 在 `main.ts` 中引入 `router` 并使用。
 
 ```ts
-import { createApp } from 'vue'
-import App from './App.vue'
-import router from './router'
+import { createApp } from "vue";
+import App from "./App.vue";
+import router from "./router";
 
-createApp(App).use(router).mount('#app')
+createApp(App).use(router).mount("#app");
 ```
 
 - 在 `App.vue` 中使用 `<router-view />`。
@@ -93,10 +93,10 @@ export default defineConfig({
   plugins: [vue(), vueJsx()],
   resolve: {
     alias: {
-      '@': '/src',
+      "@": "/src",
     },
   },
-})
+});
 ```
 
 - tsconfig.json 中添加 `"baseUrl": "."` 和`"paths": { "@/_": ["src/_"] }
@@ -110,20 +110,20 @@ pnpm add pinia
 - 在 `src` 目录下创建 `store` 目录，创建 `index.ts` 文件。
 
 ```ts
-import { createPinia } from 'pinia'
+import { createPinia } from "pinia";
 
-export const pinia = createPinia()
+export const pinia = createPinia();
 ```
 
 - 在 `main.ts` 中引入 `pinia` 并使用。
 
 ```ts
-import { createApp } from 'vue'
-import App from './App.vue'
-import router from './router'
-import { pinia } from './store'
+import { createApp } from "vue";
+import App from "./App.vue";
+import router from "./router";
+import { pinia } from "./store";
 
-createApp(App).use(router).use(pinia).mount('#app')
+createApp(App).use(router).use(pinia).mount("#app");
 ```
 
 ## 添加 tailwindcss
@@ -143,17 +143,17 @@ VSCode 安装插件 `Tailwind CSS IntelliSense`。
 - 在 `tailwind.config.js` 中添加 `purge`。
 
 ```js
- // tailwind.config.js
-  module.exports = {
-   purge: ['./src/index.html', './src/**/*.{vue,js,ts,jsx,tsx}'],
-    theme: {
-      extend: {},
-    },
-    variants: {
-      extend: {},
-    },
-    plugins: [],
-  }
+// tailwind.config.js
+module.exports = {
+  purge: ["./src/index.html", "./src/**/*.{vue,js,ts,jsx,tsx}"],
+  theme: {
+    extend: {},
+  },
+  variants: {
+    extend: {},
+  },
+  plugins: [],
+};
 ```
 
 - 在 `index.css` 中引入 tailwindcss。
@@ -172,7 +172,7 @@ VSCode 安装插件 `PostCSS Language Support`。
 
 ```ts
 // main.ts
-import './index.css'
+import "./index.css";
 ```
 
 ## 参考

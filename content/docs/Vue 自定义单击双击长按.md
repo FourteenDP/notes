@@ -11,8 +11,8 @@ tags:
   - 双击
   - 长按
   - 自定义
-createTime: '2024-04-22 10:48:19'
-updateTime: '2024-04-22 10:48:19'
+createTime: "2024-04-23 00:07:33"
+updateTime: "2024-04-23 00:07:33"
 ---
 
 # Vue 自定义单击双击长按
@@ -41,24 +41,23 @@ updateTime: '2024-04-22 10:48:19'
 </template>
 
 <script>
-export default {
-  name: "App",
-  methods: {
-    onMouseDown(e) {
-      let timer = setTimeout(() => {
-        console.log("长按");
-      }, 500);
-      e.target.onmouseup = () => {
-        clearTimeout(timer);
-        console.log("单击");
-      };
-      e.target.ondblclick = () => {
-        clearTimeout(timer);
-        console.log("双击");
-      };
+  export default {
+    name: "App",
+    methods: {
+      onMouseDown(e) {
+        let timer = setTimeout(() => {
+          console.log("长按");
+        }, 500);
+        e.target.onmouseup = () => {
+          clearTimeout(timer);
+          console.log("单击");
+        };
+        e.target.ondblclick = () => {
+          clearTimeout(timer);
+          console.log("双击");
+        };
+      },
     },
-  },
-};
+  };
 </script>
-
-````
+```

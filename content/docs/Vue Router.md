@@ -9,8 +9,8 @@ tags:
   - 计算机/前端/Vue3
   - 计算机/前端/JavaScript
   - 计算机/前端/Vue Router
-createTime: '2024-04-22 10:48:19'
-updateTime: '2024-04-22 10:48:19'
+createTime: "2024-04-23 00:07:33"
+updateTime: "2024-04-23 00:07:33"
 ---
 
 # Vue Router
@@ -18,16 +18,16 @@ updateTime: '2024-04-22 10:48:19'
 ## Setup 中使用 router
 
 ```js
-import { useRouter } from 'vue-router'
+import { useRouter } from "vue-router";
 // cosnt router = useRouter() // 无法使用
 export default {
   setup() {
-    const router = useRouter()
+    const router = useRouter();
     return {
-      router
-    }
-  }
-}
+      router,
+    };
+  },
+};
 ```
 
 ## 路由元信息类型提示

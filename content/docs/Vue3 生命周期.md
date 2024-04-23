@@ -8,8 +8,8 @@ tags:
   - 计算机/前端/Vue
   - 计算机/前端/Vue3
   - 计算机/前端/Vue/生命周期
-createTime: '2024-04-22 10:48:19'
-updateTime: '2024-04-22 10:48:19'
+createTime: "2024-04-23 00:07:33"
+updateTime: "2024-04-23 00:07:33"
 ---
 
 # Vue3 生命周期
@@ -21,36 +21,36 @@ updateTime: '2024-04-22 10:48:19'
 
 ## Vue2 和 Vue3 生命周期的对比
 
-| Vue2 | Vue3 | 说明 |
-| --- | --- | --- |
-| beforeCreate | setup |  组件实例化之前 |
-| created | setup | 组件实例化之后 |
-| beforeMount | beforeMount | 挂载之前 |
-| mounted | mounted | 挂载之后 |
-| beforeUpdate | beforeUpdate | 更新之前 |
-| updated | updated | 更新之后 |
-| beforeDestroy | beforeUnmount | 销毁之前 |
-| destroyed | unmounted | 销毁之后 |
-| errorCaptured | errorCaptured | 错误捕获 |
+| Vue2          | Vue3          | 说明           |
+| ------------- | ------------- | -------------- |
+| beforeCreate  | setup         | 组件实例化之前 |
+| created       | setup         | 组件实例化之后 |
+| beforeMount   | beforeMount   | 挂载之前       |
+| mounted       | mounted       | 挂载之后       |
+| beforeUpdate  | beforeUpdate  | 更新之前       |
+| updated       | updated       | 更新之后       |
+| beforeDestroy | beforeUnmount | 销毁之前       |
+| destroyed     | unmounted     | 销毁之后       |
+| errorCaptured | errorCaptured | 错误捕获       |
 
 ## 开发模式钩子
 
-| 钩子 | 说明 |
-| --- | --- |
-| renderTracked | 跟踪响应式数据的变化 |
+| 钩子            | 说明                 |
+| --------------- | -------------------- |
+| renderTracked   | 跟踪响应式数据的变化 |
 | renderTriggered | 触发响应式数据的变化 |
 
 ## 页面路由钩子
 
-| 钩子 | 说明 |
-| --- | --- |
-| onActivated | 路由激活时 |
+| 钩子          | 说明       |
+| ------------- | ---------- |
+| onActivated   | 路由激活时 |
 | onDeactivated | 路由失活时 |
 
 ## 服务端渲染钩子
 
-| 钩子 | 说明 |
-| --- | --- |
+| 钩子             | 说明           |
+| ---------------- | -------------- |
 | onServerPrefetch | 服务端预取数据 |
 
 ## 生命周期图示

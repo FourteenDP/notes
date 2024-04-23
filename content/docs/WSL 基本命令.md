@@ -9,8 +9,8 @@ tags:
   - 基本命令
   - 计算机/Linux/安装
   - Linux发行版
-createTime: '2024-04-22 10:48:19'
-updateTime: '2024-04-22 10:48:19'
+createTime: "2024-04-23 00:07:33"
+updateTime: "2024-04-23 00:07:33"
 ---
 
 以下 WSL 命令以 PowerShell 或 Windows 命令提示符支持的格式列出。若要通过 Bash/Linux 发行版命令行运行这些命令，必须将 `wsl` 替换为 `wsl.exe`。
@@ -159,11 +159,11 @@ PowerShell 复制
 
 例如：`ubuntu config --default-user johndoe` 会将 Ubuntu 发行版的默认用户更改为 "johndoe" 用户。
 
- 备注
+备注
 
 如果在确定发行版名称时遇到问题，请使用命令 `wsl -l`。
 
- 警告
+警告
 
 此命令不适用于导入的发行版，因为这些发行版没有可执行启动器。可以改为使用 `/etc/wsl.conf` 文件来更改导入的发行版的默认用户。请参阅 [高级设置配置](https://docs.microsoft.com/zh-cn/windows/wsl/wsl-config#user-settings) 文档中的 " 自动装载 " 选项。
 
@@ -239,7 +239,7 @@ wsl --mount <DiskPath>
 - `wsl --mount --options <MountOptions>`：装载磁盘时，可以包括一些特定于文件系统的选项。例如，`wsl --mount -o "data-ordered"` 或 `wsl --mount -o "data=writeback` 之类的 [ext4 装载选项](https://www.kernel.org/doc/Documentation/filesystems/ext4.txt)。但是，目前仅支持特定于文件系统的选项。不支持通用选项，例如 `ro`、`rw` 或 `noatime`。
 - `wsl --unmount <DiskPath>`：从所有 WSL 2 发行版中卸载和分离磁盘。如果未包含 `<DiskPath>`，则此命令将卸载并分离所有装载的磁盘。
 
- 备注
+备注
 
 如果你正在运行 32 位进程来访问 wsl.exe（一种 64 位工具），那么你可能需要按如下方式运行此命令：`C:\Windows\Sysnative\wsl.exe --command`。
 

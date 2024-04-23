@@ -11,8 +11,8 @@ tags:
   - 远程连接
   - 服务安装
   - 配置信息
-createTime: '2024-04-22 10:48:19'
-updateTime: '2024-04-22 10:48:19'
+createTime: "2024-04-23 00:07:33"
+updateTime: "2024-04-23 00:07:33"
 ---
 
 # WSL SSH 远程连接
@@ -37,6 +37,6 @@ PermitRootLogin yes
 ```
 
 - 开启服务
-`service ssh start`
+  `service ssh start`
 - 查看状态
-`service ssh status`
+  `service ssh status`

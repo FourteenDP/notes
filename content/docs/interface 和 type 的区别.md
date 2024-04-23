@@ -10,8 +10,8 @@ tags:
   - 计算机/语言/TypeScript
   - interface
   - type
-createTime: '2024-04-22 10:48:19'
-updateTime: '2024-04-22 10:48:19'
+createTime: "2024-04-23 00:07:33"
+updateTime: "2024-04-23 00:07:33"
 ---
 
 # interface 和 type 的区别
@@ -36,7 +36,7 @@ updateTime: '2024-04-22 10:48:19'
 
 ```ts
 // type 支持计算属性，生成映射类型
-type Keys = 'a' | 'b';
+type Keys = "a" | "b";
 
 type Obj = {
   [p in Keys]: any;

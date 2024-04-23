@@ -9,8 +9,8 @@ tags:
   - 计算机/Linux/安装
   - 计算机/Linux/配置
   - 计算机/Linux/Debian
-createTime: '2024-04-22 10:48:19'
-updateTime: '2024-04-22 10:48:19'
+createTime: "2024-04-23 00:07:33"
+updateTime: "2024-04-23 00:07:33"
 ---
 
 # Neovim 的安装和配置

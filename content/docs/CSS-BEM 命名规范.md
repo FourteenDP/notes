@@ -8,8 +8,8 @@ tags:
   - 计算机/前端/CSS
   - CSS-BEM
   - 计算机/前端/命名规范
-createTime: '2024-04-22 10:48:19'
-updateTime: '2024-04-22 10:48:19'
+createTime: "2024-04-23 00:07:33"
+updateTime: "2024-04-23 00:07:33"
 ---
 
 # CSS-BEM 命名规范
@@ -23,9 +23,12 @@ BEM 是 Block Element Modifier 的缩写,为什么要使用 BEM 命名规范呢?
 - Modifier: 一个组件的状态
 
 ```css
-.block {}
-.block__element {}
-.block--modifier {}
+.block {
+}
+.block__element {
+}
+.block--modifier {
+}
 ```
 
 ## 个人使用简化版
@@ -35,9 +38,12 @@ BEM 是 Block Element Modifier 的缩写,为什么要使用 BEM 命名规范呢?
   - BEM 的命名规范有点长,不够简洁
 
 ```css
-.block {}
-.block_element {}
-.block-modifier {}
+.block {
+}
+.block_element {
+}
+.block-modifier {
+}
 ```
 
 ## 参考

@@ -6,8 +6,8 @@ aliases: []
 categories: []
 tags:
   - 计算机/语言/TypeScript
-createTime: '2024-04-22 10:48:19'
-updateTime: '2024-04-22 10:48:19'
+createTime: "2024-04-23 00:07:33"
+updateTime: "2024-04-23 00:07:33"
 ---
 
 # any 和 unknown 的区别
@@ -18,12 +18,12 @@ updateTime: '2024-04-22 10:48:19'
 ```ts
 // any
 let a: any = 1;
-a = '1';
+a = "1";
 a = true;
 
 // unknown
 let b: unknown = 1;
-b = '1';
+b = "1";
 b = true;
 
 // any可以赋值给任何类型
@@ -39,19 +39,16 @@ let h: boolean = b; // error
 let i: any = b;
 let j: unknown = b;
 
-
-
 // 使用unknown需要先判断类型
-if (typeof b === 'string') {
+if (typeof b === "string") {
   b.trim();
 }
 
-if (typeof b === 'number') {
+if (typeof b === "number") {
   b.toFixed(2);
 }
 
-if (typeof b === 'boolean') {
+if (typeof b === "boolean") {
   b.valueOf();
 }
-
 ```

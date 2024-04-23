@@ -1,17 +1,17 @@
 ---
 author: blog.csdn.net
-originalLink: 'https://blog.csdn.net/weixin_41714373/article/details/119519589'
+originalLink: "https://blog.csdn.net/weixin_41714373/article/details/119519589"
 title: 【WSL】 WSLg 中显示中文（解决中文乱码）_wslg 中文乱码 - CSDN 博客
 uid: 8444249302111453
 archived: false
 aliases: []
 categories: []
 tags: []
-createTime: '2024-04-22 10:48:19'
-updateTime: '2024-04-22 10:48:19'
+createTime: "2024-04-23 00:07:33"
+updateTime: "2024-04-23 00:07:33"
 ---
 
-# 【WSL】 WSLg 中显示中文（解决中文乱码）_wslg 中文乱码 - CSDN 博客
+# 【WSL】 WSLg 中显示中文（解决中文乱码）\_wslg 中文乱码 - CSDN 博客
 
 - 生成 locale 配置文件
 

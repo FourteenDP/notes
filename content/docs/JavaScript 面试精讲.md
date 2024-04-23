@@ -6,8 +6,8 @@ aliases: []
 categories: []
 tags:
   - 面试题
-createTime: '2024-04-22 10:48:19'
-updateTime: '2024-04-22 10:48:19'
+createTime: "2024-04-23 00:07:33"
+updateTime: "2024-04-23 00:07:33"
 ---
 
 # JavaScript 面试精讲
@@ -46,33 +46,33 @@ updateTime: '2024-04-22 10:48:19'
 第一：使用只声明而未初始化的变量时，会返回 `undefined`
 
 ```js
-var a
-console.log(a) //undefined
+var a;
+console.log(a); //undefined
 ```
 
 第二：获取一个对象的某个不存在的属性时，会返回 `undefined`
 
 ```js
-var obj={
-    userName:'zhangsan'
-}
-console.log(obj.age)//undefined
+var obj = {
+  userName: "zhangsan",
+};
+console.log(obj.age); //undefined
 ```
 
 第三：函数没有明确的返回值，却对函数的调用结果进行打印
 
 ```js
-function fn(){}
-console.log(fn()) //undefined
+function fn() {}
+console.log(fn()); //undefined
 ```
 
 第四：函数定义的时候，使用了多个形参，但是在调用的时候传递的参数的数量少于形参数量，那么没有匹配上的参数就为 `undefined`
 
 ```js
-function fn(p1,p2,p3){
-    console.log(p3) //undefined
+function fn(p1, p2, p3) {
+  console.log(p3); //undefined
 }
-fn(1,2)
+fn(1, 2);
 ```
 
 #### 1.2 Null 类型
@@ -84,25 +84,25 @@ fn(1,2)
 第一：一般情况下，如果声明的变量是为了以后保存某个值，不清楚为这个变量赋什么值得时候，则应该在声明时就将其赋值为 `null`
 
 ```js
-var obj=null
-function foo(){
-    return {
-        userName:'zhangsan'
-    }
+var obj = null;
+function foo() {
+  return {
+    userName: "zhangsan",
+  };
 }
-obj=foo();
+obj = foo();
 ```
 
 第二：`JavaScript` 在获取 `DOM` 元素时，如果没有获取到指定的元素对象，就会返回 `null`
 
 ```js
-document.querySelector('#id') //null
+document.querySelector("#id"); //null
 ```
 
 第三：在使用正则表达式进行匹配的时候，如果没有匹配的结果，就会返回 `null`
 
 ```js
-'test'.match(/a/);// null
+"test".match(/a/); // null
 ```
 
 #### 1.3 Undefined 与 null 比较
@@ -111,7 +111,7 @@ document.querySelector('#id') //null
 
 **（1）相同点**
 
- 第一：`Undefined` 和 `Null` 两种数据类型都只有一个字面值，分别是 `undefined` 和 `null`.
+第一：`Undefined` 和 `Null` 两种数据类型都只有一个字面值，分别是 `undefined` 和 `null`.
 
 第二：`Undefined` 和 `Null` 类型在转换为 `Boolean` 类型的值时，都会转换为 `false`.
 
@@ -119,15 +119,15 @@ document.querySelector('#id') //null
 
 ```js
 var a;
-var b=null;
-cosnole.log(a.name);//Cannot read property 'name' of undefined
-cosnole.log(b.name);//Cannot read property 'name' of undefined
+var b = null;
+cosnole.log(a.name); //Cannot read property 'name' of undefined
+cosnole.log(b.name); //Cannot read property 'name' of undefined
 ```
 
 第四：`Undefined` 类型派生自 `Null` 类型，所以在非严格相等的比较下，两者是相等的。如下面代码所示：
 
 ```js
-null==undefined //true
+null == undefined; //true
 ```
 
 **(2) 不同点**
@@ -137,22 +137,22 @@ null==undefined //true
 第二：在使用 `typeof` 运算符进行检测时，`Undefined` 类型的值会返回 `undefined`.而 `Null` 类型的值返回为 `object`
 
 ```js
-typeof undefined ;//undefined
-typeof null ;//object
+typeof undefined; //undefined
+typeof null; //object
 ```
 
 第三：在需要进行字符串类型的转换时，`null` 会转换成字符串 `null`,而 `undefined` 会转换字符串 `undefined`.
 
 ```js
-undefined+" abc" //"undefined abc"
-null+" abc" //"null abc"
+undefined + " abc"; //"undefined abc"
+null + " abc"; //"null abc"
 ```
 
 第四：在进行数值类型的转换时，`undefined` 会转换为 `NaN`,无法参与计算，而 `null` 会转换为 `0`,可以参与计算。
 
 ```js
-undefined +0;// NaN
-null+0 ;// 0
+undefined + 0; // NaN
+null + 0; // 0
 ```
 
 第五：建议：无论在什么情况下都没有必要将一个变量显示的赋值为 `undefined`。如果需要定义某个变量来保存将来要使用的对象，应该将其初始化为 `null`.
@@ -180,11 +180,11 @@ null+0 ;// 0
 如果 `object` 为 `null` 时，会转换为 `false`,如果 `object` 不为 `null`，则都会转换成 `true`.
 
 ```js
-var obj={}
-Boolean(obj) //true
+var obj = {};
+Boolean(obj); //true
 
-var obj=null
-Boolean(obj)//false
+var obj = null;
+Boolean(obj); //false
 ```
 
 第四：`Function` 类型转换 `Boolean` 类型
@@ -192,9 +192,8 @@ Boolean(obj)//false
 任何 `Function` 类型都会转换为 `true`
 
 ```js
-var fn=function(){
-}
-Boolean(fn)//true
+var fn = function () {};
+Boolean(fn); //true
 ```
 
 第五：`Null` 类型转换为 `Boolean` 类型，我们知道 `Null` 类型只有一个 `null` 值，会转换为 `false`.
@@ -210,13 +209,13 @@ Boolean(fn)//true
 第一：八进制：如果想要用八进制来表示一个数值，那么首位必须是 0，其它位必须是 0--7 的数字，如果后面的数字大于 7，则破坏了八进制的规则，这时会被当作十进制数来处理。
 
 ```js
-var num1=024
-console.log(num1) //20
+var num1 = 024;
+console.log(num1); //20
 ```
 
 ```js
-var num2=079
-console.log(num2) //79
+var num2 = 079;
+console.log(num2); //79
 ```
 
 `num1` 第一位是 `0` 表示八进制，后面每位数字都是在 `0--7` 之间的，所以符合八进制规则，最终转换为十进制为 `20`
@@ -228,8 +227,8 @@ console.log(num2) //79
 如果想用十六进制表示一个数值，那么前面两位必须是 `0x`,其它的位必须是 (0--9,`a--f` 或者 `A--F`).如果超出了这个范围，则会抛出异常。
 
 ```js
-var num1=0x5f //95
-var num2=Ox5h //Uncaught SyntaxError: Invalid or unexpected token
+var num1 = 0x5f; //95
+var num2 = Ox5h; //Uncaught SyntaxError: Invalid or unexpected token
 ```
 
 与 `Boolean` 类型一样，当其它类型在与 `Number` 类型进行数据转换时，也会遵守一定的规则。
@@ -249,28 +248,28 @@ var num2=Ox5h //Uncaught SyntaxError: Invalid or unexpected token
 第一：如果是数字，会按照对应的进制数据格式，统一转换为十进制返回。
 
 ```js
-Number(10) //10
-Number(010) // 8, 010是八进制的数据，转换成十进制是8
-Number(0x10) // 16,0x10是十六进制的数据，转换成十进制是16
+Number(10); //10
+Number(010); // 8, 010是八进制的数据，转换成十进制是8
+Number(0x10); // 16,0x10是十六进制的数据，转换成十进制是16
 ```
 
 第二：如果是 `Boolean` 类型的值，`true` 返回 1,`false` 返回是的 0
 
 ```js
-Number(true) //1
-Number(false) //0
+Number(true); //1
+Number(false); //0
 ```
 
 第三：如果值为 `null`,则返回 0
 
 ```js
-Number(null) //0
+Number(null); //0
 ```
 
 第四：如果值为 `undefined`,则返回 `NaN`
 
 ```js
-Number(undefined) //NaN
+Number(undefined); //NaN
 ```
 
 第五：如果值为字符串类型，需要遵循如下规则
@@ -278,42 +277,42 @@ Number(undefined) //NaN
 （1）如果该字符串只包含了数字，则会直接转换成十进制数；如果数字前面有 0，则会直接忽略掉这个 0。
 
 ```js
-Number('21') //21
-Number('012') //12
+Number("21"); //21
+Number("012"); //12
 ```
 
 (2) 如果字符串是有效的浮点数形式，则会直接转成对应的浮点数，前置的多个重复的 0 会被删除，只保留一个。
 
 ```js
-Number('0.12') //0.12
-Number('00.12') //0.12
+Number("0.12"); //0.12
+Number("00.12"); //0.12
 ```
 
 (3) 如果字符串是有效的十六进制形式，则会转换为对应的十进制数值
 
 ```js
-Number('0x12') //18
+Number("0x12"); //18
 ```
 
 (4) 如果字符串是有效的八进制，则不会按照八进制转换，而是直接按照十进制转换并输出，因为前置的 0 会被直接忽略掉。
 
 ```js
-Number('010') //10
-Number('0020') //20
+Number("010"); //10
+Number("0020"); //20
 ```
 
 (5) 如果字符串为空，即字符串不包含任何字符，或为连续多个空格，则会转换为 0.
 
 ```js
-Number('') //0
-Number('     ')//0
+Number(""); //0
+Number("     "); //0
 ```
 
 (6) 如果字符串中包含了任何不适以上 5 种情况的其它格式内容，则会返回 `NaN`
 
 ```js
-Number('123a') //NaN
-Number('abc') //NaN
+Number("123a"); //NaN
+Number("abc"); //NaN
 ```
 
 第六：如果是对象类型，则会调用对象的 `valueOf()` 函数获取返回值，并且判断返回值能否转换为 `Number` 类型，如果不能，会调用对象的 `toString()` 函数获取返回值，并且判断是否能够转换为 `Number` 类型。如果也不满足，则返回 `NaN`.
@@ -321,27 +320,25 @@ Number('abc') //NaN
 以下是通过 `valueOf()` 函数将对象转换成 `Number` 类型。
 
 ```js
-var obj={
-    age:'12',
-    valueOf:function(){
-        return this.age
-    },
-
-  }
-Number(obj) //12
+var obj = {
+  age: "12",
+  valueOf: function () {
+    return this.age;
+  },
+};
+Number(obj); //12
 ```
 
 以下是通过 `toString()` 函数将对象转换成 `Number` 类型。
 
 ```js
-var obj={
-    age:'21',
-    toString:function(){
-        return this.age
-    }
-
-}
-Number(obj)
+var obj = {
+  age: "21",
+  toString: function () {
+    return this.age;
+  },
+};
+Number(obj);
 ```
 
 **parseInt() 函数**
@@ -351,7 +348,7 @@ Number(obj)
 语法格式：
 
 ```js
-parseInt(string,radix)
+parseInt(string, radix);
 ```
 
 其中 `string` 参数表示要被解析的值，如果该参数不是一个字符串，那么会使用 `toString()` 函数将其转换成字符串。并且字符串前面的空白符会被忽略。
@@ -363,7 +360,7 @@ parseInt(string,radix)
 `parseInt()` 函数会返回字符串解析后的整数值，如果该字符串无法转换成 `Number` 类型，则会返回 `NaN`.
 
 ```js
-parseInt('aaa')//NaN
+parseInt("aaa"); //NaN
 ```
 
 在使用 `parseInt` 函数将字符串转换成整数时，需要注意的问题：
@@ -373,7 +370,7 @@ parseInt('aaa')//NaN
 第二：`parseInt()` 函数在做转换时，对于传入的字符串会采用前置匹配的原则。
 
 ```js
-parseInt("fg123",16)
+parseInt("fg123", 16);
 ```
 
 对于字符串 `fg123`,首先从第一个字符开始，`f` 是满足十六进制的数据的，因为十六进制数据的范围是 `0--9`,`a--f`,所以保留 `f`，然后是第二个字符 `g`，它不满足十六进制数据范围，因此从第二个字符都最后一个字符全部舍弃，最终字符串只保留了字符 `f`，然后将字符 `f` 转换成十六进制的数据，为 15，因此最终返回的结果为 `15`.
@@ -381,8 +378,8 @@ parseInt("fg123",16)
 还要注意的一点就是，如果传入的字符串中涉及到了算术运算，则不会执行，算术符号会被当作字符处理。
 
 ```js
-parseInt('16*2')// 16,这里直接当作字符串处理，并不会进行乘法的运算
-parseInt(16*2) // 32
+parseInt("16*2"); // 16,这里直接当作字符串处理，并不会进行乘法的运算
+parseInt(16 * 2); // 32
 ```
 
 第三：对浮点数的处理
@@ -390,7 +387,7 @@ parseInt(16*2) // 32
 如果传入的值是浮点数，则会忽略小数点以及后面的数，直接取整。
 
 ```js
-parseInt(12.98) //12
+parseInt(12.98); //12
 ```
 
 第四：`map()` 函数与 `parseInt()` 函数的问题
@@ -400,11 +397,10 @@ parseInt(12.98) //12
 这里我们可能会想到使用 `map()` 函数，然后在该函数中调用 `parseInt()` 函数来完成转换。所以代码如下：
 
 ```js
- <script>
-      var arr = ["1", "2", "3", "4"];
-      var result = arr.map(parseInt);
-      console.log(result);
-    </script>
+<script>
+  var arr = ["1", "2", "3", "4"]; var result = arr.map(parseInt);
+  console.log(result);
+</script>
 ```
 
 执行上面程序得到的结果是：`[1,NaN,NaN,NaN]`
@@ -414,32 +410,31 @@ parseInt(12.98) //12
 上面的代码等效如下的代码
 
 ```js
- var arr = ["1", "2", "3", "4"];
-      //   var result = arr.map(parseInt);
-      var result = arr.map(function (val, index) {
-        return parseInt(val, index);
-      });
-      console.log(result);
+var arr = ["1", "2", "3", "4"];
+//   var result = arr.map(parseInt);
+var result = arr.map(function (val, index) {
+  return parseInt(val, index);
+});
+console.log(result);
 ```
 
 通过以上的代码，可以发现，`parseInt` 函数第二个参数实际上就是数组的索引值。所以，整体的形式如下所示：
 
 ```js
-parseInt('1',0) // 任何整数以0为基数取整时，都会返回本身，所以这里返回的是1
-parseInt('2',1) //注意parseInt第二个参数的取值范围为2--36，所以不满足条件，这里只能返回NaN
-parseInt('3',2) // 表示将3作为二进制来进行处理，但是二进制只有0和1，所以3超出了范围，无法转换，返回`NaN`
-parseInt('4',3) //将4作为三进制来处理，但是4无法用三进制的数据表示，返回NaN
+parseInt("1", 0); // 任何整数以0为基数取整时，都会返回本身，所以这里返回的是1
+parseInt("2", 1); //注意parseInt第二个参数的取值范围为2--36，所以不满足条件，这里只能返回NaN
+parseInt("3", 2); // 表示将3作为二进制来进行处理，但是二进制只有0和1，所以3超出了范围，无法转换，返回`NaN`
+parseInt("4", 3); //将4作为三进制来处理，但是4无法用三进制的数据表示，返回NaN
 ```
 
 所以当我们在 `map()` 函数中使用 `parseInt()` 函数时，不能直接将 `parseInt()` 函数作为 `map()` 函数的参数，而是需要在 `map()` 函数的回调函数中使用,并尽量指定基数。代码如下所示：
 
 ```js
-      var arr = ["1", "2", "3", "4"];
-      var result = arr.map(function (val) {
-        return parseInt(val, 10);
-      });
-      console.log(result);
-
+var arr = ["1", "2", "3", "4"];
+var result = arr.map(function (val) {
+  return parseInt(val, 10);
+});
+console.log(result);
 ```
 
 **parseFloat() 函数**
@@ -453,15 +448,15 @@ parseInt('4',3) //将4作为三进制来处理，但是4无法用三进制的数
 第一：如果字符串前面有空白符，则会直接忽略掉，如果第一个字符就无法解析，则会直接返回 `NaN`
 
 ```js
-parseFloat('  2.6')// 2.6
-parseFloat('f2.6') //NaN
+parseFloat("  2.6"); // 2.6
+parseFloat("f2.6"); //NaN
 ```
 
 第二：对于小数点，只能正确匹配第一个，第二个小数点是无效的，它后面的字符也都将被忽略。
 
 ```js
-parseFloat('12.23')// 12.23
-parseFloat('12.23.39')//12.23
+parseFloat("12.23"); // 12.23
+parseFloat("12.23.39"); //12.23
 ```
 
 **总结:**
@@ -497,17 +492,17 @@ NaN==NaN //false
 `isNaN` 检测的机制：它在处理的时候会去判断传入的变量值能否转为数字，如果能转换成数字则会返回 `false`,如果无法转换则会返回 `true`.
 
 ```js
-isNaN(NaN)//true
-isNaN(undefined) //true
-isNaN({})//true
+isNaN(NaN); //true
+isNaN(undefined); //true
+isNaN({}); //true
 
-isNaN(true)// false ,Number(true)会转换成数字1
-isNaN(false)// false,Number(false)会转换成数字0
-isNaN(null) // false,Number(null)会转换成数字0
+isNaN(true); // false ,Number(true)会转换成数字1
+isNaN(false); // false,Number(false)会转换成数字0
+isNaN(null); // false,Number(null)会转换成数字0
 
-isNaN(1) //false
-isNaN('aaa') //true 字符串aaa无法转换成数字
-isNaN('1') //false 字符串“1”可以转换成数字1.
+isNaN(1); //false
+isNaN("aaa"); //true 字符串aaa无法转换成数字
+isNaN("1"); //false 字符串“1”可以转换成数字1.
 ```
 
 **`Number.isNaN()`**函数
@@ -517,19 +512,19 @@ isNaN('1') //false 字符串“1”可以转换成数字1.
 这是因为全局的 `isNaN` 函数本身存在误导性，而 `ES6` 中的 `Number.isNaN()` 函数会在真正意义上去判断变量是否为 `NaN`,不会做数据类型转换。只有在传入的值为 `NaN`,才会返回 `true`,传入其它类型的值时会返回 `false`.
 
 ```js
-Number.isNaN(NaN)// true
-Number.isNaN(1) //false
-Number.isNaN(null) //false
-Number.isNaN(undefined) //false
+Number.isNaN(NaN); // true
+Number.isNaN(1); //false
+Number.isNaN(null); //false
+Number.isNaN(undefined); //false
 ```
 
 如果在非 `ES6` 环境中想用 `ES6` 中的 `isNaN()` 函数，怎样处理呢？
 
 ```js
-if(!Number.isNaN){
-    Number.isNaN=function(n){
-        return n!==n
-    }
+if (!Number.isNaN) {
+  Number.isNaN = function (n) {
+    return n !== n;
+  };
 }
 ```
 
@@ -560,8 +555,8 @@ if(!Number.isNaN){
 注意：单引号和双引号是等价的。
 
 ```js
-var str='hello'
-var str2="JavaScript"
+var str = "hello";
+var str2 = "JavaScript";
 ```
 
 **直接调用 `String()` 函数**
@@ -571,27 +566,27 @@ var str2="JavaScript"
 第一：如果是 `Number` 类型的值，则直接转换成对应的字符串。
 
 ```js
-String(123) // '123'
-String(123.56) // "123.56"
+String(123); // '123'
+String(123.56); // "123.56"
 ```
 
 第二：如果是 `Boolean` 类型的值，则直接转换成字符串的 `"true"` 或者是 `"false"`
 
 ```js
-String(true)// "true"
-String(false) // "false"
+String(true); // "true"
+String(false); // "false"
 ```
 
 第三：如果值为 `null`,直接转换成字符串的 `"null"`
 
 ```js
-String(null) // "null"
+String(null); // "null"
 ```
 
 第四：如果值为 `undefined`,则转换成字符串的 `undefined`
 
 ```js
-String(undefined) //"undefined"
+String(undefined); //"undefined"
 ```
 
 **new String() 构造函数**
@@ -599,7 +594,7 @@ String(undefined) //"undefined"
 这种方式是使用 `new` 运算符来创建一个 `String` 的实例。转换的规则和 `String()` 函数是一样的，最后返回的是一个 `String` 类型的对象实例。
 
 ```js
-new String(678) //返回的对象中有length属性，并且可以通过下标获取对应的值。
+new String(678); //返回的对象中有length属性，并且可以通过下标获取对应的值。
 ```
 
 **三种创建方式的区别**
@@ -609,13 +604,13 @@ new String(678) //返回的对象中有length属性，并且可以通过下标�
 基本字符串在比较的时候，只需要比较字符串的值即可，而在比较字符串对象时，比较的是对象所在的地址。
 
 ```js
-var str='hello'
-var str2=String('hello')
-str===str2 //true
+var str = "hello";
+var str2 = String("hello");
+str === str2; //true
 
-var str3=new String('hello')
-var str4=new String('hello')
-str3===str4 //false
+var str3 = new String("hello");
+var str4 = new String("hello");
+str3 === str4; //false
 ```
 
 对于 `str` 与 `str2` 都是基本字符串，只是比较字符串的值就可以了，所以两者是相等的。
@@ -631,7 +626,7 @@ str3===str4 //false
 但是，我们发现了一个问题，就是采用字面量方式定义的字符串也能够直接调用原型链上的这些函数。
 
 ```js
-'hello'.indexOf('o') //4
+"hello".indexOf("o"); //4
 ```
 
 这是为什么呢？
@@ -654,16 +649,16 @@ str3===str4 //false
 
 ```js
 function reverseString(str) {
-        return str.split("").reverse().join("");
-      }
-      console.log(reverseString("abcdef"));
+  return str.split("").reverse().join("");
+}
+console.log(reverseString("abcdef"));
 ```
 
 第二种算法：
 
 ```js
-var arr=Array.from('abcdef') //转换成数组,这里比第一种方式简单
-console.log(arr.reverse().join(""))
+var arr = Array.from("abcdef"); //转换成数组,这里比第一种方式简单
+console.log(arr.reverse().join(""));
 ```
 
 第三种算法：
@@ -671,14 +666,14 @@ console.log(arr.reverse().join(""))
 这里可以通过字符串本身提供的 `chartAt` 函数来完成。
 
 ```js
-  function reverseString2(str) {
-        var result = "";
-        for (var i = str.length - 1; i >= 0; i--) {
-          result += str.charAt(i);
-        }
-        return result;
-      }
-      console.log(reverseString2("abcdef"));
+function reverseString2(str) {
+  var result = "";
+  for (var i = str.length - 1; i >= 0; i--) {
+    result += str.charAt(i);
+  }
+  return result;
+}
+console.log(reverseString2("abcdef"));
 ```
 
 **统计字符串中出现次数最多的字符及出现的次数**
@@ -729,28 +724,28 @@ console.log(arr.reverse().join(""))
 思路：这里主要是对字符串进行排序，然后通过 `lastIndexOf()` 函数获取索引值后，判断索引值的大小以获取出现的最大次数。
 
 ```js
- function getMaxCount(str) {
-        //定义两个变量,分别表示出现最大次数和对应的字符。
-        var maxCount = 0,
-          maxCountChar = "";
-        //处理成数组，调用sort()函数排序，再处理成字符串
-        str = str.split("").sort().join("");
-        for (var i = 0, j = str.length; i < j; i++) {
-          var char = str[i];
-          //计算每个字符出现的次数
-          var charCount = str.lastIndexOf(char) - i + 1;
-          //与次数最大值进行比较
-          if (charCount > maxCount) {
-            //更新maxCount与maxCountChar的值
-            maxCount = charCount;
-            maxCountChar = char;
-          }
-          //变更索引为字符出现的最后位置
-          i = str.lastIndexOf(char);
-        }
-        return "出现最多的字符是" + maxCountChar + ",出现次数为" + maxCount;
-      }
-      console.log(getMaxCount("caa"));
+function getMaxCount(str) {
+  //定义两个变量,分别表示出现最大次数和对应的字符。
+  var maxCount = 0,
+    maxCountChar = "";
+  //处理成数组，调用sort()函数排序，再处理成字符串
+  str = str.split("").sort().join("");
+  for (var i = 0, j = str.length; i < j; i++) {
+    var char = str[i];
+    //计算每个字符出现的次数
+    var charCount = str.lastIndexOf(char) - i + 1;
+    //与次数最大值进行比较
+    if (charCount > maxCount) {
+      //更新maxCount与maxCountChar的值
+      maxCount = charCount;
+      maxCountChar = char;
+    }
+    //变更索引为字符出现的最后位置
+    i = str.lastIndexOf(char);
+  }
+  return "出现最多的字符是" + maxCountChar + ",出现次数为" + maxCount;
+}
+console.log(getMaxCount("caa"));
 ```
 
 **去除字符串中重复的字符**
@@ -758,26 +753,26 @@ console.log(arr.reverse().join(""))
 假如存在一个字符串 `"javascriptjavaabc"`,其中存有重复的字符，现在需要将这些重复的字符去掉，只保留一个。
 
 ```js
- function removeStringChar(str) {
-        //结果数组
-        var result = [];
-        //key-value形式的对象
-        var json = {};
-        for (var i = 0; i < str.length; i++) {
-          //当前处理的字符
-          var char = str[i];
-          //判断是否在对象中
-          if (!json[char]) {
-            //将value值设置为true
-            json[char] = true;
-            //添加到结果数组中
-            result.push(char);
-          }
-        }
-        return result.join("");
-      }
-      var str = "javascriptjavaabc";
-      console.log(removeStringChar(str));
+function removeStringChar(str) {
+  //结果数组
+  var result = [];
+  //key-value形式的对象
+  var json = {};
+  for (var i = 0; i < str.length; i++) {
+    //当前处理的字符
+    var char = str[i];
+    //判断是否在对象中
+    if (!json[char]) {
+      //将value值设置为true
+      json[char] = true;
+      //添加到结果数组中
+      result.push(char);
+    }
+  }
+  return result.join("");
+}
+var str = "javascriptjavaabc";
+console.log(removeStringChar(str));
 ```
 
 **算法 2**
@@ -787,9 +782,9 @@ console.log(arr.reverse().join(""))
 下面先来看一下 `Set` 的基本使用方式
 
 ```js
-const set = new Set([1,2,3,4,4,]);
+const set = new Set([1, 2, 3, 4, 4]);
 //console.log(set)  // Set(4) {1, 2, 3, 4}
-[...set] // [1, 2, 3, 4] 通过扩展运算符将set中的内容转换成数组，同时可以看到已经去重。
+[...set]; // [1, 2, 3, 4] 通过扩展运算符将set中的内容转换成数组，同时可以看到已经去重。
 ```
 
 基本思路：
@@ -799,12 +794,12 @@ const set = new Set([1,2,3,4,4,]);
 (2) 将 `Set` 通过扩展运算符 (…) 转换成数组的形式，最终转换成字符串获得需要的结果。
 
 ```js
- function removeStringChar(str) {
-        let set = new Set(str.split(""));
-        return [...set].join("");
-      }
-      var str = "javascriptjavaabc";
-      console.log(removeStringChar(str));
+function removeStringChar(str) {
+  let set = new Set(str.split(""));
+  return [...set].join("");
+}
+var str = "javascriptjavaabc";
+console.log(removeStringChar(str));
 ```
 
 **判断一个字符串是否为回文字符串**
@@ -818,28 +813,28 @@ const set = new Set([1,2,3,4,4,]);
 主要思想是将字符串按从前往后顺序的字符与按从后往前顺序的字符逐个进行比较，如果遇到不一样的值则直接返回 `false`,否则返回 `true`.
 
 ```js
- function isEequStr(str) {
-        //空字符串则直接返回true
-        if (!str.length) {
-          return true;
-        }
-        //统一转换成小写，同时再将其转换成数组
-        str = str.toLowerCase().split("");
-        var start = 0,
-          end = str.length - 1;
-        //通过while循环，判断正序和倒序的字母
-        while (start < end) {
-          // 如果相等则更改比较的索引
-          if (str[start] === str[end]) {
-            start++;
-            end--;
-          } else {
-            return false;
-          }
-        }
-        return true;
-      }
-      var str = "abcdcba";
+function isEequStr(str) {
+  //空字符串则直接返回true
+  if (!str.length) {
+    return true;
+  }
+  //统一转换成小写，同时再将其转换成数组
+  str = str.toLowerCase().split("");
+  var start = 0,
+    end = str.length - 1;
+  //通过while循环，判断正序和倒序的字母
+  while (start < end) {
+    // 如果相等则更改比较的索引
+    if (str[start] === str[end]) {
+      start++;
+      end--;
+    } else {
+      return false;
+    }
+  }
+  return true;
+}
+var str = "abcdcba";
 ```
 
 **算法 2**
@@ -848,15 +843,15 @@ const set = new Set([1,2,3,4,4,]);
 
 ```js
 function isEequStr(str) {
-        //字符串统一转换成小写的形式
-        str = str.toLowerCase();
-        //将字符串转换成数组
-        var arr = str.split("");
-        //将数组逆序并转换成字符串
-        var reverseStr = arr.reverse().join("");
-        return str === reverseStr;
-      }
-      console.log(isEequStr("abccba"));
+  //字符串统一转换成小写的形式
+  str = str.toLowerCase();
+  //将字符串转换成数组
+  var arr = str.split("");
+  //将数组逆序并转换成字符串
+  var reverseStr = arr.reverse().join("");
+  return str === reverseStr;
+}
+console.log(isEequStr("abccba"));
 ```
 
 ### 2、运算符
@@ -872,63 +867,61 @@ function isEequStr(str) {
 (1) 如果比较的值类型不相同，则直接返回 `false`
 
 ```js
-1==='1' //false
-true==='true' //false
+1 === "1"; //false
+true === "true"; //false
 ```
 
 这里还需要注意的一点就是，基本数据类型存在包装类型，在没有使用 `new` 操作符时，简单类型的比较实际上就是值的比较，而使用了 `new` 操作符以后，实际得到的是引用类型的值，在判断时会因为类型不同而直接返回 `false`
 
 ```js
-1===Number(1) //true
-1===new Number(1) //false
-'hello'===String('hello') //true
-'hello'===new String('hello') //false
+1 === Number(1); //true
+1 === new Number(1); //false
+"hello" === String("hello"); //true
+"hello" === new String("hello"); //false
 ```
 
 (2) 如果比较的值都是数值类型，则直接比较值的大小，相等则返回 `true`,否则返回 `false`,需要注意的是，如果参与比较的值中有任何一方为 `NaN`,则返回 `false`
 
 ```js
-26===26 //true
-34===NaN //false
+26 === 26; //true
+34 === NaN; //false
 ```
 
 （3）如果比较的值是字符串类型，则判断每个字符是否相等，如果全部相等，返回 `true`,否则返回 `false`
 
 ```js
-'abc'==='abc' //true
-'abc'==='abd' //false
-
+"abc" === "abc"; //true
+"abc" === "abd"; //false
 ```
 
 （4）关于 `null` 与 `undefined` 比较
 
 ```js
-null===null //true
-undefined===undefined //true
-undefined===null //false
+null === null; //true
+undefined === undefined; //true
+undefined === null; //false
 ```
 
 (5) 如果比较的值都是引用类型，则比较的是引用类型的地址，当两个引用指向同一个地址时，则返回 `true`,否则返回 `false`
 
 ```js
-var a=[]
-var b=a
-var c=[]
-console.log(a===b) //true
-console.log(a===c) //false
+var a = [];
+var b = a;
+var c = [];
+console.log(a === b); //true
+console.log(a === c); //false
 
-new String('hello')===new String('hello')//false 两个不同对象，地址不相同
+new String("hello") === new String("hello"); //false 两个不同对象，地址不相同
 //创建构造函数
-
 ```
 
 ```js
- function Person(userName) {
-        this.userName = userName;
-      }
-      var p1 = new Person("wangwu");
-      var p2 = new Person("wangwu");
-      console.log(p1 === p2);//false  两个不同对象，地址不相同
+function Person(userName) {
+  this.userName = userName;
+}
+var p1 = new Person("wangwu");
+var p2 = new Person("wangwu");
+console.log(p1 === p2); //false  两个不同对象，地址不相同
 ```
 
 ##### 2.1.2 双等于运算符
@@ -942,24 +935,24 @@ new String('hello')===new String('hello')//false 两个不同对象，地址不�
 (1) 如果比较的一方是 `null` 或者是 `undefined`,只有在另一方是 `null` 或者是 `undefined` 的情况下才返回 `true`,否则返回 `false`
 
 ```js
-null==undefined //true
-null==1 //false
-undefined==2 //false
+null == undefined; //true
+null == 1; //false
+undefined == 2; //false
 ```
 
 （2）如果比较的是字符串和数值类型数据，则会将字符串转换为数值后再进行比较，如果转换后的数值是相等的则返回 `true`,否则返回 `false`.
 
 ```js
-1=='1' //true
-'222'==222 //true
+1 == "1"; //true
+"222" == 222; //true
 ```
 
 （3）如果比较的时候，有一方的类型是 `boolean` 类型，会将 `boolean` 类型进行转换，`true` 转换为 1,`false` 转换 0，然后在进行比较。
 
 ```js
-'1'==true
-'2'==true //false
-'0'==false //true
+"1" == true;
+"2" == true; //false
+"0" == false; //true
 ```
 
 #### 2.2 Typeof 运算符
@@ -990,11 +983,11 @@ typeof (operator)
 ```
 
 ```js
-typeof undefined //"undefined"
-typeof abc //"undefined" ,未声明的变量abc，通过typeof返回的是undefined
+typeof undefined; //"undefined"
+typeof abc; //"undefined" ,未声明的变量abc，通过typeof返回的是undefined
 
-var sum
-typeof sum //undefined  已经声明但是没有初始化的变量
+var sum;
+typeof sum; //undefined  已经声明但是没有初始化的变量
 ```
 
 (2) 处理 `Boolean` 类型的值
@@ -1002,8 +995,8 @@ typeof sum //undefined  已经声明但是没有初始化的变量
 `Boolean` 类型的值有两个，分别是 `true` 和 `false`,`typeof` 运算符在处理这两个值的时候返回都是 `boolean`
 
 ```js
-var b=true
-typeof b //"boolean"
+var b = true;
+typeof b; //"boolean"
 ```
 
 (3) 处理 `Number` 类型的值
@@ -1011,8 +1004,8 @@ typeof b //"boolean"
 对于 `Number` 类型的数，`typeof` 运算符在处理时会返回 `number`
 
 ```js
-typeof 666 //number
-typeof 66.66 //number
+typeof 666; //number
+typeof 66.66; //number
 ```
 
 （4）处理 `String` 类型的值
@@ -1020,8 +1013,8 @@ typeof 66.66 //number
 字符串类型，`typeof` 返回的是 `string`,包括空字符串。
 
 ```js
-typeof 'aaa' //string
-typeof '' //string
+typeof "aaa"; //string
+typeof ""; //string
 ```
 
 (5) 处理 `Function` 类型的值
@@ -1029,19 +1022,18 @@ typeof '' //string
 函数的定义，包括函数的声明，`typeof` 返回的值 `function`
 
 ```js
-function fun(){}
-typeof fun // "function"
+function fun() {}
+typeof fun; // "function"
 
-var fun2=function(){}
-typeof fun2 // "function"
+var fun2 = function () {};
+typeof fun2; // "function"
 ```
 
 关于通过 `class` 关键字定义的类，通过 `typoef` 计算返回的值也是 `function`
 
 ```js
-class Obj{
-}
-typeof Obj // "function"
+class Obj {}
+typeof Obj; // "function"
 ```
 
 `class` 是在 `ES6` 中新增的一个关键字，原理依旧是原型继承，也就是说本质上仍然是一个 `Function`
@@ -1051,18 +1043,18 @@ typeof Obj // "function"
 对象字面量的形式，返回的是 `object`
 
 ```js
-var obj={userName:'zhangsan'}
-typeof obj //"object"
+var obj = { userName: "zhangsan" };
+typeof obj; //"object"
 ```
 
 数组，通过 `typeof` 计算返回的值是 `object`
 
 ```js
-var arr=[1,2,3]
-typeof arr // "object"
+var arr = [1, 2, 3];
+typeof arr; // "object"
 
-var arr2=new Array()
-typeof arr2 //"object"
+var arr2 = new Array();
+typeof arr2; //"object"
 ```
 
 (7) `typeof` 运算符对 `null` 的处理
@@ -1070,7 +1062,7 @@ typeof arr2 //"object"
 `typeof` 运算符对 `null` 的处理，返回的是 `object`
 
 ```js
-typeof null //object
+typeof null; //object
 ```
 
 注意：在前面我们提到过，在使用 `typeof` 的时候，括号有时候是必须的，如果不加上括号会因为优先级问题，得不到我们想要的结果。
@@ -1078,9 +1070,9 @@ typeof null //object
 例如如下代码所示：
 
 ```js
-var num=123
-typeof (num + 'hello')// string
-typeof num + " hello"  //"number hello"
+var num = 123;
+typeof (num + "hello"); // string
+typeof num + " hello"; //"number hello"
 ```
 
 通过上面的代码，我们知道 `typeof` 运算符的优先级要高于字符串的拼接运算符 `(+)`,但是优先级低于小括号，所以在未使用括号时，会优先处理 `typeof num`, 返回的是 `number`,然后与 `hello` 字符串进行拼接，得到的最终的结果就是 `number hello`
@@ -1088,13 +1080,13 @@ typeof num + " hello"  //"number hello"
 下面，我们再来看一段代码
 
 ```js
-typeof 6/2 // NaN
+typeof 6 / 2; // NaN
 ```
 
 在上面的代码中，会先执行 `typeof 6` 得到的结果为 `number`,然后除以 2，一个字符串除以 2，得到的结果为 `NaN`
 
 ```js
-typeof (6/2) //"number"
+typeof (6 / 2); //"number"
 ```
 
 这里会先计算括号中的内容，然后在通过 `typeof` 进行计算。
@@ -1104,14 +1096,15 @@ typeof (6/2) //"number"
 在 `JavaScript` 中判断一个变量是否为空，我们往往会想到对变量取反，然后判断是否为 `true`
 
 ```js
-if(!x){ }
+if (!x) {
+}
 ```
 
 这是一个非常简单的判断变量是否为空的方法，但是其实涉及到的场景却很多，这里我们就分情况来看一下。
 
 **（1）判断变量为空对象**
 
- **判断变量为 `null` 或者为 `undefined`**
+**判断变量为 `null` 或者为 `undefined`**
 
 判断一个变量是否为空时，可以直接将变量与 `null` 或者是 `undefined` 进行比较，需要注意的是双等号和三等好直接的区别。
 
@@ -1126,42 +1119,42 @@ if(obj===undefined) //只能判断undefined的情况
 
 ```js
 function isEmpty(obj) {
-        for (let key in obj) {
-          if (obj.hasOwnProperty(key)) {
-            return false;
-          }
-        }
-        return true;
-      }
+  for (let key in obj) {
+    if (obj.hasOwnProperty(key)) {
+      return false;
+    }
+  }
+  return true;
+}
 
- var obj = {
-        username: "zhangsan",
-      };
-      console.log(isEmpty(obj));// false,表明obj这个对象是有自己的属性，所以不是空对象
+var obj = {
+  username: "zhangsan",
+};
+console.log(isEmpty(obj)); // false,表明obj这个对象是有自己的属性，所以不是空对象
 ```
 
 ```js
- var obj = {};
-      console.log(isEmpty(obj));//true,这里将obj对象的属性去掉了，返回的值为true,表明没有自己的属性，表示空对象
+var obj = {};
+console.log(isEmpty(obj)); //true,这里将obj对象的属性去掉了，返回的值为true,表明没有自己的属性，表示空对象
 ```
 
 ```js
 //这里通过构造函数的形式创建对象，并且指定了age属性
-      function Person() {
-        this.age = 20;
-      }
+function Person() {
+  this.age = 20;
+}
 
-      var p = new Person();
-      console.log(isEmpty(p));//false
+var p = new Person();
+console.log(isEmpty(p)); //false
 ```
 
 下面看一下另外一种情况
 
 ```js
 function Person() {}
-      Person.prototype.userName = "zhangsan";
-      var p = new Person();
-      console.log(isEmpty(p)); //true
+Person.prototype.userName = "zhangsan";
+var p = new Person();
+console.log(isEmpty(p)); //true
 ```
 
 在上面的代码中，变量 `p` 是通过 `new` 操作符得到的 `Person` 对象的实例，所以 `p` 会继承 `Person` 原型链上的 `userName` 属性，但是因为不是自身的属性，所以会被判断为空，所以返回 `true`.
@@ -1171,8 +1164,8 @@ function Person() {}
 判断变量是否为空数组时，首先要判断变量是否为数组，然后通过数组的 `length` 属性确定。(**`instanceof` 用于判断一个变量是否某个对象的实例**)
 
 ```js
-var arr=new Array()
-arr instanceof Array && arr.length===0
+var arr = new Array();
+arr instanceof Array && arr.length === 0;
 ```
 
 以上两个条件都满足时，变量就是一个空数组。
@@ -1182,7 +1175,7 @@ arr instanceof Array && arr.length===0
 判断变量是否为空字符串时，可以直接将其与空字符串进行比较，或者调用 `trim()` 函数去掉前后的空格以后，在去判断字符串的长度。
 
 ```js
-str==''||str.trim().length==0
+str == "" || str.trim().length == 0;
 ```
 
 当满足以上两个条件中的任意一个时，变量就是一个空字符串。
@@ -1192,7 +1185,7 @@ str==''||str.trim().length==0
 当一个变量为 `Number` 类型时，判断变量是否为 0 或者 `NaN`,因为 `NaN` 与任何值比较都是 `false`,所以这里我们通过取非来完成判断。
 
 ```js
-!(Number(num)&&num)==true
+!(Number(num) && num) == true;
 ```
 
 当上述代码返回的结果为 `true`，表明变量为 0 或者是 `NaN`
@@ -1204,8 +1197,7 @@ str==''||str.trim().length==0
 在 `JavaScript` 中判断一个变量是否为空，我们往往会想到对变量取反，然后判断是否为 `true`
 
 ```js
-if(!x){
-
+if (!x) {
 }
 ```
 
@@ -1252,7 +1244,7 @@ if(!x){
 但是，这里我们把对 `getStringValue` 函数的调用修改成如下的形式：
 
 ```js
-getStringValue(3) //d
+getStringValue(3); //d
 ```
 
 这里将参数修改成数字 3，得到的结果是 `d`.原因是：在 `JavaScript` 中的关于 `case` 的比较是采用严格相等的方式 (===)。在上面的函数调用中，传递的是数字类型的 3，而在 `case` 中比较的是 `String` 字符串的 '3',两者按照严格方式进行对比，是不相等的。所以只能执行 `default`,输出字母 `d`.
@@ -1260,7 +1252,7 @@ getStringValue(3) //d
 下面，再来看如下的调用
 
 ```js
- getStringValue(String("3")); //c
+getStringValue(String("3")); //c
 ```
 
 上面调用的结果是 `c`.
@@ -1270,19 +1262,19 @@ getStringValue(3) //d
 所以在严格模式下进行比较是相等的。
 
 ```js
-String('3')==='3' //true
+String("3") === "3"; //true
 ```
 
 下面再来看另外一种调用方式
 
 ```js
- getStringValue(new String("3")); //d
+getStringValue(new String("3")); //d
 ```
 
 通过 `new` 关键字创建的是字符串对象，这里采用严格模式进行比较，比较的是字符串对象的内存地址是否相同。而当与字符串的字面量进行比较时，会返回 `false`.
 
 ```js
-new String('3')==='3' //false
+new String("3") === "3"; //false
 ```
 
 所以在运行整个 `getStringValue` 整个函数的时候，得到的结果为 `d`.
@@ -1374,7 +1366,7 @@ new String('3')==='3' //false
 对 `this` 有了一个简单的了解以后，下面重点看如下代码
 
 ```js
-var person= new Person("zhangsan", 20)
+var person = new Person("zhangsan", 20);
 ```
 
 从上面的代码中，主要的作用就是创建一个 `Person` 对象，然后赋值给了 `person` 这个变量，该变量中包含了 `Person` 对象中的属性和函数。
@@ -1382,9 +1374,9 @@ var person= new Person("zhangsan", 20)
 其实，在 `new` 操作符做了如下 3 件事情。
 
 ```js
-var person={};
-person.__proto__=Person.prototype;
-Person.call(person)
+var person = {};
+person.__proto__ = Person.prototype;
+Person.call(person);
 ```
 
 #### 1.2 原型对象理解
@@ -1394,14 +1386,12 @@ Person.call(person)
 我们创建的每一个函数都有一个 `prototype` 属性，这个属性是一个指针，指向一个对象。这个对象的用途是包含可以由特定类型的所有实例共享的属性和方法，简单来说，该函数实例化的所有对象的 `__proto__` 的属性指向这个对象，它是该函数所有实例化对象的原型。
 
 ```js
-function Person(){
-
-}
+function Person() {}
 
 // 为原型对象添加方法
-Person.prototype.sayName = function(){
-    alert(this.name);
-}
+Person.prototype.sayName = function () {
+  alert(this.name);
+};
 ```
 
 下面我们来看一下它们之间的关系。
@@ -1419,7 +1409,7 @@ Person.prototype.sayName = function(){
 拿前面的一个例子来说 `Person.prototype.constructor` 就指向 `Person ` 函数对象。
 
 ```js
-console.log(Person.prototype.constructor == Person)
+console.log(Person.prototype.constructor == Person);
 ```
 
 下面我们来更新一下它们之间的关系图。
@@ -1440,7 +1430,6 @@ console.log(Person.prototype.constructor == Person)
 var student = new Person();
 
 console.log(student.__proto__ === Person.prototype); // true
-
 ```
 
 从上面我们可以看出，这个连接是存在与实例与构造函数的原型对象之间的，而不是存在于实例和构造函数之间的。
@@ -1474,15 +1463,14 @@ console.log(Person.prototype.isPrototypeOf(student)); // true
 在属性确认存在的情况下，我们可以使用 `hasOwnProperty() ` 方法来判断一个属性是存在与实例中，还是存在于原型中
 
 ```js
-function Person() {};
+function Person() {}
 
-Person.prototype.name = "laker" ;
+Person.prototype.name = "laker";
 
 var student = new Person();
 
 console.log(student.name); // laker
 console.log(student.hasOwnProperty("name")); // false
-
 
 student.name = "xiaoming";
 console.log(student.name); //xiaoming 屏蔽了原型对象中的 name 属性
@@ -1490,34 +1478,34 @@ console.log(student.hasOwnProperty("name")); // true
 ```
 
 ```js
-function hasPrototypeProperty(object, name){
-    return !object.hasOwnProperty(name) && (name in object);
+function hasPrototypeProperty(object, name) {
+  return !object.hasOwnProperty(name) && name in object;
 }
 ```
 
 ##### 所有属性获取
 
 ```js
-  function Person() {
-        this.name = "KXY";
-      }
-      Person.prototype = {
-        job: "student",
-      };
+function Person() {
+  this.name = "KXY";
+}
+Person.prototype = {
+  job: "student",
+};
 
-      var kxy = new Person();
-      Object.defineProperty(kxy, "sex", {
-        value: "female",
-        enumerable: false,
-      });
+var kxy = new Person();
+Object.defineProperty(kxy, "sex", {
+  value: "female",
+  enumerable: false,
+});
 
-      console.log(Object.keys(kxy)); //["name"] //无法获取不可枚举的属性与原型链上继承的属性
-      console.log(Object.getOwnPropertyNames(kxy));//["name", "sex"]
+console.log(Object.keys(kxy)); //["name"] //无法获取不可枚举的属性与原型链上继承的属性
+console.log(Object.getOwnPropertyNames(kxy)); //["name", "sex"]
 //for...in能获取原型链上继承的属性，无法获取不可枚举的属性
-   for (var pro in kxy) {
-        console.log("kxy." + pro + " = " + kxy[pro]);// kxy.name = KXY
-        //kxy.job = student
-      }
+for (var pro in kxy) {
+  console.log("kxy." + pro + " = " + kxy[pro]); // kxy.name = KXY
+  //kxy.job = student
+}
 ```
 
 **怎样判断属性是否为实例属性并且是否可枚举**
@@ -1525,21 +1513,21 @@ function hasPrototypeProperty(object, name){
 如果想判断指定名称的属性是否为实例属性并且是否可枚举的，可以使用 `propertyIsEnumerable`
 
 ```js
- function Student(userName) {
-        this.userName = userName;
-      }
-      Student.prototype.sayHello = function () {
-        console.log("hello" + this.userName);
-      };
-      var stu = new Student();
-      console.log(stu.propertyIsEnumerable("userName")); //true:userName为自身定义的实例属性
-      console.log(stu.propertyIsEnumerable("age")); // false:age属性不存在，返回false
-      console.log(stu.propertyIsEnumerable("sayHello")); // false :sayHello属于原型上的函数
-      //将userName属性设置为不可枚举
-      Object.defineProperty(stu, "userName", {
-        enumerable: false,
-      });
-      console.log(stu.propertyIsEnumerable("userName")); // false: userName设置了不可枚举
+function Student(userName) {
+  this.userName = userName;
+}
+Student.prototype.sayHello = function () {
+  console.log("hello" + this.userName);
+};
+var stu = new Student();
+console.log(stu.propertyIsEnumerable("userName")); //true:userName为自身定义的实例属性
+console.log(stu.propertyIsEnumerable("age")); // false:age属性不存在，返回false
+console.log(stu.propertyIsEnumerable("sayHello")); // false :sayHello属于原型上的函数
+//将userName属性设置为不可枚举
+Object.defineProperty(stu, "userName", {
+  enumerable: false,
+});
+console.log(stu.propertyIsEnumerable("userName")); // false: userName设置了不可枚举
 ```
 
 #### 1.4 `Object.create()` 方法
@@ -1549,7 +1537,7 @@ function hasPrototypeProperty(object, name){
 该函数的主要作用是创建并返回一个指定原型和指定属性的新对象，语法格式如下：
 
 ```js
-Object.create(prototype,propertyDescriptor)
+Object.create(prototype, propertyDescriptor);
 ```
 
 `prototype` 属性为对象的原型（必须），可以为 `null`,如果为 `null`，则对象的原型为 `undefined`.
@@ -1587,27 +1575,27 @@ propertyName:{
 
 ```js
 var obj = Object.create(null, {
-        userName: {
-          value: "wangwu",
-          writable: true,
-          enumerable: true,
-          configurable: true,
-        },
-        age: {
-          value: 23,
-        },
-      });
-      console.log(obj.userName);
-      console.log(obj.age);
-      obj.age = 26;
-      console.log(obj.age);
-      for (var o in obj) {
-        console.log(o);
-      }
-      delete obj.userName;
-      console.log(obj.userName);
-      delete obj.age;
-      console.log(obj.age);
+  userName: {
+    value: "wangwu",
+    writable: true,
+    enumerable: true,
+    configurable: true,
+  },
+  age: {
+    value: 23,
+  },
+});
+console.log(obj.userName);
+console.log(obj.age);
+obj.age = 26;
+console.log(obj.age);
+for (var o in obj) {
+  console.log(o);
+}
+delete obj.userName;
+console.log(obj.userName);
+delete obj.age;
+console.log(obj.age);
 ```
 
 ##### 实现原理
@@ -1615,30 +1603,32 @@ var obj = Object.create(null, {
 通过如下的伪代码来查看对应的实现原理
 
 ```js
-Object.create=function(proto,propertiesObject){
-    //省略了其它判断操作
-    function F(){}
-    F.prototype=proto;
-    if(propertiesObject){ Object.defineProperties(F, propertiesObject)}
-    return new F()
-}
+Object.create = function (proto, propertiesObject) {
+  //省略了其它判断操作
+  function F() {}
+  F.prototype = proto;
+  if (propertiesObject) {
+    Object.defineProperties(F, propertiesObject);
+  }
+  return new F();
+};
 ```
 
 通过以上的代码，我们可以得出如下的结论：
 
 ```js
-var f=new F()
-f.__proto__===F.prototype
+var f = new F();
+f.__proto__ === F.prototype;
 ```
 
 下面我们可以通过一个例子来验证一下：
 
 ```js
- var obj = { x: 12, y: 13 };
-      var test = Object.create(obj);
-      console.log(test);
-      console.log(test.x);
-      console.log(test.__proto__.x);
+var obj = { x: 12, y: 13 };
+var test = Object.create(obj);
+console.log(test);
+console.log(test.x);
+console.log(test.__proto__.x);
 ```
 
 **最后，这里演示一下 `Object.defineProperties` 方法的基本使用**
@@ -1650,21 +1640,21 @@ f.__proto__===F.prototype
 ```js
 var person = {};
 
-      Object.defineProperties(person, {
-        userName: {
-          value: "张三",
-          enumerable: true,
-        },
-        age: {
-          value: 12,
-          enumerable: true,
-        },
-      });
-      for (var p in person) {
-        console.log(p);
-      }
-      person.age = 20;
-      console.log(person.age);
+Object.defineProperties(person, {
+  userName: {
+    value: "张三",
+    enumerable: true,
+  },
+  age: {
+    value: 12,
+    enumerable: true,
+  },
+});
+for (var p in person) {
+  console.log(p);
+}
+person.age = 20;
+console.log(person.age);
 ```
 
 ##### 应用场景
@@ -1673,36 +1663,36 @@ var person = {};
 
 ```js
 function Person(name, sex) {
-        this.name = name;
-        this.sex = sex;
-      }
-      Person.prototype.getInfo = function () {
-        console.log("getInfo: [name:" + this.name + ", sex:" + this.sex + "]");
-      };
-      var a = new Person("jojo", "femal");
-      var b = Object.create(Person.prototype);
+  this.name = name;
+  this.sex = sex;
+}
+Person.prototype.getInfo = function () {
+  console.log("getInfo: [name:" + this.name + ", sex:" + this.sex + "]");
+};
+var a = new Person("jojo", "femal");
+var b = Object.create(Person.prototype);
 console.log(a.name);
-      console.log(b.name);
-      console.log(b.getInfo);
+console.log(b.name);
+console.log(b.getInfo);
 ```
 
 下面看一下怎样实现完整的继承操作。
 
 ```js
 function Person(name, sex) {
-        this.name = name;
-        this.sex = sex;
-      }
-      Person.prototype.getInfo = function () {
-        console.log("getInfo: [name:" + this.name + ", sex:" + this.sex + "]");
-      };
-      function Student(name, sex, age) {
-        Person.call(this, name, sex);
-        this.age = age;
-      }
-      Student.prototype = Object.create(Person.prototype);
-      var s = new Student("coco", "femal", 25);
-      s.getInfo();
+  this.name = name;
+  this.sex = sex;
+}
+Person.prototype.getInfo = function () {
+  console.log("getInfo: [name:" + this.name + ", sex:" + this.sex + "]");
+};
+function Student(name, sex, age) {
+  Person.call(this, name, sex);
+  this.age = age;
+}
+Student.prototype = Object.create(Person.prototype);
+var s = new Student("coco", "femal", 25);
+s.getInfo();
 ```
 
 下面，我们简单的分析一下，上面的代码。
@@ -1710,37 +1700,37 @@ function Person(name, sex) {
 对象 `s` 的 `__proto__` 指向的是 `s` 的构造函数 `Student` 的 `prototype`
 
 ```js
-s.__proto__===Student.prototype
+s.__proto__ === Student.prototype;
 ```
 
 那么 `Student.prototype` 的 `__proto__` 指向什么呢？
 
 ```js
-Student.prototype.__proto__===Person.prototype
+Student.prototype.__proto__ === Person.prototype;
 ```
 
 ```js
-s.__proto__.__proto__===Person.prototype
+s.__proto__.__proto__ === Person.prototype;
 ```
 
 而我们知道对象 `s` 是有 `Student` 创建的，所以其构造函数为 `Student`,所以我们在修改了原型以后，这里应该重新修正构造函数。
 
 ```js
 function Person(name, sex) {
-        this.name = name;
-        this.sex = sex;
-      }
-      Person.prototype.getInfo = function () {
-        console.log("getInfo: [name:" + this.name + ", sex:" + this.sex + "]");
-      };
-      function Student(name, sex, age) {
-        Person.call(this, name, sex);
-        this.age = age;
-      }
-      Student.prototype = Object.create(Person.prototype);
-      Student.prototype.constructor = Student;
-      var s = new Student("coco", "femal", 25);
-      s.getInfo();
+  this.name = name;
+  this.sex = sex;
+}
+Person.prototype.getInfo = function () {
+  console.log("getInfo: [name:" + this.name + ", sex:" + this.sex + "]");
+};
+function Student(name, sex, age) {
+  Person.call(this, name, sex);
+  this.age = age;
+}
+Student.prototype = Object.create(Person.prototype);
+Student.prototype.constructor = Student;
+var s = new Student("coco", "femal", 25);
+s.getInfo();
 ```
 
 #### 1.5 `Object.create()` 与 `new Object()` 的区别
@@ -1750,16 +1740,16 @@ function Person(name, sex) {
 在前面我们介绍了 `new` 操作符所做的三件事情，下面我们来模拟实现一下。
 
 ```js
- function Person(name, age) {
-        this.name = name;
-        this.age = age;
-      }
-      function New() {
-        var obj = {};
-            var res = Person.apply(obj, arguments);
-             return typeof res === "object" ? res : obj;
-      }
-      console.log(New("zhangsan", 19));
+function Person(name, age) {
+  this.name = name;
+  this.age = age;
+}
+function New() {
+  var obj = {};
+  var res = Person.apply(obj, arguments);
+  return typeof res === "object" ? res : obj;
+}
+console.log(New("zhangsan", 19));
 ```
 
 #### 1.7 原型链理解
@@ -1767,29 +1757,28 @@ function Person(name, sex) {
 下面我们通过一个案例来看一个简单的原型链过程。初步代码如下
 
 ```js
-var A=function(){ }
-var a=new A( );
+var A = function () {};
+var a = new A();
 ```
 
 通过 `a` 实例沿着原型链第一次的追溯，`__proto__` 属性指向 `A()` 构造函数的原型对象。
 
 ```js
-a.__proto__===A.prototype
+a.__proto__ === A.prototype;
 ```
 
 `a` 实例沿着原型链第二次的追溯，`A` 原型对象的 `__proto__` 属性指向 `Object` 类型的原型对象.
 
 ```js
-a.__proto__.__proto__===A.prototype.__proto__
-A.prototype.__proto__===Object.prototype
+a.__proto__.__proto__ === A.prototype.__proto__;
+A.prototype.__proto__ === Object.prototype;
 ```
 
 `a` 实例沿着原型链第三次追溯，`Object` 类型的原型对象的 `__proto__` 属性为 `null`
 
 ```js
-a.__proto__.__proto__.__proto__===Object.prototype.__proto__
-Object.prototype.__proto__===null
-
+a.__proto__.__proto__.__proto__ === Object.prototype.__proto__;
+Object.prototype.__proto__ === null;
 ```
 
 具体的图如下所示：
@@ -1799,16 +1788,10 @@ Object.prototype.__proto__===null
 下面，我们再来看一个案例：
 
 ```js
-function Super(){
+function Super() {}
 
-};
-
-function Middle(){
-
-};
-function Sub(){
-
-};
+function Middle() {}
+function Sub() {}
 
 Middle.prototype = new Super();
 Sub.prototype = new Middle();
@@ -1834,7 +1817,7 @@ var suber = new Sub();
 由于这个特点，我们在自定义的对象中，可以调用某些未在自定义构造函数中定义的函数，例如 `toString()` 函数。
 
 ```js
-function Person(){ }
+function Person() {}
 var p = new Person();
 p.toString(); // 实际上调用的是Object.prototype.toString( )
 ```
@@ -1848,14 +1831,14 @@ p.toString(); // 实际上调用的是Object.prototype.toString( )
 关于这个问题，前面我们也已经讲解过，是通过 `hasOwnProperty()` 函数来完成的，这里我们在简单的复习强调一下。
 
 ```js
- function Person(name, age) {
-        this.name = name;
-      }
-      //在对象的原型上添加age属性
-      Person.prototype.age = 21;
-      var p = new Person("zhangsan");
-      console.log(p.hasOwnProperty("name")); //true
-      console.log(p.hasOwnProperty("age")); //false
+function Person(name, age) {
+  this.name = name;
+}
+//在对象的原型上添加age属性
+Person.prototype.age = 21;
+var p = new Person("zhangsan");
+console.log(p.hasOwnProperty("name")); //true
+console.log(p.hasOwnProperty("age")); //false
 ```
 
 `name` 属性为实例属性，在调用 `hasOwnProperty` 方法时，会返回 `true`。`age` 属性为原型对象上的属性，在调用 `hasOwnProperty` 函数时，会返回 `false`.
@@ -1863,10 +1846,9 @@ p.toString(); // 实际上调用的是Object.prototype.toString( )
 在使用 `for…in` 运算符，遍历对象的属性时，一般可以配合 `hasOwnProperty` 方法一起使用，检测某个属性是否为对象自身的属性，如果是，可以做相应的处理。
 
 ```js
-for(var p in person){
-    if(person.hasOwnProperty(p)){
-
-    }
+for (var p in person) {
+  if (person.hasOwnProperty(p)) {
+  }
 }
 ```
 
@@ -1879,8 +1861,8 @@ for(var p in person){
 这里，我们可能会想到使用 `typeof` 运算符，因为 `typeof` 运算符是专门用于检测数据类型的，但是 `typeof` 运算符能够满足我们的需求吗？
 
 ```js
-      var a = [1, 2, 3];
-      console.log(typeof a);
+var a = [1, 2, 3];
+console.log(typeof a);
 ```
 
 ##### 2.1.1 `instanceof` 运算符
@@ -1888,29 +1870,29 @@ for(var p in person){
 `instanceof` 运算符用于通过查找原型链来检查某个变量是否为某个类型数据的实例，使用 `instanceof` 运算符可以判断一个变量是数组还是对象。
 
 ```js
-    var a = [1, 2, 3];
-      console.log(a instanceof Array); // true
-      console.log(a instanceof Object); // true
+var a = [1, 2, 3];
+console.log(a instanceof Array); // true
+console.log(a instanceof Object); // true
 
-  var userInfo = { userName: "zhangsan" };
-      console.log(userInfo instanceof Array); // false
-      console.log(userInfo instanceof Object); // true
+var userInfo = { userName: "zhangsan" };
+console.log(userInfo instanceof Array); // false
+console.log(userInfo instanceof Object); // true
 ```
 
 这里我们可以封装一个函数，用于判断变量是数组类型还是对象类型。
 
 ```js
-    var a = [1, 2, 3];
-      function getType(o) {
-        if (o instanceof Array) {
-          return "Array";
-        } else if (o instanceof Object) {
-          return "Object";
-        } else {
-          return "参数类型不是Array也不是Object";
-        }
-      }
-      console.log(getType(a));
+var a = [1, 2, 3];
+function getType(o) {
+  if (o instanceof Array) {
+    return "Array";
+  } else if (o instanceof Object) {
+    return "Object";
+  } else {
+    return "参数类型不是Array也不是Object";
+  }
+}
+console.log(getType(a));
 ```
 
 ##### 2.1.2 通过构造函数来判断
@@ -1920,30 +1902,30 @@ for(var p in person){
 因为一个对象的实例都是通过构造函数创建的。
 
 ```js
- var a = [1, 2, 3];
-      console.log(a.__proto__.constructor === Array);
+var a = [1, 2, 3];
+console.log(a.__proto__.constructor === Array);
 ```
 
 ```js
- console.log(a.__proto__.constructor === Object); // false
+console.log(a.__proto__.constructor === Object); // false
 ```
 
 同样这里，这里我们也可以封装一个函数，来判断变量是数组类型还是对象类型。
 
 ```js
-    function getType(o) {
-        //获取构造函数
-        var constructor = o.__proto__.constructor;
-        if (constructor === Array) {
-          return "Array";
-        } else if (constructor === Object) {
-          return "Object";
-        } else {
-          return "参数类型不是Array也不是Object";
-        }
-      }
-      var a = [1, 2, 3];
-      console.log(getType(a));
+function getType(o) {
+  //获取构造函数
+  var constructor = o.__proto__.constructor;
+  if (constructor === Array) {
+    return "Array";
+  } else if (constructor === Object) {
+    return "Object";
+  } else {
+    return "参数类型不是Array也不是Object";
+  }
+}
+var a = [1, 2, 3];
+console.log(getType(a));
 ```
 
 ##### 2.1.3 通过 `toString()` 函数来判断
@@ -1955,11 +1937,11 @@ for(var p in person){
 如下所示：
 
 ```js
-  var arr = [1, 2, 3];
-      var obj = { userName: "zhangsan" };
-      console.log(Object.prototype.toString.call(arr)); //[object Array]
-      console.log(Object.prototype.toString.call(obj)); // [object Object]
- console.log(arr.toString()); // 1,2,3
+var arr = [1, 2, 3];
+var obj = { userName: "zhangsan" };
+console.log(Object.prototype.toString.call(arr)); //[object Array]
+console.log(Object.prototype.toString.call(obj)); // [object Object]
+console.log(arr.toString()); // 1,2,3
 ```
 
 ##### 2.1.4 通过 `Array.isArray()` 函数来判断
@@ -1967,11 +1949,11 @@ for(var p in person){
 `Array.isArray` 方法用来判断变量是否为数组。
 
 ```js
-    var arr = [1, 2, 3];
-      var obj = { name: "zhangsan" };
-      console.log(Array.isArray(1)); //false
-      console.log(Array.isArray(arr)); //true
-      console.log(Array.isArray(obj)); //false
+var arr = [1, 2, 3];
+var obj = { name: "zhangsan" };
+console.log(Array.isArray(1)); //false
+console.log(Array.isArray(arr)); //true
+console.log(Array.isArray(obj)); //false
 ```
 
 #### 2.2 怎样过滤数组中满足条件的数据
@@ -1994,16 +1976,16 @@ for(var p in person){
 下面案例是查找出年龄大于 16 的男生的信息。
 
 ```js
- var arr = [
-        { gender: "男", age: 15 },
-        { gender: "男", age: 17 },
-        { gender: "女", age: 15 },
-      ];
-      var fn = function (obj) {
-        return obj.gender === "男" && obj.age > 16;
-      };
-      const result = arr.filter(fn);
-      console.log(result);
+var arr = [
+  { gender: "男", age: 15 },
+  { gender: "男", age: 17 },
+  { gender: "女", age: 15 },
+];
+var fn = function (obj) {
+  return obj.gender === "男" && obj.age > 16;
+};
+const result = arr.filter(fn);
+console.log(result);
 ```
 
 #### 2.3 怎样对数组元素做累加处理
@@ -2021,11 +2003,11 @@ arr.reduce(callback(accumulator, currentValue[, index[, array]])[, initialValue]
 求出数组中所有元素累加的和
 
 ```js
- var arr = [1, 2, 3, 4, 5, 6];
-      var sum = arr.reduce(function (accumulator, currentValue) {
-        return accumulator + currentValue;
-      }, 0);
-      console.log(sum);
+var arr = [1, 2, 3, 4, 5, 6];
+var sum = arr.reduce(function (accumulator, currentValue) {
+  return accumulator + currentValue;
+}, 0);
+console.log(sum);
 ```
 
 #### 2.4 怎样求数组中的最大值与最小值
@@ -2035,49 +2017,49 @@ arr.reduce(callback(accumulator, currentValue[, index[, array]])[, initialValue]
 第一：通过 `prototype` 属性扩展 `min` 函数和 `max` 函数来实现求最小值与最大值
 
 ```js
-     //最小值
-      Array.prototype.min = function () {
-        var min = this[0];
-        var len = this.length;
-        for (var i = 1; i < len; i++) {
-          if (this[i] < min) {
-            min = this[i];
-          }
-        }
-        return min;
-      };
-      //最大值
-      Array.prototype.max = function () {
-        var max = this[0];
-        var len = this.length;
-        for (var i = 1; i < len; i++) {
-          if (this[i] > max) {
-            max = this[i];
-          }
-        }
-        return max;
-      };
-      var arr = [1, 3, 6, 90, 23];
-      console.log(arr.min()); // 1
-      console.log(arr.max()); // 90
+//最小值
+Array.prototype.min = function () {
+  var min = this[0];
+  var len = this.length;
+  for (var i = 1; i < len; i++) {
+    if (this[i] < min) {
+      min = this[i];
+    }
+  }
+  return min;
+};
+//最大值
+Array.prototype.max = function () {
+  var max = this[0];
+  var len = this.length;
+  for (var i = 1; i < len; i++) {
+    if (this[i] > max) {
+      max = this[i];
+    }
+  }
+  return max;
+};
+var arr = [1, 3, 6, 90, 23];
+console.log(arr.min()); // 1
+console.log(arr.max()); // 90
 ```
 
 第二：通过数组的 `reduce` 函数来完成。
 
 ```js
-     Array.prototype.max = function () {
-        return this.reduce(function (preValue, currentValue) {
-          return preValue > currentValue ? preValue : currentValue; //返回最大的值
-        });
-      };
-      Array.prototype.min = function () {
-        return this.reduce(function (preValue, currentValue) {
-          return preValue < currentValue ? preValue : currentValue; // 返回最小的值
-        });
-      };
-      var arr = [1, 3, 6, 90, 23];
-      console.log(arr.min()); //
-      console.log(arr.max()); //
+Array.prototype.max = function () {
+  return this.reduce(function (preValue, currentValue) {
+    return preValue > currentValue ? preValue : currentValue; //返回最大的值
+  });
+};
+Array.prototype.min = function () {
+  return this.reduce(function (preValue, currentValue) {
+    return preValue < currentValue ? preValue : currentValue; // 返回最小的值
+  });
+};
+var arr = [1, 3, 6, 90, 23];
+console.log(arr.min()); //
+console.log(arr.max()); //
 ```
 
 第三：通过 `ES6` 中的扩展运算符来实现
@@ -2085,9 +2067,9 @@ arr.reduce(callback(accumulator, currentValue[, index[, array]])[, initialValue]
 这里我们可以通过 `ES6` 中的扩展运算符 (…) 来实现。
 
 ```js
-      var arr = [1, 3, 6, 90, 23];
-      console.log(Math.min(...arr)); //
-      console.log(Math.max(...arr));
+var arr = [1, 3, 6, 90, 23];
+console.log(Math.min(...arr)); //
+console.log(Math.max(...arr));
 ```
 
 #### 2.5 数组遍历的方式有哪些
@@ -2099,9 +2081,9 @@ arr.reduce(callback(accumulator, currentValue[, index[, array]])[, initialValue]
 这时最基本的实现方式
 
 ```js
-var arr=[1,2,3]
-for(var i=0;i<arr.length;i++){
-    console.log(arr[i])
+var arr = [1, 2, 3];
+for (var i = 0; i < arr.length; i++) {
+  console.log(arr[i]);
 }
 ```
 
@@ -2110,10 +2092,10 @@ for(var i=0;i<arr.length;i++){
 `forEach` 函数也是我们遍历数组用的比较多的方法，`forEach()` 函数接收一个回调函数，参数分别表示当前执行的元素的值，当前值的索引和数组本身。
 
 ```js
- var arr = [1, 3, 6, 90, 23];
-      arr.forEach(function (element, index, array) {
-        console.log(index + ":" + element);
-      });
+var arr = [1, 3, 6, 90, 23];
+arr.forEach(function (element, index, array) {
+  console.log(index + ":" + element);
+});
 ```
 
 ##### 使用 `map()` 函数
@@ -2121,12 +2103,12 @@ for(var i=0;i<arr.length;i++){
 `m
 
 ```js
-    var arr = [1, 3, 6, 90, 23];
-      var result = arr.map(function (element, index, array) {
-        console.log(index);
-        return element * element;
-      });
-      console.log("result: ===", result);
+var arr = [1, 3, 6, 90, 23];
+var result = arr.map(function (element, index, array) {
+  console.log(index);
+  return element * element;
+});
+console.log("result: ===", result);
 ```
 
 在使用 `map` 函数的时候一定要注意：在 `map()` 函数的回调函数中需要通过 `return` 将处理后的值进行返回，否则会返回 `undefined`.
@@ -2134,18 +2116,18 @@ for(var i=0;i<arr.length;i++){
 如下所示：
 
 ```js
-  var arr = [1, 3, 6, 90, 23];
-      var result = arr.map(function (element, index, array) {
-        // console.log(index);
-        element * element;
-      });
-      console.log("result: ===", result);
+var arr = [1, 3, 6, 90, 23];
+var result = arr.map(function (element, index, array) {
+  // console.log(index);
+  element * element;
+});
+console.log("result: ===", result);
 ```
 
 在上面的计算中，将 `return` 关键字省略了，最终返回的结果是：
 
 ```js
-[undefined, undefined, undefined, undefined, undefined]
+[undefined, undefined, undefined, undefined, undefined];
 ```
 
 ##### 使用 `some()` 函数与 `every()` 函数
@@ -2159,37 +2141,36 @@ for(var i=0;i<arr.length;i++){
 而要判断数组中是否所有的元素都大于 6，则需要通过 `every()` 函数来处理。
 
 ```js
-   function fn(element, index, array) {
-        return element > 6;
-      }
-      var result = [1, 2, 3, 4, 5].some(fn); //false
-      console.log(result);
+function fn(element, index, array) {
+  return element > 6;
+}
+var result = [1, 2, 3, 4, 5].some(fn); //false
+console.log(result);
 ```
 
 ```js
-  var result = [1, 2, 3, 4, 5, 7].some(fn);
-      console.log(result);
+var result = [1, 2, 3, 4, 5, 7].some(fn);
+console.log(result);
 ```
 
 下面测试一下 `every()` 函数
 
 ```js
-      function fn(element, index, array) {
-        return element > 6;
-      }
-      var result = [1, 2, 3, 4, 5, 7].every(fn); //false
-      console.log(result);
+function fn(element, index, array) {
+  return element > 6;
+}
+var result = [1, 2, 3, 4, 5, 7].every(fn); //false
+console.log(result);
 ```
 
 下面修改一下数组中的元素。
 
 ```js
-
-      function fn(element, index, array) {
-        return element > 6;
-      }
-      var result = [7, 8].every(fn); //true
-      console.log(result);
+function fn(element, index, array) {
+  return element > 6;
+}
+var result = [7, 8].every(fn); //true
+console.log(result);
 ```
 
 现在数组中的元素的值都是大于 6，所以返回的结果为 `true`.
@@ -2201,19 +2182,19 @@ for(var i=0;i<arr.length;i++){
 `find()` 方法的参数与 `forEach` 是一样的。
 
 ```js
-    var arr = [1, 3, 6, 90, 23];
-      const result = arr.find(function (element, index, array) {
-        return element > 6;
-      });
-      console.log(result); // 90
+var arr = [1, 3, 6, 90, 23];
+const result = arr.find(function (element, index, array) {
+  return element > 6;
+});
+console.log(result); // 90
 ```
 
 ```js
-    var arr = [1, 3, 6, 90, 23];
-      const result = arr.find(function (element, index, array) {
-        return element > 100; //undefined
-      });
-      console.log(result);
+var arr = [1, 3, 6, 90, 23];
+const result = arr.find(function (element, index, array) {
+  return element > 100; //undefined
+});
+console.log(result);
 ```
 
 以上就是我们比较常用的数组遍历的方式。当然还有我们前面讲解过的 `filter`，`reduce` 函数。
@@ -2243,22 +2224,22 @@ for(var i=0;i<arr.length;i++){
 `filter` 函数内部需要一个回调函数，数组中的每个元素都会执行该回调函数，在执行回调函数时会将数组中的每个元素传递给回调函数的参数，在回调函数的函数体内进行判断，如果返回的是 `true`,那么将该元素放到新数组 `arr` 中，如果判断的结果为 `false`，则数据不会放到新数组 `arr` 中。
 
 ```js
- //模拟实现filter函数
-      Array.prototype.filterOne = function (fn) {
-        var newArray = [];
-        for (var i = 0; i < this.length; i++) {
-          var f = fn(this[i]);
-          if (f) {
-            newArray.push(this[i]);
-          }
-        }
-        return newArray;
-      };
-      var array = [65, 56, 89, 53];
-      var arr = array.filterOne(function (item) {
-        return item >= 60;
-      });
-      console.log("arr=", arr);
+//模拟实现filter函数
+Array.prototype.filterOne = function (fn) {
+  var newArray = [];
+  for (var i = 0; i < this.length; i++) {
+    var f = fn(this[i]);
+    if (f) {
+      newArray.push(this[i]);
+    }
+  }
+  return newArray;
+};
+var array = [65, 56, 89, 53];
+var arr = array.filterOne(function (item) {
+  return item >= 60;
+});
+console.log("arr=", arr);
 ```
 
 #### 2.8 手动实现 some函数
@@ -2266,21 +2247,21 @@ for(var i=0;i<arr.length;i++){
 `some()` 方法让数组中的每一个元素执行一次回调函数，在该回调函数中执行一些操作，只要有一个操作结果为真，就会返回 true。不会在对后面的元素进行判断,否则返回 false。
 
 ```js
-   //手动模式some方法
-      Array.prototype.someTest = function (fn) {
-        for (let i = 0; i < this.length; i++) {
-          let f = fn(this[i]);
-          if (f) {
-            return f;
-          }
-        }
-        return false;
-      };
-      let array = [1, 3, 5, 7, 90];
-      let result = array.someTest(function (item) {
-        return item > 10;
-      });
-      console.log("result=", result);
+//手动模式some方法
+Array.prototype.someTest = function (fn) {
+  for (let i = 0; i < this.length; i++) {
+    let f = fn(this[i]);
+    if (f) {
+      return f;
+    }
+  }
+  return false;
+};
+let array = [1, 3, 5, 7, 90];
+let result = array.someTest(function (item) {
+  return item > 10;
+});
+console.log("result=", result);
 ```
 
 #### 2.9 手动实现 every函数
@@ -2288,23 +2269,23 @@ for(var i=0;i<arr.length;i++){
 该方法与 `some()` 方法不同，`some()` 方法只要有一个符合条件就返回 true,而 `every()` 方法是数组中所有元素都要符合指定的条件，才会返回 true.
 
 ```js
-  //手动模拟实现`every`方法
-      Array.prototype.everyTest = function (fn) {
-        let f = true;
-        for (let i = 0; i < this.length; i++) {
-          let f = fn(this[i]);
-          if (!f) {
-            //只要有一个不符合，就立即返回false.
-            return false;
-          }
-        }
-        return f;
-      };
-      let array = [11, 31, 5, 71, 90];
-      let result = array.everyTest(function (item) {
-        return item > 10;
-      });
-      console.log("result=", result); //false
+//手动模拟实现`every`方法
+Array.prototype.everyTest = function (fn) {
+  let f = true;
+  for (let i = 0; i < this.length; i++) {
+    let f = fn(this[i]);
+    if (!f) {
+      //只要有一个不符合，就立即返回false.
+      return false;
+    }
+  }
+  return f;
+};
+let array = [11, 31, 5, 71, 90];
+let result = array.everyTest(function (item) {
+  return item > 10;
+});
+console.log("result=", result); //false
 ```
 
 #### 2.10 手动实现 map方法
@@ -2313,40 +2294,40 @@ for(var i=0;i<arr.length;i++){
 
 ```js
 //手动实现map方法
-      Array.prototype.mapTest = function (fn) {
-        let newArray = [];
-        for (let i = 0; i < this.length; i++) {
-          let f = fn(this[i], i, this);
-          newArray.push(f);
-        }
-        return newArray;
-      };
-      var arr = [1, 3, 6, 90, 23];
-      var result = arr.mapTest(function (element, index, array) {
-        console.log(index);
-        return element * element;
-      });
-      console.log("result: ===", result);
+Array.prototype.mapTest = function (fn) {
+  let newArray = [];
+  for (let i = 0; i < this.length; i++) {
+    let f = fn(this[i], i, this);
+    newArray.push(f);
+  }
+  return newArray;
+};
+var arr = [1, 3, 6, 90, 23];
+var result = arr.mapTest(function (element, index, array) {
+  console.log(index);
+  return element * element;
+});
+console.log("result: ===", result);
 ```
 
 #### 2.11 手动实现 reduce方法
 
 ```js
- Array.prototype.reduceTest = function (fn, initialValue) {
-        //如果没有传递initialValue,我们将使用数组的第一项作为initialValue的值
-        let hasInitialValue = initialValue !== undefined;
-        let value = hasInitialValue ? initialValue : this[0];
-        //如果没有传递initialValue,则索引从1开始，否则从0开始
-        for (let i = hasInitialValue ? 0 : 1, len = this.length; i < len; i++) {
-          value = fn(value, this[i], i, this);
-        }
-        return value;
-      };
-      var arr = [1, 2, 3, 4, 5, 6];
-      var sum = arr.reduceTest(function (accumulator, currentValue) {
-        return accumulator + currentValue;
-      }, 0);
-      console.log(sum);
+Array.prototype.reduceTest = function (fn, initialValue) {
+  //如果没有传递initialValue,我们将使用数组的第一项作为initialValue的值
+  let hasInitialValue = initialValue !== undefined;
+  let value = hasInitialValue ? initialValue : this[0];
+  //如果没有传递initialValue,则索引从1开始，否则从0开始
+  for (let i = hasInitialValue ? 0 : 1, len = this.length; i < len; i++) {
+    value = fn(value, this[i], i, this);
+  }
+  return value;
+};
+var arr = [1, 2, 3, 4, 5, 6];
+var sum = arr.reduceTest(function (accumulator, currentValue) {
+  return accumulator + currentValue;
+}, 0);
+console.log(sum);
 ```
 
 #### 2.12 怎样实现数组的去重
@@ -2356,61 +2337,62 @@ for(var i=0;i<arr.length;i++){
 ##### 利用数组遍历去重
 
 ```js
- // 数组去重
-      function fn(array) {
-        var newArray = [];
-        for (var i = 0; i < array.length; i++) {
-          if (newArray.indexOf(array[i]) === -1) {
-            newArray.push(array[i]);
-          }
-        }
-        return newArray;
-      }
-      var arr = [1, 2, 3, 4, 5, 5, 6];
-      console.log(fn(arr));
+// 数组去重
+function fn(array) {
+  var newArray = [];
+  for (var i = 0; i < array.length; i++) {
+    if (newArray.indexOf(array[i]) === -1) {
+      newArray.push(array[i]);
+    }
+  }
+  return newArray;
+}
+var arr = [1, 2, 3, 4, 5, 5, 6];
+console.log(fn(arr));
 ```
 
 ##### 利用键值对去重
 
 ```js
-   function fn(array) {
-        var obj = {},
-          result = [],
-          val;
-        for (var i = 0; i < array.length; i++) {
-          val = array[i];
-          if (!obj[val]) {//根据key获取obj对象中的值
-            obj[val] = "ok"; //表示该元素已经出现了
-            result.push(val);
-          }
-        }
-        return result;
-      }
-      var arr = [1, 2, 3, 4, 5, 5, 6];
-      console.log(fn(arr));
+function fn(array) {
+  var obj = {},
+    result = [],
+    val;
+  for (var i = 0; i < array.length; i++) {
+    val = array[i];
+    if (!obj[val]) {
+      //根据key获取obj对象中的值
+      obj[val] = "ok"; //表示该元素已经出现了
+      result.push(val);
+    }
+  }
+  return result;
+}
+var arr = [1, 2, 3, 4, 5, 5, 6];
+console.log(fn(arr));
 ```
 
 ```js
-      function fn(array) {
-        var obj = {},
-          result = [],
-          val,
-          type;
-        for (var i = 0; i < array.length; i++) {
-          val = array[i];
-          type = typeof val;
-          if (!obj[val]) {
-            obj[val] = [type];
-            result.push(val);
-          } else if (obj[val].indexOf(type) < 0) {
-            obj[val].push(type);
-            result.push(val);
-          }
-        }
-        return result;
-      }
-      var arr = [1, 2, 3, 4, 5, 5, 6, "6"];
-      console.log(fn(arr));
+function fn(array) {
+  var obj = {},
+    result = [],
+    val,
+    type;
+  for (var i = 0; i < array.length; i++) {
+    val = array[i];
+    type = typeof val;
+    if (!obj[val]) {
+      obj[val] = [type];
+      result.push(val);
+    } else if (obj[val].indexOf(type) < 0) {
+      obj[val].push(type);
+      result.push(val);
+    }
+  }
+  return result;
+}
+var arr = [1, 2, 3, 4, 5, 5, 6, "6"];
+console.log(fn(arr));
 ```
 
 ##### 使用 `Set` 数据结构去重
@@ -2418,10 +2400,10 @@ for(var i=0;i<arr.length;i++){
 具体的代码如下所示：
 
 ```js
-   function fn(arr) {
-        return Array.from(new Set(arr));
-      }
-      console.log(fn([1, 2, 3, 4, 5, 5, 6, "6"]));
+function fn(arr) {
+  return Array.from(new Set(arr));
+}
+console.log(fn([1, 2, 3, 4, 5, 5, 6, "6"]));
 ```
 
 #### 2.13 怎样获取数组中最多的元素
@@ -2466,24 +2448,22 @@ for(var i=0;i<arr.length;i++){
 ##### 算法优化
 
 ```js
-  function fn(array) {
-        var result = {};
-        var maxNum = 0;
-        var maxElement = null;
-        for (var i = 0; i < array.length; i++) {
-          var val = array[i];
-          result[val] === undefined ? (result[val] = 1) : result[val]++;
-          if (result[val] > maxNum) {
-            maxNum = result[val];
-            maxElement = val;
-          }
-        }
-        return (
-          "在数组中出现最多的元素是" + maxElement + ",共出现了" + maxNum + "次"
-        );
-      }
-      var array = [1, 2, 3, 3, 3, 6, 6, 6, 6, 6, 7, 8, 9];
-      console.log(fn(array));
+function fn(array) {
+  var result = {};
+  var maxNum = 0;
+  var maxElement = null;
+  for (var i = 0; i < array.length; i++) {
+    var val = array[i];
+    result[val] === undefined ? (result[val] = 1) : result[val]++;
+    if (result[val] > maxNum) {
+      maxNum = result[val];
+      maxElement = val;
+    }
+  }
+  return "在数组中出现最多的元素是" + maxElement + ",共出现了" + maxNum + "次";
+}
+var array = [1, 2, 3, 3, 3, 6, 6, 6, 6, 6, 7, 8, 9];
+console.log(fn(array));
 ```
 
 ## 三、函数
@@ -2503,8 +2483,8 @@ for(var i=0;i<arr.length;i++){
 函数声明是直接通过 `function` 关键字接一个函数名，同时可以接收参数。
 
 ```js
-function sum(num1, num2){
-     return num1 + num2
+function sum(num1, num2) {
+  return num1 + num2;
 }
 ```
 
@@ -2513,9 +2493,9 @@ function sum(num1, num2){
 函数表达式的形式类似于普通变量的初始化，只不过这个变量初始化的值是一个函数。如下代码所示：
 
 ```js
-var sum =  function (num1,num2){
-    return num1 + num2
-}
+var sum = function (num1, num2) {
+  return num1 + num2;
+};
 ```
 
 这个函数表达式没有名称，属于匿名函数表达式。
@@ -2525,7 +2505,7 @@ var sum =  function (num1,num2){
 使用 `new` 操作符，调用 `Function()` 构造函数，传入参数，也可以定义一个函数。
 
 ```js
-var sum = new Function('num1','num2', 'return a+b ')
+var sum = new Function("num1", "num2", "return a+b ");
 ```
 
 其中的参数，除了最后一个参数是要执行的函数体，其它的参数都是函数的形参。
@@ -2543,12 +2523,12 @@ var sum = new Function('num1','num2', 'return a+b ')
 如下代码所示：
 
 ```js
-    var a = "12";
-      function fun() {
-        var a = "11";
-        return new Function("return a");
-      }
-      console.log(fun()());
+var a = "12";
+function fun() {
+  var a = "11";
+  return new Function("return a");
+}
+console.log(fun()());
 ```
 
 ### 3、函数表达式的应用场景
@@ -2556,19 +2536,19 @@ var sum = new Function('num1','num2', 'return a+b ')
 关于函数表达式非常典型的应用就是实现了块级作用域
 
 ```js
-  var person = (function () {
-        var _name = "";
-        return {
-          getName: function () {
-            return _name;
-          },
-          setName: function (userName) {
-            _name = userName;
-          },
-        };
-      })();
-      person.setName("zhangsan");
-      console.log(person.getName());
+var person = (function () {
+  var _name = "";
+  return {
+    getName: function () {
+      return _name;
+    },
+    setName: function (userName) {
+      _name = userName;
+    },
+  };
+})();
+person.setName("zhangsan");
+console.log(person.getName());
 ```
 
 ### 4、函数声明与函数表达式有什么区别
@@ -2579,28 +2559,28 @@ var sum = new Function('num1','num2', 'return a+b ')
 
 ```js
 // 函数声明，函数名称sum是必须的
-function sum (num1,num2){
-  return num1 + num2
+function sum(num1, num2) {
+  return num1 + num2;
 }
 // 没有函数名称的匿名函数表达式
-var sum = function (num1,num2){
-    return num1 + num2
-}
+var sum = function (num1, num2) {
+  return num1 + num2;
+};
 ```
 
 第二点就是关于：函数提升
 
 ```js
-      console.log(add(1, 2)); // 3
-      console.log(sum(3, 6)); // Uncaught TypeError: sum is not a function
-      // 函数声明
-      function add(num1, num2) {
-        return num1 + num2;
-      }
-      // 函数表达式
-      var sum = function (num1, num2) {
-        return num1 + num2;
-      };
+console.log(add(1, 2)); // 3
+console.log(sum(3, 6)); // Uncaught TypeError: sum is not a function
+// 函数声明
+function add(num1, num2) {
+  return num1 + num2;
+}
+// 函数表达式
+var sum = function (num1, num2) {
+  return num1 + num2;
+};
 ```
 
 ### 5、函数常见的调用模式有哪些
@@ -2608,81 +2588,81 @@ var sum = function (num1,num2){
 **函数调用模式**
 
 ```js
-  function add(num1, num2) {
-        return num1 + num2;
-      }
-      // 函数表达式
-      var sum = function (num1, num2) {
-        return num1 + num2;
-      };
+function add(num1, num2) {
+  return num1 + num2;
+}
+// 函数表达式
+var sum = function (num1, num2) {
+  return num1 + num2;
+};
 
-  console.log(add(1, 2));
- console.log(sum(3, 6));
+console.log(add(1, 2));
+console.log(sum(3, 6));
 ```
 
 **方法调用模式**
 
 ```js
-     var obj = {
-        userName: "zhangsan",
-        getUserName: function () {
-          return this.userName;
-        },
-      };
-      console.log(obj.getUserName());
+var obj = {
+  userName: "zhangsan",
+  getUserName: function () {
+    return this.userName;
+  },
+};
+console.log(obj.getUserName());
 ```
 
 ```js
- var obj = {
-        userName: "zhangsan",
-        getUserName: function () {
-          return this.userName;
-        },
-      };
-      // console.log(obj.getUserName());
-      console.log(obj["getUserName"]());
+var obj = {
+  userName: "zhangsan",
+  getUserName: function () {
+    return this.userName;
+  },
+};
+// console.log(obj.getUserName());
+console.log(obj["getUserName"]());
 ```
 
 ```js
-   var obj = {
-        userName: "zhangsan",
-        getUserName: function () {
-          return this.userName;
-        },
-        setUserName: function (name) {
-          this.userName = name;
-          return this;
-        },
-      };
-      console.log(obj.setUserName("lisi").getUserName());// lisi
+var obj = {
+  userName: "zhangsan",
+  getUserName: function () {
+    return this.userName;
+  },
+  setUserName: function (name) {
+    this.userName = name;
+    return this;
+  },
+};
+console.log(obj.setUserName("lisi").getUserName()); // lisi
 ```
 
 **构造器 (构造函数) 调用模式**
 
 ```js
-  //定义构造函数
-      function Person(name) {
-        this.userName = name; //定义属性
-      }
-      // 在原型上定义函数
-      Person.prototype.getUserName = function () {
-        return this.userName;
-      };
-      // 通过new来创建实例
-      var p = new Person("zhangsan");
-      // 调用原型上的方法
-      console.log(p.getUserName());
+//定义构造函数
+function Person(name) {
+  this.userName = name; //定义属性
+}
+// 在原型上定义函数
+Person.prototype.getUserName = function () {
+  return this.userName;
+};
+// 通过new来创建实例
+var p = new Person("zhangsan");
+// 调用原型上的方法
+console.log(p.getUserName());
 ```
 
 ```js
-   function sum(num1, num2) {
-        return num1 + num2;
-      }
-      //定义一个对象
-      var obj = {};
-      //通过call()和apply( )函数调用sum( )函数
-      console.log(sum.call(obj, 2, 6));
-      console.log(sum.apply(obj, [3, 6]));
+function sum(num1, num2) {
+  return num1 + num2;
+}
+//定义一个对象
+var obj = {};
+//通过call()和apply( )函数调用sum( )函数
+console.log(sum.call(obj, 2, 6));
+console.log(sum.apply(obj, [3, 6]));
 ```
 
 **匿名函数调用模式**
@@ -2701,9 +2681,9 @@ sum(2,6)
 另外一种是使用小括号 `()` 将匿名函数括起来，然后在后面使用小括号 `()`,传递对应的参数从而完成对应的调用。
 
 ```js
- (function (num1, num2) {
-        console.log(num1 + num2);
-      })(2, 6);
+(function (num1, num2) {
+  console.log(num1 + num2);
+})(2, 6);
 ```
 
 ### 6、实参与形参有哪些区别
@@ -2717,12 +2697,12 @@ sum(2,6)
 相同的内存地址，此时形参可以修改实参的值。
 
 ```js
- var person = { age: 21 };
-      function fn(obj) {
-        obj.age = 22;
-      }
-      fn(person);
-      console.log(person.age);
+var person = { age: 21 };
+function fn(obj) {
+  obj.age = 22;
+}
+fn(person);
+console.log(person.age);
 ```
 
 第三：函数可以不用定义形参，在函数体中可以通过 `arguments` 对象获取传递过来的实参的值，并进行处理。
@@ -2740,76 +2720,75 @@ sum(2,6)
 第一：`arguments` 对象只能在函数内部使用，无法在函数的外部访问到 `arguments` 对象。同时 `arguments` 对象存在于函数级的作用域中。
 
 ```js
- console.log(arguments); //Uncaught ReferenceError: arguments is not defined
-      function fn() {
-        console.log(arguments.length);
-      }
-      fn(1, 2, 3);
+console.log(arguments); //Uncaught ReferenceError: arguments is not defined
+function fn() {
+  console.log(arguments.length);
+}
+fn(1, 2, 3);
 ```
 
 第二：可以通过索引来访问 `arguments` 对象中的内容，因为 `arguments` 对象类似数组结构。
 
 ```js
- function fn() {
-        console.log(arguments[0]); // 1
-        console.log(arguments[1]); // 2
-        console.log(arguments[2]); // undefined
-      }
-      fn(1, 2);
+function fn() {
+  console.log(arguments[0]); // 1
+  console.log(arguments[1]); // 2
+  console.log(arguments[2]); // undefined
+}
+fn(1, 2);
 ```
 
 第三：`arguments` 对象的值由实参决定，不是有形参决定。
 
 ```js
-  function fn(num1, num2, num3) {
-        console.log(arguments.length); // 2
-      }
-      fn(1, 2);
+function fn(num1, num2, num3) {
+  console.log(arguments.length); // 2
+}
+fn(1, 2);
 ```
 
 因为 `arguments` 对象的 `length` 属性是由实际传递的实参的个数决定的，所以这里输出的是 2.
 
 ```js
-
-    function fn(num1, num2, num3) {
-        arguments[0] = 23;
-        console.log("num1=", num1); //23
-        num2 = 33;
-        console.log(arguments[1]); // 33
-      }
-      fn(1, 2);
+function fn(num1, num2, num3) {
+  arguments[0] = 23;
+  console.log("num1=", num1); //23
+  num2 = 33;
+  console.log(arguments[1]); // 33
+}
+fn(1, 2);
 ```
 
 ```js
-      function fn(num1, num2, num3) {
-        // arguments[0] = 23;
-        // console.log("num1=", num1); //23
-        // num2 = 33;
-        // console.log(arguments[1]); // 33
+function fn(num1, num2, num3) {
+  // arguments[0] = 23;
+  // console.log("num1=", num1); //23
+  // num2 = 33;
+  // console.log(arguments[1]); // 33
 
-        arguments[2] = 19;
-        console.log(num3); //undefined
-        num3 = 10;
-        console.log(arguments[2]); // 19
-      }
-      fn(1, 2);
+  arguments[2] = 19;
+  console.log(num3); //undefined
+  num3 = 10;
+  console.log(arguments[2]); // 19
+}
+fn(1, 2);
 ```
 
 ```js
- function fn(num1, num2, num3) {
-        // arguments[0] = 23;
-        // console.log("num1=", num1); //23
-        // num2 = 33;
-        // console.log(arguments[1]); // 33
+function fn(num1, num2, num3) {
+  // arguments[0] = 23;
+  // console.log("num1=", num1); //23
+  // num2 = 33;
+  // console.log(arguments[1]); // 33
 
-        arguments[2] = 19;
-        console.log(num3); //undefined
-        num3 = 10;
-        console.log(arguments[2]); // 19
+  arguments[2] = 19;
+  console.log(num3); //undefined
+  num3 = 10;
+  console.log(arguments[2]); // 19
 
-        console.log(arguments.length); // 2 长度还是2
-      }
-      fn(1, 2);
+  console.log(arguments.length); // 2 长度还是2
+}
+fn(1, 2);
 ```
 
 ### 8、arguments对象有哪些应用场景
@@ -2817,27 +2796,26 @@ sum(2,6)
 第一：进行参数个数的判断。
 
 ```js
-  function fn(num1, num2, num3) {
-        // 判断传递的参数个数是否正确
-        if (arguments.length !== 3) {
-          throw new Error(
-            "希望传递3个参数，实际传递的参数个数为:" + arguments.length
-          );
-        }
-      }
-      fn(1, 3);
+function fn(num1, num2, num3) {
+  // 判断传递的参数个数是否正确
+  if (arguments.length !== 3) {
+    throw new Error(
+      "希望传递3个参数，实际传递的参数个数为:" + arguments.length,
+    );
+  }
+}
+fn(1, 3);
 ```
 
 第二：对任意个数参数的处理，也就是说只会对函数中前几个参数做特定处理，后面的参数不论传递多少个都会统一进行处理，这种情况我们可以使用 `arguments` 对象来完成。
 
 ```js
-  function fn(sep) {
-
-        var arr = Array.prototype.slice.call(arguments, 1);
-        // console.log(arr); // ["a", "b", "c"]
-        return arr.join(sep);
-      }
-      console.log(fn("-", "a", "b", "c"));
+function fn(sep) {
+  var arr = Array.prototype.slice.call(arguments, 1);
+  // console.log(arr); // ["a", "b", "c"]
+  return arr.join(sep);
+}
+console.log(fn("-", "a", "b", "c"));
 ```
 
 第三：模拟函数的重载
@@ -2849,30 +2827,29 @@ sum(2,6)
 但是在 `JavaScript` 中没有函数的重载。
 
 ```js
-
-      function fn(num1, num2) {
-        return num1 + num2;
-      }
-      function fn(num1, num2, num3) {
-        return num1 + num2 + num3;
-      }
-      console.log(fn(1, 2)); // NaN
-      console.log(fn(1, 2, 3)); // 6
+function fn(num1, num2) {
+  return num1 + num2;
+}
+function fn(num1, num2, num3) {
+  return num1 + num2 + num3;
+}
+console.log(fn(1, 2)); // NaN
+console.log(fn(1, 2, 3)); // 6
 ```
 
 ```js
-   function fn() {
-        //将arguments对象转换成数组
-        var arr = Array.prototype.slice.call(arguments);
-        // console.log(arr);  // [1,2]
-       //调用数组中的reduce方法完成数据的计算
-        return arr.reduce(function (pre, currentValue) {
-          return pre + currentValue;
-        });
-      }
-      console.log(fn(1, 2));
-      console.log(fn(1, 2, 3));
-      console.log(fn(1, 2, 3, 4, 5));
+function fn() {
+  //将arguments对象转换成数组
+  var arr = Array.prototype.slice.call(arguments);
+  // console.log(arr);  // [1,2]
+  //调用数组中的reduce方法完成数据的计算
+  return arr.reduce(function (pre, currentValue) {
+    return pre + currentValue;
+  });
+}
+console.log(fn(1, 2));
+console.log(fn(1, 2, 3));
+console.log(fn(1, 2, 3, 4, 5));
 ```
 
 ### 9、说一下普通函数与构造函数的区别
@@ -2886,11 +2863,11 @@ sum(2,6)
 第二：在构造函数的函数体内可以使用 `this` 关键字，表示创生成的对象实例。
 
 ```js
-      function Person(userName) {
-        this.userName = userName;
-      }
-      var person = new Person("zhangsan");
-      console.log(person);
+function Person(userName) {
+  this.userName = userName;
+}
+var person = new Person("zhangsan");
+console.log(person);
 ```
 
 第三：在使用构造函数的时候，必须与 `new` 操作符配合使用。
@@ -2900,30 +2877,30 @@ sum(2,6)
 代码如下：
 
 ```js
-     function Person(userName) {
-        this.userName = userName;
-        this.sayHi = function () {
-          console.log(this.username);
-        };
-      }
-      var p1 = new Person("zhangsan");
-      var p2 = new Person("lisi");
-      console.log(p1.sayHi === p2.sayHi); // false
+function Person(userName) {
+  this.userName = userName;
+  this.sayHi = function () {
+    console.log(this.username);
+  };
+}
+var p1 = new Person("zhangsan");
+var p2 = new Person("lisi");
+console.log(p1.sayHi === p2.sayHi); // false
 ```
 
 ```js
-    function Person(userName) {
-        this.userName = userName;
-        // this.sayHi = function () {
-        //   console.log(this.username);
-        // };
-      }
-      Person.prototype.sayHi = function () {
-        console.log(this.username);
-      };
-      var p1 = new Person("zhangsan");
-      var p2 = new Person("lisi");
-      console.log(p1.sayHi === p2.sayHi); // true
+function Person(userName) {
+  this.userName = userName;
+  // this.sayHi = function () {
+  //   console.log(this.username);
+  // };
+}
+Person.prototype.sayHi = function () {
+  console.log(this.username);
+};
+var p1 = new Person("zhangsan");
+var p2 = new Person("lisi");
+console.log(p1.sayHi === p2.sayHi); // true
 ```
 
 ### 10、什么是变量提升，什么是函数提升
@@ -2933,11 +2910,11 @@ sum(2,6)
 如下所示：
 
 ```js
-     function fn() {
-        console.log(num); // undefined
-        var num = 2;
-      }
-      fn();
+function fn() {
+  console.log(num); // undefined
+  var num = 2;
+}
+fn();
 ```
 
 同样函数在定义之前也可以被调用，而不会抛出异常。
@@ -2945,10 +2922,10 @@ sum(2,6)
 如下代码所示：
 
 ```js
-  fn();
-      function fn() {
-        console.log("hello");
-      }
+fn();
+function fn() {
+  console.log("hello");
+}
 ```
 
 导致出现以上情况的原因是，在 `javascript` 中存在变量提升与函数提升的机制。
@@ -2964,21 +2941,21 @@ sum(2,6)
 如下程序：
 
 ```js
- function fn() {
-        var userName = "zhangsan";
-        console.log(userName);
-      }
-      fn(); //zhangsan
+function fn() {
+  var userName = "zhangsan";
+  console.log(userName);
+}
+fn(); //zhangsan
 ```
 
 下面，再看如下代码：
 
 ```js
-  var userName = "zhangsan";
-      function fn() {
-        console.log(userName);
-      }
-      fn(); //zhangsan
+var userName = "zhangsan";
+function fn() {
+  console.log(userName);
+}
+fn(); //zhangsan
 ```
 
 综上两个案例，我们可以总结出，**作用域本质就是一套规则，用于确定在何处以及如何查找变量的规则。**
@@ -2992,11 +2969,11 @@ sum(2,6)
 下面，我们再来看一下前面的代码：
 
 ```js
-  var userName = "zhangsan";
-      function fn() {
-        console.log(userName);
-      }
-      fn(); //zhangsan
+var userName = "zhangsan";
+function fn() {
+  console.log(userName);
+}
+fn(); //zhangsan
 ```
 
 我们在查找 `userName` 这个变量的时候，现在函数的作用域中进行查找，没有找到，再去全局作用域中查找。你会注意到，这是一个往外层查找的过程，即顺着一条链条从下往上查找变量。这个链条，我们就称之为作用域链。
@@ -3011,104 +2988,104 @@ sum(2,6)
 
 #### 面试中关于作用域与作用域链的问题
 
-  第一题：以下代码的执行结果是：
+第一题：以下代码的执行结果是：
 
 ```js
-   var a = 1;
-      function fn1() {
-        function fn2() {
-          console.log(a);
-        }
-        function fn3() {
-          var a = 4;
-          fn2();
-        }
-        var a = 2;
-        return fn3;
-      }
-      var fn = fn1();
-      fn(); // 2
+var a = 1;
+function fn1() {
+  function fn2() {
+    console.log(a);
+  }
+  function fn3() {
+    var a = 4;
+    fn2();
+  }
+  var a = 2;
+  return fn3;
+}
+var fn = fn1();
+fn(); // 2
 ```
 
 第二题：以下代码的执行结果是：
 
 ```js
-    var a = 1;
-      function fn1() {
-        function fn3() {
-          var a = 4;
-          fn2();
-        }
-        var a = 2;
-        return fn3;
-      }
+var a = 1;
+function fn1() {
+  function fn3() {
+    var a = 4;
+    fn2();
+  }
+  var a = 2;
+  return fn3;
+}
 
-      function fn2() {
-        console.log(a);
-      }
-      var fn = fn1();
-      fn(); // 1
+function fn2() {
+  console.log(a);
+}
+var fn = fn1();
+fn(); // 1
 ```
 
 第三题：以下代码的输出结果为
 
 ```js
-  var a = 1;
-      function fn1() {
-        function fn3() {
-          function fn2() {
-            console.log(a);
-          }
-          var a;
-          fn2();
-          a = 4;
-        }
-        var a = 2;
-        return fn3;
-      }
-      var fn = fn1();
-      fn(); //undefined
+var a = 1;
+function fn1() {
+  function fn3() {
+    function fn2() {
+      console.log(a);
+    }
+    var a;
+    fn2();
+    a = 4;
+  }
+  var a = 2;
+  return fn3;
+}
+var fn = fn1();
+fn(); //undefined
 ```
 
 第四题：以下代码的输出结果为：
 
 ```js
- var x = 10;
-      bar(); //10
-      function foo() {
-        console.log(x);
-      }
-      function bar() {
-        var x = 30;
-        foo();
-      }
+var x = 10;
+bar(); //10
+function foo() {
+  console.log(x);
+}
+function bar() {
+  var x = 30;
+  foo();
+}
 ```
 
 第五题：以下代码的输出结果为：
 
 ```js
-  var x = 10;
-      bar(); //30
-      function bar() {
-        var x = 30;
-        function foo() {
-          console.log(x);
-        }
-        foo();
-      }
+var x = 10;
+bar(); //30
+function bar() {
+  var x = 30;
+  function foo() {
+    console.log(x);
+  }
+  foo();
+}
 ```
 
 第六题：以下代码的输出结果为:
 
 ```js
-   var x = 10;
-      bar(); //30
-      function bar() {
-        var x = 30;
-        (function () {
-          console.log(x);
-        })();
-      }
+var x = 10;
+bar(); //30
+function bar() {
+  var x = 30;
+  (function () {
+    console.log(x);
+  })();
+}
 ```
 
 #### 变量提升
@@ -3116,41 +3093,41 @@ sum(2,6)
 所谓变量提升，是将变量的声明提升到函数顶部的位置，也就是将变量声明提升到变量所在的作用域的顶端，而变量的赋值并不会被提升。
 
 ```js
-  var str = "hello world";
-      (function () {
-        console.log(str);
-        var str = "hello vue";
-      })(); // undefined
+var str = "hello world";
+(function () {
+  console.log(str);
+  var str = "hello vue";
+})(); // undefined
 ```
 
 ```js
-      var str = "hello world";
-      (function () {
-        var str; //变量的声明得到提升
-        console.log(str);
-        str = "hello vue"; // 变量的赋值没有得到提升
-      })();
+var str = "hello world";
+(function () {
+  var str; //变量的声明得到提升
+  console.log(str);
+  str = "hello vue"; // 变量的赋值没有得到提升
+})();
 ```
 
 如下代码所示：
 
 ```js
-    (function () {
-        console.log(str);
-        str = "hello vue";
-      })(); // str is not defined
+(function () {
+  console.log(str);
+  str = "hello vue";
+})(); // str is not defined
 ```
 
 以下代码的执行结果是：
 
 ```js
-  function foo() {
-        var a = 1;
-        console.log(a); //1
-        console.log(b); //undefined
-        var b = 2;
-      }
-      foo();
+function foo() {
+  var a = 1;
+  console.log(a); //1
+  console.log(b); //undefined
+  var b = 2;
+}
+foo();
 ```
 
 上面的代码等价于
@@ -3174,52 +3151,52 @@ foo();
 如下代码：
 
 ```js
-   foo(); // 函数提升
-      function foo() {
-        console.log("hello");
-      }
-```
-
-```js
-function foo(){
-    console.log("hello");
+foo(); // 函数提升
+function foo() {
+  console.log("hello");
 }
-foo() //'hello'
 ```
 
 ```js
-   foo(); // foo is not a function
-      var foo = function () {
-        console.log("hello");
-      };
+function foo() {
+  console.log("hello");
+}
+foo(); //'hello'
+```
+
+```js
+foo(); // foo is not a function
+var foo = function () {
+  console.log("hello");
+};
 ```
 
 看一下如下程序的执行结果：
 
 ```js
- function foo() {
-        function bar() {
-          return 3;
-        }
-        return bar();
-        function bar() {
-          return 9;
-        }
-      }
-      console.log(foo()); // 9
+function foo() {
+  function bar() {
+    return 3;
+  }
+  return bar();
+  function bar() {
+    return 9;
+  }
+}
+console.log(foo()); // 9
 ```
 
 如下程序的执行结果：
 
 ```js
-  var a = true;
-      foo();
-      function foo() {
-        if (a) {
-          var a = 20;
-        }
-        console.log(a); // undefined
-      }
+var a = true;
+foo();
+function foo() {
+  if (a) {
+    var a = 20;
+  }
+  console.log(a); // undefined
+}
 ```
 
 以上的代码的执行过程如下：
@@ -3227,39 +3204,39 @@ foo() //'hello'
 ```js
 var a;
 a = true;
-function foo(){
-    var a;
-    if(a){
-        a=20
-    }
-    console.log(a)
+function foo() {
+  var a;
+  if (a) {
+    a = 20;
+  }
+  console.log(a);
 }
-foo()
+foo();
 ```
 
 如下程序的执行结果：
 
 ```js
-   function v() {
-        var a = 1;
-        function a() {}
-        console.log(a);
-      }
-      v(); // 1
+function v() {
+  var a = 1;
+  function a() {}
+  console.log(a);
+}
+v(); // 1
 ```
 
 下面我们再来看一段代码：
 
 ```js
- function fn() {
-        console.log(typeof foo); // function
-        var foo = "hello";
-        function foo() {
-          return "abc";
-        }
-        console.log(typeof foo); // string
-      }
-      fn();
+function fn() {
+  console.log(typeof foo); // function
+  var foo = "hello";
+  function foo() {
+    return "abc";
+  }
+  console.log(typeof foo); // string
+}
+fn();
 ```
 
 执行上面的代码，首先打印的是 `function`,然后是 `string`.
@@ -3268,53 +3245,53 @@ foo()
 
 ```js
 function fn1() {
-        // 变量提升到函数的顶部
-        var foo;
-        // 函数提升，但是优先级低，所以出现在变量声明的后面。
-        function foo() {
-          return "abc";
-        }
-        console.log(typeof foo); //function
-        foo = "hello";
-        console.log(typeof foo); //string
-      }
+  // 变量提升到函数的顶部
+  var foo;
+  // 函数提升，但是优先级低，所以出现在变量声明的后面。
+  function foo() {
+    return "abc";
+  }
+  console.log(typeof foo); //function
+  foo = "hello";
+  console.log(typeof foo); //string
+}
 ```
 
 下面，我们再来看一段代码，看一下对应的输出结果是：
 
 ```js
-   function foo() {
-          var a = 1;
-          function b() {
-            a = 10;
-            return;
-            function a() {}
-          }
-          b();
-          console.log(a);
-        }
-        foo(); //1
+function foo() {
+  var a = 1;
+  function b() {
+    a = 10;
+    return;
+    function a() {}
+  }
+  b();
+  console.log(a);
+}
+foo(); //1
 ```
 
 上面的代码可以修改成如下的代码。
 
 ```js
- function foo() {
-     //变量a提升
-        var a;
-     //函数声明b的提升
-        function b() {
-            //内部的函数声明a的提升
-          function a() {}
-            //全局变量
-          a = 10;
-          return;
-        }
-        a = 1;
-        b();
-        console.log(a);//在当前的作用域中，可以找到变量a，不需要获取全局变量a,所以其值为1，所以打印结果为1，
-      }
-      foo();
+function foo() {
+  //变量a提升
+  var a;
+  //函数声明b的提升
+  function b() {
+    //内部的函数声明a的提升
+    function a() {}
+    //全局变量
+    a = 10;
+    return;
+  }
+  a = 1;
+  b();
+  console.log(a); //在当前的作用域中，可以找到变量a，不需要获取全局变量a,所以其值为1，所以打印结果为1，
+}
+foo();
 ```
 
 ### 11、闭包
@@ -3337,20 +3314,20 @@ function fn1() {
 
 ```js
 function f1() {
-    f2();
-    console.log(1);
-};
+  f2();
+  console.log(1);
+}
 
 function f2() {
-    f3();
-    console.log(2);
-};
+  f3();
+  console.log(2);
+}
 
 function f3() {
-    console.log(3);
-};
+  console.log(3);
+}
 
-f1();//3 2 1
+f1(); //3 2 1
 ```
 
 为了方便理解，我们假设执行栈是一个数组，在代码执行初期一定会创建全局执行上下文并压入栈，因此过程大致如下：
@@ -3359,11 +3336,11 @@ f1();//3 2 1
 //代码执行前创建全局执行上下文
 ECStack = [globalContext];
 // f1调用
-ECStack.push('f1 functionContext');
+ECStack.push("f1 functionContext");
 // f1又调用了f2，f2执行完毕之前无法console 1
-ECStack.push('f2 functionContext');
+ECStack.push("f2 functionContext");
 // f2又调用了f3，f3执行完毕之前无法console 2
-ECStack.push('f3 functionContext');
+ECStack.push("f3 functionContext");
 // f3执行完毕，输出3并出栈
 ECStack.pop();
 // f2执行完毕，输出2并出栈
@@ -3400,11 +3377,11 @@ function outer () {
 
 ```js
 function makeFunc() {
-    var name = "Mozilla";
-    function displayName() {
-        alert(name);
-    }
-    return displayName;
+  var name = "Mozilla";
+  function displayName() {
+    alert(name);
+  }
+  return displayName;
 }
 
 var myFunc = makeFunc();
@@ -3414,47 +3391,47 @@ myFunc();
 下面，我们再来看另外一段代码：
 
 ```js
-    function fn() {
-        var max = 10;
-        return function bar(x) {
-          if (x > max) {
-            console.log(x);
-          }
-        };
-      }
-      var f1 = fn();
-      f1(11); // 11
+function fn() {
+  var max = 10;
+  return function bar(x) {
+    if (x > max) {
+      console.log(x);
+    }
+  };
+}
+var f1 = fn();
+f1(11); // 11
 ```
 
 #### 闭包的应用场景
 
- **应用缓存**
+**应用缓存**
 
 ```js
-   var cacheApp = (function () {
-        var cache = {};
-        return {
-          getResult: function (id) {
-            // 如果在内存中，则直接返回
-            if (id in cache) {
-              return "得到的结果为:" + cache[id];
-            }
-            //经过耗时函数的处理
-            var result = timeFn(id);
-            //更新缓存
-            cache[id] = result;
-            //返回计算的结果
-            return "得到的结果为:" + result;
-          },
-        };
-      })();
-      //耗时函数
-      function timeFn(id) {
-        console.log("这是一个非常耗时的任务");
-        return id;
+var cacheApp = (function () {
+  var cache = {};
+  return {
+    getResult: function (id) {
+      // 如果在内存中，则直接返回
+      if (id in cache) {
+        return "得到的结果为:" + cache[id];
       }
-      console.log(cacheApp.getResult(23));
-      console.log(cacheApp.getResult(23));
+      //经过耗时函数的处理
+      var result = timeFn(id);
+      //更新缓存
+      cache[id] = result;
+      //返回计算的结果
+      return "得到的结果为:" + result;
+    },
+  };
+})();
+//耗时函数
+function timeFn(id) {
+  console.log("这是一个非常耗时的任务");
+  return id;
+}
+console.log(cacheApp.getResult(23));
+console.log(cacheApp.getResult(23));
 ```
 
 **代码封装**
@@ -3493,121 +3470,119 @@ myFunc();
 获取所单击的 `li` 元素的索引值
 
 ```html
-  <ul>
-      <li>a</li>
-      <li>b</li>
-      <li>c</li>
-      <li>d</li>
-      <li>e</li>
-    </ul>
+<ul>
+  <li>a</li>
+  <li>b</li>
+  <li>c</li>
+  <li>d</li>
+  <li>e</li>
+</ul>
 ```
 
 对应的 `js` 代码如下：
 
 ```js
-  // 获取所单击的`li`元素的索引值
-      var list = document.getElementsByTagName("ul")[0].children;
-      for (var i = 0; i < list.length; i++) {
-        list[i].onclick = function () {
-          console.log(i);
-        };
-      }
+// 获取所单击的`li`元素的索引值
+var list = document.getElementsByTagName("ul")[0].children;
+for (var i = 0; i < list.length; i++) {
+  list[i].onclick = function () {
+    console.log(i);
+  };
+}
 ```
 
 可以采用闭包解决这个问题：
 
 ```js
-  var list = document.getElementsByTagName("ul")[0].children;
-      for (var i = 0; i < list.length; i++) {
-        (function (index) {
-          list[index].onclick = function () {
-            console.log(index);
-          };
-        })(i);
-      }
+var list = document.getElementsByTagName("ul")[0].children;
+for (var i = 0; i < list.length; i++) {
+  (function (index) {
+    list[index].onclick = function () {
+      console.log(index);
+    };
+  })(i);
+}
 ```
 
 第二：如下程序输出结果是：
 
 ```js
-  var arr = ["a", "b", "c"];
-      for (var i = 0; i < arr.length; i++) {
-        setTimeout(function () {
-          console.log(arr[i]);
-        }, 1000);
-      }
-
+var arr = ["a", "b", "c"];
+for (var i = 0; i < arr.length; i++) {
+  setTimeout(function () {
+    console.log(arr[i]);
+  }, 1000);
+}
 ```
 
 代码修改后的内容为：
 
 ```js
-
-      var arr = ["a", "b", "c"];
-      for (var i = 0; i < arr.length; i++) {
-        (function (index) {
-          setTimeout(function () {
-            console.log(arr[index]);
-          }, 1000);
-        })(i);
-      }
+var arr = ["a", "b", "c"];
+for (var i = 0; i < arr.length; i++) {
+  (function (index) {
+    setTimeout(function () {
+      console.log(arr[index]);
+    }, 1000);
+  })(i);
+}
 ```
 
 第三：以下程序打印结果是：
 
 ```js
-      var userName = "zhangsan";
-      var person = {
-        userName: "lisi",
-        method: function () {
-          return function () {
-            return this.userName;
-          };
-        },
-      };
-      console.log(person.method()()); //zhangsan
+var userName = "zhangsan";
+var person = {
+  userName: "lisi",
+  method: function () {
+    return function () {
+      return this.userName;
+    };
+  },
+};
+console.log(person.method()()); //zhangsan
 ```
 
 ```js
-  var userName = "zhangsan";
-      var person = {
-        userName: "lisi",
-        method: function () {
-          var that = this; //用that保存person的this
-          return function () {
-            return that.userName;
-          };
-        },
-      };
-      console.log(person.method()());
+var userName = "zhangsan";
+var person = {
+  userName: "lisi",
+  method: function () {
+    var that = this; //用that保存person的this
+    return function () {
+      return that.userName;
+    };
+  },
+};
+console.log(person.method()());
 ```
 
 第四：以下程序的输出结果
 
 ```js
-    function create() {
-        var a = 100;
-        return function () {
-          console.log(a);
-        };
-      }
-      var fn = create();
-      var a = 200;
-      fn(); // 100
+function create() {
+  var a = 100;
+  return function () {
+    console.log(a);
+  };
+}
+var fn = create();
+var a = 200;
+fn(); // 100
 ```
 
 第五：以下程序的输出结果：
 
 ```js
-   function print(fn) {
-        var a = 200;
-        fn();
-      }
-      var a = 100;
-      function fn() {
-        console.log(a); // 100
-      }
-      print(fn);
+function print(fn) {
+  var a = 200;
+  fn();
+}
+var a = 100;
+function fn() {
+  console.log(a); // 100
+}
+print(fn);
 ```
 
 #### 闭包优缺点
@@ -3631,21 +3606,21 @@ myFunc();
 如下代码所示：
 
 ```js
-  function Person(userName) {
-        this.userName = userName;
-      }
-      var person = new Person("zhangsan");
-      console.log(person.userName);
+function Person(userName) {
+  this.userName = userName;
+}
+var person = new Person("zhangsan");
+console.log(person.userName);
 ```
 
 如果，我们将上面的 `Person` 函数当作一个普通函数来调用执行，那么对应的 `this` 会指向谁呢？
 
 ```js
- function Person(userName) {
-        this.userName = userName;
-      }
-      Person("lisi");
-      console.log(window.userName);
+function Person(userName) {
+  this.userName = userName;
+}
+Person("lisi");
+console.log(window.userName);
 ```
 
 通过上面的程序，我们可以总结出，`this` 指向的永远是函数的调用者。
@@ -3653,113 +3628,113 @@ myFunc();
 第一：如下程序的输出结果：
 
 ```js
-    var a = 10;
-      var obj = {
-        a: 120,
-        method: function () {
-          var bar = function () {
-            console.log(this.a); // 10
-          };
-          bar();//这里是通过window对象完成bar方法的调用
-          return this.a;
-        },
-      };
-      console.log(obj.method()); // 120
+var a = 10;
+var obj = {
+  a: 120,
+  method: function () {
+    var bar = function () {
+      console.log(this.a); // 10
+    };
+    bar(); //这里是通过window对象完成bar方法的调用
+    return this.a;
+  },
+};
+console.log(obj.method()); // 120
 ```
 
 第二：如下程序的输出结果是：
 
 ```js
-   var num = 10;
-      function Person() {
-        //给全局变量重新赋值
-        num = 20;
-        // 实例变量
-        this.num = 30;
-      }
-      Person.prototype.getNum = function () {
-        return this.num;
-      };
-      var person = new Person();
-      console.log(person.getNum()); // 30
+var num = 10;
+function Person() {
+  //给全局变量重新赋值
+  num = 20;
+  // 实例变量
+  this.num = 30;
+}
+Person.prototype.getNum = function () {
+  return this.num;
+};
+var person = new Person();
+console.log(person.getNum()); // 30
 ```
 
 第三：如下程序的输出结果是：
 
 ```js
-    function fn() {
-        console.log(this);
-      }
-      let obj = {
-        fn: fn,
-      };
-      fn(); //window
-      obj.fn(); //obj
+function fn() {
+  console.log(this);
+}
+let obj = {
+  fn: fn,
+};
+fn(); //window
+obj.fn(); //obj
 ```
 
 第四：如下程序的输出结果是：
 
 ```js
- var fullName = "language";
-      var obj = {
-        fullName: "javascript",
-        prop: {
-          getFullName: function () {
-            return this.fullName;
-          },
-        },
-      };
-      console.log(obj.prop.getFullName()); // undefined
-      var test = obj.prop.getFullName; // language
-      console.log(test());
+var fullName = "language";
+var obj = {
+  fullName: "javascript",
+  prop: {
+    getFullName: function () {
+      return this.fullName;
+    },
+  },
+};
+console.log(obj.prop.getFullName()); // undefined
+var test = obj.prop.getFullName; // language
+console.log(test());
 ```
 
 第五：如下程序的输出结果是：
 
 ```js
-      var val = 1;
-      var json = {
-        val: 10,
-        dbl: function () {
-          val *= 2; //这里由于前面没有添加this,也就是没有写成this.val,所以这里的val指向了全局变量
-        },
-      };
-      json.dbl();
-      console.log(json.val + val); // 12
+var val = 1;
+var json = {
+  val: 10,
+  dbl: function () {
+    val *= 2; //这里由于前面没有添加this,也就是没有写成this.val,所以这里的val指向了全局变量
+  },
+};
+json.dbl();
+console.log(json.val + val); // 12
 ```
 
 如果将上面的题目修改成如下的形式：
 
 ```js
-var val = 1
+var val = 1;
 var json = {
   val: 10,
   dbl: function () {
-    this.val *= 2 //20
-  }
-}
-json.dbl()
-console.log(json.val + val)//21  20+1=21
+    this.val *= 2; //20
+  },
+};
+json.dbl();
+console.log(json.val + val); //21  20+1=21
 ```
 
 第六，如下程序的输出结果是：
 
 ```js
-  var num = 10;
-      var obj = { num: 20 };
-      obj.fn = (function (num) {
-        this.num = num * 3;
-        num++;
-        return function (n) {
-          this.num += n;
-          num++;
-          console.log(num);
-        };
-      })(obj.num);
-      var fn = obj.fn;
-      fn(5);
-      obj.fn(10);
-      console.log(num, obj.num);
+var num = 10;
+var obj = { num: 20 };
+obj.fn = (function (num) {
+  this.num = num * 3;
+  num++;
+  return function (n) {
+    this.num += n;
+    num++;
+    console.log(num);
+  };
+})(obj.num);
+var fn = obj.fn;
+fn(5);
+obj.fn(10);
+console.log(num, obj.num);
 ```
 
 第七：`this` 指向 `call()` 函数，`apply()` 函数，`bind()` 函数调用后重新绑定的对象。
@@ -3769,50 +3744,50 @@ console.log(json.val + val)//21  20+1=21
 代码如下：
 
 ```js
- //全局变量
-      var value = 10;
-      var obj = {
-        value: 20,
-      };
-      // 全局函数
-      var method = function () {
-        console.log(this.value);
-      };
-      method(); // 10
-      method.call(obj); // 20
-      method.apply(obj); // 20
-      var newMethod = method.bind(obj);
-      newMethod(); // 20
+//全局变量
+var value = 10;
+var obj = {
+  value: 20,
+};
+// 全局函数
+var method = function () {
+  console.log(this.value);
+};
+method(); // 10
+method.call(obj); // 20
+method.apply(obj); // 20
+var newMethod = method.bind(obj);
+newMethod(); // 20
 ```
 
 下面我们再来看一段代码，看一下对应的执行结果：
 
 ```html
 <body>
-    <button id="btn">获取用户信息</button>
-    <script>
-      var userInfo = {
-        data: [
-          { userName: "zhangsan", age: 20 },
-          { userName: "lisi", age: 21 },
-        ],
-        getUserInfo: function () {
-          var index = 1;
-          console.log(this.data[index].userName + " " + this.data[index].age);
-        },
-      };
-      var btn = document.getElementById("btn");
-      btn.onclick = userInfo.getUserInfo;
-    </script>
-  </body>
+  <button id="btn">获取用户信息</button>
+  <script>
+    var userInfo = {
+      data: [
+        { userName: "zhangsan", age: 20 },
+        { userName: "lisi", age: 21 },
+      ],
+      getUserInfo: function () {
+        var index = 1;
+        console.log(this.data[index].userName + " " + this.data[index].age);
+      },
+    };
+    var btn = document.getElementById("btn");
+    btn.onclick = userInfo.getUserInfo;
+  </script>
+</body>
 ```
 
 修改后的代码：
 
 ```js
-   var btn = document.getElementById("btn");
-      //   btn.onclick = userInfo.getUserInfo;
-      btn.onclick = userInfo.getUserInfo.bind(userInfo);
+var btn = document.getElementById("btn");
+//   btn.onclick = userInfo.getUserInfo;
+btn.onclick = userInfo.getUserInfo.bind(userInfo);
 ```
 
 第八、如下程序的输出结果是：
@@ -3862,21 +3837,21 @@ console.log(json.val + val)//21  20+1=21
 或者是修改成箭头函数
 
 ```js
-     var userInfo = {
-        data: [
-          { userName: "zhangsan", age: 20 },
-          { userName: "lisi", age: 21 },
-        ],
-        getUserInfo: function () {
-          //   var that = this;
-          this.data.forEach((p) => {
-            console.log(this);
-          });
-        },
-      };
-      var btn = document.getElementById("btn");
-      //   btn.onclick = userInfo.getUserInfo;
-      btn.onclick = userInfo.getUserInfo.bind(userInfo);
+var userInfo = {
+  data: [
+    { userName: "zhangsan", age: 20 },
+    { userName: "lisi", age: 21 },
+  ],
+  getUserInfo: function () {
+    //   var that = this;
+    this.data.forEach((p) => {
+      console.log(this);
+    });
+  },
+};
+var btn = document.getElementById("btn");
+//   btn.onclick = userInfo.getUserInfo;
+btn.onclick = userInfo.getUserInfo.bind(userInfo);
 ```
 
 ### 13、call()函数，apply()函数，bind()函数的使用与区别
@@ -3902,15 +3877,15 @@ function.call(thisObj,arg1,arg2,...)
 `arg1,arg2,..` 表示：调用的函数需要的参数。
 
 ```js
-   function add(a, b) {
-        console.log(this);
-        console.log(a + b);
-      }
-      function sub(a, b) {
-        console.log(a - b);
-      }
+function add(a, b) {
+  console.log(this);
+  console.log(a + b);
+}
+function sub(a, b) {
+  console.log(a - b);
+}
 
-      add.call(sub, 3, 1);// 调用add方法，但是add方法中的this指向的是sub,最终的输出结果是4
+add.call(sub, 3, 1); // 调用add方法，但是add方法中的this指向的是sub,最终的输出结果是4
 ```
 
 #### `apply()` 函数的基本使用
@@ -3930,15 +3905,15 @@ function.apply(thisObj,[argsArray])
 `[argsArray]`:表示的是函数需要的参数会通过数组的形式进行传递,如果传递的不是数组或者是 arguments对象，会抛出异常。
 
 ```js
-  function add(a, b) {
-        console.log(this); // 这里指向的是sub
-        console.log(a + b);
-      }
-      function sub(a, b) {
-        console.log(a - b);
-      }
+function add(a, b) {
+  console.log(this); // 这里指向的是sub
+  console.log(a + b);
+}
+function sub(a, b) {
+  console.log(a - b);
+}
 
-      add.apply(sub, [3, 1]);
+add.apply(sub, [3, 1]);
 ```
 
 #### `bind` 函数的基本使用
@@ -3952,17 +3927,16 @@ function.bind(thisObj,arg1,arg2,...)
 不同 的是 `bind` 函数会返回一个新的函数，可以在任何时候进行调用。
 
 ```js
+function add(a, b) {
+  console.log(this); // 这里指向的是sub
+  console.log(a + b);
+}
+function sub(a, b) {
+  console.log(a - b);
+}
 
-      function add(a, b) {
-        console.log(this); // 这里指向的是sub
-        console.log(a + b);
-      }
-      function sub(a, b) {
-        console.log(a - b);
-      }
-
-      var newFun = add.bind(sub, 3, 1); //bind 返回的是一个新的函数。
-      newFun();//完成对add函数的调用，同时this指向了sub
+var newFun = add.bind(sub, 3, 1); //bind 返回的是一个新的函数。
+newFun(); //完成对add函数的调用，同时this指向了sub
 ```
 
 #### 三个函数的比较
@@ -3982,42 +3956,42 @@ function.bind(thisObj,arg1,arg2,...)
 **求数组中的最大值与最小值**
 
 ```js
- var arr = [3, 6, 7, 1, 9];
-      console.log(Math.max.apply(null, arr));
-      console.log(Math.min.apply(null, arr));
+var arr = [3, 6, 7, 1, 9];
+console.log(Math.max.apply(null, arr));
+console.log(Math.min.apply(null, arr));
 ```
 
 **将 `arguments` 转换成数组**
 
 ```js
-   function fn() {
-        var arr = Array.prototype.slice.call(arguments);
-        arr.push(6);
-        return arr;
-      }
-      console.log(fn(1, 2));
+function fn() {
+  var arr = Array.prototype.slice.call(arguments);
+  arr.push(6);
+  return arr;
+}
+console.log(fn(1, 2));
 ```
 
 **继承的实现**
 
 ```js
 function Person(userName, userAge) {
-        this.userName = userName;
-        this.userAge = userAge;
-      }
-      function Student(name, age, gender) {
-        Person.call(this, name, age);
-        this.gender = gender;
-      }
-      var student = new Student("zhangsan", 20, "男");
-      console.log(
-        "userName=" +
-          student.userName +
-          ",userAge=" +
-          student.userAge +
-          ",gender=" +
-          student.gender
-      );
+  this.userName = userName;
+  this.userAge = userAge;
+}
+function Student(name, age, gender) {
+  Person.call(this, name, age);
+  this.gender = gender;
+}
+var student = new Student("zhangsan", 20, "男");
+console.log(
+  "userName=" +
+    student.userName +
+    ",userAge=" +
+    student.userAge +
+    ",gender=" +
+    student.gender,
+);
 ```
 
 **改变匿名函数的 `this` 指向**
@@ -4025,35 +3999,35 @@ function Person(userName, userAge) {
 首先看一下如下程序的执行结果：
 
 ```js
-  var person = [
-        { id: 1, userName: "zhangsan" },
-        { id: 2, userName: "lisi" },
-      ];
-      for (var i = 0; i < person.length; i++) {
-        (function (i) {
-          this.print = function () {
-            console.log(this.id);
-          };
-          this.print();
-        })(i);
-      }
+var person = [
+  { id: 1, userName: "zhangsan" },
+  { id: 2, userName: "lisi" },
+];
+for (var i = 0; i < person.length; i++) {
+  (function (i) {
+    this.print = function () {
+      console.log(this.id);
+    };
+    this.print();
+  })(i);
+}
 ```
 
 具体的实现方式如下：
 
 ```js
-    var person = [
-        { id: 1, userName: "zhangsan" },
-        { id: 2, userName: "lisi" },
-      ];
-      for (var i = 0; i < person.length; i++) {
-        (function (i) {
-          this.print = function () {
-            console.log(this.id);
-          };
-          this.print();
-        }.call(person[i], i));
-      }
+var person = [
+  { id: 1, userName: "zhangsan" },
+  { id: 2, userName: "lisi" },
+];
+for (var i = 0; i < person.length; i++) {
+  (function (i) {
+    this.print = function () {
+      console.log(this.id);
+    };
+    this.print();
+  }).call(person[i], i);
+}
 ```
 
 #### 手写 call、apply及 bind函数
@@ -4061,75 +4035,73 @@ function Person(userName, userAge) {
 **`call` 方法的实现**
 
 ```js
+Function.prototype.myCall = function (context) {
+  var args = [...arguments].slice(1);
 
-      Function.prototype.myCall = function (context) {
+  context = context || window;
 
-        var args = [...arguments].slice(1);
+  context.fn = this;
 
-        context = context || window;
-
-        context.fn = this;
-
-        var result = context.fn(...args);
-        return result;
-      };
-      function Add(num1, num2) {
-        console.log(this);
-        console.log(num1 + num2);
-      }
-      function Sub(num1, num2) {
-        console.log(num1 - num2);
-      }
-      Add.myCall(Sub, 6, 3);
+  var result = context.fn(...args);
+  return result;
+};
+function Add(num1, num2) {
+  console.log(this);
+  console.log(num1 + num2);
+}
+function Sub(num1, num2) {
+  console.log(num1 - num2);
+}
+Add.myCall(Sub, 6, 3);
 ```
 
 **`apply` 函数的实现**
 
 ```js
- Function.prototype.myApply = function (context) {
-        var result = null;
-        context = context || window;
-        context.fn = this;
-        if (arguments[1]) {
-          // console.log("arguments=", arguments[1]);// arguments= (2) [6, 3]
-          result = context.fn(...arguments[1]);
-        } else {
-          result = context.fn();
-        }
-        return result;
-      };
-      function Add(num1, num2) {
-        console.log(this);
-        console.log(num1 + num2);
-      }
-      function Sub(num1, num2) {
-        console.log(num1 - num2);
-      }
-      Add.myApply(Sub, [6, 3]);
+Function.prototype.myApply = function (context) {
+  var result = null;
+  context = context || window;
+  context.fn = this;
+  if (arguments[1]) {
+    // console.log("arguments=", arguments[1]);// arguments= (2) [6, 3]
+    result = context.fn(...arguments[1]);
+  } else {
+    result = context.fn();
+  }
+  return result;
+};
+function Add(num1, num2) {
+  console.log(this);
+  console.log(num1 + num2);
+}
+function Sub(num1, num2) {
+  console.log(num1 - num2);
+}
+Add.myApply(Sub, [6, 3]);
 ```
 
 **`bind` 函数的实现**
 
 ```js
-   Function.prototype.myBind = function (context) {
-        // 获取参数
-        var args = [...arguments].slice(1), // [1,5]
-          fn = this;
-        // console.log(this);//Add
-        return function Fn() {
-          // console.log(this); //Window
-          return fn.apply(context, args);
-        };
-      };
-      function Add(num1, num2) {
-        console.log(this);
-        console.log(num1 + num2);
-      }
-      function Sub(num1, num2) {
-        console.log(num1 - num2);
-      }
-      var newFun = Add.myBind(Sub, 1, 5);
-      newFun();
+Function.prototype.myBind = function (context) {
+  // 获取参数
+  var args = [...arguments].slice(1), // [1,5]
+    fn = this;
+  // console.log(this);//Add
+  return function Fn() {
+    // console.log(this); //Window
+    return fn.apply(context, args);
+  };
+};
+function Add(num1, num2) {
+  console.log(this);
+  console.log(num1 + num2);
+}
+function Sub(num1, num2) {
+  console.log(num1 - num2);
+}
+var newFun = Add.myBind(Sub, 1, 5);
+newFun();
 ```
 
 ```js
@@ -4150,29 +4122,29 @@ function Person(userName, userAge) {
 下面，我们就实现一下关于 `myBind` 方法参数的模拟。
 
 ```js
-    Function.prototype.myBind = function (context) {
-        // 获取参数
-        var args = [...arguments].slice(1),
-          fn = this;
-        // console.log(this);//Add
-        return function Fn() {
-          // console.log(this); //Window
-          //这里是调用bind函数的时候传递的参数，将其转换成数组
-          var bindArgs = Array.prototype.slice.call(arguments);
-          //下面完成参数的拼接
-          return fn.apply(context, args.concat(bindArgs));
-        };
-      };
-      function Add(num1, num2) {
-        console.log(this);
-        console.log(num1 + num2);
-        return 10;
-      }
-      function Sub(num1, num2) {
-        console.log(num1 - num2);
-      }
-      var newFun = Add.myBind(Sub, 1);
-      console.log(newFun(8));
+Function.prototype.myBind = function (context) {
+  // 获取参数
+  var args = [...arguments].slice(1),
+    fn = this;
+  // console.log(this);//Add
+  return function Fn() {
+    // console.log(this); //Window
+    //这里是调用bind函数的时候传递的参数，将其转换成数组
+    var bindArgs = Array.prototype.slice.call(arguments);
+    //下面完成参数的拼接
+    return fn.apply(context, args.concat(bindArgs));
+  };
+};
+function Add(num1, num2) {
+  console.log(this);
+  console.log(num1 + num2);
+  return 10;
+}
+function Sub(num1, num2) {
+  console.log(num1 - num2);
+}
+var newFun = Add.myBind(Sub, 1);
+console.log(newFun(8));
 ```
 
 ### 14、回调函数有什么缺点
@@ -4184,27 +4156,22 @@ function Person(userName, userAge) {
 例如，如下的代码示例：
 
 ```js
-const btn=document.getElementById('btn');
-btn.addEventListener('click',function(event){
-
-})
+const btn = document.getElementById("btn");
+btn.addEventListener("click", function (event) {});
 ```
 
 回调函数有一个比较严重的问题，就是很容易出现回调地狱的问题。也就是实现了回调函数不断的嵌套。
 
 ```js
 setTimeout(() => {
-    console.log(1)
+  console.log(1);
+  setTimeout(() => {
+    console.log(2);
     setTimeout(() => {
-        console.log(2)
-        setTimeout(() => {
-            console.log(3)
-
-        },3000)
-
-    },2000)
-},1000)
-
+      console.log(3);
+    }, 3000);
+  }, 2000);
+}, 1000);
 ```
 
 以上的代码就是典型的回调地狱的问题，这样的代码是非常不利于阅读和维护的。
@@ -4219,7 +4186,6 @@ JavaScript 语言将函数看作一种值，与其它值（数值、字符串、
 
 #
 
-
 ## 四、对象
 
 ### 1、对象的属性
@@ -4227,49 +4193,49 @@ JavaScript 语言将函数看作一种值，与其它值（数值、字符串、
 给对象添加属性非常的简单如下所示：
 
 ```js
-var person={
-    userName:'zhangsan'
-}
+var person = {
+  userName: "zhangsan",
+};
 ```
 
 如果想修改属性的特性，可以通过 `Object.defineProperty()` 来完成。
 
 ```js
-  var person = {
-        userName: "zhangsan",
-      };
-      Object.defineProperty(person, "userName", {
-        writable: false,
-      });
-      person.userName = "lisi"; //无法完成值的修改
-      console.log(person.userName); //zhangsan
+var person = {
+  userName: "zhangsan",
+};
+Object.defineProperty(person, "userName", {
+  writable: false,
+});
+person.userName = "lisi"; //无法完成值的修改
+console.log(person.userName); //zhangsan
 ```
 
 我们可以给 `Object.defineProperty` 添加 `getter()` 函数和 `setter()` 函数，这两个函数可以实现对象的私有属性，私有属性不对外公布，如果想要对私有属性进行读取和写入，可以通过 `getter()` 函数和 `setter()` 函数。
 
 ```js
- var person = {
-        _age: 20, // _age表示私有属性
-      };
-      Object.defineProperty(person, "age", {
-        get: function () {
-          return this._age;
-        },
-        //在给私有属性赋值的时候，完成对应的校验功能
-        set: function (value) {
-          if (value >= 18) {
-            this._age = value;
-            console.log("可以浏览该网站");
-          } else {
-            console.log("不可以浏览该网站");
-          }
-        },
-      });
-      console.log(person.age); //20
-      person.age = 12;
-      console.log(person.age); //20
-      person.age = 30;
-      console.log(person.age); // 30
+var person = {
+  _age: 20, // _age表示私有属性
+};
+Object.defineProperty(person, "age", {
+  get: function () {
+    return this._age;
+  },
+  //在给私有属性赋值的时候，完成对应的校验功能
+  set: function (value) {
+    if (value >= 18) {
+      this._age = value;
+      console.log("可以浏览该网站");
+    } else {
+      console.log("不可以浏览该网站");
+    }
+  },
+});
+console.log(person.age); //20
+person.age = 12;
+console.log(person.age); //20
+person.age = 30;
+console.log(person.age); // 30
 ```
 
 关于 `Object.defineProperty` 更详细的内容，可以参考 `vue` 响应式原理的课程。
@@ -4287,19 +4253,19 @@ var person={
 第一：使用方括号来访问属性，可以借助于变量来实现。
 
 ```js
-    var person = {
-        userName: "zhangsan",
-      };
-      var myName = "userName";
-      console.log(person[myName]);
+var person = {
+  userName: "zhangsan",
+};
+var myName = "userName";
+console.log(person[myName]);
 ```
 
 第二：使用方括号来访问属性，也可以通过数字来做属性。
 
 ```js
-  var person = {};
-      person[1] = "hello";
-      console.log(person[1]);
+var person = {};
+person[1] = "hello";
+console.log(person[1]);
 ```
 
 ### 3、创建对象有哪几种方式
@@ -4307,14 +4273,14 @@ var person={
 **字面量方式创建对象**
 
 ```js
- var userInfo = {
-        userName: "zhangsan",
-        userAge: 18,
-        getUserInfo: function () {
-          console.log(this.userName + ":" + this.userAge);
-        },
-      };
-      userInfo.getUserInfo();
+var userInfo = {
+  userName: "zhangsan",
+  userAge: 18,
+  getUserInfo: function () {
+    console.log(this.userName + ":" + this.userAge);
+  },
+};
+userInfo.getUserInfo();
 ```
 
 字面量创建对象比较简单，但是问题也比较突出，每次只能创建一个对象，复用性比较差，如果需要创建多个对象，代码冗余比较高。
@@ -4324,18 +4290,18 @@ var person={
 工厂模式是一个比较重要的设计模式，该模式提供了一个函数，在该函数中完成对象的创建。
 
 ```js
- function createUser(userName, userAge) {
-        var o = new Object();
-        o.userName = userName;
-        o.userAge = userAge;
-        o.sayHi = function () {
-          console.log(this.userName + ":" + this.userAge);
-        };
-        return o;
-      }
-      var user1 = createUser("wangwu", 20);
-      var user2 = createUser("lisi", 20);
-      console.log(user1.userName + ":" + user2.userName);
+function createUser(userName, userAge) {
+  var o = new Object();
+  o.userName = userName;
+  o.userAge = userAge;
+  o.sayHi = function () {
+    console.log(this.userName + ":" + this.userAge);
+  };
+  return o;
+}
+var user1 = createUser("wangwu", 20);
+var user2 = createUser("lisi", 20);
+console.log(user1.userName + ":" + user2.userName);
 ```
 
 通过工厂模式创建对象，解决了字面量创建对象的问题，也就是当创建多个相似对象的时候代码重复的问题。
@@ -4345,15 +4311,15 @@ var person={
 **通过构造函数创建对象**
 
 ```js
- function Person(userName, userAge) {
-        this.userName = userName;
-        this.userAge = userAge;
-        this.sayHi = function () {
-          console.log(this.userName + ":" + this.userAge);
-        };
-      }
-      var p = new Person("zhangsan", 19);
-      p.sayHi();
+function Person(userName, userAge) {
+  this.userName = userName;
+  this.userAge = userAge;
+  this.sayHi = function () {
+    console.log(this.userName + ":" + this.userAge);
+  };
+}
+var p = new Person("zhangsan", 19);
+p.sayHi();
 ```
 
 构造函数创建对象的优点：解决了工厂模式中对象类型无法识别的问题，也就是说通过构造函数创建的对象可以确定其所属的类型。
@@ -4367,16 +4333,16 @@ var person={
 我们知道，每个函数都有一个 `prototype` 属性，这个属性指向函数的原型对象，而所谓的通过原型模式创建对象就是将属性和方法添加到 `prototype` 属性上。
 
 ```js
-  function Person() {}
-      Person.prototype.userName = "wangwu";
-      Person.prototype.userAge = 20;
-      Person.prototype.sayHi = function () {
-        console.log(this.userName + ":" + this.userAge);
-      };
-      var person1 = new Person();
-      person1.sayHi();
-      var person2 = new Person();
-      console.log(person1.sayHi === person2.sayHi); // true
+function Person() {}
+Person.prototype.userName = "wangwu";
+Person.prototype.userAge = 20;
+Person.prototype.sayHi = function () {
+  console.log(this.userName + ":" + this.userAge);
+};
+var person1 = new Person();
+person1.sayHi();
+var person2 = new Person();
+console.log(person1.sayHi === person2.sayHi); // true
 ```
 
 通过上面的代码，我们可以发现，使用基于原型模式创建的对象，它的属性和方法都是相等的，也就是说不同的对象会共享原型上的属性和方法，这样我们就解决了 `构造函数` 创建对象的问题。
@@ -4384,22 +4350,22 @@ var person={
 但是这种方式创建的对象也是有问题的，因为所有的对象都是共享相同的属性，所以改变一个对象的属性值，会引起其他对象属性值的改变。而这种情况是我们不允许的，因为这样很容易造成数据的混乱。
 
 ```js
-   function Person() {}
-      Person.prototype.userName = "wangwu";
-      Person.prototype.userAge = 20;
-      Person.prototype.arr = [1, 2];
-      Person.prototype.sayHi = function () {
-        console.log(this.userName + ":" + this.userAge);
-      };
-      var p1 = new Person();
-      var p2 = new Person();
-      console.log(p1.userName);
-      p2.userName = "zhangsan";
-      console.log(p1.userName); //wangwu,基本数据类型不受影响
-      p1.arr.push(3);
-      console.log(p1.arr); // [1,2,3]
-      console.log(p2.arr); // [1,2,3]
-      //引用类型受影响
+function Person() {}
+Person.prototype.userName = "wangwu";
+Person.prototype.userAge = 20;
+Person.prototype.arr = [1, 2];
+Person.prototype.sayHi = function () {
+  console.log(this.userName + ":" + this.userAge);
+};
+var p1 = new Person();
+var p2 = new Person();
+console.log(p1.userName);
+p2.userName = "zhangsan";
+console.log(p1.userName); //wangwu,基本数据类型不受影响
+p1.arr.push(3);
+console.log(p1.arr); // [1,2,3]
+console.log(p2.arr); // [1,2,3]
+//引用类型受影响
 ```
 
 **组合使用构造函数模式和原型模式**
@@ -4410,24 +4376,24 @@ var person={
 
 ```js
 //在构造函数中定义对象的属性
-      function Person(userName, userAge) {
-        this.userName = userName;
-        this.userAge = userAge;
-      }
-      //在原型对象中添加共享的方法
-      Person.prototype.sayHi = function () {
-        return this.userName;
-      };
-      var p = new Person("zhangsan", 21);
-      var p1 = new Person("lisi", 22);
-      console.log(p1.sayHi());
-      console.log(p.sayHi());
-      // 不同对象共享相同的函数，所以经过比较发现是相等的。
-      console.log(p.sayHi === p1.sayHi);
-      //修改p对象的userName属性的值，但是不会影响到p1对象的userName属性的值
-      p.userName = "admin";
-      console.log(p.sayHi());
-      console.log(p1.sayHi());
+function Person(userName, userAge) {
+  this.userName = userName;
+  this.userAge = userAge;
+}
+//在原型对象中添加共享的方法
+Person.prototype.sayHi = function () {
+  return this.userName;
+};
+var p = new Person("zhangsan", 21);
+var p1 = new Person("lisi", 22);
+console.log(p1.sayHi());
+console.log(p.sayHi());
+// 不同对象共享相同的函数，所以经过比较发现是相等的。
+console.log(p.sayHi === p1.sayHi);
+//修改p对象的userName属性的值，但是不会影响到p1对象的userName属性的值
+p.userName = "admin";
+console.log(p.sayHi());
+console.log(p1.sayHi());
 ```
 
 通过构造函数与原型模式组合创建对象的好处就是：每个对象都有自己的属性值，也就是拥有一份自己的实例属性的副本，同时又共享着方法的引用，最大限度的节省了内存。
@@ -4437,20 +4403,20 @@ var person={
 所谓的使用动态原型模式创建对象，其实就是将所有的内容都封装到构造函数中，而在构造函数中通过判断只初始化一次原型。
 
 ```js
- function Person(userName, userAge) {
-        this.userName = userName;
-        this.userAge = userAge;
-        if (typeof this.sayHi !== "function") {
-          console.log("abc"); //只输出一次
-          Person.prototype.sayHi = function () {
-            console.log(this.userName);
-          };
-        }
-      }
-      var person = new Person("zhangsan", 21);
-      var person1 = new Person("zhangsan", 21);
-      person.sayHi();
-      person1.sayHi();
+function Person(userName, userAge) {
+  this.userName = userName;
+  this.userAge = userAge;
+  if (typeof this.sayHi !== "function") {
+    console.log("abc"); //只输出一次
+    Person.prototype.sayHi = function () {
+      console.log(this.userName);
+    };
+  }
+}
+var person = new Person("zhangsan", 21);
+var person1 = new Person("zhangsan", 21);
+person.sayHi();
+person1.sayHi();
 ```
 
 通过上面的代码可以看出，我们将所有的内容写在了构造函数中，并且在构造函数中通过判断只初始化一次原型，而且只在第一次生成实例的时候进行原型的设置。这种方式创建的对象与构造函数和原型混合模式创建的对象功能上是相同的。
@@ -4466,10 +4432,10 @@ var person={
 对于引用数据类型，变量存储的是值在内存中的地址，如果有多个变量同时指向同一个内存地址，其中对一个变量的值进行修改以后，其它的变量也会受到影响。
 
 ```js
-var arr=[1,23,33]
-var arr2=arr
-arr2[0]=10;
-console.log(arr) //  [10, 23, 33]
+var arr = [1, 23, 33];
+var arr2 = arr;
+arr2[0] = 10;
+console.log(arr); //  [10, 23, 33]
 ```
 
 在上面的代码中，我们把 `arr` 赋值给了 `arr2`,然后修改 `arr2` 的值，但是 `arr` 也受到了影响。
@@ -4491,40 +4457,40 @@ console.log(arr) //  [10, 23, 33]
 下面我们先来看一下**浅拷贝**的内容
 
 ```js
- var obj = { a: 1, arr: [2, 3], o: { name: "zhangsan" } };
-      var shallowObj = shallowCopy(obj);
+var obj = { a: 1, arr: [2, 3], o: { name: "zhangsan" } };
+var shallowObj = shallowCopy(obj);
 
-      function shallowCopy(src) {
-        var dst = {};
-        for (var prop in src) {
-          if (src.hasOwnProperty(prop)) {
-            dst[prop] = src[prop];
-          }
-        }
-        return dst;
-      }
-      obj.o.name = "lisi";
-      console.log(shallowObj.o.name); //lisi,值受到了影响
-      obj.arr[0] = 20;
-      console.log(shallowObj.arr[0]); //20，值受到了影响
-      obj.a = 10;
-      console.log(shallowObj.a); // 1,值没有收到影响
+function shallowCopy(src) {
+  var dst = {};
+  for (var prop in src) {
+    if (src.hasOwnProperty(prop)) {
+      dst[prop] = src[prop];
+    }
+  }
+  return dst;
+}
+obj.o.name = "lisi";
+console.log(shallowObj.o.name); //lisi,值受到了影响
+obj.arr[0] = 20;
+console.log(shallowObj.arr[0]); //20，值受到了影响
+obj.a = 10;
+console.log(shallowObj.a); // 1,值没有收到影响
 ```
 
 除了以上方式实现浅拷贝以外，还可以通过 `ES6` 中的 `Object.assign()` 函数来实现，该函数可以将源对象中的可枚举的属性复制到目标对象中。
 
 ```js
- var obj = { a: 1, arr: [2, 3], o: { name: "zhangsan" } };
-      var result = {};
-      //将obj对象拷贝给result对象
-      Object.assign(result, obj);
-      console.log(result);
-      obj.a = 10;
-      console.log(result.a); // 1，不受影响
-      obj.arr[0] = 20;
-      console.log(result.arr[0]); //20 受影响
-      obj.o.name = "lisi";
-      console.log(result.o.name); // lisi 受影响
+var obj = { a: 1, arr: [2, 3], o: { name: "zhangsan" } };
+var result = {};
+//将obj对象拷贝给result对象
+Object.assign(result, obj);
+console.log(result);
+obj.a = 10;
+console.log(result.a); // 1，不受影响
+obj.arr[0] = 20;
+console.log(result.arr[0]); //20 受影响
+obj.o.name = "lisi";
+console.log(result.o.name); // lisi 受影响
 ```
 
 #### 深拷贝
@@ -4544,15 +4510,15 @@ JSON.parse(JSON.stringify());
 `JSON.parse()` 可以将字符串反序列为一个对象
 
 ```js
- var obj = { a: 1, arr: [2, 3], o: { name: "zhangsan" } };
-      var str = JSON.stringify(obj);
-      var resultObj = JSON.parse(str);
-      obj.a = 10;
-      console.log(resultObj.a); // 1 不受影响
-      obj.arr[0] = 20;
-      console.log(resultObj.arr[0]); // 2 不受影响
-      obj.o.name = "lisi";
-      console.log(resultObj.o.name); // zhangsan 不受影响
+var obj = { a: 1, arr: [2, 3], o: { name: "zhangsan" } };
+var str = JSON.stringify(obj);
+var resultObj = JSON.parse(str);
+obj.a = 10;
+console.log(resultObj.a); // 1 不受影响
+obj.arr[0] = 20;
+console.log(resultObj.arr[0]); // 2 不受影响
+obj.o.name = "lisi";
+console.log(resultObj.o.name); // zhangsan 不受影响
 ```
 
 以上通过 `JSON` 对象，虽然能够实现深拷贝，但是还是有一定的问题的。
@@ -4564,32 +4530,32 @@ JSON.parse(JSON.stringify());
 第三：对象中的构造函数会指向 `Object`,原型链关系被破坏。
 
 ```js
- function Person(userName) {
-        this.userName = userName;
-      }
-      var person = new Person("zhangsan");
-      var obj = {
-        fn: function () {
-          console.log("abc");
-        },
-        // 属性o的值为某个对象
-        o: person,
-      };
-      var str = JSON.stringify(obj);
-      var resultObj = JSON.parse(str);
-      console.log("resultObj=", resultObj); // 这里丢失了fn属性。因为该属性的值为函数
-      console.log(resultObj.o.constructor); //指向了Object,导致了原型链关系的破坏。
-      console.log(obj.o.constructor); // 这里指向Person构造函数，没有问题
+function Person(userName) {
+  this.userName = userName;
+}
+var person = new Person("zhangsan");
+var obj = {
+  fn: function () {
+    console.log("abc");
+  },
+  // 属性o的值为某个对象
+  o: person,
+};
+var str = JSON.stringify(obj);
+var resultObj = JSON.parse(str);
+console.log("resultObj=", resultObj); // 这里丢失了fn属性。因为该属性的值为函数
+console.log(resultObj.o.constructor); //指向了Object,导致了原型链关系的破坏。
+console.log(obj.o.constructor); // 这里指向Person构造函数，没有问题
 ```
 
 下面我们再来看一下循环引用的情况：
 
 ```js
-  var obj = {
-        userName: "zhangsan",
-      };
-      obj.a = obj;
-      var result = JSON.parse(JSON.stringify(obj));
+var obj = {
+  userName: "zhangsan",
+};
+obj.a = obj;
+var result = JSON.parse(JSON.stringify(obj));
 ```
 
 以上的内容会抛出异常。
@@ -4601,53 +4567,53 @@ JSON.parse(JSON.stringify());
 在浅拷贝中，我们通过循环将源对象中属性依次添加到目标对象中，而在深拷贝中，需要考虑对象中的属性是否有嵌套的情况（属性的值是否还是一个对象），如果有嵌套可以通过递归的方式来实现，直到属性为基本类型，也就是说，我们需要将源对象各个属性所包含的对象依次采用递归的方式复制到**新对象**上。
 
 ```js
- function clone(target) {
-        if (typeof target === "object") {
-          let objTarget = {};
-          for (const key in target) {
-              //通过递归完成拷贝
-            objTarget[key] = clone(target[key]);
-          }
-          return objTarget;
-        } else {
-          return target;
-        }
-      }
-      var obj = {
-        userName: "zhangsan",
-        a: {
-          a1: "hello",
-        },
-      };
-      var result = clone(obj);
-      console.log(result);
+function clone(target) {
+  if (typeof target === "object") {
+    let objTarget = {};
+    for (const key in target) {
+      //通过递归完成拷贝
+      objTarget[key] = clone(target[key]);
+    }
+    return objTarget;
+  } else {
+    return target;
+  }
+}
+var obj = {
+  userName: "zhangsan",
+  a: {
+    a1: "hello",
+  },
+};
+var result = clone(obj);
+console.log(result);
 ```
 
 以上就是一个最简单的深拷贝功能，但是在这段代码中我们只考虑了普通的 `object`,还没有实现数组，所以将上面的代码修改一下，让其能够兼容到数组。
 
 ```js
-   function clone(target) {
-        if (typeof target === "object") {
-          //判断target是否为数组
-          let objTarget = Array.isArray(target) ? [] : {};
-          for (const key in target) {
-            objTarget[key] = clone(target[key]);
-          }
-          return objTarget;
-        } else {
-          return target;
-        }
-      }
-      var obj = {
-        userName: "zhangsan",
-        a: {
-          a1: "hello",
-        },
-        //添加数组
-        arr: [2, 3],
-      };
-      var result = clone(obj);
-      console.log(result);
+function clone(target) {
+  if (typeof target === "object") {
+    //判断target是否为数组
+    let objTarget = Array.isArray(target) ? [] : {};
+    for (const key in target) {
+      objTarget[key] = clone(target[key]);
+    }
+    return objTarget;
+  } else {
+    return target;
+  }
+}
+var obj = {
+  userName: "zhangsan",
+  a: {
+    a1: "hello",
+  },
+  //添加数组
+  arr: [2, 3],
+};
+var result = clone(obj);
+console.log(result);
 ```
 
 在上面的代码中，添加了 `  let objTarget = Array.isArray(target)? []: {};` 判断 `target` 是否为数组。
@@ -4655,29 +4621,29 @@ JSON.parse(JSON.stringify());
 下面我们来看一下循环引用的情况：
 
 ```js
-   function clone(target) {
-        if (typeof target === "object") {
-          //判断target是否为数组
-          let objTarget = Array.isArray(target) ? [] : {};
-          for (const key in target) {
-            objTarget[key] = clone(target[key]);
-          }
-          return objTarget;
-        } else {
-          return target;
-        }
-      }
-      var obj = {
-        userName: "zhangsan",
-        a: {
-          a1: "hello",
-        },
-        //添加数组
-        arr: [2, 3],
-      };
-      obj.o = obj; //构成了循环引用
-      var result = clone(obj);
-      console.log(result);
+function clone(target) {
+  if (typeof target === "object") {
+    //判断target是否为数组
+    let objTarget = Array.isArray(target) ? [] : {};
+    for (const key in target) {
+      objTarget[key] = clone(target[key]);
+    }
+    return objTarget;
+  } else {
+    return target;
+  }
+}
+var obj = {
+  userName: "zhangsan",
+  a: {
+    a1: "hello",
+  },
+  //添加数组
+  arr: [2, 3],
+};
+obj.o = obj; //构成了循环引用
+var result = clone(obj);
+console.log(result);
 ```
 
 在上面的代码中，添加了 `obj.o=obj`.然后出现了 `Maximum call stack size exceeded`
@@ -4691,36 +4657,36 @@ JSON.parse(JSON.stringify());
 当需要拷贝当前的对象的时候，先去这个存储空间中进行查找，如果没有拷贝过这个对象，执行拷贝操作。如果已经拷贝过这个对象，直接返回，这样就可以解决循环引用的问题。
 
 ```js
-   let map = new WeakMap();
-      function clone(target) {
-        if (typeof target === "object") {
-          //判断target是否为数组
-          let objTarget = Array.isArray(target) ? [] : {};
-          // 如果有直接返回
-          if (map.get(target)) {
-            return target;
-          }
-          //存储当前对象与拷贝对象的对应关系
-          map.set(target, objTarget);
-          for (const key in target) {
-            objTarget[key] = clone(target[key]);
-          }
-          return objTarget;
-        } else {
-          return target;
-        }
-      }
-      var obj = {
-        userName: "zhangsan",
-        a: {
-          a1: "hello",
-        },
-        //添加数组
-        arr: [2, 3],
-      };
-      obj.o = obj; //构成了循环引用
-      var result = clone(obj);
-      console.log(result);
+let map = new WeakMap();
+function clone(target) {
+  if (typeof target === "object") {
+    //判断target是否为数组
+    let objTarget = Array.isArray(target) ? [] : {};
+    // 如果有直接返回
+    if (map.get(target)) {
+      return target;
+    }
+    //存储当前对象与拷贝对象的对应关系
+    map.set(target, objTarget);
+    for (const key in target) {
+      objTarget[key] = clone(target[key]);
+    }
+    return objTarget;
+  } else {
+    return target;
+  }
+}
+var obj = {
+  userName: "zhangsan",
+  a: {
+    a1: "hello",
+  },
+  //添加数组
+  arr: [2, 3],
+};
+obj.o = obj; //构成了循环引用
+var result = clone(obj);
+console.log(result);
 ```
 
 以上就是一个基本的深拷贝的案例。
@@ -4754,16 +4720,16 @@ JSON.parse(JSON.stringify());
 如下代码所示：
 
 ```js
-   function Person() {}
-      Person.prototype = {
-        userName: "zhangsan",
-        age: 20,
-        sayHi: function () {
-          console.log(this.userName);
-        },
-      };
-      var person = new Person();
-      person.sayHi(); //zhangsan
+function Person() {}
+Person.prototype = {
+  userName: "zhangsan",
+  age: 20,
+  sayHi: function () {
+    console.log(this.userName);
+  },
+};
+var person = new Person();
+person.sayHi(); //zhangsan
 ```
 
 通过执行的结果，依然可以获取到原型对象上属性的值。
@@ -4773,17 +4739,17 @@ JSON.parse(JSON.stringify());
 但是这时候，我们打印 `Person.prototype.constructor` 的时候，发现不在指向 `Person` 这个构造函数,而是指向了 `Object` 构造函数。
 
 ```js
-    function Person() {}
-      Person.prototype = {
-        userName: "zhangsan",
-        age: 20,
-        sayHi: function () {
-          console.log(this.userName);
-        },
-      };
-      var person = new Person();
-      person.sayHi();
-      console.log(Person.prototype.constructor); // Object
+function Person() {}
+Person.prototype = {
+  userName: "zhangsan",
+  age: 20,
+  sayHi: function () {
+    console.log(this.userName);
+  },
+};
+var person = new Person();
+person.sayHi();
+console.log(Person.prototype.constructor); // Object
 ```
 
 原因是：在重写 `prototype` 的时候，我们使用字面量创建了一个新的对象，并且这个新的对象中少了 `constructor` 属性，
@@ -4800,17 +4766,17 @@ JSON.parse(JSON.stringify());
 
 ```js
 function Person() {}
-      Person.prototype = {
-        constructor: Person, //添加constructor
-        userName: "zhangsan",
-        age: 20,
-        sayHi: function () {
-          console.log(this.userName);
-        },
-      };
-      var person = new Person();
-      person.sayHi();
-      console.log(Person.prototype.constructor);// Person
+Person.prototype = {
+  constructor: Person, //添加constructor
+  userName: "zhangsan",
+  age: 20,
+  sayHi: function () {
+    console.log(this.userName);
+  },
+};
+var person = new Person();
+person.sayHi();
+console.log(Person.prototype.constructor); // Person
 ```
 
 重写了原型对象以后，还需要注意一个问题，就是在重写原型对象之前，已经生成的对象的实例，无法获取新的原型对象中的属性和方法。
@@ -4848,27 +4814,27 @@ function Person() {}
 代码如下：
 
 ```js
-      function Animal() {
-        this.superType = "Animal";
-        this.name = name || "动物";
-        //实例方法
-        this.sleep = function () {
-          console.log(this.name + "正在睡觉!!");
-        };
-      }
+function Animal() {
+  this.superType = "Animal";
+  this.name = name || "动物";
+  //实例方法
+  this.sleep = function () {
+    console.log(this.name + "正在睡觉!!");
+  };
+}
 //原型上的函数
-      Animal.prototype.eat = function (food) {
-        console.log(this.name + "正在吃:" + food);
-      };
-      function Dog(name) {
-        this.name = name;
-      }
-      // 改变Dog的prototype指向，指向了一个Animal实例，实现了原型继承
-      Dog.prototype = new Animal();
-      var doggie = new Dog("wangcai");
-      console.log(doggie.superType);
-      doggie.sleep();
-      doggie.eat("狗粮");
+Animal.prototype.eat = function (food) {
+  console.log(this.name + "正在吃:" + food);
+};
+function Dog(name) {
+  this.name = name;
+}
+// 改变Dog的prototype指向，指向了一个Animal实例，实现了原型继承
+Dog.prototype = new Animal();
+var doggie = new Dog("wangcai");
+console.log(doggie.superType);
+doggie.sleep();
+doggie.eat("狗粮");
 ```
 
 在上面的代码中，将 `Animal` 的实例赋值给了 `Dog` 的原型对象，这样就实现了原型的继承，所以 `Dog` 的实例可以获取父类 `Animal` 中的 `superType` 属性，调用父类中的实例方法，原型上的函数。
@@ -4888,34 +4854,34 @@ function Person() {}
 `Dog.prototype.constructor` 指向了 `Animal`
 
 ```js
-Dog.prototype.constructor===Animal // true
+Dog.prototype.constructor === Animal; // true
 ```
 
 这里，还是要求 `Dog.prototype.constructor` 指向 `Dog`
 
 ```js
- function Animal() {
-        this.superType = "Animal";
-        this.name = name || "动物";
-        //实例方法
-        this.sleep = function () {
-          console.log(this.name + "正在睡觉!!");
-        };
-      }
-      Animal.prototype.eat = function (food) {
-        console.log(this.name + "正在吃:" + food);
-      };
-      function Dog(name) {
-        this.name = name;
-      }
-      // 改变Dog的prototype指向，指向了一个Animal实例，实现了原型继承
-      Dog.prototype = new Animal();
-      // 将Dog的构造函数指向自身
-      Dog.prototype.constructor = Dog;
-      var doggie = new Dog("wangcai");
-      console.log(doggie.superType);
-      doggie.sleep();
-      doggie.eat("狗粮");
+function Animal() {
+  this.superType = "Animal";
+  this.name = name || "动物";
+  //实例方法
+  this.sleep = function () {
+    console.log(this.name + "正在睡觉!!");
+  };
+}
+Animal.prototype.eat = function (food) {
+  console.log(this.name + "正在吃:" + food);
+};
+function Dog(name) {
+  this.name = name;
+}
+// 改变Dog的prototype指向，指向了一个Animal实例，实现了原型继承
+Dog.prototype = new Animal();
+// 将Dog的构造函数指向自身
+Dog.prototype.constructor = Dog;
+var doggie = new Dog("wangcai");
+console.log(doggie.superType);
+doggie.sleep();
+doggie.eat("狗粮");
 ```
 
 原型继承的优点：
@@ -4933,21 +4899,21 @@ Dog.prototype.constructor===Animal // true
 如下代码所示：
 
 ```js
-    function Person() {
-        this.emotion = ["吃饭", "睡觉", "学习"]; // 爱好
-      }
-      function Studnet(id) {
-        this.id = id; // 学号
-      }
-      Studnet.prototype = new Person();
-      Studnet.prototype.constructor = Studnet;
-      var stu1 = new Studnet(1001);
-      console.log(stu1.emotion); // ["吃饭", "睡觉", "学习"]
-      stu1.emotion.push("玩游戏");
-      console.log(stu1.emotion); // ["吃饭", "睡觉", "学习", "玩游戏"]
-      //创建 stu2对象
-      var stu2 = new Studnet(1002);
-      console.log(stu2.emotion); // ["吃饭", "睡觉", "学习", "玩游戏"]
+function Person() {
+  this.emotion = ["吃饭", "睡觉", "学习"]; // 爱好
+}
+function Studnet(id) {
+  this.id = id; // 学号
+}
+Studnet.prototype = new Person();
+Studnet.prototype.constructor = Studnet;
+var stu1 = new Studnet(1001);
+console.log(stu1.emotion); // ["吃饭", "睡觉", "学习"]
+stu1.emotion.push("玩游戏");
+console.log(stu1.emotion); // ["吃饭", "睡觉", "学习", "玩游戏"]
+//创建 stu2对象
+var stu2 = new Studnet(1002);
+console.log(stu2.emotion); // ["吃饭", "睡觉", "学习", "玩游戏"]
 ```
 
 通过上面的代码，我们可以看到 `stu1` 对象向数组 `emotion` 数组中添加了一项以后，`stu2` 对象也收到了影响。
@@ -4961,20 +4927,20 @@ Dog.prototype.constructor===Animal // true
 如下代码：
 
 ```js
-   function Person() {
-        this.emotion = ["吃饭", "睡觉", "学习"]; // 爱好
-      }
-      function Studnet(id) {
-        this.id = id; // 学号
-      }
+function Person() {
+  this.emotion = ["吃饭", "睡觉", "学习"]; // 爱好
+}
+function Studnet(id) {
+  this.id = id; // 学号
+}
 //在Studnet.prototype = new Person();代码前给Student的prototype添加study方法。
-      Studnet.prototype.study = function () {
-        console.log("好好学习，天天向上");
-      };
-      Studnet.prototype = new Person();
-      Studnet.prototype.constructor = Studnet;
-      var stu1 = new Studnet(1001);
-      stu1.study();
+Studnet.prototype.study = function () {
+  console.log("好好学习，天天向上");
+};
+Studnet.prototype = new Person();
+Studnet.prototype.constructor = Studnet;
+var stu1 = new Studnet(1001);
+stu1.study();
 ```
 
 指向上面的代码，会出现 `stu1.study is not a function` 的错误。
@@ -4984,21 +4950,21 @@ Dog.prototype.constructor===Animal // true
 修改后的代码：
 
 ```js
-      function Person() {
-        this.emotion = ["吃饭", "睡觉", "学习"]; // 爱好
-      }
-      function Studnet(id) {
-        this.id = id; // 学号
-      }
+function Person() {
+  this.emotion = ["吃饭", "睡觉", "学习"]; // 爱好
+}
+function Studnet(id) {
+  this.id = id; // 学号
+}
 
-      Studnet.prototype = new Person();
-      Studnet.prototype.constructor = Studnet;
+Studnet.prototype = new Person();
+Studnet.prototype.constructor = Studnet;
 //放在了Studnet.prototype=new Person语句的后面
-      Studnet.prototype.study = function () {
-        console.log("好好学习，天天向上");
-      };
-      var stu1 = new Studnet(1001);
-      stu1.study();
+Studnet.prototype.study = function () {
+  console.log("好好学习，天天向上");
+};
+var stu1 = new Studnet(1001);
+stu1.study();
 ```
 
 #### 构造函数继承
@@ -5006,32 +4972,32 @@ Dog.prototype.constructor===Animal // true
 在子类的构造函数中，通过 `apply()` 方法或者是 `call()` 方法，调用父类的构造函数，从而实现继承功能。
 
 ```js
-  function Person() {
-        this.emotion = ["吃饭", "睡觉", "学习"]; // 爱好
-      }
-      function Studnet(id) {
-        this.id = id; // 学号
-        Person.call(this);
-      }
-      var stu1 = new Studnet(1001);
-      console.log(stu1.emotion);
+function Person() {
+  this.emotion = ["吃饭", "睡觉", "学习"]; // 爱好
+}
+function Studnet(id) {
+  this.id = id; // 学号
+  Person.call(this);
+}
+var stu1 = new Studnet(1001);
+console.log(stu1.emotion);
 ```
 
 如下代码：
 
 ```js
-   function Person() {
-        this.emotion = ["吃饭", "睡觉", "学习"]; // 爱好
-      }
-      function Studnet(id) {
-        this.id = id; // 学号
-        Person.call(this);
-      }
-      var stu1 = new Studnet(1001);
-      var stu2 = new Studnet(1002);
-      stu1.emotion.push("玩游戏");
-      console.log(stu1.emotion); // ["吃饭", "睡觉", "学习", "玩游戏"]
-      console.log(stu2.emotion); // ["吃饭", "睡觉", "学习"]
+function Person() {
+  this.emotion = ["吃饭", "睡觉", "学习"]; // 爱好
+}
+function Studnet(id) {
+  this.id = id; // 学号
+  Person.call(this);
+}
+var stu1 = new Studnet(1001);
+var stu2 = new Studnet(1002);
+stu1.emotion.push("玩游戏");
+console.log(stu1.emotion); // ["吃饭", "睡觉", "学习", "玩游戏"]
+console.log(stu2.emotion); // ["吃饭", "睡觉", "学习"]
 ```
 
 通过上面的代码，可以看到 `stu1` 对象向 `emotion` 数组中添加数据，并不会影响到 `stu2` 对象。
@@ -5045,22 +5011,22 @@ Dog.prototype.constructor===Animal // true
 ```js
 //传递age参数
 function Person(age) {
-        this.emotion = ["吃饭", "睡觉", "学习"];
-        this.age = age;
-      }
+  this.emotion = ["吃饭", "睡觉", "学习"];
+  this.age = age;
+}
 //传递age参数
-      function Studnet(id, age) {
-        this.id = id;
-         // 传递age参数
-        Person.call(this, age);
-      }
-      var stu1 = new Studnet(1001, 20);//传递年龄
-      var stu2 = new Studnet(1002, 21);
-      stu1.emotion.push("玩游戏");
-      console.log(stu1.emotion); // ["吃饭", "睡觉", "学习", "玩游戏"]
-      console.log(stu2.emotion); // ["吃饭", "睡觉", "学习"]
-      console.log(stu1.age); // 20
-      console.log(stu2.age); // 21
+function Studnet(id, age) {
+  this.id = id;
+  // 传递age参数
+  Person.call(this, age);
+}
+var stu1 = new Studnet(1001, 20); //传递年龄
+var stu2 = new Studnet(1002, 21);
+stu1.emotion.push("玩游戏");
+console.log(stu1.emotion); // ["吃饭", "睡觉", "学习", "玩游戏"]
+console.log(stu2.emotion); // ["吃饭", "睡觉", "学习"]
+console.log(stu1.age); // 20
+console.log(stu2.age); // 21
 ```
 
 **构造函数继承的缺点**
@@ -5068,42 +5034,42 @@ function Person(age) {
 第一：子类只能继承父类中实例的属性和方法，无法继承父类原型对象上的属性和方法。
 
 ```js
-   function Person(age) {
-        this.emotion = ["吃饭", "睡觉", "学习"]; // 爱好
-        this.age = age;
-      }
-      // 原型上的方法
-      Person.prototype.study = function () {
-        console.log("好好学习，天天向上");
-      };
-      function Studnet(id, age) {
-        this.id = id; // 学号
-        Person.call(this, age);
-      }
-      var stu = new Studnet(1001, 20);
-      console.log(stu.age); // 20
-      stu.study(); //stu.study is not a function
+function Person(age) {
+  this.emotion = ["吃饭", "睡觉", "学习"]; // 爱好
+  this.age = age;
+}
+// 原型上的方法
+Person.prototype.study = function () {
+  console.log("好好学习，天天向上");
+};
+function Studnet(id, age) {
+  this.id = id; // 学号
+  Person.call(this, age);
+}
+var stu = new Studnet(1001, 20);
+console.log(stu.age); // 20
+stu.study(); //stu.study is not a function
 ```
 
 第二：在父类的构造函数中添加一个实例方法，对应的子类也就有了该实例方法，但是问题时，每创建一个子类的实例，都会有一个父类中的实例方法，这样导致的结果就是占用内存比较大。以前我们是定义在 `prototype` 原型上来解决这个问题的，但是在构造函数的继承中，又出现了这个。
 
 ```js
-  function Person(age) {
-        this.emotion = ["吃饭", "睡觉", "学习"]; // 爱好
-        this.age = age;
-        this.study = function () {
-          console.log(this.id + "号同学要努力学习");
-        };
-      }
+function Person(age) {
+  this.emotion = ["吃饭", "睡觉", "学习"]; // 爱好
+  this.age = age;
+  this.study = function () {
+    console.log(this.id + "号同学要努力学习");
+  };
+}
 
-      function Studnet(id, age) {
-        this.id = id; // 学号
-        Person.call(this, age);
-      }
-      var stu = new Studnet(1001, 20);
-      stu.study();
-      var stu1 = new Studnet(1002, 20);
-      stu1.study();
+function Studnet(id, age) {
+  this.id = id; // 学号
+  Person.call(this, age);
+}
+var stu = new Studnet(1001, 20);
+stu.study();
+var stu1 = new Studnet(1002, 20);
+stu1.study();
 //stu对象和stu1对象都单独有一个study方法。
 ```
 
@@ -5112,32 +5078,32 @@ function Person(age) {
 所谓的拷贝继承指的是先创建父类的实例，然后通过 `for…in` 的方式来遍历父类实例中的所有属性和方法，并依次赋值给子类的实例，同时原型上的属性和函数也赋给子类的实例。
 
 ```js
- function Person(age) {
-        this.emotion = ["吃饭", "睡觉", "学习"]; // 爱好
-        this.age = age;
-        this.study = function () {
-          console.log(this.id + "号同学要努力学习");
-        };
-      }
-      Person.prototype.run = function () {
-        console.log(this.id + "号学生正在跑步,年龄是:" + this.age);
-      };
+function Person(age) {
+  this.emotion = ["吃饭", "睡觉", "学习"]; // 爱好
+  this.age = age;
+  this.study = function () {
+    console.log(this.id + "号同学要努力学习");
+  };
+}
+Person.prototype.run = function () {
+  console.log(this.id + "号学生正在跑步,年龄是:" + this.age);
+};
 
-      function Studnet(id, age) {
-        var person = new Person(age);
-        for (var key in person) {
-          if (person.hasOwnProperty(key)) {
-            this[key] = person[key];
-          } else {
-            Studnet.prototype[key] = person[key];
-          }
-        }
-        // 子类自身的属性
-        this.id = id;
-      }
-      var student = new Studnet(1001, 21);
-      student.study();
-      student.run();
+function Studnet(id, age) {
+  var person = new Person(age);
+  for (var key in person) {
+    if (person.hasOwnProperty(key)) {
+      this[key] = person[key];
+    } else {
+      Studnet.prototype[key] = person[key];
+    }
+  }
+  // 子类自身的属性
+  this.id = id;
+}
+var student = new Studnet(1001, 21);
+student.study();
+student.run();
 ```
 
 在上面的代码中，创建了父类 `Person`,并且在该类中指定了相应的实例属性和实例方法，同时为其原型对象中也添加了方法。
@@ -5161,25 +5127,25 @@ function Person(age) {
 组合继承的核心思想是将构造函数继承与原型继承两种方式组合在一起。
 
 ```js
-  function Person(age) {
-        this.emotion = ["吃饭", "睡觉", "学习"]; // 爱好
-        this.age = age;
-        this.study = function () {
-          console.log(this.id + "号同学要努力学习");
-        };
-      }
-      Person.prototype.run = function () {
-        console.log(this.id + "号学生正在跑步,年龄是:" + this.age);
-      };
-      function Studnet(id, age) {
-        Person.call(this, age);
-        this.id = id; //子类独有的属性
-      }
-      Studnet.prototype = new Person();
-      Studnet.prototype.constructor = Studnet;
-      var student = new Studnet(1001, 21);
-      student.run();
-      console.log("爱好是:" + student.emotion);
+function Person(age) {
+  this.emotion = ["吃饭", "睡觉", "学习"]; // 爱好
+  this.age = age;
+  this.study = function () {
+    console.log(this.id + "号同学要努力学习");
+  };
+}
+Person.prototype.run = function () {
+  console.log(this.id + "号学生正在跑步,年龄是:" + this.age);
+};
+function Studnet(id, age) {
+  Person.call(this, age);
+  this.id = id; //子类独有的属性
+}
+Studnet.prototype = new Person();
+Studnet.prototype.constructor = Studnet;
+var student = new Studnet(1001, 21);
+student.run();
+console.log("爱好是:" + student.emotion);
 ```
 
 **组合继承的优点**
@@ -5188,7 +5154,7 @@ function Person(age) {
 
 第二：可以向父类的构造函数中传递参数。
 
- **组合继承的缺点**
+**组合继承的缺点**
 
 组合继承的主要缺点是父类的实例属性会绑定两次。
 
@@ -5201,31 +5167,31 @@ function Person(age) {
 如下代码所示：
 
 ```js
- function Person(age) {
-        this.emotion = ["吃饭", "睡觉", "学习"]; // 爱好
-        this.age = age;
-     //实例方法
-        this.study = function () {
-          console.log(this.id + "号同学要努力学习");
-        };
-      }
-      Person.prototype.run = function () {
-        console.log(this.id + "号学生正在跑步,年龄是:" + this.age);
-      };
-    // 原型方法
-      Person.prototype.study = function () {
-        console.log(this.id + "号学生需要好好学习");
-      };
-      function Studnet(id, age) {
-        Person.call(this, age);
-        this.id = id; //子类独有的属性
-      }
-      Studnet.prototype = new Person();
-      Studnet.prototype.constructor = Student;
-      var student = new Studnet(1001, 21);
-      student.run();
-      console.log("爱好是:" + student.emotion);
-      student.study(); //调用父类的实例方法student
+function Person(age) {
+  this.emotion = ["吃饭", "睡觉", "学习"]; // 爱好
+  this.age = age;
+  //实例方法
+  this.study = function () {
+    console.log(this.id + "号同学要努力学习");
+  };
+}
+Person.prototype.run = function () {
+  console.log(this.id + "号学生正在跑步,年龄是:" + this.age);
+};
+// 原型方法
+Person.prototype.study = function () {
+  console.log(this.id + "号学生需要好好学习");
+};
+function Studnet(id, age) {
+  Person.call(this, age);
+  this.id = id; //子类独有的属性
+}
+Studnet.prototype = new Person();
+Studnet.prototype.constructor = Student;
+var student = new Studnet(1001, 21);
+student.run();
+console.log("爱好是:" + student.emotion);
+student.study(); //调用父类的实例方法student
 ```
 
 在上面的代码中，在父类 `Person` 的构造函数中定义了实例方法 `study`,同时在其原型对象上也定义了一个 `study` 方法。
@@ -5235,34 +5201,34 @@ function Person(age) {
 #### 寄生式组合继承
 
 ```js
-   function Person(age) {
-        this.emotion = ["吃饭", "睡觉", "学习"]; // 爱好
-        this.age = age;
-        this.study = function () {
-          console.log(this.id + "号同学要努力学习");
-        };
-      }
-      Person.prototype.run = function () {
-        console.log(this.id + "号学生正在跑步,年龄是:" + this.age);
-      };
-      Person.prototype.study = function () {
-        console.log(this.id + "号学生需要好好学习");
-      };
-      function Studnet(id, age) {
-        Person.call(this, age);
-        this.id = id;
-      }
+function Person(age) {
+  this.emotion = ["吃饭", "睡觉", "学习"]; // 爱好
+  this.age = age;
+  this.study = function () {
+    console.log(this.id + "号同学要努力学习");
+  };
+}
+Person.prototype.run = function () {
+  console.log(this.id + "号学生正在跑步,年龄是:" + this.age);
+};
+Person.prototype.study = function () {
+  console.log(this.id + "号学生需要好好学习");
+};
+function Studnet(id, age) {
+  Person.call(this, age);
+  this.id = id;
+}
 // 定义Super构造函数
-      function Super() {}
+function Super() {}
 //Super.prototype原型对象指向了Person.prototype
-      Super.prototype = Person.prototype;
+Super.prototype = Person.prototype;
 //Student.prototype原型对象指向了Super的实例，这样就去掉了Person父类的实例属性。
-      Studnet.prototype = new Super();
-      Studnet.prototype.constructor = Studnet;
-      var student = new Studnet(1001, 21);
-      student.run();
-      console.log("爱好是:" + student.emotion);
-      student.study();
+Studnet.prototype = new Super();
+Studnet.prototype.constructor = Studnet;
+var student = new Studnet(1001, 21);
+student.run();
+console.log("爱好是:" + student.emotion);
+student.study();
 ```
 
 在上面的代码中，创建了一个 `Super` 构造函数，让 `Super.prototype` 的原型指向了 `Person.prototype`,同时将 `Super` 的对象赋值给了 `Student.prototype`，这样就去掉了 `Person` 父类的实例属性。
@@ -5296,21 +5262,21 @@ function Person(age) {
 下面，我们使用 `jQuery` 原型中的 `size` 方法和 `version` 属性。
 
 ```js
-   // 为jQuery起一个别名，模仿jQuery的框架
-      var $ = (jQuery = function () {});
-      // 为jQuery原型起一个别名
-      //这里没有直接赋值给fn，否则它属于window对象，容易造成全局污染
-      //后面要访问jquery的原型，可以直接通过jQuery.fn来实现
-      jQuery.fn = jQuery.prototype = {
-        version: "6.1.1", //添加原型属性，表示jquery的版本
-        //添加原型方法，表示返回jquery对象的长度
-        size: function () {
-          return this.length;
-        },
-      };
-      var jq = new $();
-      console.log(jq.version); // 6.1.1
-      console.log(jq.size()); // undefined
+// 为jQuery起一个别名，模仿jQuery的框架
+var $ = (jQuery = function () {});
+// 为jQuery原型起一个别名
+//这里没有直接赋值给fn，否则它属于window对象，容易造成全局污染
+//后面要访问jquery的原型，可以直接通过jQuery.fn来实现
+jQuery.fn = jQuery.prototype = {
+  version: "6.1.1", //添加原型属性，表示jquery的版本
+  //添加原型方法，表示返回jquery对象的长度
+  size: function () {
+    return this.length;
+  },
+};
+var jq = new $();
+console.log(jq.version); // 6.1.1
+console.log(jq.size()); // undefined
 ```
 
 在上面的代码中，我们是创建了一个 `jquery` 的实例，然后通过该实例完成了原型属性和方法的调用。
@@ -5319,7 +5285,7 @@ function Person(age) {
 
 ```js
 $().version;
-$().size()
+$().size();
 ```
 
 通过以上的两行代码，我们可以看到在 `jQuery` 库中，并没有使用 `new` 操作符，而是直接使用小括号运算符完成了对 `jQuery` 构造函数的调用。然后后面直接访问原型成员。
@@ -5329,24 +5295,24 @@ $().size()
 我们想到的就是，在 `jquery` 的构造函数中，直接创建 `jQuery` 类的实例。
 
 ```js
-   // 为jQuery起一个别名，模仿jQuery的框架
-      var $ = (jQuery = function () {
-        return new jQuery();
-      });
-      // 为jQuery原型起一个别名
-      //这里没有直接赋值给fn，否则它属于window对象，容易造成全局污染
-      //后面要访问jquery的原型，可以直接通过jQuery.fn来实现
-      jQuery.fn = jQuery.prototype = {
-        version: "6.1.1", //添加原型属性，表示jquery的版本
-        //添加原型方法，表示返回jquery对象的长度
-        size: function () {
-          return this.length;
-        },
-      };
-      $().version;
-      //   var jq = new $();
-      //   console.log(jq.version); // 6.1.1
-      //   console.log(jq.size());
+// 为jQuery起一个别名，模仿jQuery的框架
+var $ = (jQuery = function () {
+  return new jQuery();
+});
+// 为jQuery原型起一个别名
+//这里没有直接赋值给fn，否则它属于window对象，容易造成全局污染
+//后面要访问jquery的原型，可以直接通过jQuery.fn来实现
+jQuery.fn = jQuery.prototype = {
+  version: "6.1.1", //添加原型属性，表示jquery的版本
+  //添加原型方法，表示返回jquery对象的长度
+  size: function () {
+    return this.length;
+  },
+};
+$().version;
+//   var jq = new $();
+//   console.log(jq.version); // 6.1.1
+//   console.log(jq.size());
 ```
 
 在上面的代码中，给 `jQuery` 构造函数直接返回了 `它的实例`，`return new jQuery();`
@@ -5364,21 +5330,20 @@ Uncaught RangeError: Maximum call stack size exceeded
 原因就是：当我们通过 `$()` 调用构造函数的时候，内部有执行了 `new` 操作，这时，又会重新执行 `jQuery` 的构造函数，这样就造成了死循环。
 
 ```js
+var $ = (jQuery = function () {
+  return jQuery.fn.init(); //调用原型中的`init方法`
+});
 
-      var $ = (jQuery = function () {
-        return jQuery.fn.init(); //调用原型中的`init方法`
-      });
-
-      jQuery.fn = jQuery.prototype = {
-        init: function () {
-          return this; //返回jquery的原型对象
-        },
-        version: "6.1.1",
-        size: function () {
-          return this.length;
-        },
-      };
-      console.log($().version);
+jQuery.fn = jQuery.prototype = {
+  init: function () {
+    return this; //返回jquery的原型对象
+  },
+  version: "6.1.1",
+  size: function () {
+    return this.length;
+  },
+};
+console.log($().version);
 ```
 
 在上面的代码中，在 `jQuery` 的构造方法中，调用的是原型中的 `init` 方法，在该方法中，返回了 `jquery` 的原型对象。
@@ -5388,79 +5353,80 @@ Uncaught RangeError: Maximum call stack size exceeded
 但是，以上的处理还是隐藏一个问题，具体看如下代码：
 
 ```js
- var $ = (jQuery = function () {
-        return jQuery.fn.init();
-      });
-      jQuery.fn = jQuery.prototype = {
-        init: function () {
-          this.length = 0; //原型属性length
-          this._size = function () { //原型方法
-            return this.length;
-          };
-          return this;
-        },
-        version: "6.1.1",
-        length: 1, // 原型属性
-        size: function () {
-          return this.length;
-        },
-      };
-      console.log($().version);
-      console.log($()._size()); // 0
-      console.log($().size()); // 0
+var $ = (jQuery = function () {
+  return jQuery.fn.init();
+});
+jQuery.fn = jQuery.prototype = {
+  init: function () {
+    this.length = 0; //原型属性length
+    this._size = function () {
+      //原型方法
+      return this.length;
+    };
+    return this;
+  },
+  version: "6.1.1",
+  length: 1, // 原型属性
+  size: function () {
+    return this.length;
+  },
+};
+console.log($().version);
+console.log($()._size()); // 0
+console.log($().size()); // 0
 ```
 
 在上面的代码中，在 `init` 这个原型方法中添加了 `lenght` 属性与 `_size` 方法，在该方法中打印 `length` 的值。
 
 ```js
- var $ = (jQuery = function () {
-        return new jQuery.fn.init(); //调用原型中的`init方法`
-      });
+var $ = (jQuery = function () {
+  return new jQuery.fn.init(); //调用原型中的`init方法`
+});
 ```
 
 在 `jQuery` 的构造函数中，通过 `new` 操作符创建了一个实例对象，这样 `init()` 方法中的 `this` 指向的就是 `init` 方法的实例，而不是 `jQuery.prototype` 这个原型对象了。
 
 ```js
-  console.log($().version); // 返回undefined
-      console.log($()._size()); // 0
-      console.log($().size()); // 抛出异常：Uncaught TypeError: $(...).size is not a function
+console.log($().version); // 返回undefined
+console.log($()._size()); // 0
+console.log($().size()); // 抛出异常：Uncaught TypeError: $(...).size is not a function
 ```
 
 下面，我们来看一下怎样解决现在面临的问题。
 
 ```js
-  var $ = (jQuery = function () {
-        return new jQuery.fn.init(); //调用原型中的`init方法`
-      });
-      jQuery.fn = jQuery.prototype = {
-        init: function () {
-          this.length = 0;
-          this._size = function () {
-            return this.length;
-          };
-          return this;
-        },
-        version: "6.1.1",
-        length: 1,
-        size: function () {
-          return this.length;
-        },
-      };
-    // 将`jQuery`的原型对象覆盖掉init的原型对象。
-      jQuery.fn.init.prototype = jQuery.fn;
-      console.log($().version); //6.1.1
-      console.log($()._size()); // 0
-      console.log($().size()); // 0
+var $ = (jQuery = function () {
+  return new jQuery.fn.init(); //调用原型中的`init方法`
+});
+jQuery.fn = jQuery.prototype = {
+  init: function () {
+    this.length = 0;
+    this._size = function () {
+      return this.length;
+    };
+    return this;
+  },
+  version: "6.1.1",
+  length: 1,
+  size: function () {
+    return this.length;
+  },
+};
+// 将`jQuery`的原型对象覆盖掉init的原型对象。
+jQuery.fn.init.prototype = jQuery.fn;
+console.log($().version); //6.1.1
+console.log($()._size()); // 0
+console.log($().size()); // 0
 ```
 
 在上面的代码中，我们添加了一行代码：
 
 ```js
- jQuery.fn.init.prototype = jQuery.fn;
+jQuery.fn.init.prototype = jQuery.fn;
 ```
 
 ```js
- console.log($().version);
+console.log($().version);
 ```
 
 **下面，要实现的是选择器功能**
@@ -5539,7 +5505,7 @@ Uncaught RangeError: Maximum call stack size exceeded
 在使用 `jQuery` 库的时候，我们经常可以看到如下的操作：
 
 ```js
-$('div').html()
+$("div").html();
 ```
 
 以上代码的含义就是直接在 `jQuery` 对象上调用 `html()` 方法来操作 `jQuery` 包含所有的 `DOM` 元素。
@@ -5643,16 +5609,16 @@ $('div').html()
 在上面的代码中，首先添加了 `jQuery.each` 方法。
 
 ```js
-    //提供each扩展方法
-      jQuery.each = function (object, callback, args) {
-        //通过for循环的方式来遍历jQuery对象中的每个DOM元素。
-        for (var i = 0; i < object.length; i++) {
-          // 在每个DOM元素上调用回调函数
-            //这里的让回调函数中的this指向了dom元素。
-          callback.call(object[i], args);
-        }
-        return object; //返回jQuery对象。
-      };
+//提供each扩展方法
+jQuery.each = function (object, callback, args) {
+  //通过for循环的方式来遍历jQuery对象中的每个DOM元素。
+  for (var i = 0; i < object.length; i++) {
+    // 在每个DOM元素上调用回调函数
+    //这里的让回调函数中的this指向了dom元素。
+    callback.call(object[i], args);
+  }
+  return object; //返回jQuery对象。
+};
 ```
 
 在上面的代码中，通过 `for` 循环遍历 `jQuery` 对象中的每个 `DOM` 元素。然后执行回调函数 `callback`
@@ -5677,13 +5643,13 @@ $('div').html()
 `window.onload` 的方法修改成如下的形式：
 
 ```js
-    window.onload = function () {
-        // console.log($("div").length);
-        $("div").html("<h2>hello<h2>");
-      };
+window.onload = function () {
+  // console.log($("div").length);
+  $("div").html("<h2>hello<h2>");
+};
 ```
 
-### **下面我们实现 `jQuery` 的扩展功能
+### \*\*下面我们实现 `jQuery` 的扩展功能
 
 jQuery 提供了良好的扩展接口，方便用户自定义 jQuery 方法。根据设计习惯，如果为 jQuery 或者 jQuery.prototype 新增方法时，我们可以直接通过点语法来实现，例如上面我们扩展的 `html` 方法，或者在 jQuery.prototype 对象结构内增加。但是，如果分析 jQuery 源码，会发现它是通过 extend() 函数来实现功能扩展的。
 
@@ -5694,7 +5660,7 @@ jQuery 提供了良好的扩展接口，方便用户自定义 jQuery 方法。�
 extend() 函数的功能很简单，它只是把指定对象的方法复制给 ` jQuery` 对象或者 `jQuery.prototype`。
 
 ```html
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -5783,7 +5749,7 @@ extend() 函数的功能很简单，它只是把指定对象的方法复制给 `
             function (val) {
               this.innerHTML = val;
             },
-            val
+            val,
           );
         },
       });
@@ -5802,18 +5768,17 @@ extend() 函数的功能很简单，它只是把指定对象的方法复制给 `
     <div></div>
   </body>
 </html>
-
 ```
 
 在上面的代码中，我们为 `jQuery` 的原型对象添加了 `extend` 方法
 
 ```js
-     jQuery.extend = jQuery.fn.extend = function (obj) {
-        for (var prop in obj) {
-          this[prop] = obj[prop];
-        }
-        return this;
-      };
+jQuery.extend = jQuery.fn.extend = function (obj) {
+  for (var prop in obj) {
+    this[prop] = obj[prop];
+  }
+  return this;
+};
 ```
 
 把 `obj` 对象中的属性添加到 `jQuery` 原型对象上。
@@ -5821,17 +5786,17 @@ extend() 函数的功能很简单，它只是把指定对象的方法复制给 `
 下面调用 `extend` 方法，同时设置 `html` 属性
 
 ```js
-  jQuery.fn.extend({
-        html: function (val) {
-          jQuery.each(
-            this,
-            function (val) {
-              this.innerHTML = val;
-            },
-            val
-          );
-        },
-      });
+jQuery.fn.extend({
+  html: function (val) {
+    jQuery.each(
+      this,
+      function (val) {
+        this.innerHTML = val;
+      },
+      val,
+    );
+  },
+});
 ```
 
 这样 `jQuery` 原型对象上就有了 `html` 方法。
@@ -6003,23 +5968,23 @@ extend() 函数的功能很简单，它只是把指定对象的方法复制给 `
 在上面的代码中，重新改造 `extend` 方法。
 
 ```js
-     jQuery.extend = jQuery.fn.extend = function () {
-        var destination = arguments[0],
-          source = arguments[1];
-        //如果存在两个参数，并且都是对象
-        if (typeof destination === "object" && typeof source === "object") {
-          //把第二个对象合并到第一个参数对象中，并返回合并后的对象
-          for (var property in source) {
-            destination[property] = source[property];
-          }
-          return destination;
-        } else {
-          for (var prop in destination) {
-            this[prop] = destination[prop];
-          }
-          return this;
-        }
-      };
+jQuery.extend = jQuery.fn.extend = function () {
+  var destination = arguments[0],
+    source = arguments[1];
+  //如果存在两个参数，并且都是对象
+  if (typeof destination === "object" && typeof source === "object") {
+    //把第二个对象合并到第一个参数对象中，并返回合并后的对象
+    for (var property in source) {
+      destination[property] = source[property];
+    }
+    return destination;
+  } else {
+    for (var prop in destination) {
+      this[prop] = destination[prop];
+    }
+    return this;
+  }
+};
 ```
 
 在 `extend` 方法中，首先获取两个参数，然后判断这两个参数是否都是对象，如果都是对象，把第二个参数对象合并到第一个参数对象中，并返回合并后的对象。
@@ -6027,23 +5992,23 @@ extend() 函数的功能很简单，它只是把指定对象的方法复制给 `
 否则，将第一个参数对象复制到 `jquery` 的原型对象上。
 
 ```js
-     jQuery.fn.extend({
-        fontStyle: function (obj) {
-          var defaults = {
-            color: "#ccc",
-            size: "16px",
-          };
-          //如果有参数，会覆盖掉默认的参数
-          defaults = jQuery.extend(defaults, obj || {});
-            // console.log("this==", this);//init {0: p, 1: p, length: 2, context: document}
-          //为每个DOM元素执设置样式.
-          jQuery.each(this, function () {
-               //这里的this表示的是p标签，因为在each方法内部通过call改变了this指向，让this指向了每个遍历得到的p元素
-            this.style.color = defaults.color;
-            this.style.fontSize = defaults.size;
-          });
-        },
-      });
+jQuery.fn.extend({
+  fontStyle: function (obj) {
+    var defaults = {
+      color: "#ccc",
+      size: "16px",
+    };
+    //如果有参数，会覆盖掉默认的参数
+    defaults = jQuery.extend(defaults, obj || {});
+    // console.log("this==", this);//init {0: p, 1: p, length: 2, context: document}
+    //为每个DOM元素执设置样式.
+    jQuery.each(this, function () {
+      //这里的this表示的是p标签，因为在each方法内部通过call改变了this指向，让this指向了每个遍历得到的p元素
+      this.style.color = defaults.color;
+      this.style.fontSize = defaults.size;
+    });
+  },
+});
 ```
 
 在上面的代码中，调用了 `extend` 方法，然后传递了 `fontStyle`,这个 `fontStyle` 可以用来设置文本的颜色与字体大小。
@@ -6263,49 +6228,49 @@ window.jQuery = window.$ = jQuery;
 `querySelector`：该选择器返回的是在基准元素下，选择器匹配到的元素集合中的第一个元素。该选择器的参数接收的是一个 `css` 选择
 
 ```html
- <body>
-    <div>
-      <h4>标题内容</h4>
-      <span>span标签内容</span>
-      <p>
-        段落内容
-        <span>段落中的第一个span标签</span><br />
-        <span>段落中的第二个span标签</span>
-      </p>
-    </div>
-  </body>
-  <script>
-    console.log(document.querySelector("p span").innerHTML);// 获取p标签中第一个span标签中的内容，所以输出结果为:段落中的第一个span标签
-       console.log(document.querySelector("h4,span").innerHTML);//获取第一个h4或者是span元素的内容：所以输出结果为：标题内容
-        var ele = document.querySelector("p");
-    console.log(ele.querySelector("div span").innerHTML);//段落中的第一个span标签。
-      // 首先先找到`p`元素，然后看一下p元素下面有没有div,我们发现没有，但是依然能够匹配到span元素。
-      //原因是：在匹配的过程中会优先找出最外层div元素下的span元素的集合，然后在判断span元素是否属于p元素的子元素，最后返回
-      //第一个匹配到的span元素的值。
-  </script>
+<body>
+  <div>
+    <h4>标题内容</h4>
+    <span>span标签内容</span>
+    <p>
+      段落内容
+      <span>段落中的第一个span标签</span><br />
+      <span>段落中的第二个span标签</span>
+    </p>
+  </div>
+</body>
+<script>
+  console.log(document.querySelector("p span").innerHTML); // 获取p标签中第一个span标签中的内容，所以输出结果为:段落中的第一个span标签
+  console.log(document.querySelector("h4,span").innerHTML); //获取第一个h4或者是span元素的内容：所以输出结果为：标题内容
+  var ele = document.querySelector("p");
+  console.log(ele.querySelector("div span").innerHTML); //段落中的第一个span标签。
+  // 首先先找到`p`元素，然后看一下p元素下面有没有div,我们发现没有，但是依然能够匹配到span元素。
+  //原因是：在匹配的过程中会优先找出最外层div元素下的span元素的集合，然后在判断span元素是否属于p元素的子元素，最后返回
+  //第一个匹配到的span元素的值。
+</script>
 ```
 
 下面，把 `HTML` 文档的结构修改成如下的形式：
 
 ```html
 <div>
-      <h4>标题内容</h4>
-      <span>span标签内容</span>
-    <!--这里增加了一个p标签-->
-      <p>第一个段落</p>
-      <p>
-        段落内容
-        <span>段落中的第一个span标签</span><br />
-        <span>段落中的第二个span标签</span>
-      </p>
-    </div>
+  <h4>标题内容</h4>
+  <span>span标签内容</span>
+  <!--这里增加了一个p标签-->
+  <p>第一个段落</p>
+  <p>
+    段落内容
+    <span>段落中的第一个span标签</span><br />
+    <span>段落中的第二个span标签</span>
+  </p>
+</div>
 ```
 
 执行如下代码会出现异常：
 
 ```js
-   var ele = document.querySelector("p");
-    console.log(ele.querySelector("div span").innerHTML);//Cannot read property 'innerHTML' of null
+var ele = document.querySelector("p");
+console.log(ele.querySelector("div span").innerHTML); //Cannot read property 'innerHTML' of null
 ```
 
 原因：会找到第一个 `p` 元素,然后看一下 `p` 标签中是否有 `div`,发现没有，但是会找出最外层 `div` 下的所有 `span` 元素的集合，看一下 `span` 元素是否属于 `p` 元素，而第一个 `p` 元素中没有 `span` 元素，所以抛出异常。
@@ -6315,34 +6280,33 @@ window.jQuery = window.$ = jQuery;
 `querySelectorAll` 选择器与 `querySelector` 选择器的区别是：`querySelectAll` 选择器会获取到基准元素下匹配到所有子元素的集合。返回的是一个 `NodeList` 集合。
 
 ```html
- <div>
-      <h4>标题内容</h4>
-      <span>span标签内容</span>
-      <p>
-        段落内容
-        <span>段落中的第一个span标签</span><br />
-        <span>段落中的第二个span标签</span>
-      </p>
-    </div>
+<div>
+  <h4>标题内容</h4>
+  <span>span标签内容</span>
+  <p>
+    段落内容
+    <span>段落中的第一个span标签</span><br />
+    <span>段落中的第二个span标签</span>
+  </p>
+</div>
 <script>
-   console.log(document.querySelectorAll("span"));//返回所有的span标签。
+  console.log(document.querySelectorAll("span")); //返回所有的span标签。
 </script>
 ```
 
 下面，再来看一段代码：
 
 ```html
- <div id="container">
-      <div class="bar"></div>
-      <div class="foo">
-        <div class="inner"></div>
-      </div>
-    </div>
+<div id="container">
+  <div class="bar"></div>
+  <div class="foo">
+    <div class="inner"></div>
+  </div>
+</div>
 <script>
-    // 获取container下的所有div元素。
- var div1 = document.querySelectorAll("#container div");
-    console.log(div1);// NodeList(3) [div.bar, div.foo, div.inner]
-
+  // 获取container下的所有div元素。
+  var div1 = document.querySelectorAll("#container div");
+  console.log(div1); // NodeList(3) [div.bar, div.foo, div.inner]
 </script>
 ```
 
@@ -6355,30 +6319,30 @@ window.jQuery = window.$ = jQuery;
 `item()` 函数：通过序号索引值来获取特定的某个节点，超过索引则返回 `null`.
 
 ```html
-  <div id="container">
-      <div class="bar"></div>
-      <div class="foo">
-        <div class="inner"></div>
-      </div>
-    </div>
+<div id="container">
+  <div class="bar"></div>
+  <div class="foo">
+    <div class="inner"></div>
+  </div>
+</div>
 <script>
- var main = document.getElementById("container").children;
-    console.log(main); //HTMLCollection
-    console.log(main.item(0)); //输出:<div class="bar"></div>
-    console.log(main.item(1)); // 输出:foo元素
+  var main = document.getElementById("container").children;
+  console.log(main); //HTMLCollection
+  console.log(main.item(0)); //输出:<div class="bar"></div>
+  console.log(main.item(1)); // 输出:foo元素
 </script>
 ```
 
 `namedItem()` 函数：该函数用来返回一个节点，首先通过 `id` 属性去匹配，然后如果没有匹配到则使用 `name` 属性匹配，如果还没有匹配到则返回 `null`. 当出现重复的 `id` 或者 `name` 属性时，只返回匹配到的第一个值。
 
 ```html
-  <form id="form1">
-      <input type="text" id="userName" />
-      <input type="password" id="password" name="userPwd" />
-    </form>
+<form id="form1">
+  <input type="text" id="userName" />
+  <input type="password" id="password" name="userPwd" />
+</form>
 <script>
- var form1 = document.getElementById("form1").children;
-    console.log(form1.namedItem("userPwd"));//   <input type="password" id="password" name="userPwd" />
+  var form1 = document.getElementById("form1").children;
+  console.log(form1.namedItem("userPwd")); //   <input type="password" id="password" name="userPwd" />
 </script>
 ```
 
@@ -6421,18 +6385,17 @@ window.jQuery = window.$ = jQuery;
 第二：`NodeList` 对象中存储的是元素节点的集合，包括元素，以及节点，例如 `text` 文本节点，而 `HTMLCollection` 对象中只包含了元素的集合。
 
 ```html
-  <form id="form1">
-      用户名<input type="text" id="userName" /> <br />
-      用户密码<input type="password" id="password" name="userPwd" />
-    </form>
+<form id="form1">
+  用户名<input type="text" id="userName" /> <br />
+  用户密码<input type="password" id="password" name="userPwd" />
+</form>
 <script>
- //获取HTMLCollection集合
-    var form1Children = document.getElementById("form1").children;
-    console.log(form1Children);
-    //获取NodeList对象
-    var formNodes = document.getElementById("form1").childNodes;
-    console.log(formNodes);
-
+  //获取HTMLCollection集合
+  var form1Children = document.getElementById("form1").children;
+  console.log(form1Children);
+  //获取NodeList对象
+  var formNodes = document.getElementById("form1").childNodes;
+  console.log(formNodes);
 </script>
 ```
 
@@ -6443,40 +6406,40 @@ window.jQuery = window.$ = jQuery;
 **添加节点**
 
 ```html
-  <form id="form1">
-      用户名<input type="text" id="userName" /> <br />
-      用户密码<input type="password" id="password" name="userPwd" />
-    </form>
+<form id="form1">
+  用户名<input type="text" id="userName" /> <br />
+  用户密码<input type="password" id="password" name="userPwd" />
+</form>
 <script>
   var form1 = document.getElementById("form1");
-    //创建一个input元素
-    var newInput = document.createElement("input");
-    //创建属性
-    var newAttr = document.createAttribute("type");
-    newAttr.value = "password";
-    //将属性绑定到元素上
-    newInput.setAttributeNode(newAttr);
+  //创建一个input元素
+  var newInput = document.createElement("input");
+  //创建属性
+  var newAttr = document.createAttribute("type");
+  newAttr.value = "password";
+  //将属性绑定到元素上
+  newInput.setAttributeNode(newAttr);
 
-    //创建一个文本节点
-    var newTextNode = document.createTextNode("用户密码");
-    form1.appendChild(newTextNode); //添加文本节点
-    form1.appendChild(newInput);
+  //创建一个文本节点
+  var newTextNode = document.createTextNode("用户密码");
+  form1.appendChild(newTextNode); //添加文本节点
+  form1.appendChild(newInput);
 </script>
 ```
 
 **删除节点**
 
 ```html
-  <form id="form1">
-      用户名<input type="text" id="userName" /> <br />
-      用户密码<input type="password" id="password" name="userPwd" />
-    </form>
+<form id="form1">
+  用户名<input type="text" id="userName" /> <br />
+  用户密码<input type="password" id="password" name="userPwd" />
+</form>
 <script>
   var form1 = document.getElementById("form1");
-    var nodeChilds = form1.childNodes;
-    console.log(nodeChilds);
-    form1.removeChild(nodeChilds[0]);
-    form1.removeChild(nodeChilds[0]);
+  var nodeChilds = form1.childNodes;
+  console.log(nodeChilds);
+  form1.removeChild(nodeChilds[0]);
+  form1.removeChild(nodeChilds[0]);
 </script>
 ```
 
@@ -6491,35 +6454,34 @@ window.jQuery = window.$ = jQuery;
 **删除文本框的 `id` 属性**
 
 ```html
-  <form id="form1">
-      用户名<input type="text" id="userName" /> <br />
-      用户密码<input type="password" id="password" name="userPwd" />
-    </form>
-  <script>
-   var input = document.querySelector("#userName");
-    input.removeAttribute("id");
+<form id="form1">
+  用户名<input type="text" id="userName" /> <br />
+  用户密码<input type="password" id="password" name="userPwd" />
+</form>
+<script>
+  var input = document.querySelector("#userName");
+  input.removeAttribute("id");
 </script>
 ```
 
- **修改节点**
+**修改节点**
 
 **修改元素节点**
 
 修改元素的节点的操作，一般是直接用新的节点替换旧的节点。关于节点的替换可以使用，`replaceChild` 函数来实现，该函数的调用是通过父元素来调用的，例如：把 `div1` 中的内容替换掉，这里就需要通过 `container.replaceChild` 方法来完成，`replaceChild` 方法需要两个参数，第一个参数表示的是新元素，第二个参数表示的是旧元素。
 
 ```html
-   <div id="container">
-      <div id="div1">hello</div>
-    </div>
-   <script>
+<div id="container">
+  <div id="div1">hello</div>
+</div>
+<script>
   var container = document.getElementById("container"); //获取父元素container
-      var div1 = document.getElementById("div1"); //获取子元素
-      var newDiv = document.createElement("div"); // 创建一个新的div元素
-      var newText = document.createTextNode("nihao"); //创建一个文本内容
-      newDiv.appendChild(newText); //把创建的文本内容添加到新的div中
-      container.replaceChild(newDiv, div1); //用新的div替换旧的div,完成节点的修改操作。
+  var div1 = document.getElementById("div1"); //获取子元素
+  var newDiv = document.createElement("div"); // 创建一个新的div元素
+  var newText = document.createTextNode("nihao"); //创建一个文本内容
+  newDiv.appendChild(newText); //把创建的文本内容添加到新的div中
+  container.replaceChild(newDiv, div1); //用新的div替换旧的div,完成节点的修改操作。
 </script>
-
 ```
 
 **修改属性节点**
@@ -6527,38 +6489,38 @@ window.jQuery = window.$ = jQuery;
 修改属性的节点，我们可以通过 `setAttribute()` 函数来完成，如果想获取属性节点可以通过 `getAttribute()` 函数来完成。
 
 ```html
-  <div id="container">
-      <div id="div1" style="color: red">hello</div>
-    </div>
+<div id="container">
+  <div id="div1" style="color: red">hello</div>
+</div>
 <script>
-     var div1 = document.getElementById("div1");
-      div1.setAttribute("style", "color:blue"); //设置style属性
-      console.log(div1.getAttribute("style")); // 获取style属性的值
+  var div1 = document.getElementById("div1");
+  div1.setAttribute("style", "color:blue"); //设置style属性
+  console.log(div1.getAttribute("style")); // 获取style属性的值
 </script>
 ```
 
 修改属性节点除了通过 `setAttribute()` 方法完成以外，还可以通过属性名直接进行修改
 
 ```html
- <div id="container">
-      <div id="div1" style="color: red">hello</div>
-    </div>
+<div id="container">
+  <div id="div1" style="color: red">hello</div>
+</div>
 <script>
- var div1 = document.getElementById("div1");
-      div1.style.color = "blue";
+  var div1 = document.getElementById("div1");
+  div1.style.color = "blue";
 </script>
 ```
 
 但是通过这种方式进行修改，还需要注意一个问题：直接修改的属性名与元素节点中的属性名不一定是一致的。例如 `class` 这个属性，在 `javascript` 中是关键字，不能直接作为属性使用，这时需要通过 `className` 来完成。
 
 ```html
-    <div id="container">
-      <div id="div1" style="color: red">hello</div>
-      <div id="div2" class="foo">前端学习</div>
-    </div>
-  <script>
+<div id="container">
+  <div id="div1" style="color: red">hello</div>
+  <div id="div2" class="foo">前端学习</div>
+</div>
+<script>
   var div2 = document.getElementById("div2");
-      div2.className = "bar"; //注意这里使用的是className
+  div2.className = "bar"; //注意这里使用的是className
 </script>
 ```
 
@@ -6596,18 +6558,18 @@ window.jQuery = window.$ = jQuery;
 这里需要对页面中所有 `p` 标签内文字调整大小 (单击按钮完成)
 
 ```js
- //不缓存的结果
-      for (let i = 0; i < document.getElementsByTagName("p").length; i++) {
-        //每次循环，都会计算lenght,频繁进行DOM查询
-      }
+//不缓存的结果
+for (let i = 0; i < document.getElementsByTagName("p").length; i++) {
+  //每次循环，都会计算lenght,频繁进行DOM查询
+}
 ```
 
 ```js
- const pList = document.getElementsByTagName("p");
-      const length = pList.length;
-      for (let i = 0; i < length; i++) {
-        //缓存length,只进行一次DOM查询
-      }
+const pList = document.getElementsByTagName("p");
+const length = pList.length;
+for (let i = 0; i < length; i++) {
+  //缓存length,只进行一次DOM查询
+}
 ```
 
 下面看一下第二种情况：
@@ -6617,34 +6579,34 @@ window.jQuery = window.$ = jQuery;
 传统的做法：
 
 ```html
- <ul id="list"></ul>
+<ul id="list"></ul>
 ```
 
 ```js
 const listNode = document.getElementById("list");
-      for (let i = 0; i < 10; i++) {
-        const li = document.createElement("li");
-        li.innerHTML = `item${i}`;
-        list.appendChild(li);
-      }
+for (let i = 0; i < 10; i++) {
+  const li = document.createElement("li");
+  li.innerHTML = `item${i}`;
+  list.appendChild(li);
+}
 ```
 
 执行上面的代码，可以实现对应的需求，但是问题是上面的操作是频繁操作 `dom`，性能比较低。
 
 ```js
 const listNode = document.getElementById("list");
-      //创建一个文档片段，文档片段存在于内存中，并不在DOM树中，所以此时还没有插入到DOM中
-      //也就是先将dom插入到临时区域中
-      const frag = document.createDocumentFragment();
-      //执行插入
+//创建一个文档片段，文档片段存在于内存中，并不在DOM树中，所以此时还没有插入到DOM中
+//也就是先将dom插入到临时区域中
+const frag = document.createDocumentFragment();
+//执行插入
 
-      for (let i = 0; i < 10; i++) {
-        const li = document.createElement("li");
-        li.innerHTML = `item${i}`;
-        frag.appendChild(li);
-      }
-      //都完成后，再插入到DOM树中
-      listNode.appendChild(frag);
+for (let i = 0; i < 10; i++) {
+  const li = document.createElement("li");
+  li.innerHTML = `item${i}`;
+  frag.appendChild(li);
+}
+//都完成后，再插入到DOM树中
+listNode.appendChild(frag);
 ```
 
 ### 5、什么是事件传播
@@ -6685,48 +6647,48 @@ window----> document----> html----> body ---->目标元素
 
 ```html
 <body>
-    <table border="1">
-      <tbody>
-        <tr>
-          <td>单元格内容</td>
-        </tr>
-      </tbody>
-    </table>
-    <script>
-      var table = document.querySelector("table");
-      var tbody = document.querySelector("tbody");
-      var tr = document.querySelector("tr");
-      var td = document.querySelector("td");
-      table.addEventListener(
-        "click",
-        function () {
-          console.log("table");
-        },
-        true
-      );
-      tbody.addEventListener(
-        "click",
-        function () {
-          console.log("tbody");
-        },
-        true
-      );
-      tr.addEventListener(
-        "click",
-        function () {
-          console.log("tr");
-        },
-        true
-      );
-      td.addEventListener(
-        "click",
-        function () {
-          console.log("td");
-        },
-        true
-      );
-    </script>
-  </body>
+  <table border="1">
+    <tbody>
+      <tr>
+        <td>单元格内容</td>
+      </tr>
+    </tbody>
+  </table>
+  <script>
+    var table = document.querySelector("table");
+    var tbody = document.querySelector("tbody");
+    var tr = document.querySelector("tr");
+    var td = document.querySelector("td");
+    table.addEventListener(
+      "click",
+      function () {
+        console.log("table");
+      },
+      true,
+    );
+    tbody.addEventListener(
+      "click",
+      function () {
+        console.log("tbody");
+      },
+      true,
+    );
+    tr.addEventListener(
+      "click",
+      function () {
+        console.log("tr");
+      },
+      true,
+    );
+    td.addEventListener(
+      "click",
+      function () {
+        console.log("td");
+      },
+      true,
+    );
+  </script>
+</body>
 ```
 
 在上面的代码中，有一个表格，给表格中的每个元素通过 `addEventListener` 方法绑定了单击事件，同时该方法的第三个参数，设置为了 `true`,这样就表明事件将在捕获阶段发生。
@@ -6741,32 +6703,32 @@ window----> document----> html----> body ---->目标元素
 
 ```html
 <body>
-    <table border="1">
-      <tbody>
-        <tr>
-          <td>单元格内容</td>
-        </tr>
-      </tbody>
-    </table>
-    <script>
-      var table = document.querySelector("table");
-      var tbody = document.querySelector("tbody");
-      var tr = document.querySelector("tr");
-      var td = document.querySelector("td");
-      table.addEventListener("click", function () {
-        console.log("table");
-      });
-      tbody.addEventListener("click", function () {
-        console.log("tbody");
-      });
-      tr.addEventListener("click", function () {
-        console.log("tr");
-      });
-      td.addEventListener("click", function () {
-        console.log("td");
-      });
-    </script>
-  </body>
+  <table border="1">
+    <tbody>
+      <tr>
+        <td>单元格内容</td>
+      </tr>
+    </tbody>
+  </table>
+  <script>
+    var table = document.querySelector("table");
+    var tbody = document.querySelector("tbody");
+    var tr = document.querySelector("tr");
+    var td = document.querySelector("td");
+    table.addEventListener("click", function () {
+      console.log("table");
+    });
+    tbody.addEventListener("click", function () {
+      console.log("tbody");
+    });
+    tr.addEventListener("click", function () {
+      console.log("tr");
+    });
+    td.addEventListener("click", function () {
+      console.log("td");
+    });
+  </script>
+</body>
 ```
 
 上面的代码，我们将 `addEventListener` 方法的第三个参数 `true` 去掉了，这时就有事件的捕获变成了事件的冒泡。默认值为 (`false`).
@@ -6817,45 +6779,45 @@ window----> document----> html----> body ---->目标元素
 如下代码所示：
 
 ```html
- <body>
-    <table border="1">
-      <tbody>
-        <tr>
-          <td>单元格内容</td>
-        </tr>
-      </tbody>
-    </table>
-    <script>
-      var table = document.querySelector("table");
-      var tbody = document.querySelector("tbody");
-      var tr = document.querySelector("tr");
-      var td = document.querySelector("td");
-      table.addEventListener("click", function () {
-        console.log("table");
-      });
-      tbody.addEventListener("click", function () {
-        console.log("tbody");
-      });
-      tr.addEventListener("click", function () {
-        console.log("tr");
-      });
-        //单元格第一个单击事件
-      td.addEventListener("click", function (event) {
-        console.log("td1");
-      });
-        //单元格第二个单击事件
-      td.addEventListener("click", function (event) {
-        //阻止了事件的冒泡操作
-       // event.stopImmediatePropagation();
-         event.stopPropagation();
-        console.log("td2");
-      });
-     //   单元格第三个单击事件
-      td.addEventListener("click", function (event) {
-        console.log("td3");
-      });
-    </script>
-  </body>
+<body>
+  <table border="1">
+    <tbody>
+      <tr>
+        <td>单元格内容</td>
+      </tr>
+    </tbody>
+  </table>
+  <script>
+    var table = document.querySelector("table");
+    var tbody = document.querySelector("tbody");
+    var tr = document.querySelector("tr");
+    var td = document.querySelector("td");
+    table.addEventListener("click", function () {
+      console.log("table");
+    });
+    tbody.addEventListener("click", function () {
+      console.log("tbody");
+    });
+    tr.addEventListener("click", function () {
+      console.log("tr");
+    });
+    //单元格第一个单击事件
+    td.addEventListener("click", function (event) {
+      console.log("td1");
+    });
+    //单元格第二个单击事件
+    td.addEventListener("click", function (event) {
+      //阻止了事件的冒泡操作
+      // event.stopImmediatePropagation();
+      event.stopPropagation();
+      console.log("td2");
+    });
+    //   单元格第三个单击事件
+    td.addEventListener("click", function (event) {
+      console.log("td3");
+    });
+  </script>
+</body>
 ```
 
 在上面的代码中，给单元格添加了三个单击的事件，同时第二个单击事件使用了 `stopPropagation` 方法来阻止冒泡行为。
@@ -6874,45 +6836,44 @@ window----> document----> html----> body ---->目标元素
 
 ```html
 <body>
-    <table border="1">
-      <tbody>
-        <tr>
-          <td>单元格内容</td>
-        </tr>
-      </tbody>
-    </table>
-    <script>
-      var table = document.querySelector("table");
-      var tbody = document.querySelector("tbody");
-      var tr = document.querySelector("tr");
-      var td = document.querySelector("td");
-      //事件捕获
-      table.addEventListener(
-        "click",
-        function () {
-          console.log("table");
-        },
-        true
-      );
-      //事件冒泡
-      tbody.addEventListener("click", function () {
-        console.log("tbody");
-      });
-      //事件捕获
-      tr.addEventListener(
-        "click",
-        function () {
-          console.log("tr");
-        },
-        true
-      );
-      //事件冒泡
-      td.addEventListener("click", function (event) {
-        console.log("td");
-      });
-
-    </script>
-  </body>
+  <table border="1">
+    <tbody>
+      <tr>
+        <td>单元格内容</td>
+      </tr>
+    </tbody>
+  </table>
+  <script>
+    var table = document.querySelector("table");
+    var tbody = document.querySelector("tbody");
+    var tr = document.querySelector("tr");
+    var td = document.querySelector("td");
+    //事件捕获
+    table.addEventListener(
+      "click",
+      function () {
+        console.log("table");
+      },
+      true,
+    );
+    //事件冒泡
+    tbody.addEventListener("click", function () {
+      console.log("tbody");
+    });
+    //事件捕获
+    tr.addEventListener(
+      "click",
+      function () {
+        console.log("tr");
+      },
+      true,
+    );
+    //事件冒泡
+    td.addEventListener("click", function (event) {
+      console.log("td");
+    });
+  </script>
+</body>
 ```
 
 在上面的代码中，既有事件捕获又有事件冒泡，那么执行的结果是怎样的呢？
@@ -7036,21 +6997,21 @@ window----> document----> html----> body ---->目标元素
 当然为了能够兼容其它的浏览器，可以做一下兼容的处理。
 
 ```js
-   var eventFn = {
-        event: function (e) {
-          return e || window.event;
-        },
-        target: function (e) {
-          return e.target || e.srcElement;
-        },
-      };
+var eventFn = {
+  event: function (e) {
+    return e || window.event;
+  },
+  target: function (e) {
+    return e.target || e.srcElement;
+  },
+};
 
-      var btn = document.getElementById("btn");
-      btn.addEventListener("click", function (event) {
-        var event = eventFn.event(event);
-        console.log("target=", eventFn.target(event));
-        console.log("srcElement=", eventFn.target(event));
-      });
+var btn = document.getElementById("btn");
+btn.addEventListener("click", function (event) {
+  var event = eventFn.event(event);
+  console.log("target=", eventFn.target(event));
+  console.log("srcElement=", eventFn.target(event));
+});
 ```
 
 这里在 `eventFn` 对象中封装了一个 `target` 属性。
@@ -7058,13 +7019,13 @@ window----> document----> html----> body ---->目标元素
 **阻止默认行为**
 
 ```html
- <a href="https://www.baidu.com" id="a1">链接</a>
-  <script>
-      var a1 = document.getElementById("a1");
-      a1.addEventListener("click", function (event) {
-        event.preventDefault(); //阻止默认行为
-        alert("你点击了链接");
-      });
+<a href="https://www.baidu.com" id="a1">链接</a>
+<script>
+  var a1 = document.getElementById("a1");
+  a1.addEventListener("click", function (event) {
+    event.preventDefault(); //阻止默认行为
+    alert("你点击了链接");
+  });
 </script>
 ```
 
@@ -7081,20 +7042,18 @@ window----> document----> html----> body ---->目标元素
 如下代码：
 
 ```js
-var btn=document.getElementById('btn')
-btn.onclick=function(){}
+var btn = document.getElementById("btn");
+btn.onclick = function () {};
 ```
 
 或者也可以采用如下的方式：
 
 ```html
-<button onclick="fn()">
-    单击
-    </button>
+<button onclick="fn()">单击</button>
 <script>
-  function fn(){
-        console.log('hello')
-    }
+  function fn() {
+    console.log("hello");
+  }
 </script>
 ```
 
@@ -7136,15 +7095,15 @@ btn.onclick=null
 在 `IE10` 及以下版本中只支持事件的冒泡，在 `IE11` 中同时支持事件的捕获与事件冒泡。在 `IE10` 及以下版本中，可以通过 `attachEvent` 函数来添加事件处理程序，通过 `detachEvent` 函数删除事件处理程序。
 
 ```js
-element.attachEvent('on'+ eventName,handler) // 添加事件处理程序
-element.detachEvent('on'+ eventName,handler) //  删除事件处理程序
+element.attachEvent("on" + eventName, handler); // 添加事件处理程序
+element.detachEvent("on" + eventName, handler); //  删除事件处理程序
 ```
 
 在 `IE11` 和非 `IE` 浏览器中，同时支持事件捕获和事件冒泡两个阶段，可以通过 `addEventListener()` 函数添加事件处理程序，可以通过 `removeEventListener()` 函数删除事件处理程序。
 
 ```js
-addEventListener(eventName,handler,useCapture) //添加事件处理程序
-removeEventListener(eventName,handler,useCapture) // 删除事件处理程序
+addEventListener(eventName, handler, useCapture); //添加事件处理程序
+removeEventListener(eventName, handler, useCapture); // 删除事件处理程序
 ```
 
 其中 `useCapture` 如果为 `true` 表示支持事件捕获，为 `false`b表示支持事件冒泡，默认是为 `false`
@@ -7158,19 +7117,18 @@ removeEventListener(eventName,handler,useCapture) // 删除事件处理程序
 第一：在 `DOM2` 的事件处理中不管是 `IE` 浏览器还是非 `IE` 浏览器都支持对同一个事件绑定多个处理函数。
 
 ```html
- <body>
-    <button id="btn">单击按钮</button>
-    <script>
-      var btn = document.getElementById("btn");
-      btn.addEventListener("click", function () {
-        console.log("hello");
-      });
-      btn.addEventListener("click", function () {
-        console.log("nihao");
-      });
-
-    </script>
-  </body>
+<body>
+  <button id="btn">单击按钮</button>
+  <script>
+    var btn = document.getElementById("btn");
+    btn.addEventListener("click", function () {
+      console.log("hello");
+    });
+    btn.addEventListener("click", function () {
+      console.log("nihao");
+    });
+  </script>
+</body>
 ```
 
 以上程序的输出结果为：`hello`,`nihao`
@@ -7180,24 +7138,28 @@ removeEventListener(eventName,handler,useCapture) // 删除事件处理程序
 下面的代码中，同时绑定和删除了 `handler` 函数，这样做是完全可以的。
 
 ```js
-var btn=document.getElementById('btn')
-var handle=function(){
-    console.log('hello');
-}
-btn.addEventListener('click',handle,false);
-btn.removeEventListener('click',handle)
+var btn = document.getElementById("btn");
+var handle = function () {
+  console.log("hello");
+};
+btn.addEventListener("click", handle, false);
+btn.removeEventListener("click", handle);
 ```
 
 但是如果采用如下的删除方式是无法取消绑定的事件的。因为它们都是匿名函数，而并不是同一个函数。
 
 ```js
-btn.addEventListener('click',function(){
-    console.log('hello')
-},false)
-btn.removeEventListener('click',function(){})
+btn.addEventListener(
+  "click",
+  function () {
+    console.log("hello");
+  },
+  false,
+);
+btn.removeEventListener("click", function () {});
 ```
 
- **不同点**
+**不同点**
 
 第一：在 `IE` 浏览器中，使用 `attachEvent` 函数为同一个事件添加多个处理程序时，会按照添加的相反顺序执行。
 
@@ -7222,26 +7184,26 @@ btn.removeEventListener('click',function(){})
 既然 `DOM2` 事件的处理有浏览器的兼容性问题，那应该怎样进行处理呢？
 
 ```js
- var EventHandler = {
-        addEventHandler: function (ele, type, handler) {
-          if (ele.addEventListener) {
-            ele.addEventListener(type, handler);
-          } else if (ele.attachEvent) {
-            ele.attachEvent("on" + type, handler);
-          } else {
-            ele["on" + type] = handler;
-          }
-        },
-        removeEventHandler: function (ele, type, handler) {
-          if (ele.addEventListener) {
-            ele.removeEventHandler(type, handler);
-          } else if (ele.detachEvent) {
-            ele.detachEvent("on" + type, handler);
-          } else {
-            ele["on" + type] = null;
-          }
-        },
-      };
+var EventHandler = {
+  addEventHandler: function (ele, type, handler) {
+    if (ele.addEventListener) {
+      ele.addEventListener(type, handler);
+    } else if (ele.attachEvent) {
+      ele.attachEvent("on" + type, handler);
+    } else {
+      ele["on" + type] = handler;
+    }
+  },
+  removeEventHandler: function (ele, type, handler) {
+    if (ele.addEventListener) {
+      ele.removeEventHandler(type, handler);
+    } else if (ele.detachEvent) {
+      ele.detachEvent("on" + type, handler);
+    } else {
+      ele["on" + type] = null;
+    }
+  },
+};
 ```
 
 **DOM3 事件模型**
@@ -7258,34 +7220,34 @@ btn.removeEventListener('click',function(){})
 具体的示例代码如下
 
 ```html
- <body>
-    <div id="div1">监听自定义事件</div>
-    <button id="btn">单击</button>
-    <script>
-      var customeEvent;
-      //在立即执行函数中创建自定义事件
-      (function () {
-        //判断浏览器是否支持DOM3事件处理程序，如果条件成立表示支持,固定写法
-        if (document.implementation.hasFeature("CustomEvents", "3.0")) {
-          var user = { userName: "zhangsan" };
-          customeEvent = document.createEvent("CustomEvent"); //创建自定义事件
-          customeEvent.initCustomEvent("myEvent", true, false, user);
-        }
-      })();
+<body>
+  <div id="div1">监听自定义事件</div>
+  <button id="btn">单击</button>
+  <script>
+    var customeEvent;
+    //在立即执行函数中创建自定义事件
+    (function () {
+      //判断浏览器是否支持DOM3事件处理程序，如果条件成立表示支持,固定写法
+      if (document.implementation.hasFeature("CustomEvents", "3.0")) {
+        var user = { userName: "zhangsan" };
+        customeEvent = document.createEvent("CustomEvent"); //创建自定义事件
+        customeEvent.initCustomEvent("myEvent", true, false, user);
+      }
+    })();
 
-      //监听自定义事件
-      //通过addEventListener()函数监听自定义的事件`myEvent`
-      var div1 = document.getElementById("div1");
-      div1.addEventListener("myEvent", function (e) {
-        console.log("用户名是:", e.detail.userName);
-      });
-      //触发自定义事件
-      var btn1 = document.getElementById("btn");
-      btn.addEventListener("click", function () {
-        div1.dispatchEvent(customeEvent);
-      });
-    </script>
-  </body>
+    //监听自定义事件
+    //通过addEventListener()函数监听自定义的事件`myEvent`
+    var div1 = document.getElementById("div1");
+    div1.addEventListener("myEvent", function (e) {
+      console.log("用户名是:", e.detail.userName);
+    });
+    //触发自定义事件
+    var btn1 = document.getElementById("btn");
+    btn.addEventListener("click", function () {
+      div1.dispatchEvent(customeEvent);
+    });
+  </script>
+</body>
 ```
 
 以上就是 `DOM3` 事件模型的案例。
@@ -7299,12 +7261,12 @@ btn.removeEventListener('click',function(){})
 例如：
 
 ```html
-  <div id="div1">
-      <a href="#">a1</a>
-      <a href="#">a2</a>
-      <a href="#">a3</a>
-      <button>增加按钮</button>
-    </div>
+<div id="div1">
+  <a href="#">a1</a>
+  <a href="#">a2</a>
+  <a href="#">a3</a>
+  <button>增加按钮</button>
+</div>
 ```
 
 在上面的代码中有很多的 `a` 标签，如果给每个 `a` 标签添加单击事件比较麻烦，同时采用这种方式添加事件还会导致占用内存比较多，你可以想象一下，如果 `a` 标签比较多的话，是不是会占用更多的内存。
@@ -7335,30 +7297,30 @@ btn.removeEventListener('click',function(){})
 
 ```html
 <body>
-    <div id="div1">
-      <a href="#" id="a1">a1</a>
-      <a href="#" id="a2">a2</a>
-      <a href="#" id="a3">a3</a>
-      <button>增加按钮</button>
-    </div>
-    <script>
-      const div1 = document.getElementById("div1");
-      div1.addEventListener("click", function (e) {
-        var target = e.target;
-        switch (target.id) {
-          case "a1":
-            console.log("针对a1进行操作");
-            break;
-          case "a2":
-            console.log("针对a2进行操作");
-            break;
-          case "a3":
-            console.log("针对a3进行操作");
-            break;
-        }
-      });
-    </script>
-  </body>
+  <div id="div1">
+    <a href="#" id="a1">a1</a>
+    <a href="#" id="a2">a2</a>
+    <a href="#" id="a3">a3</a>
+    <button>增加按钮</button>
+  </div>
+  <script>
+    const div1 = document.getElementById("div1");
+    div1.addEventListener("click", function (e) {
+      var target = e.target;
+      switch (target.id) {
+        case "a1":
+          console.log("针对a1进行操作");
+          break;
+        case "a2":
+          console.log("针对a2进行操作");
+          break;
+        case "a3":
+          console.log("针对a3进行操作");
+          break;
+      }
+    });
+  </script>
+</body>
 ```
 
 在上面的代码中，给每个 `a` 标签，添加了 `id` 属性，通过 `switch` 结构进行判断，然后执行不同的操作。
@@ -7370,7 +7332,7 @@ btn.removeEventListener('click',function(){})
 我们想到的实现方式如下：
 
 ```html
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -7388,25 +7350,25 @@ btn.removeEventListener('click',function(){})
     </ul>
     <button id="btn">添加</button>
     <script>
-        //通过querySelectorAll方法获取所有的li元素
-        //通过for循环遍历的方式，给每个li添加单击事件
+      //通过querySelectorAll方法获取所有的li元素
+      //通过for循环遍历的方式，给每个li添加单击事件
       var children = document.querySelectorAll("li");
       for (var i = 0; i < children.length; i++) {
         children[i].addEventListener("click", function () {
           console.log(this.innerHTML);
         });
       }
-        //获取按钮
+      //获取按钮
       var btn = document.querySelector("#btn");
-        //获取ul标签
+      //获取ul标签
       var ul = document.querySelector("ul");
-        //给按钮添加单击事件
+      //给按钮添加单击事件
       btn.addEventListener("click", function () {
         //创建li
         var newLi = document.createElement("li");
-          //创建文本节点
+        //创建文本节点
         var newText = document.createTextNode("a6");
-          //将文本添加到新创建的li标签上
+        //将文本添加到新创建的li标签上
         newLi.appendChild(newText);
         //把创建的li添加到ul上
         ul.appendChild(newLi);
@@ -7414,7 +7376,6 @@ btn.removeEventListener('click',function(){})
     </script>
   </body>
 </html>
-
 ```
 
 执行上面的代码：打击 `a1--a5` 都可以获取内容，单击按钮也可以添加一个新的 `li` 元素，但是问题是单击新创建的 `li` 元素，并没有输出元素中的内容。
@@ -7555,10 +7516,10 @@ btn.removeEventListener('click',function(){})
 虽然浏览器有这样的优化，但是我们写的一些代码还会导致浏览器提取刷新队列，例如以下的操作。
 
 ```js
-offsetLeft,offsetWidth,offsetHeight,offsetTop
-scrollTop,scrollLeft,scrollWidth,scrollHeight
-clientTop,clientLeft,clientWidth,clientHeight
-widht,height
+offsetLeft, offsetWidth, offsetHeight, offsetTop;
+scrollTop, scrollLeft, scrollWidth, scrollHeight;
+clientTop, clientLeft, clientWidth, clientHeight;
+widht, height;
 ```
 
 当我们进行以上属性操作的时候，浏览器为了返回最精确的信息，需要刷新队列，因为队列中的某些操作会影响到这些属性值的获取。
@@ -7600,10 +7561,10 @@ box-shadow:元素的阴影
 例如，我们需要修改一个元素的样式，可以通过如下的代码实现：
 
 ```js
-  var mainDiv = document.getElementById("div1");
-      mainDiv.style.width = "200px";
-      mainDiv.style.height = "100px";
-      mainDiv.style.background = "#ccc";
+var mainDiv = document.getElementById("div1");
+mainDiv.style.width = "200px";
+mainDiv.style.height = "100px";
+mainDiv.style.background = "#ccc";
 ```
 
 但是问题是，在上面的操作中多次修改了 `style` 属性，会引发多次的重排与重绘操作。
@@ -7623,7 +7584,7 @@ box-shadow:元素的阴影
 然后通过通过 `javascript` 直接修改元素的样式
 
 ```js
-  document.getElementById("div1").className = "changeStyle";
+document.getElementById("div1").className = "changeStyle";
 ```
 
 这样我们可以在最后一步完成样式的修改，从而只引起一次的重排与重绘的操作。
@@ -7637,18 +7598,18 @@ box-shadow:元素的阴影
 如下代码所示：
 
 ```js
-  function createTable(list) {
-        var table = $("#table");
-        var rowHtml = "";
-        list.forEach(function (item) {
-          rowHtml += "<tr>";
-          rowHtml += "<td>" + item.userName + "</td>";
-          rowHtml += "<td>" + item.userPwd + "</td>";
-          rowHtml += "</tr>";
-          table.append(rowHtml);
-          rowHtml = "";
-        });
-      }
+function createTable(list) {
+  var table = $("#table");
+  var rowHtml = "";
+  list.forEach(function (item) {
+    rowHtml += "<tr>";
+    rowHtml += "<td>" + item.userName + "</td>";
+    rowHtml += "<td>" + item.userPwd + "</td>";
+    rowHtml += "</tr>";
+    table.append(rowHtml);
+    rowHtml = "";
+  });
+}
 ```
 
 当调用 `createTable` 方法的时候，会从 `list` 集合中取出一条数据，然后放在 `tr` 标签中，紧跟着添加到表格中，这样就会导致每添加一行数据，都会引发一次浏览器的重排和重绘的操作，如果数据很多，则会对渲染造成很大的影响。
@@ -7657,17 +7618,17 @@ box-shadow:元素的阴影
 
 ```js
 function createTabel(list) {
-        var table = $("#table");
-        var rowHtml = "";
-        list.forEach(function (item) {
-          rowHtml += "<tr>";
-          rowHtml += "<td>" + item.userName + "</td>";
-          rowHtml += "<td>" + item.userPwd + "</td>";
-          rowHtml += "</tr>";
-        });
-    //将数据一次性追加到表格中，完成一次渲染
-        table.append(rowHtml);
-      }
+  var table = $("#table");
+  var rowHtml = "";
+  list.forEach(function (item) {
+    rowHtml += "<tr>";
+    rowHtml += "<td>" + item.userName + "</td>";
+    rowHtml += "<td>" + item.userPwd + "</td>";
+    rowHtml += "</tr>";
+  });
+  //将数据一次性追加到表格中，完成一次渲染
+  table.append(rowHtml);
+}
 ```
 
 通过上面的改造以后，只会引起一次浏览器的重绘与重排的操作，从而带来很大的新能提升。
@@ -7684,18 +7645,18 @@ function createTabel(list) {
 
 ```js
 const listNode = document.getElementById("list");
-      //创建一个文档片段，文档片段存在于内存中，并不在DOM树中，所以此时还没有插入到DOM中
-      //也就是先将dom插入到临时区域中
-      const frag = document.createDocumentFragment();
-      //执行插入
+//创建一个文档片段，文档片段存在于内存中，并不在DOM树中，所以此时还没有插入到DOM中
+//也就是先将dom插入到临时区域中
+const frag = document.createDocumentFragment();
+//执行插入
 
-      for (let i = 0; i < 10; i++) {
-        const li = document.createElement("li");
-        li.innerHTML = `item${i}`;
-        frag.appendChild(li);
-      }
-      //都完成后，再插入到DOM树中
-      listNode.appendChild(frag);
+for (let i = 0; i < 10; i++) {
+  const li = document.createElement("li");
+  li.innerHTML = `item${i}`;
+  frag.appendChild(li);
+}
+//都完成后，再插入到DOM树中
+listNode.appendChild(frag);
 ```
 
 以上就是关于浏览器重绘与重排的内容。
@@ -7738,10 +7699,12 @@ Ajax的原理简单来说通过 `XmlHttpRequest` 对象来向服务器发送异�
 
 ```js
 let xhr = null;
-if (window.XMLHttpRequest) {// 兼容 IE7+, Firefox, Chrome, Opera, Safari
-    xhr = new XMLHttpRequest();
-} else {// 兼容 IE6, IE5
-    xhr = new ActiveXObject("Microsoft.XMLHTTP");
+if (window.XMLHttpRequest) {
+  // 兼容 IE7+, Firefox, Chrome, Opera, Safari
+  xhr = new XMLHttpRequest();
+} else {
+  // 兼容 IE6, IE5
+  xhr = new ActiveXObject("Microsoft.XMLHTTP");
 }
 ```
 
@@ -7749,7 +7712,7 @@ if (window.XMLHttpRequest) {// 兼容 IE7+, Firefox, Chrome, Opera, Safari
 
 ```js
 xhr.open(method, url, async);
-send(string);//`POST`请求时才使用字符串参数，否则不用带参数。
+send(string); //`POST`请求时才使用字符串参数，否则不用带参数。
 // method：请求的类型；GET 或 POST
 // url：文件在服务器上的位置
 // async：true（异步）或 false（同步）
@@ -7760,17 +7723,17 @@ send(string);//`POST`请求时才使用字符串参数，否则不用带参数�
 ```js
 xhr.open("POST", "test.html", true);
 xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-xhr.send("fname=Henry&lname=Ford");  //`POST`请求参数放在send里面，即请求体
+xhr.send("fname=Henry&lname=Ford"); //`POST`请求参数放在send里面，即请求体
 ```
 
 处理响应
 
 ```js
-xhr.onreadystatechange = function() {
-    if (xhr.readyState == 4 && xhr.status == 200){
+xhr.onreadystatechange = function () {
+  if (xhr.readyState == 4 && xhr.status == 200) {
     document.GetElementById("mydiv").innerHTML = xhr.responseText;
-    }
-}
+  }
+};
 ```
 
 #### 什么是 readyState？
@@ -7854,9 +7817,9 @@ HTTP状态码(status)由三个十进制数字组成。HTTP状态码共分为5种
 
 （1）数据的搜索，单击搜索按钮，搜索网站中指定的数据。
 
-  (2) 传递的数据量小，适合用于 `url` 方式进行传递
+(2) 传递的数据量小，适合用于 `url` 方式进行传递
 
- (3) 数据安全性要求不高的情况
+(3) 数据安全性要求不高的情况
 
 `post` 请求的应用场景
 
@@ -7913,7 +7876,7 @@ HTTP状态码(status)由三个十进制数字组成。HTTP状态码共分为5种
 创建一个文件夹，在该文件夹中创建 `index.html` 文件，该文件中的代码如下：
 
 ```html
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -7947,7 +7910,6 @@ HTTP状态码(status)由三个十进制数字组成。HTTP状态码共分为5种
     <button id="btnLogin">登录</button>
   </body>
 </html>
-
 ```
 
 在该文件夹下面安装 `express`
@@ -7959,23 +7921,23 @@ npm install express
 同时创建 `server.js` 文件，该文件的代码如下：
 
 ```js
-var express = require('express')
+var express = require("express");
 var app = express();
-app.get('/getUserNameInfo', function (req, res) {
-    var userName = req.query.name;
-    var result = {
-        id: 10001,
-        userName: userName,
-        userAge:21
-    };
-    var data = JSON.stringify(result);
-    res.writeHead(200, { 'Content-type': 'application/json' })
-    res.write(data);
-    res.end()
-})
+app.get("/getUserNameInfo", function (req, res) {
+  var userName = req.query.name;
+  var result = {
+    id: 10001,
+    userName: userName,
+    userAge: 21,
+  };
+  var data = JSON.stringify(result);
+  res.writeHead(200, { "Content-type": "application/json" });
+  res.write(data);
+  res.end();
+});
 app.listen(3000, function () {
-    console.log('服务端启动....')
-})
+  console.log("服务端启动....");
+});
 ```
 
 下面启动服务端
@@ -8001,45 +7963,45 @@ Access to XMLHttpRequest at 'http://localhost:3000/getUserNameInfo?name=admin' f
 服务端修改后的代码如下：
 
 ```js
-var express = require('express')
+var express = require("express");
 var app = express();
-app.all('*', function (req, res) {
-    //设置可以接收请求的域名
-    res.header('Access-Control-Allow-Origin', 'http://127.0.0.1:5500');
-    res.header('Access-Control-Allow-Methods', 'GET, POST,PUT');
-    res.header('Access-Control-Allow-Headers', 'Content-Type');
-    res.header('Content-Type', 'application/json;charset=utf-8');
-    req.next();
-})
-app.get('/getUserNameInfo', function (req, res) {
-    var userName = req.query.name;
-    console.log('userName=',userName)
-    var result = {
-        id: 10001,
-        userName: userName,
-        userAge:21
-    };
-    var data = JSON.stringify(result);
-    res.writeHead(200, { 'Content-type': 'application/json' })
-    res.write(data);
-    res.end()
-})
+app.all("*", function (req, res) {
+  //设置可以接收请求的域名
+  res.header("Access-Control-Allow-Origin", "http://127.0.0.1:5500");
+  res.header("Access-Control-Allow-Methods", "GET, POST,PUT");
+  res.header("Access-Control-Allow-Headers", "Content-Type");
+  res.header("Content-Type", "application/json;charset=utf-8");
+  req.next();
+});
+app.get("/getUserNameInfo", function (req, res) {
+  var userName = req.query.name;
+  console.log("userName=", userName);
+  var result = {
+    id: 10001,
+    userName: userName,
+    userAge: 21,
+  };
+  var data = JSON.stringify(result);
+  res.writeHead(200, { "Content-type": "application/json" });
+  res.write(data);
+  res.end();
+});
 app.listen(3000, function () {
-    console.log('服务端启动....')
-})
+  console.log("服务端启动....");
+});
 ```
 
 在原有的代码中，我们主要是添加了如下的代码：
 
 ```js
-app.all('*', function (req, res) {
-    //设置可以接收请求的域名
-    res.header('Access-Control-Allow-Origin', 'http://127.0.0.1:5500');
-    res.header('Access-Control-Allow-Methods', 'GET, POST,PUT');
-    res.header('Access-Control-Allow-Headers', 'Content-Type');
-    res.header('Content-Type', 'application/json;charset=utf-8');
-    req.next();
-})
+app.all("*", function (req, res) {
+  //设置可以接收请求的域名
+  res.header("Access-Control-Allow-Origin", "http://127.0.0.1:5500");
+  res.header("Access-Control-Allow-Methods", "GET, POST,PUT");
+  res.header("Access-Control-Allow-Headers", "Content-Type");
+  res.header("Content-Type", "application/json;charset=utf-8");
+  req.next();
+});
 ```
 
 在上面的代码中，最主要的是 `  res.header('Access-Control-Allow-Origin', 'http://127.0.0.1:5500');` 这行代码，
@@ -8063,7 +8025,7 @@ app.all('*', function (req, res) {
 前端代码：
 
 ```html
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -8110,7 +8072,6 @@ app.all('*', function (req, res) {
     <button id="btnLogin">登录</button>
   </body>
 </html>
-
 ```
 
 在上面的代码中，我们重新改造了 `sendRequest` 方法，在该方法中构建了 `param` 参数，该参数的内容包括了用户输入的用户名以及回调函数名。下面构建好所要请求的服务端的 `url` 地址，将该 `url` 地址交给 `script` 标签的 `src` 属性，通过该属性向服务器发送请求。
@@ -8122,7 +8083,7 @@ app.all('*', function (req, res) {
 下面看一下服务端的处理：
 
 ```js
-var express = require('express')
+var express = require("express");
 var app = express();
 // app.all('*', function (req, res) {
 //     //设置可以接收请求的域名
@@ -8132,27 +8093,27 @@ var app = express();
 //     res.header('Content-Type', 'application/json;charset=utf-8');
 //     req.next();
 // })
-app.get('/getUserNameInfo', function (req, res) {
-    var userName = req.query.name;
-    //获取请求的回调函数
-    var callbackFn = req.query.callback
-    console.log('callbackFn==',callbackFn)
-    console.log('userName=',userName)
-    var result = {
-        id: 10001,
-        userName: userName,
-        userAge:21
-    };
-    var data = JSON.stringify(result);
-    res.writeHead(200, { 'Content-type': 'application/json' })
-    //返回值是对对回调函数的调用
-    res.write(callbackFn+'('+data+')')
-    // res.write(data);
-    res.end()
-})
+app.get("/getUserNameInfo", function (req, res) {
+  var userName = req.query.name;
+  //获取请求的回调函数
+  var callbackFn = req.query.callback;
+  console.log("callbackFn==", callbackFn);
+  console.log("userName=", userName);
+  var result = {
+    id: 10001,
+    userName: userName,
+    userAge: 21,
+  };
+  var data = JSON.stringify(result);
+  res.writeHead(200, { "Content-type": "application/json" });
+  //返回值是对对回调函数的调用
+  res.write(callbackFn + "(" + data + ")");
+  // res.write(data);
+  res.end();
+});
 app.listen(3000, function () {
-    console.log('服务端启动....')
-})
+  console.log("服务端启动....");
+});
 ```
 
 在服务的代码中，需要接收回调函数的名称。
@@ -8182,14 +8143,11 @@ app.listen(3000, function () {
 ES6中新增了 let命令，用于变量的声明，基本的用法和 var类似。例如：
 
 ```javascript
- <script>
-        // 使用var使用声明变量
-        var userName = "bxg";
-        console.log("userName=", userName);
-        // 使用let声明变量
-        let userAge = 18;
-        console.log("userAge=", userAge);
-    </script>
+<script>
+  // 使用var使用声明变量 var userName = "bxg"; console.log("userName=",
+  userName); // 使用let声明变量 let userAge = 18; console.log("userAge=",
+  userAge);
+</script>
 ```
 
 通过以上的代码，我们发现 var和 let的基本使用是类似的，但是两者还是有本质的区别，最大的区别就是：
@@ -8214,10 +8172,10 @@ ES6中新增了 let命令，用于变量的声明，基本的用法和 var类似
 但是如果将 var换成 let会出现什么问题呢？代码如下：
 
 ```javascript
-   for (let i = 1; i <= 10; i++) {
-            console.log("i=", i)
-        }
-        console.log("last=", i)
+for (let i = 1; i <= 10; i++) {
+  console.log("i=", i);
+}
+console.log("last=", i);
 ```
 
 在循环体中输出的 i的值还是 1--10,但是循环体外部打印 i的值时出现了错误，错误如下：
@@ -8241,10 +8199,10 @@ ES6中新增了 let命令，用于变量的声明，基本的用法和 var类似
 也就是说，在我们写的如下的案例中：
 
 ```javascript
-   for (let i = 1; i <= 10; i++) {
-            console.log("i=", i)
-        }
-        console.log("last=", i)
+for (let i = 1; i <= 10; i++) {
+  console.log("i=", i);
+}
+console.log("last=", i);
 ```
 
 i 这个变量的作用域只在这一对大括号内有效，超出这一对大括号就无效了。
@@ -8258,14 +8216,14 @@ i 这个变量的作用域只在这一对大括号内有效，超出这一对大
 ​ 代码如下：
 
 ```javascript
-    var temp = new Date();
-        function show() {
-            console.log("temp=", temp)
-            if (false) {
-                var temp = "hello world";
-            }
-        }
-        show();
+var temp = new Date();
+function show() {
+  console.log("temp=", temp);
+  if (false) {
+    var temp = "hello world";
+  }
+}
+show();
 ```
 
 执行上面的代码，输出的结果为 _temp=undefined_，原因就是变量由于提升导致内层的 temp变量覆盖了外层的 temp变量
@@ -8290,15 +8248,14 @@ i 这个变量的作用域只在这一对大括号内有效，超出这一对大
 下面使用 let来改造前面的案例。
 
 ```javascript
-   let temp = new Date();
-        function show() {
-            console.log("temp=", temp)
-            if (false) {
-                let temp = "hello world";
-            }
-
-        }
-        show();
+let temp = new Date();
+function show() {
+  console.log("temp=", temp);
+  if (false) {
+    let temp = "hello world";
+  }
+}
+show();
 ```
 
 通过上面的代码，可以知道 let不像 var那样会发生 "变量提升 "的现象。
@@ -8309,7 +8266,7 @@ i 这个变量的作用域只在这一对大括号内有效，超出这一对大
 
 let实际上为 JavaScript新增了块级作用域，下面再看几个案例，通过这几个案例，巩固一下关于 "块级作用域 "这个知识点的理解，同时进一步体会块级作用域带来的好处
 
-``` javascript
+```javascript
   <script>
         function test() {
             let num = 5;
@@ -8328,28 +8285,28 @@ let实际上为 JavaScript新增了块级作用域，下面再看几个案例，
 
 ```javascript
 if (true) {
-            let b = 20;
-            console.log(b)
-            if (true) {
-                let c = 30;
-            }
-            console.log(c);
-        }
+  let b = 20;
+  console.log(b);
+  if (true) {
+    let c = 30;
+  }
+  console.log(c);
+}
 ```
 
 输出的结果是：b的值是 20，在输出 c的时候，出现了错误。
 
 导致的原因，两个 if就是两个块级作用域，c这个变量在第二个 if中，也就是第二个块级作用域中，所以在外部块级作用域中无法获取到变量 c.
 
- 块级作用域的出现，带来了一个好处以前获得广泛使用的立即执行匿名函数不再需要了。
+块级作用域的出现，带来了一个好处以前获得广泛使用的立即执行匿名函数不再需要了。
 
 下面首先定义了一个立即执行匿名函数：
 
 ```javascript
-   ;(function text() {
-            var temp = 'hello world';
-            console.log('temp=', temp);
-        })()
+(function text() {
+  var temp = "hello world";
+  console.log("temp=", temp);
+})();
 ```
 
 匿名函数的好处：通过定义一个匿名函数，创建了一个新的函数作用域，相当于创建了一个 "私有 "的空间，该空间内的变量和方法，不会破坏污染全局的空间。
@@ -8357,10 +8314,10 @@ if (true) {
 但是以上的写法是比较麻烦的，有了 "块级作用域 "后就编的比较简单了，代码如下：
 
 ```javascript
-       {
-            let temp = 'hello world';
-            console.log('temp=', temp);
-        }
+{
+  let temp = "hello world";
+  console.log("temp=", temp);
+}
 ```
 
 通过以上的写法，也是创建了一个 "私有 "的空间，也就是创建了一个封闭的作用域。同样在该封闭的作用域中的变量和方法，不会破坏污染全局的空间。
@@ -8370,10 +8327,10 @@ if (true) {
 现在问你一个问题，以下代码是否可以：
 
 ```javascript
-  let temp = '你好';
-        {
-             let temp = 'hello world';
-        }
+let temp = "你好";
+{
+  let temp = "hello world";
+}
 ```
 
 答案是可以的，因为这里有两个 "块级作用域 "，一个是外层，一个是内层，互不影响。
@@ -8381,11 +8338,11 @@ if (true) {
 但是，现在修改成如下的写法：
 
 ```javascript
-       let temp = '你好';
-         {
-            console.log('temp=', temp);
-            let temp = 'hello world';
-        }
+let temp = "你好";
+{
+  console.log("temp=", temp);
+  let temp = "hello world";
+}
 ```
 
 出错了，也是变量未定义的错误，造成错误的原因还是前面所讲解的 let 不存在 "变量提升 "。
@@ -8395,11 +8352,11 @@ if (true) {
 该案例希望不同时间打印变量 i的值。
 
 ```javascript
-      for (var i = 0; i < 3; i++) {
-                setTimeout(function() {
-                    console.log('i=', i);
-                }, 1000)
-        }
+for (var i = 0; i < 3; i++) {
+  setTimeout(function () {
+    console.log("i=", i);
+  }, 1000);
+}
 ```
 
 那么上面程序的执行结果是多少？
@@ -8411,13 +8368,13 @@ if (true) {
 那么可以怎样解决呢？相信这一点对你来说很简单，在前面 ES5课程中也讲过。
 
 ```javascript
-  for (var i = 0; i < 3; i++) {
-            (function(i) {
-                setTimeout(function() {
-                    console.log('i=', i);
-                }, 1000)
-            })(i)
-        }
+for (var i = 0; i < 3; i++) {
+  (function (i) {
+    setTimeout(function () {
+      console.log("i=", i);
+    }, 1000);
+  })(i);
+}
 ```
 
 通过以上的代码其实就是通过自定义一个函数，生成了函数的作用域,i变量就不是全局的了。
@@ -8427,11 +8384,11 @@ if (true) {
 代码如下：
 
 ```javascript
-  for (let i = 0; i < 3; i++) {
-            setTimeout(function() {
-                console.log('i=', i);
-            }, 1000)
-        }
+for (let i = 0; i < 3; i++) {
+  setTimeout(function () {
+    console.log("i=", i);
+  }, 1000);
+}
 ```
 
 #### 1.4 Let命令注意事项
@@ -8443,8 +8400,8 @@ let不像 var那样会发生 "变量提升 "现象。所以，变量一定要在
 关于这一点，前面的课程也多次强调。
 
 ```javascript
-  console.log(num);
-  let num = 2;
+console.log(num);
+let num = 2;
 ```
 
 ##### 1.4.2 暂时性死区
@@ -8454,11 +8411,11 @@ let不像 var那样会发生 "变量提升 "现象。所以，变量一定要在
 先来看一个案例：
 
 ```javascript
-   var num = 123;
-        if (true) {
-            num = 666;
-            let num;
-        }
+var num = 123;
+if (true) {
+  num = 666;
+  let num;
+}
 ```
 
 上面的代码中存在全局的变量 num,但是在块级作用域内使用了 let又声明了一个局部的变量 num,导致后面的 num绑定到这个块级作用域，所以在 let声明变量前，对 num进行赋值操作会出错。
@@ -8479,43 +8436,43 @@ let 不允许在相同的作用域内重复声明一个变量，
 
 ```javascript
 function test() {
-            var num = 12;
-            var num = 20;
-            console.log(num)
-        }
-        test()
+  var num = 12;
+  var num = 20;
+  console.log(num);
+}
+test();
 ```
 
 以上代码没有问题，但是如果将 var换成 let,就会出错。如下代码所示：
 
 ```javascript
- function test() {
-            let num = 12;
-            let num = 20;
-            console.log(num)
-        }
-        test()
+function test() {
+  let num = 12;
+  let num = 20;
+  console.log(num);
+}
+test();
 ```
 
 当然，以下的写法也是错误的。
 
 ```javascript
-  function test() {
-            var num = 12;
-            let num = 20;
-            console.log(num)
-        }
-        test()
+function test() {
+  var num = 12;
+  let num = 20;
+  console.log(num);
+}
+test();
 ```
 
 同时，还需要注意，不能在函数内部声明的变量与参数同名，如下所示：
 
 ```javascript
-   function test(num) {
-            let num = 20;
-            console.log(num)
-        }
-        test(30)
+function test(num) {
+  let num = 20;
+  console.log(num);
+}
+test(30);
 ```
 
 ### 2、const命令
@@ -8527,9 +8484,9 @@ const用来声明常量，常量指的就是一旦声明，其值是不能被修
 这一点与变量是不一样的，而变量指的是在程序运行中，是可以改变的量。
 
 ```javascript
-    let num = 12;
-        num = 30;
-        console.log(num)
+let num = 12;
+num = 30;
+console.log(num);
 ```
 
 以上的代码输出结果为:30
@@ -8537,9 +8494,9 @@ const用来声明常量，常量指的就是一旦声明，其值是不能被修
 但是通过 const命令声明的常量，其值是不允许被修改的。
 
 ```javascript
-        const PI = 3.14;
-        PI = 3.15;
-        console.log(PI)
+const PI = 3.14;
+PI = 3.15;
+console.log(PI);
 ```
 
 以上代码会出错。
@@ -8553,8 +8510,8 @@ const用来声明常量，常量指的就是一旦声明，其值是不能被修
 以下代码是错误的
 
 ```javascript
-        console.log(PI);
-        const PI = 3.14
+console.log(PI);
+const PI = 3.14;
 ```
 
 ##### 2.2.2 只在声明的块级作用域内有效
@@ -8564,10 +8521,10 @@ const命令的作用域与 let命令相同：只在声明的块级作用域内�
 如下代码所示：
 
 ```javascript
-        if (true) {
-            const PI = 3.14;
-        }
-        console.log(PI);
+if (true) {
+  const PI = 3.14;
+}
+console.log(PI);
 ```
 
 以上代码会出错
@@ -8577,10 +8534,10 @@ const命令的作用域与 let命令相同：只在声明的块级作用域内�
 const命令与 let指令一样，都有暂时性死区的问题，如下代码所示：
 
 ```javascript
-        if (true) {
-            console.log(PI);
-            const PI = 3.14;
-        }
+if (true) {
+  console.log(PI);
+  const PI = 3.14;
+}
 ```
 
 以上代码会出错
@@ -8588,9 +8545,9 @@ const命令与 let指令一样，都有暂时性死区的问题，如下代码�
 ##### 2.2.4 不允许重复声明
 
 ```javascript
-        let PI = 3.14;
-        const PI = 3.14;
-        console.log(PI);
+let PI = 3.14;
+const PI = 3.14;
+console.log(PI);
 ```
 
 以上代码会出错
@@ -8618,11 +8575,11 @@ const命令与 let指令一样，都有暂时性死区的问题，如下代码�
 首先通过一个案例，来看一下以前是怎样实现的。
 
 ```javascript
-      let arr = [1, 2, 3];
-        let num1 = arr[0];
-        let num2 = arr[1];
-        let num3 = arr[2];
-        console.log(num1, num2, num3);
+let arr = [1, 2, 3];
+let num1 = arr[0];
+let num2 = arr[1];
+let num3 = arr[2];
+console.log(num1, num2, num3);
 ```
 
 在这里定义了一个数组 arr,并且进行了初始化，下面紧跟着通过下标的方式获取数组中的值，然后赋值给对应的变量。
@@ -8630,9 +8587,9 @@ const命令与 let指令一样，都有暂时性死区的问题，如下代码�
 虽然这种方式可以实现，但是相对来说比较麻烦，ES6中提供了解构赋值的方式，代码如下：
 
 ```javascript
-        let arr = [1, 2, 3];
-        let [num1, num2, num3] = arr;
-        console.log(num1, num2, num3);
+let arr = [1, 2, 3];
+let [num1, num2, num3] = arr;
+console.log(num1, num2, num3);
 ```
 
 将 arr数组中的值取出来分别赋值给了，num1,num2和 num3.
@@ -8642,19 +8599,16 @@ const命令与 let指令一样，都有暂时性死区的问题，如下代码�
 下面再看一个案例：
 
 ```javascript
- let arr = [{
-                userName: 'zs',
-                age: 18
-            },
-            [1, 3], 6
-        ];
-        let [{
-                userName,
-                age
-            },
-            [num1, num2], num3
-        ] = arr;
-        console.log(userName, age, num1, num2, num3);
+let arr = [
+  {
+    userName: "zs",
+    age: 18,
+  },
+  [1, 3],
+  6,
+];
+let [{ userName, age }, [num1, num2], num3] = arr;
+console.log(userName, age, num1, num2, num3);
 ```
 
 定义了一个 arr数组，并且进行了初始化，arr数组中有对象，数组和数值。
@@ -8664,14 +8618,16 @@ const命令与 let指令一样，都有暂时性死区的问题，如下代码�
 但是，如果不想获取具体的值，而是获取 arr数组存储的 json对象，数组，那么应该怎样写呢？
 
 ```javascript
-  let arr = [{
-                userName: 'zs',
-                age: 18
-            },
-            [1, 3], 6
-        ];
-        let [jsonResult, array, num] = arr;
-        console.log(jsonResult, array, num);
+let arr = [
+  {
+    userName: "zs",
+    age: 18,
+  },
+  [1, 3],
+  6,
+];
+let [jsonResult, array, num] = arr;
+console.log(jsonResult, array, num);
 ```
 
 #### 3.2、注意事项
@@ -8679,8 +8635,8 @@ const命令与 let指令一样，都有暂时性死区的问题，如下代码�
 ##### 3.2.1 如果解析不成功，对应的值会为 undefined
 
 ```javascript
-        let [num1, num2] = [6]
-        console.log(num1, num2);
+let [num1, num2] = [6];
+console.log(num1, num2);
 ```
 
 以上的代码中，num1的值为 6，num2的值为 undefined.
@@ -8692,8 +8648,8 @@ const命令与 let指令一样，都有暂时性死区的问题，如下代码�
 代码如下：
 
 ```javascript
-        let [num1, num2] = [1, 2, 3];
-        console.log(num1, num2);
+let [num1, num2] = [1, 2, 3];
+console.log(num1, num2);
 ```
 
 以上代码的执行结果：num1=1,num2 = 2
@@ -8701,21 +8657,21 @@ const命令与 let指令一样，都有暂时性死区的问题，如下代码�
 也就是只取了数组中的前两个值。
 
 ```javascript
-        // 如果只取第一个值呢？
-       let [num1] = [1, 2, 3];
-    console.log(num1);
+// 如果只取第一个值呢？
+let [num1] = [1, 2, 3];
+console.log(num1);
 ```
 
 ```javascript
-        //只取第二个值呢？
-        let [, num, ] = [1, 2, 3];
-        console.log(num);
+//只取第二个值呢？
+let [, num] = [1, 2, 3];
+console.log(num);
 ```
 
 ```javascript
-        // 只取第三个值呢？
-        let [, , num] = [1, 2, 3];
-        console.log(num);
+// 只取第三个值呢？
+let [, , num] = [1, 2, 3];
+console.log(num);
 ```
 
 #### 3.4、对象解构赋值基本使用
@@ -8723,14 +8679,11 @@ const命令与 let指令一样，都有暂时性死区的问题，如下代码�
 解构不仅可以用于数组，还可以用于对象。
 
 ```javascript
-   let {
-            userName,
-            userAge
-        } = {
-            userName: 'ls',
-            userAge: 20
-        };
-        console.log(userName, userAge);
+let { userName, userAge } = {
+  userName: "ls",
+  userAge: 20,
+};
+console.log(userName, userAge);
 ```
 
 在对 对象进行解构赋值的时候，一定要注意：变量名必须与属性的名称一致，才能够取到正确的值。
@@ -8738,14 +8691,11 @@ const命令与 let指令一样，都有暂时性死区的问题，如下代码�
 如下所示：
 
 ```javascript
-        let {
-            name,
-            age
-        } = {
-            userName: 'ls',
-            userAge: 20
-        };
-        console.log(name, age);
+let { name, age } = {
+  userName: "ls",
+  userAge: 20,
+};
+console.log(name, age);
 ```
 
 输出的结果都是 undefined.
@@ -8753,14 +8703,11 @@ const命令与 let指令一样，都有暂时性死区的问题，如下代码�
 那么应该怎样解决上面的问题呢？
 
 ```javascript
-  let {
-            userName: name,
-            userAge: age
-        } = {
-            userName: 'ls',
-            userAge: 20
-        }
-        console.log(name, age);
+let { userName: name, userAge: age } = {
+  userName: "ls",
+  userAge: 20,
+};
+console.log(name, age);
 ```
 
 通过以上的代码解决了对应的问题，那么这种方式的原理是什么呢？
@@ -8770,22 +8717,19 @@ const命令与 let指令一样，都有暂时性死区的问题，如下代码�
 把上面的代码，改造成如下的形式，更容易理解：
 
 ```javascript
-        let obj = {
-            userName: 'ls',
-            userAge: 21
-        };
-        let {
-            userName: name,
-            userAge: age
-        } = obj;
-        console.log(name, age)
+let obj = {
+  userName: "ls",
+  userAge: 21,
+};
+let { userName: name, userAge: age } = obj;
+console.log(name, age);
 ```
 
 如果按照 ES5的方式：
 
 ```javascript
-let name = obj.userName
-let age = obj.userAge
+let name = obj.userName;
+let age = obj.userAge;
 ```
 
 #### 3.5、对象解构赋值注意事项
@@ -8797,14 +8741,11 @@ let age = obj.userAge
 演示默认解构之前，先来看如下的代码：
 
 ```javascript
-        let obj = {
-            name: 'zs'
-        };
-        let {
-            name,
-            age
-        } = obj;
-        console.log(name, age);
+let obj = {
+  name: "zs",
+};
+let { name, age } = obj;
+console.log(name, age);
 ```
 
 你想一下输出结果是什么呢？
@@ -8818,14 +8759,11 @@ let age = obj.userAge
 现在修改一下上面的程序
 
 ```javascript
-        let obj = {
-            name: 'zs'
-        };
-        let {
-            name,
-            age = 20
-        } = obj;
-        console.log(name, age);
+let obj = {
+  name: "zs",
+};
+let { name, age = 20 } = obj;
+console.log(name, age);
 ```
 
 现在给 age这个变量赋了一个默认值为 20，所以输出的结果为：zs 20
@@ -8837,15 +8775,12 @@ let age = obj.userAge
 如下代码所示：
 
 ```javascript
-        let obj = {
-            name: 'zs',
-            age: 26
-        };
-        let {
-            name,
-            age = 20
-        } = obj;
-        console.log(name, age);
+let obj = {
+  name: "zs",
+  age: 26,
+};
+let { name, age = 20 } = obj;
+console.log(name, age);
 ```
 
 输出的结果为: zs 26
@@ -8857,19 +8792,18 @@ let age = obj.userAge
 解构也可以用于对嵌套结构的对象，如下代码所示：
 
 ```javascript
-        let obj = {
-            arr: [
-                "Hello", {
-                    msg: 'World'
-                }
-            ]
-        }
-        let {
-            arr: [str, {
-                msg
-            }]
-        } = obj;
-        console.log(str, msg);
+let obj = {
+  arr: [
+    "Hello",
+    {
+      msg: "World",
+    },
+  ],
+};
+let {
+  arr: [str, { msg }],
+} = obj;
+console.log(str, msg);
 ```
 
 在上面的代码中要注意的是：arr只是一种标志或者是一种模式，不是变量，因此不会被赋值。
@@ -8877,23 +8811,20 @@ let age = obj.userAge
 再看一个案例:
 
 ```javascript
-        let obj = {
-            local: {
-                start: {
-                    x: 20,
-                    y: 30
-                }
-            }
-        };
-        let {
-            local: {
-                start: {
-                    x,
-                    y
-                }
-            }
-        } = obj;
-        console.log(x, y);
+let obj = {
+  local: {
+    start: {
+      x: 20,
+      y: 30,
+    },
+  },
+};
+let {
+  local: {
+    start: { x, y },
+  },
+} = obj;
+console.log(x, y);
 ```
 
 在该案例中创建了一个 obj对象，在该对象中又嵌套了一个 local对象，该对象可以认为是一个表示位置的坐标对象，在该对象中又嵌套了一个 start对象，start对象可以认为是一个位置的起始坐标点，所以在该对象中有两个属性为 x,y，分别表示横坐标和纵坐标。
@@ -8909,17 +8840,15 @@ let age = obj.userAge
 字符串也可以进行解构赋值，这是因为字符串被转换成了一个类似于数组的对象。
 
 ```javascript
-        let [a, b, c, d, e, f] = 'itcast';
-        console.log(a, b, c, d, e, f);
+let [a, b, c, d, e, f] = "itcast";
+console.log(a, b, c, d, e, f);
 ```
 
 类似于数组的对象都有 length属性，因此也可以对这个属性进行解构赋值。
 
 ```javascript
-        let {
-            length: len
-        } = 'itcast';
-        console.log('len=', len);
+let { length: len } = "itcast";
+console.log("len=", len);
 ```
 
 #### 3.7、函数参数的解构赋值
@@ -8927,10 +8856,10 @@ let age = obj.userAge
 函数的参数也能够进行解构的赋值，如下代码所示：
 
 ```javascript
-        function test([x, y]) {
-            return x + y;
-        }
-        console.log(test([3, 6]));
+function test([x, y]) {
+  return x + y;
+}
+console.log(test([3, 6]));
 ```
 
 上面的代码中，函数 test的参数不是一个数组，而是通过解构得到的变量 x和 y.
@@ -8938,24 +8867,22 @@ let age = obj.userAge
 函数的参数的解构也可以使用默认的值。
 
 ```javascript
-        function test({
-            x = 0,
-            y = 0
-        } = {}) {
-            return [x, y];
-
-        }
-        console.log(test({
-            x: 3,
-            y: 6
-        }));
+function test({ x = 0, y = 0 } = {}) {
+  return [x, y];
+}
+console.log(
+  test({
+    x: 3,
+    y: 6,
+  }),
+);
 ```
 
 当然可以进行如下的调用
 
 ```javascript
-test({x:3})
-test({})
+test({ x: 3 });
+test({});
 ```
 
 #### 3.8、解构赋值的好处
@@ -8963,20 +8890,20 @@ test({})
 ##### 3.8.1 交换变量的值
 
 ```javascript
-        let num1 = 3;
-        let num2 = 6;
-        [num1, num2] = [num2, num1];
-        console.log(num1, num2);
+let num1 = 3;
+let num2 = 6;
+[num1, num2] = [num2, num1];
+console.log(num1, num2);
 ```
 
 ##### 3.8.2 函数可以返回多个值
 
 ```javascript
-        function test() {
-            return [1, 2, 3];
-        }
-        let [a, b, c] = test();
-        console.log(a, b, c);
+function test() {
+  return [1, 2, 3];
+}
+let [a, b, c] = test();
+console.log(a, b, c);
 ```
 
 在上面的代码中，返回了三个值，当然在实际的开发过程中，你可以根据自己的实际情况确定返回的数据的个数。
@@ -8985,24 +8912,24 @@ test({})
 
 ```javascript
 // 接收第一个值
-        function test() {
-            return [1, 2, 3];
-        }
-        let [a] = test();
-        console.log(a);
+function test() {
+  return [1, 2, 3];
+}
+let [a] = test();
+console.log(a);
 
-        // 接收前两个值
-        function test() {
-            return [1, 2, 3];
-        }
-        let [a, b] = test();
-        console.log(a, b);
-        // 只接收第一个值和第三个值。
-        function test() {
-            return [1, 2, 3];
-        }
-        let [a, , b] = test();
-        console.log(a, b);
+// 接收前两个值
+function test() {
+  return [1, 2, 3];
+}
+let [a, b] = test();
+console.log(a, b);
+// 只接收第一个值和第三个值。
+function test() {
+  return [1, 2, 3];
+}
+let [a, , b] = test();
+console.log(a, b);
 ```
 
 ##### 3.8.3 函数返回一个对象
@@ -9010,17 +8937,14 @@ test({})
 可以将函数返回的多个值封装到一个对象中。
 
 ```javascript
-        function test() {
-            return {
-                num1: 3,
-                num2: 6
-            }
-        }
-        let {
-            num1,
-            num2
-        } = test();
-        console.log(num1, num2);
+function test() {
+  return {
+    num1: 3,
+    num2: 6,
+  };
+}
+let { num1, num2 } = test();
+console.log(num1, num2);
 ```
 
 ##### 3.8.4 提取 JSON对象中的数据
@@ -9028,17 +8952,13 @@ test({})
 解构赋值对提取 JSON对象中的数据也非常有用。
 
 ```javascript
-        let userData = {
-            id: 12,
-            userName: 'zhangsan',
-            userAge: 20
-        }
-        let {
-            id,
-            userName,
-            userAge
-        } = userData;
-        console.log(id, userName, userAge);
+let userData = {
+  id: 12,
+  userName: "zhangsan",
+  userAge: 20,
+};
+let { id, userName, userAge } = userData;
+console.log(id, userName, userAge);
 ```
 
 以上的代码可以快速提取 JSON中的数据。
@@ -9054,19 +8974,19 @@ test({})
 先采用传统的做法：
 
 ```javascript
-        let arr1 = [1, 2, 3];
-        let arr2 = [4, 5, 6];
-        let arr3 = [].concat(arr1, arr2);
-        console.log(arr3);
+let arr1 = [1, 2, 3];
+let arr2 = [4, 5, 6];
+let arr3 = [].concat(arr1, arr2);
+console.log(arr3);
 ```
 
 下面使用扩展运算符来完成上面的案例
 
 ```javascript
-        let arr1 = [1, 2, 3];
-        let arr2 = [4, 5, 6];
-        let arr3 = [...arr1, ...arr2];
-        console.log(arr3);
+let arr1 = [1, 2, 3];
+let arr2 = [4, 5, 6];
+let arr3 = [...arr1, ...arr2];
+console.log(arr3);
 ```
 
 通过以上的代码，发现也实现了我们最终想要的结果，`…arr1` 是将 `arr1` 这个数组中的所有的元素取出来，然后组成 '1,2,3'这个形式，放到 `…arr1` 这个位置，同理 arr2也是一样。
@@ -9097,15 +9017,14 @@ console.log(arr3);
 通过循环的方式来完成，如下面的代码：
 
 ```javascript
-        let arr = [12, 23, 11, 56];
-        let max = arr[0]
-        for (let index = 0; index < arr.length; index++) {
-            if (arr[index] > max) {
-                max = arr[index];
-            }
-
-        }
-        console.log("max=", max);
+let arr = [12, 23, 11, 56];
+let max = arr[0];
+for (let index = 0; index < arr.length; index++) {
+  if (arr[index] > max) {
+    max = arr[index];
+  }
+}
+console.log("max=", max);
 ```
 
 这种方式非常麻烦，所以可以使用 Math对象中的 max方法来完成.
@@ -9113,14 +9032,14 @@ console.log(arr3);
 先来看一下 Math.max的基本用法
 
 ```javascript
-   console.log(Math.max(1, 5, 12, 67));
+console.log(Math.max(1, 5, 12, 67));
 ```
 
 如果是用 Math.max来计算数组中的最大值。（ES5的写法）
 
 ```javascript
-        let arr = [12, 23, 11, 56];
-        console.log(Math.max.apply(null, arr));
+let arr = [12, 23, 11, 56];
+console.log(Math.max.apply(null, arr));
 ```
 
 虽然可以使用 `Math.max.apply` 来实现，但是感觉还是很麻烦，
@@ -9128,9 +9047,8 @@ console.log(arr3);
 这里就可以使用扩展运算符
 
 ```javascript
-        let arr = [12, 23, 11, 56];
-        console.log(Math.max(...arr));
-
+let arr = [12, 23, 11, 56];
+console.log(Math.max(...arr));
 ```
 
 在上面的代码中（不管 ES5还是 ES6），由于 JavaScript不提供求数组中最大值的函数，所以只能将数组转换成一个参数的列表，然后再进行相应的求值。
@@ -9140,11 +9058,11 @@ console.log(arr3);
 在函数调用的时候，需要进行参数的传递，在某些情况下，通过扩展运算符，更有利于参数的传递。
 
 ```javascript
-        function test(num1, num2) {
-            return num1 + num2;
-        }
-        let array = [23, 56];
-        console.log(test(...array));
+function test(num1, num2) {
+  return num1 + num2;
+}
+let array = [23, 56];
+console.log(test(...array));
 ```
 
 通过扩展运算符，将 array这个数组中的值取出来，然后 23赋值给了 num1,56赋值给了 num2.
@@ -9154,12 +9072,12 @@ console.log(arr3);
 把一组数据添加到数组中。
 
 ```javascript
-        function test(array, ...items) {
-            array.push(...items);
-            console.log(array)
-        }
-        let array = [23, 56];
-        test(array, 90, 78, 98);
+function test(array, ...items) {
+  array.push(...items);
+  console.log(array);
+}
+let array = [23, 56];
+test(array, 90, 78, 98);
 ```
 
 test这个函数的作用是：把 90,78,98这三个数添加到 array这个数组中，
@@ -9173,11 +9091,10 @@ test这个函数的作用是：把 90,78,98这三个数添加到 array这个数�
 在 `ES6` 中引入了 rest参数，形式为 "…变量名 "，用于获取函数中的多余参数，这样就不需要使用 arguments对象了。rest参数搭配的变量是一个数组。
 
 ```javascript
-        function add(s, num1, num2) {
-            return s + (num1 + num2);
-
-        }
-        console.log(add('+', 2, 3));
+function add(s, num1, num2) {
+  return s + (num1 + num2);
+}
+console.log(add("+", 2, 3));
 ```
 
 在上面定义的函数中，传递了三个参数，第一个参数：是一个 '+'号，后面两个参数，表示进行加法运算的数据。
@@ -9187,37 +9104,37 @@ test这个函数的作用是：把 90,78,98这三个数添加到 array这个数�
 如下所示：
 
 ```javascript
-        function add(...values) {
-            console.log(values);
-        }
-        add(2, 3);
+function add(...values) {
+  console.log(values);
+}
+add(2, 3);
 ```
 
 通过以上的代码输出发现，values这个参数是一个数组，所传递的数据都存储到这个数组中，下面可以将数据从这个数组中取出来，进行运算。
 
 ```javascript
-        function add(...values) {
-            // console.log(values);
-            let sum = 0;
-            for (let index = 0; index < values.length; index++) {
-                sum += values[index];
-            }
-            return sum;
-        }
-        console.log(add(2, 3));
+function add(...values) {
+  // console.log(values);
+  let sum = 0;
+  for (let index = 0; index < values.length; index++) {
+    sum += values[index];
+  }
+  return sum;
+}
+console.log(add(2, 3));
 ```
 
 上面的循环方式，使用的是传统的模式，也可以使用 `forEach` 的形式来进行循环，如下所示：
 
 ```js
-   function add(...values) {
-        let sum = 0;
-        values.forEach(function(item) {
-            sum += item
-        })
-        return sum;
-    }
-    console.log(add(2, 3));
+function add(...values) {
+  let sum = 0;
+  values.forEach(function (item) {
+    sum += item;
+  });
+  return sum;
+}
+console.log(add(2, 3));
 ```
 
 下面我们再来看一个 `rest` 运算符的基本使用
@@ -9227,12 +9144,10 @@ test这个函数的作用是：把 90,78,98这三个数添加到 array这个数�
 如下代码：
 
 ```js
-  <script>
-      let arr = [1, 2, 3, 4, 5, 6];
-      let [arr1, ...arr2] = arr; //进行解构处理
-      console.log(arr1); // 1
-      console.log(arr2); // [2,3,4,5,6]
-    </script>
+<script>
+  let arr = [1, 2, 3, 4, 5, 6]; let [arr1, ...arr2] = arr; //进行解构处理
+  console.log(arr1); // 1 console.log(arr2); // [2,3,4,5,6]
+</script>
 ```
 
 在上面的代码中，`arr` 经过解构后，变量 `arr1` 的值为 1，而通过 `rest` 运算符会将后面所有的值都统一赋值给 `arr2` 变量，得到的 `arr2` 为一个数组。
@@ -9246,20 +9161,20 @@ test这个函数的作用是：把 90,78,98这三个数添加到 array这个数�
 对数据进行排序，使用的是 `arguments`。
 
 ```javascript
-        function sortFunc() {
-            return Array.prototype.slice.call(arguments).sort()
-        }
+function sortFunc() {
+  return Array.prototype.slice.call(arguments).sort();
+}
 
-        console.log(sortFunc(23, 12, 67));
+console.log(sortFunc(23, 12, 67));
 ```
 
 下面使用 rest的方式
 
 ```javascript
-        function sortFunc(...values) {
-            return values.sort()
-        }
-        console.log(sortFunc(23, 12, 67));
+function sortFunc(...values) {
+  return values.sort();
+}
+console.log(sortFunc(23, 12, 67));
 ```
 
 因为 values这个参数本身就是数组，所以可以直接使用 sort函数，进行数据的排序操作。
@@ -9302,11 +9217,11 @@ test这个函数的作用是：把 90,78,98这三个数添加到 array这个数�
 示例代码如下：
 
 ```javascript
-        // 使用传统方式定义函数
-        let f = function(x, y) {
-            return x + y;
-        }
-        console.log(f(3, 6));
+// 使用传统方式定义函数
+let f = function (x, y) {
+  return x + y;
+};
+console.log(f(3, 6));
 ```
 
 通过上面的代码，可以发现传统方式来定义函数的时候，比较麻烦。
@@ -9314,10 +9229,10 @@ test这个函数的作用是：把 90,78,98这三个数添加到 array这个数�
 箭头函数的使用
 
 ```javascript
-        let f = (x, y) => {
-            return x + y
-        };
-        console.log(f(9, 8));
+let f = (x, y) => {
+  return x + y;
+};
+console.log(f(9, 8));
 ```
 
 在调用 f这个函数的时候，将 9和 8传递给了 x,y这两个参数，然后进行加法运算。
@@ -9325,26 +9240,26 @@ test这个函数的作用是：把 90,78,98这三个数添加到 array这个数�
 如果参数只有一个，可以省略小括号。
 
 ```javascript
-        let f = num => {
-            return num / 2;
-        }
-        console.log(f(6));
+let f = (num) => {
+  return num / 2;
+};
+console.log(f(6));
 ```
 
 如果没有参数，只需要写一对小括号就可以。
 
 ```javascript
-        let f = () => {
-            return 9 / 3;
-        }
-        console.log(f());
+let f = () => {
+  return 9 / 3;
+};
+console.log(f());
 ```
 
 上面我们写的代码中，发现函数体中只有一条语句，那么这时是可以省略大括号的。
 
 ```javascript
-        let f = (x, y) => x + y;
-        console.log(f(3, 6));
+let f = (x, y) => x + y;
+console.log(f(3, 6));
 ```
 
 把上面的代码转换成 ES5的写法，发现和我们前面写的代码是一样的。
@@ -9378,11 +9293,11 @@ console.log(f(3, 6));
 所以，正确的写法如下：
 
 ```javascript
-        let f = (id, name) => ({
-            id: id,
-            userName: name
-        });
-        console.log(f(1, 'zs'));
+let f = (id, name) => ({
+  id: id,
+  userName: name,
+});
+console.log(f(1, "zs"));
 ```
 
 通过打印，发现输出的是一个对象。
@@ -9390,14 +9305,13 @@ console.log(f(3, 6));
 当然也可以采用如下的写法
 
 ```javascript
-        let f = (id, name) => {
-            return {
-                id: id,
-                userName: name
-            }
-        };
-        console.log(f(1, 'zs'));
-
+let f = (id, name) => {
+  return {
+    id: id,
+    userName: name,
+  };
+};
+console.log(f(1, "zs"));
 ```
 
 ##### 5.2.2 箭头函数中 this的问题
@@ -9407,13 +9321,13 @@ console.log(f(3, 6));
 看一下，如下代码：
 
 ```javascript
-        let person = {
-            userName: 'ls',
-            getUserName() {
-                console.log(this.userName)
-            }
-        }
-        person.getUserName();
+let person = {
+  userName: "ls",
+  getUserName() {
+    console.log(this.userName);
+  },
+};
+person.getUserName();
 ```
 
 以上代码执行的结果为：'ls',并且在该程序中 `this` 为当前的 person对象。
@@ -9421,15 +9335,15 @@ console.log(f(3, 6));
 现在，将上面的代码修改一下，要求延迟 1秒钟以后，再输出用户名的名称。
 
 ```javascript
-        let person = {
-            userName: 'ls',
-            getUserName() {
-                setTimeout(function() {
-                    console.log(this.userName)
-                }, 1000)
-            }
-        }
-        person.getUserName();
+let person = {
+  userName: "ls",
+  getUserName() {
+    setTimeout(function () {
+      console.log(this.userName);
+    }, 1000);
+  },
+};
+person.getUserName();
 ```
 
 上面的输出结果为：`undefined`，因为在 setTimeout中 this指的是 window,而不是 person对象。
@@ -9437,16 +9351,16 @@ console.log(f(3, 6));
 为了解决上面的问题，可以将代码进行如下的修改：
 
 ```javascript
-        let person = {
-            userName: 'ls',
-            getUserName() {
-                let that = this;
-                setTimeout(function() {
-                    console.log(that.userName)
-                }, 1000)
-            }
-        }
-        person.getUserName();
+let person = {
+  userName: "ls",
+  getUserName() {
+    let that = this;
+    setTimeout(function () {
+      console.log(that.userName);
+    }, 1000);
+  },
+};
+person.getUserName();
 ```
 
 在进入 setTimeout这个方法之前，提前将 this赋值给 that变量，然后在 setTimeout中使用 that,那么这时 that指的就是 person对象。
@@ -9454,15 +9368,15 @@ console.log(f(3, 6));
 上面的解决方法比较麻烦，可以修改成箭头函数的形式，代码如下所示：
 
 ```js
-        let person = {
-            userName: 'wangwu',
-            getUserName() {
-                setTimeout(() => {
-                    console.log(this.userName);
-                },1000)
-            }
-        }
-        person.getUserName();
+let person = {
+  userName: "wangwu",
+  getUserName() {
+    setTimeout(() => {
+      console.log(this.userName);
+    }, 1000);
+  },
+};
+person.getUserName();
 ```
 
 通过上面的代码，可以发现在箭头函数中直接使用 this是没有问题的。
@@ -9476,13 +9390,13 @@ console.log(f(3, 6));
 下面，再看一个案例：（可以将下面的代码转换成 ES5的代码）
 
 ```javascript
-        let person = {
-            userName: 'zhangsan',
-            getUserName: () => {
-                console.log(this.userName)
-            }
-        }
-        person.getUserName();
+let person = {
+  userName: "zhangsan",
+  getUserName: () => {
+    console.log(this.userName);
+  },
+};
+person.getUserName();
 ```
 
 输出结果为:undefined
@@ -9492,15 +9406,15 @@ console.log(f(3, 6));
 下面再看一个案例：
 
 ```javascript
-        let person = {
-            userName: 'zhangsan',
-            getUserName() {
-                return () => {
-                    console.log(this.userName);
-                }
-            }
-        }
-        person.getUserName()();
+let person = {
+  userName: "zhangsan",
+  getUserName() {
+    return () => {
+      console.log(this.userName);
+    };
+  },
+};
+person.getUserName()();
 ```
 
 根据上面总结的规律是，这段代码输出的结果是：'zhangsan'.
@@ -9510,19 +9424,19 @@ console.log(f(3, 6));
 由于箭头函数没有自己的 this,所以不能使用 `call()`、`apply()`、`bind()` 这些方法来改变 this的指向。
 
 ```js
-    let adder = {
-            base: 1,
+let adder = {
+  base: 1,
 
-            add: function(a) {
-                let f = v => v + this.base;
-                let b = {
-                    base: 3
-                };
+  add: function (a) {
+    let f = (v) => v + this.base;
+    let b = {
+      base: 3,
+    };
 
-                return f.call(b, a);
-            }
-        };
-        console.log(adder.add(1))
+    return f.call(b, a);
+  },
+};
+console.log(adder.add(1));
 ```
 
 上面代码执行的结果为:2
@@ -9538,10 +9452,10 @@ console.log(f(3, 6));
 如下代码：
 
 ```js
-  function Person(name) {
-        this.name = name;
-      }
-      var p = new Person("zhangsan"); //正常
+function Person(name) {
+  this.name = name;
+}
+var p = new Person("zhangsan"); //正常
 ```
 
 以上是我们前面经常使用的一种方式，没有问题
@@ -9549,10 +9463,10 @@ console.log(f(3, 6));
 下面看一下使用箭头函数作为构造函数的情况
 
 ```js
-   let Person = (name) => {
-        this.userName = name;
-      };
-      let p = new Person("lisi");
+let Person = (name) => {
+  this.userName = name;
+};
+let p = new Person("lisi");
 ```
 
 当执行上面的程序的时候，会出现错误
@@ -9562,10 +9476,10 @@ console.log(f(3, 6));
 因为在箭头函数中没有 `this`,也就不存在自己的作用域，因此箭头函数是没有 `prototype` 属性的。
 
 ```js
-  let Person = (name) => {
-        this.userName = name;
-      };
-      console.log(Person.prototype); // undefined
+let Person = (name) => {
+  this.userName = name;
+};
+console.log(Person.prototype); // undefined
 ```
 
 第三：不适合将原型函数定义成箭头函数
@@ -9575,15 +9489,15 @@ console.log(f(3, 6));
 因此并不会访问到构造函数本身，也就无法访问到实例属性，失去了原型函数的意义。
 
 ```js
- function Person(name) {
-        this.userName = name;
-      }
-      Person.prototype.sayHello = () => {
-        console.log(this); // window
-        console.log(this.userName); // undefined
-      };
-      let p = new Person("zhangsan");
-      p.sayHello();
+function Person(name) {
+  this.userName = name;
+}
+Person.prototype.sayHello = () => {
+  console.log(this); // window
+  console.log(this.userName); // undefined
+};
+let p = new Person("zhangsan");
+p.sayHello();
 ```
 
 ### 6、对象的扩展
@@ -9593,25 +9507,25 @@ console.log(f(3, 6));
 以前创建对象的方式：
 
 ```javascript
-        let userName = 'zhangsan';
-        let userAge = 18;
-        let person = {
-            userName: userName,
-            userAge: userAge
-        }
-        console.log(person);
+let userName = "zhangsan";
+let userAge = 18;
+let person = {
+  userName: userName,
+  userAge: userAge,
+};
+console.log(person);
 ```
 
 通过上面的代码，可以发现对象中的属性名和变量名是一样的，像这种情况，在 ES6中是可以简化如下形式：
 
 ```javascript
-        let userName = 'zhangsan';
-        let userAge = 18;
-        let person = {
-            userName,
-            userAge
-        }
-        console.log(person);
+let userName = "zhangsan";
+let userAge = 18;
+let person = {
+  userName,
+  userAge,
+};
+console.log(person);
 ```
 
 通过以上代码可以发现：在 ES6中，如果对象的属性名和变量名是一样的，那么两者可以合二为一。
@@ -9619,31 +9533,31 @@ console.log(f(3, 6));
 当然，除了属性可以简写，方法也可以简写，以前定义方法的形式如下：
 
 ```javascript
-        let userName = 'zhangsan';
-        let userAge = 18;
-        let person = {
-            userName,
-            userAge,
-            sayHello: function() {
-                console.log('你好')
-            }
-        }
-        person.sayHello();
+let userName = "zhangsan";
+let userAge = 18;
+let person = {
+  userName,
+  userAge,
+  sayHello: function () {
+    console.log("你好");
+  },
+};
+person.sayHello();
 ```
 
 在 ES6中可以简化成如下的形式:
 
 ```javascript
-        let userName = 'zhangsan';
-        let userAge = 18;
-        let person = {
-            userName,
-            userAge,
-            sayHello() {
-                console.log('Hello');
-            }
-        }
-        person.sayHello();
+let userName = "zhangsan";
+let userAge = 18;
+let person = {
+  userName,
+  userAge,
+  sayHello() {
+    console.log("Hello");
+  },
+};
+person.sayHello();
 ```
 
 所以在以后的编程中，会经常看到或者是用到这种 `ES6` 的表示形式。
@@ -9659,20 +9573,20 @@ console.log(f(3, 6));
 如下代码所示：
 
 ```javascript
-        let obj1 = {
-            name: 'zhangsan'
-        };
-        let obj2 = {
-            age: 20
-        };
-        let obj3 = {};
-        for (let key in obj1) {
-            obj3[key] = obj1[key];
-        }
-        for (let key in obj2) {
-            obj3[key] = obj2[key];
-        }
-        console.log('obj3=', obj3);
+let obj1 = {
+  name: "zhangsan",
+};
+let obj2 = {
+  age: 20,
+};
+let obj3 = {};
+for (let key in obj1) {
+  obj3[key] = obj1[key];
+}
+for (let key in obj2) {
+  obj3[key] = obj2[key];
+}
+console.log("obj3=", obj3);
 ```
 
 虽然通过循环的方式，可以实现对象属性的拷贝，但是很麻烦。下面讲解一个简单的方法：`Object.assign()` 方法.
@@ -9682,17 +9596,17 @@ console.log(f(3, 6));
 示例代码如下：
 
 ```javascript
-        let target = {
-            a: 1,
-            b: 2
-        };
-        let source = {
-            c: 3,
-            d: 4
-        };
+let target = {
+  a: 1,
+  b: 2,
+};
+let source = {
+  c: 3,
+  d: 4,
+};
 
-        Object.assign(target, source);
-        console.log(target);
+Object.assign(target, source);
+console.log(target);
 ```
 
 最终的结果：将 source对象中的属性拷贝到 target对象上。
@@ -9700,21 +9614,21 @@ console.log(f(3, 6));
 在上面的定义中，可以看出参数不仅两个，可以有多个，但是要注意的是第一个参数一定是目标对象，下面再看一个多个参数的案例：
 
 ```javascript
-        let target = {
-            a: 1,
-            b: 2
-        };
-        let source = {
-            c: 3,
-            d: 4
-        };
-        let source1 = {
-            e: 5,
-            f: 6
-        };
+let target = {
+  a: 1,
+  b: 2,
+};
+let source = {
+  c: 3,
+  d: 4,
+};
+let source1 = {
+  e: 5,
+  f: 6,
+};
 
-        Object.assign(target, source, source1);
-        console.log(target);
+Object.assign(target, source, source1);
+console.log(target);
 ```
 
 通过上面的代码，将 source和 `source1` 这两个对象的属性都拷贝给了 target对象。
@@ -9726,17 +9640,17 @@ console.log(f(3, 6));
 如下代码所示：
 
 ```javascript
-        let obj1 = {
-            name: '张三',
-            address: {
-                city: '北京'
-            }
-        }
-        let obj2 = {};
-        Object.assign(obj2, obj1);
-        obj2.address.city = "上海";
-        console.log("obj1=", obj1);
-        console.log("obj2=", obj2);
+let obj1 = {
+  name: "张三",
+  address: {
+    city: "北京",
+  },
+};
+let obj2 = {};
+Object.assign(obj2, obj1);
+obj2.address.city = "上海";
+console.log("obj1=", obj1);
+console.log("obj2=", obj2);
 ```
 
 上面的代码中对 `obj2` 这个对象的 city属性的值进行了修改，发现对应的 `obj1` 对象中的 city属性的值也发生了改变。
@@ -9748,29 +9662,29 @@ console.log(f(3, 6));
 关于深拷贝，实现方式比较多，下面简单的说一种方式：(这里只是简单的模拟)
 
 ```javascript
-        function clone(source) {
-            let newObj = {};
-            for (let key in source) {
-                // 由于address属性为对象，所以执行递归。
-                if (typeof source[key] === 'object') {
-                    newObj[key] = clone(source[key]);
-                } else {
-                    // 如果是name属性直接赋值
-                    newObj[key] = source[key];
-                }
-            }
-            return newObj;
-        }
-        let obj1 = {
-            name: '张三',
-            address: {
-                city: '北京'
-            }
-        }
-        let obj2 = clone(obj1);
-        obj2.address.city = "上海";
-        console.log("obj1=", obj1);
-        console.log("obj2=", obj2);
+function clone(source) {
+  let newObj = {};
+  for (let key in source) {
+    // 由于address属性为对象，所以执行递归。
+    if (typeof source[key] === "object") {
+      newObj[key] = clone(source[key]);
+    } else {
+      // 如果是name属性直接赋值
+      newObj[key] = source[key];
+    }
+  }
+  return newObj;
+}
+let obj1 = {
+  name: "张三",
+  address: {
+    city: "北京",
+  },
+};
+let obj2 = clone(obj1);
+obj2.address.city = "上海";
+console.log("obj1=", obj1);
+console.log("obj2=", obj2);
 ```
 
 ##### 2.3 注意事项
@@ -9778,17 +9692,17 @@ console.log(f(3, 6));
 1、如果目标对象与源对象有同名属性，那么后面的属性会覆盖前面的属性。
 
 ```javascript
-        let target = {
-            a: 1,
-            b: 2
-        };
-        let source = {
-            b: 3,
-            d: 4
-        };
+let target = {
+  a: 1,
+  b: 2,
+};
+let source = {
+  b: 3,
+  d: 4,
+};
 
-        Object.assign(target, source);
-        console.log(target);
+Object.assign(target, source);
+console.log(target);
 ```
 
 上面的代码，将 source对象中的属性拷贝给了 target对象，但是 source对象中有 b这个属性，而且 target对象上也有 b属性，那么最终的结果是:source对象中的 b属性覆盖掉 target对象中的 b属性。
@@ -9796,16 +9710,16 @@ console.log(f(3, 6));
 2、不可枚举的属性不会被复制。
 
 ```javascript
-        let obj = {};
-        Object.defineProperty(obj, 'b', {
-            enumerable: false,
-            value: 'world'
-        })
-        let obj1 = {
-            a: 'hello'
-        }
-        Object.assign(obj1, obj);
-        console.log('obj1=', obj1);
+let obj = {};
+Object.defineProperty(obj, "b", {
+  enumerable: false,
+  value: "world",
+});
+let obj1 = {
+  a: "hello",
+};
+Object.assign(obj1, obj);
+console.log("obj1=", obj1);
 ```
 
 在上面的代码中，通过 `Object.defineProperty()` 方法为 obj对象添加了一个属性 b,这个属性的值为 'world',并且指定了 enumerable这个属性的值为 false.也就是不可以被枚举。也就是该属性不可以通过 for in来进行遍历。
@@ -9823,12 +9737,12 @@ console.log(f(3, 6));
 代码如下所示：
 
 ```javascript
-      let obj = {
-            num: 10,
-            "num 1": 20
-        }
-        console.log(obj.num);
-        console.log(obj["num 1"]);
+let obj = {
+  num: 10,
+  "num 1": 20,
+};
+console.log(obj.num);
+console.log(obj["num 1"]);
 ```
 
 通过以上的代码，可以发现在对象中定义的属性的名称本身就是字符串，而且发现 "num 1"中间是有空格的，所以在访问该属性的时候，通过 []的形式来进行访问。
@@ -9844,8 +9758,8 @@ Symbol类型的值是通过 Symbol函数生成的。它的值是独一无二的�
 可以通过如下的代码测试类型
 
 ```javascript
-        let s = Symbol();
-        console.log(typeof s);
+let s = Symbol();
+console.log(typeof s);
 ```
 
 对应的输出类型为 "symbol"
@@ -9853,10 +9767,10 @@ Symbol类型的值是通过 Symbol函数生成的。它的值是独一无二的�
 下面创建 Symbol类型的变量，然后进行打印输出。
 
 ```javascript
-        let s = Symbol();
-        let s1 = Symbol();
-        console.log(s);
-        console.log(s1);
+let s = Symbol();
+let s1 = Symbol();
+console.log(s);
+console.log(s1);
 ```
 
 发现输出的结果都是：Symbol()。
@@ -9866,10 +9780,10 @@ Symbol类型的值是通过 Symbol函数生成的。它的值是独一无二的�
 为了解决这个问题，Symbol()函数可以接受一个字符串作为参数，这个参数表示对 Symbol的描述，主要是为了在控制台进行输出打印的时候，能够区分开，Symbol最终是属于哪个变量的。
 
 ```javascript
-        let s = Symbol('s');
-        let s1 = Symbol('s1');
-        console.log(s);
-        console.log(s1);
+let s = Symbol("s");
+let s1 = Symbol("s1");
+console.log(s);
+console.log(s1);
 ```
 
 输出的结果为：Symbol(s)和 Symbol(s1)
@@ -9877,9 +9791,9 @@ Symbol类型的值是通过 Symbol函数生成的。它的值是独一无二的�
 注意：Symbol函数的参数只表示对当前 Symbol值（结果）的描述，因此相同参数的 Symbol函数的返回值是不相等的。代码如下：
 
 ```javascript
-        let s = Symbol('s');
-        let s1 = Symbol('s');
-        console.log(s === s1);
+let s = Symbol("s");
+let s1 = Symbol("s");
+console.log(s === s1);
 ```
 
 以上结果为：false.
@@ -9893,32 +9807,32 @@ Symbol类型的值是通过 Symbol函数生成的。它的值是独一无二的�
 第一种添加属性的方式：
 
 ```javascript
-        let mySymbol = Symbol();
-        let obj = {}
-            // 第一种添加属性的方式
-        obj[mySymbol] = 'hello';
-        console.log(obj[mySymbol]);
+let mySymbol = Symbol();
+let obj = {};
+// 第一种添加属性的方式
+obj[mySymbol] = "hello";
+console.log(obj[mySymbol]);
 ```
 
 第二种添加属性的方式：
 
 ```javascript
-        let mySymbol = Symbol();
-        let obj = {
-            [mySymbol]: 'world' // 注意mySymbol必须加上方括号，否则为字符串而不是Symbol类型。
-        }
-        console.log(obj[mySymbol]);
+let mySymbol = Symbol();
+let obj = {
+  [mySymbol]: "world", // 注意mySymbol必须加上方括号，否则为字符串而不是Symbol类型。
+};
+console.log(obj[mySymbol]);
 ```
 
 第三种添加属性的方式
 
 ```javascript
-        let mySymbol = Symbol();
-        let obj = {};
-        Object.defineProperty(obj, mySymbol, {
-            value: '你好'
-        })
-        console.log(obj[mySymbol]);
+let mySymbol = Symbol();
+let obj = {};
+Object.defineProperty(obj, mySymbol, {
+  value: "你好",
+});
+console.log(obj[mySymbol]);
 ```
 
 ##### 7.2.2 防止属性名称冲突
@@ -9928,19 +9842,19 @@ Symbol类型的值是通过 Symbol函数生成的。它的值是独一无二的�
 下面先定义一个对象，然后动态的向对象中添加一个 id属性。
 
 ```javascript
-        let obj = {
-            name: 'zs',
-            age: 18
-        }
-        function test1(obj) {
-            obj.id = 42;
-        }
-        function test2(obj) {
-            obj.id = 369;
-        }
-        test1(obj);
-        test2(obj);
-        console.log(obj);
+let obj = {
+  name: "zs",
+  age: 18,
+};
+function test1(obj) {
+  obj.id = 42;
+}
+function test2(obj) {
+  obj.id = 369;
+}
+test1(obj);
+test2(obj);
+console.log(obj);
 ```
 
 在上面的代码中，有两个函数分别是 test1和 test2向 obj这个对象中动态添加 id属性，在这里可以把这两个函数想象成两个不同的模块，或者是两个不同开发人员来实现的功能。
@@ -9948,25 +9862,23 @@ Symbol类型的值是通过 Symbol函数生成的。它的值是独一无二的�
 但是问题是，由于 test2()这个函数后执行，所以会将 test1()这个函数创建的 id属性的值覆盖掉。那么这是我们不希望看到的，为了解决这个问题，可以使用 Symbol作为属性名来解决。
 
 ```javascript
-        let obj = {
-            name: 'zs',
-            age: 18
-        }
-        let mySymbol = Symbol('lib1');
+let obj = {
+  name: "zs",
+  age: 18,
+};
+let mySymbol = Symbol("lib1");
 
-        function test1(obj) {
-            obj[mySymbol] = 42;
+function test1(obj) {
+  obj[mySymbol] = 42;
+}
+let mySymbol2 = Symbol("lib2");
 
-        }
-        let mySymbol2 = Symbol('lib2');
-
-        function test2(obj) {
-            obj[mySymbol2] = 369;
-
-        }
-        test1(obj);
-        test2(obj);
-        console.log(obj);
+function test2(obj) {
+  obj[mySymbol2] = 369;
+}
+test1(obj);
+test2(obj);
+console.log(obj);
 ```
 
 通过上面的代码可以发现，通过 Symbol解决了属性名称冲突的问题。
@@ -9980,7 +9892,7 @@ Proxy可以理解成在对象前添加了一个 "拦截 "层，外界在对该�
 Proxy的使用
 
 ```javascript
-let proxy=new Proxy(target,handler)
+let proxy = new Proxy(target, handler);
 ```
 
 target:表示所要拦截的目标对象 (原来要访问的对象)
@@ -9996,11 +9908,11 @@ handler:也是一个对象，表示拦截的行为和规则。
 下面先看如下的代码
 
 ```javascript
-        let student = {
-            userName: '张三'
-        }
-        console.log(student.userName);
-        console.log(student.userAge);
+let student = {
+  userName: "张三",
+};
+console.log(student.userName);
+console.log(student.userAge);
 ```
 
 这段代码非常的简单，定义了一个 student对象，在该对象中添加了一个 userName,下面可以直接通过对象名加上点的方式来获取对应的属性的值。但是，问题是，在 student这个对象中，只是定义了 userName这个属性，并没有定义 userAge,但是当通过 student.userAge这个方式来获取的时候，发现得到的结果是 undefined.
@@ -10008,21 +9920,21 @@ handler:也是一个对象，表示拦截的行为和规则。
 那么，在这里我们希望如果访问对象中不存在的属性的时候，应该给出相应的错误提示，要想实现这个需求，就要用到 Proxy中的 `get()` 方法，也就是在访问某个对象的属性之前，先拦截一下，看一下所访问的对象是否有对应的属性，如果有，继续访问，如果没有给用户一个错误的提示。
 
 ```javascript
-       let student = {
-            userName: '张三'
-        }
-        let proxy = new Proxy(student, {
-            get: function(target, property) {
-                if (property in target) {
-                    return target[property];
-                } else {
-                    // （引用错误） 对象代表当一个不存在的变量被引用时发生的错误。
-                    throw new ReferenceError('访问的属性' + property + "不存在")
-                }
-            }
-        })
-        console.log(proxy.userName);
-        console.log(proxy.userAge);
+let student = {
+  userName: "张三",
+};
+let proxy = new Proxy(student, {
+  get: function (target, property) {
+    if (property in target) {
+      return target[property];
+    } else {
+      // （引用错误） 对象代表当一个不存在的变量被引用时发生的错误。
+      throw new ReferenceError("访问的属性" + property + "不存在");
+    }
+  },
+});
+console.log(proxy.userName);
+console.log(proxy.userAge);
 ```
 
 `get()` 有两个参数，` 第一个参数表示的是目标对象，第二个参数表示的是要访问的属性。
@@ -10038,29 +9950,28 @@ handler:也是一个对象，表示拦截的行为和规则。
 假如，Student 对象有一个 age 属性，表示学生的年龄，在这里我们要求对年龄进行限制，如果大于 60 岁，给出错误提示，这样在这里可以使用 Proxy 对象保证 age 属性的取值是符合要求的。
 
 ```javascript
-        let student = {
-            name: 'zs',
-            age: 20
-        };
+let student = {
+  name: "zs",
+  age: 20,
+};
 
-        let proxy = new Proxy(student, {
-            set: function(obj, prop, value) {
-                console.log('obj=', obj);
-                console.log('prop=', prop);
-                console.log('value=', value);
-                if (prop === 'age') {
-                    if (!Number.isInteger(value)) {
-                        throw new TypeError('年龄不是整数！')
-                    }
-                    if (value > 60) {
-                        throw new RangeError('年龄太大了')
-                    }
-                }
-            }
-
-        })
-        proxy.age = '80';
-        console.log(proxy.age);
+let proxy = new Proxy(student, {
+  set: function (obj, prop, value) {
+    console.log("obj=", obj);
+    console.log("prop=", prop);
+    console.log("value=", value);
+    if (prop === "age") {
+      if (!Number.isInteger(value)) {
+        throw new TypeError("年龄不是整数！");
+      }
+      if (value > 60) {
+        throw new RangeError("年龄太大了");
+      }
+    }
+  },
+});
+proxy.age = "80";
+console.log(proxy.age);
 ```
 
 `set()` 方法
@@ -10078,11 +9989,9 @@ handler:也是一个对象，表示拦截的行为和规则。
 下面先看一下 `apply()` 函数的语法
 
 ```javascript
-let handler={
-    apply(target,ctx,args){
-
-    }
-}
+let handler = {
+  apply(target, ctx, args) {},
+};
 ```
 
 `apply()` 函数可以有三个参数,
@@ -10094,23 +10003,22 @@ let handler={
 第三个参数：表示目标对象的参数数组。
 
 ```javascript
-        let target = function(msg) {
-            return '你好' + msg;
-        }
-        let handler = {
-            apply: function(target, ctx, args) {
-                console.log('target=', target);
-                console.log('ctx=', ctx === obj);
-                console.log('args=', args);
-                return 'hello'
-            }
-        }
-        let proxy = new Proxy(target, handler);
-        let obj = {
-            proxy,
-
-        };
-        console.log(obj.proxy('张三'))
+let target = function (msg) {
+  return "你好" + msg;
+};
+let handler = {
+  apply: function (target, ctx, args) {
+    console.log("target=", target);
+    console.log("ctx=", ctx === obj);
+    console.log("args=", args);
+    return "hello";
+  },
+};
+let proxy = new Proxy(target, handler);
+let obj = {
+  proxy,
+};
+console.log(obj.proxy("张三"));
 ```
 
 在执行 target 这个方法之前，会被 Proxy 所拦截。
@@ -10120,19 +10028,18 @@ let handler={
 `has()` 可以隐藏某些属性，不被 in 操作符发现。
 
 ```javascript
-        let user = {
-            _name: 'zhangsan',
-            age: 20
-
-        }
-        let handler = {
-            has(target, key) {
-                console.log('target=', target);
-                console.log('key=', key);
-            }
-        }
-        let proxy = new Proxy(user, handler);
-        '_name' in proxy; // 自动调用 has 方法
+let user = {
+  _name: "zhangsan",
+  age: 20,
+};
+let handler = {
+  has(target, key) {
+    console.log("target=", target);
+    console.log("key=", key);
+  },
+};
+let proxy = new Proxy(user, handler);
+"_name" in proxy; // 自动调用 has 方法
 ```
 
 通过上面的代码，可以发现：has 方法有两个参数，第一个参数：表示目的对象，第二个参数：表示操作的属性。
@@ -10140,23 +10047,22 @@ let handler={
 下面的例子，把 `user` 对象中 `_name` 属性隐藏起来，也就是无法通过 `in` 运算符发现该属性。
 
 ```javascript
-        let user = {
-            _name: 'zhangsan',
-            age: 20
-
-        }
-        let handler = {
-            has(target, key) {
-                // console.log('target=', target);
-                // console.log('key=', key);
-                if (key[0] === '_') {
-                    return false
-                }
-                return key in target;
-            }
-        }
-        let proxy = new Proxy(user, handler);
-        console.log('_name' in proxy);
+let user = {
+  _name: "zhangsan",
+  age: 20,
+};
+let handler = {
+  has(target, key) {
+    // console.log('target=', target);
+    // console.log('key=', key);
+    if (key[0] === "_") {
+      return false;
+    }
+    return key in target;
+  },
+};
+let proxy = new Proxy(user, handler);
+console.log("_name" in proxy);
 ```
 
 上面的代码中，如果对象中的属性名第一个字符是下画线，那么 has 方法会返回 false,从而不会被 `in` 运算符发现，但是如果将 `console.log('_name' in proxy);` 换成 `console.log('age' in proxy);` 返回为 true.
@@ -10168,48 +10074,48 @@ let handler={
 在前面的课程中，已经讲解过基本的数据校验，下面看一个比较完整的数据校验的案例。
 
 ```javascript
-        // 创建一个对象
-        class Person {
-            constructor() {
-                this.name = '';
-                this.age = 19;
-                return validator(this, personValidators);
-            }
+// 创建一个对象
+class Person {
+  constructor() {
+    this.name = "";
+    this.age = 19;
+    return validator(this, personValidators);
+  }
+}
+// 定义校验规则
+const personValidators = {
+  name(val) {
+    return typeof val === "string";
+  },
+  age(val) {
+    return typeof val === "number" && val > 18;
+  },
+};
+// 完成校验
+function validator(target, validator) {
+  return new Proxy(target, {
+    _validator: validator,
+    set(target, key, value) {
+      if (target.hasOwnProperty(key)) {
+        let v = this._validator[key]; //根据key获取具体的校验规则
+        if (v(value)) {
+          return Reflect.set(target, key, value);
+        } else {
+          throw Error(`不能给${key}属性设置${value}`);
         }
-        // 定义校验规则
-        const personValidators = {
-                name(val) {
-                    return typeof val === 'string';
-                },
-                age(val) {
-                    return typeof val === 'number' && val > 18
-                }
-            }
-            // 完成校验
-        function validator(target, validator) {
-            return new Proxy(target, {
-                _validator: validator,
-                set(target, key, value) {
-                    if (target.hasOwnProperty(key)) {
-                        let v = this._validator[key]; //根据key获取具体的校验规则
-                        if (v(value)) {
-                            return Reflect.set(target, key, value);
-                        } else {
-                            throw Error(`不能给${key}属性设置${value}`);
-                        }
-                    } else {
-                        throw Error(`${key} 不存在`)
-                    }
-                }
-            })
-        }
-        // 注意这里返回的是Proxy对象
-        let person = new Person();
-        person.name = 'zhangsan';
-        person.age = 19;
-        // person.name = 90;
-        // person.age = 15;
-        console.log(person);
+      } else {
+        throw Error(`${key} 不存在`);
+      }
+    },
+  });
+}
+// 注意这里返回的是Proxy对象
+let person = new Person();
+person.name = "zhangsan";
+person.age = 19;
+// person.name = 90;
+// person.age = 15;
+console.log(person);
 ```
 
 通过上面的案例，将对象的创建，数据验证的规则，以及具体的验证方式都进行了分离，整体结构更加的清晰，代码更加的容易维护。
@@ -10219,25 +10125,24 @@ let handler={
 大家都知道在 `V`ue`中，是有双向绑定功能的，下面通过 Proxy 来模拟一下。
 
 ```javascript
-         let input = document.getElementById('txtInput');
-        let p = document.getElementById('txtP');
-        let obj = {
-            text: ''
-        };
-        let newObj = new Proxy(obj, {
+let input = document.getElementById("txtInput");
+let p = document.getElementById("txtP");
+let obj = {
+  text: "",
+};
+let newObj = new Proxy(obj, {
+  set: function (target, key, value) {
+    if (target.hasOwnProperty(key)) {
+      input.value = value;
+      p.innerHTML = value;
+    }
+    return Reflect.set(target, key, value);
+  },
+});
 
-            set: function(target, key, value) {
-                if (target.hasOwnProperty(key)) {
-                    input.value = value;
-                    p.innerHTML = value;
-                }
-                return Reflect.set(target, key, value);
-            },
-        });
-
-        input.addEventListener('keyup', function(e) {
-            newObj.text = e.target.value;
-        });
+input.addEventListener("keyup", function (e) {
+  newObj.text = e.target.value;
+});
 ```
 
 在文本框中输入值以后，对应的会在 p 标签中进行展示，通过在浏览器的控制台中，如果给 newObj 中的 text 属性赋值，对应的文本框和 P 标签内容也会发生变化。
@@ -10306,12 +10211,12 @@ Set 结构与数组类似，但是成员的值都是唯一的，没有重复值�
 下面先看一下 `add()` 方法的使用
 
 ```javascript
-        let s = new Set();
-        s.add(1);
-        s.add(2);
-        s.add(3);
-        console.log(s);
-        console.log(s.size);
+let s = new Set();
+s.add(1);
+s.add(2);
+s.add(3);
+console.log(s);
+console.log(s.size);
 ```
 
 在上面的代码中，用到了 size 属性，这个属性返回的是 Set 结构中的成员总数。
@@ -10319,13 +10224,13 @@ Set 结构与数组类似，但是成员的值都是唯一的，没有重复值�
 Set 结构中的成员是不允许出现重复值的，下面测试一下。
 
 ```javascript
-        let s = new Set();
-        s.add(1);
-        s.add(2);
-        s.add(3);
-        s.add(3)
-        console.log(s);
-        console.log(s.size);
+let s = new Set();
+s.add(1);
+s.add(2);
+s.add(3);
+s.add(3);
+console.log(s);
+console.log(s.size);
 ```
 
 在上面的代码中，又添加了一个数字 3，但是在输出的时候，发现 3 这个数值只出现了一次，并且总数的个数也没有发生变化，所以 Set 是不允许出现重复的。
@@ -10333,47 +10238,47 @@ Set 结构中的成员是不允许出现重复值的，下面测试一下。
 ##### 1.1.2 has() 方法
 
 ```javascript
-        let s = new Set();
-        s.add(1);
-        s.add(2);
-        s.add(3);
-        s.add(3);
-        console.log(s);
-        console.log(s.size);
-        console.log(s.has(3))
-        console.log(s.has(5))
+let s = new Set();
+s.add(1);
+s.add(2);
+s.add(3);
+s.add(3);
+console.log(s);
+console.log(s.size);
+console.log(s.has(3));
+console.log(s.has(5));
 ```
 
 ##### 1.1.3 delete() 方法
 
 ```javascript
-        let s = new Set();
-        s.add(1);
-        s.add(2);
-        s.add(3);
-        s.add(3);
-        console.log(s);
-        console.log(s.size);
-        console.log(s.delete(3)) //删除成功返回true.
-        console.log(s.has(3))
-        console.log(s.has(5))
+let s = new Set();
+s.add(1);
+s.add(2);
+s.add(3);
+s.add(3);
+console.log(s);
+console.log(s.size);
+console.log(s.delete(3)); //删除成功返回true.
+console.log(s.has(3));
+console.log(s.has(5));
 ```
 
 ##### 1.1.4 clear() 方法
 
 ```javascript
-        let s = new Set();
-        s.add(1);
-        s.add(2);
-        s.add(3);
-        s.add(3);
-        console.log(s);
-        console.log(s.size);
-        console.log(s.delete(3))
-        console.log(s.has(3))
-        console.log(s.has(5))
-        s.clear();// 清除所有项
-        console.log(s);
+let s = new Set();
+s.add(1);
+s.add(2);
+s.add(3);
+s.add(3);
+console.log(s);
+console.log(s.size);
+console.log(s.delete(3));
+console.log(s.has(3));
+console.log(s.has(5));
+s.clear(); // 清除所有项
+console.log(s);
 ```
 
 Set 结构是一个类似数组的结构，那么怎样转换成一个真正的数据呢?
@@ -10381,20 +10286,20 @@ Set 结构是一个类似数组的结构，那么怎样转换成一个真正的�
 可以通过前面学习的 `Arrray.from` 方法。
 
 ```javascript
-        let s = new Set();
-        s.add(1);
-        s.add(2);
-        s.add(3);
-        let array = Array.from(s);
-        console.log(array);
+let s = new Set();
+s.add(1);
+s.add(2);
+s.add(3);
+let array = Array.from(s);
+console.log(array);
 ```
 
 在使用数组编程的时候，经常会用到一个功能，就是清除数组中的重复的数据，那么在这里可以借助于 Set 结构来完成。
 
 ```javascript
-        // 清除数组中的重复数据.
-    // Set函数可以接受一个数组或者是类似数组的对象，作为参数。
-        let array = [1, 2, 3, 3, 5, 6];
-        let s = new Set(array);
-        console.log(Array.from(s));
+// 清除数组中的重复数据.
+// Set函数可以接受一个数组或者是类似数组的对象，作为参数。
+let array = [1, 2, 3, 3, 5, 6];
+let s = new Set(array);
+console.log(Array.from(s));
 ```

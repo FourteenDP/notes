@@ -1,14 +1,14 @@
 ---
 author: jianshu.com
-originalLink: 'https://www.jianshu.com/p/423f72d502c2'
+originalLink: "https://www.jianshu.com/p/423f72d502c2"
 title: 【JS 原型 & 原型链】一张图说清楚 - 简书
 uid: 9570149208954064
 archived: false
 aliases: []
 categories: []
 tags: []
-createTime: '2024-04-22 10:48:19'
-updateTime: '2024-04-22 10:48:19'
+createTime: "2024-04-23 00:07:33"
+updateTime: "2024-04-23 00:07:33"
 ---
 
 # 【JS 原型 & 原型链】一张图说清楚 - 简书
@@ -46,10 +46,7 @@ var p1 = new Parent();
 如果到这你都能理解，
 我们再引出一个概念，开始说过了要想清楚原型就要先搞清楚，`__proto__`、`prototype` 、 `constructor`。
 
-- 我们记住两点
-   1.`__proto__`、 `constructor` 属性是对象所独有的；
-   2.`prototype` 属性是函数独有的；
-   3. 上面说过 js 中函数也是对象的一种，那么函数同样也有属性 `__proto__`、 `constructor`
+- 我们记住两点1.`__proto__`、 `constructor` 属性是对象所独有的；2.`prototype` 属性是函数独有的；3. 上面说过 js 中函数也是对象的一种，那么函数同样也有属性 `__proto__`、 `constructor`
 
 下面开始进入正题 ↓↓↓
 

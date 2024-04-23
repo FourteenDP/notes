@@ -9,8 +9,8 @@ tags:
   - 计算机/前端/Vue3
   - 计算机/前端/JavaScript
   - 计算机/前端/状态管理
-createTime: '2024-04-22 10:48:19'
-updateTime: '2024-04-22 10:48:19'
+createTime: "2024-04-23 00:07:33"
+updateTime: "2024-04-23 00:07:33"
 ---
 
 # Pinia 与 Vuex
@@ -39,4 +39,4 @@ Pinia 的优点
 Pinia 的缺点
 
 - ~~不支持时间旅行和编辑等调试功能~~（已支持）
-![[Pasted image 20230310191049.png]] ![[Pasted image 20230310191054.png]]
+  ![[Pasted image 20230310191049.png]] ![[Pasted image 20230310191054.png]]

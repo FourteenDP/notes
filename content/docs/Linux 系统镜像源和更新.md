@@ -8,8 +8,8 @@ tags:
   - 计算机/Linux
   - 系统镜像源
   - 系统更新
-createTime: '2024-04-22 10:48:19'
-updateTime: '2024-04-22 10:48:19'
+createTime: "2024-04-23 00:07:33"
+updateTime: "2024-04-23 00:07:33"
 ---
 
 # Linux 系统镜像源和更新
@@ -68,9 +68,9 @@ deb https://mirrors.tuna.tsinghua.edu.cn/debian/ bullseye main contrib non-freed
 6、中科大镜像站
 
 ```sh
-deb https://mirrors.ustc.edu.cn/debian/ bullseye main contrib non-freedeb-src https://mirrors.ustc.edu.cn/debian/ bullseye main contrib non-free 
-deb https://mirrors.ustc.edu.cn/debian/ bullseye-updates main contrib non-freedeb-src https://mirrors.ustc.edu.cn/debian/ bullseye-updates main contrib non-free 
-deb https://mirrors.ustc.edu.cn/debian/ bullseye-backports main contrib non-freedeb-src https://mirrors.ustc.edu.cn/debian/ bullseye-backports main contrib non-free 
+deb https://mirrors.ustc.edu.cn/debian/ bullseye main contrib non-freedeb-src https://mirrors.ustc.edu.cn/debian/ bullseye main contrib non-free
+deb https://mirrors.ustc.edu.cn/debian/ bullseye-updates main contrib non-freedeb-src https://mirrors.ustc.edu.cn/debian/ bullseye-updates main contrib non-free
+deb https://mirrors.ustc.edu.cn/debian/ bullseye-backports main contrib non-freedeb-src https://mirrors.ustc.edu.cn/debian/ bullseye-backports main contrib non-free
 deb https://mirrors.ustc.edu.cn/debian-security/ bullseye-security main contrib non-freedeb-src https://mirrors.ustc.edu.cn/debian-security/ bullseye-security main contrib non-free
 ```
 

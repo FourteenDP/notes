@@ -11,8 +11,8 @@ tags:
   - call
   - apply
   - bind
-createTime: '2024-04-22 10:48:19'
-updateTime: '2024-04-22 10:48:19'
+createTime: "2024-04-23 00:07:33"
+updateTime: "2024-04-23 00:07:33"
 ---
 
 # call、apply、bind 的区别
@@ -25,18 +25,17 @@ updateTime: '2024-04-22 10:48:19'
 - call 改变 this 指向，然后立即执行函数，且可以传入参数。
 
 ```js
-var name = 'window';
+var name = "window";
 
 function test() {
   console.log(this.name);
 }
 
 var obj = {
-  name: 'obj'
-}
+  name: "obj",
+};
 
 test.call(obj); // obj
-
 ```
 
 ## Apply
@@ -44,18 +43,17 @@ test.call(obj); // obj
 - apply 改变 this 指向，然后立即执行函数，但是传入的参数必须是数组。
 
 ```js
-var name = 'window';
+var name = "window";
 
 function test() {
   console.log(this.name);
 }
 
 var obj = {
-  name: 'obj'
-}
+  name: "obj",
+};
 
 test.apply(obj); // obj
-
 ```
 
 ## Bind
@@ -63,8 +61,7 @@ test.apply(obj); // obj
 - bind 改变 this 指向，但是不会立即执行函数，而是返回一个新的函数，可以传入部分参数。
 
 ```js
-
-var name = 'window';
+var name = "window";
 
 function test(a, b) {
   console.log(this.name);
@@ -72,11 +69,10 @@ function test(a, b) {
 }
 
 var obj = {
-  name: 'obj'
-}
+  name: "obj",
+};
 
 var newTest = test.bind(obj, 1);
 
 newTest(2); // obj 1 2
-
 ```

@@ -1,14 +1,14 @@
 ---
 author: zhuanlan.zhihu.com
-originalLink: 'https://zhuanlan.zhihu.com/p/521340971'
+originalLink: "https://zhuanlan.zhihu.com/p/521340971"
 title: 坑：ssh： connect to host github-com port 22： Connection refused
 uid: 14918173766456800
 archived: false
 aliases: []
 categories: []
 tags: []
-createTime: '2024-04-22 10:48:19'
-updateTime: '2024-04-22 10:48:19'
+createTime: "2024-04-23 00:07:33"
+updateTime: "2024-04-23 00:07:33"
 ---
 
 # **问题现象**
@@ -45,9 +45,9 @@ $ vim ~/.ssh/config
 
 Host github.com
 
-  Hostname ssh.github.com
+Hostname ssh.github.com
 
-  Port 443
+Port 443
 
 ```plain
 $ ssh -T git@github.com

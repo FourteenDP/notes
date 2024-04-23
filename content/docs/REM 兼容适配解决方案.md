@@ -10,8 +10,8 @@ tags:
   - REM
   - 兼容适配
   - 计算机/前端/解决方案
-createTime: '2024-04-22 10:48:19'
-updateTime: '2024-04-22 10:48:19'
+createTime: "2024-04-23 00:07:33"
+updateTime: "2024-04-23 00:07:33"
 ---
 
 # REM 兼容适配解决方案
@@ -22,46 +22,44 @@ updateTime: '2024-04-22 10:48:19'
 
 ## 实现 750px 设计稿的响应式布局
 
-动态 root 字体大小公式: 1rem = clientWidth / 750 * 100
+动态 root 字体大小公式: 1rem = clientWidth / 750 \* 100
 
 ```html
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>rem</title>
+    <style>
+      body {
+        margin: auto;
+      }
+      .box {
+        width: 7.5rem;
+        height: 7.5rem;
+        background-color: red;
+      }
+    </style>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <title>rem</title>
-  <style>
-    body {
-      margin: auto;
-    }
-    .box {
-      width: 7.5rem;
-      height: 7.5rem;
-      background-color: red;
-    }
-
-  </style>
-</head>
-
-<body>
-  <div class="box"></div>
-  <script>
-    (function (doc, win) {
-      var docEl = doc.documentElement,
-        resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
-        recalc = function () {
-          var clientWidth = docEl.clientWidth;
-          if (!clientWidth) return;
-          docEl.style.fontSize = 100 * (clientWidth / 750) + 'px';
-        };
-      if (!doc.addEventListener) return;
-      win.addEventListener(resizeEvt, recalc, false);
-      doc.addEventListener('DOMContentLoaded', recalc, false);
-    })(document, window)
-  </script>
-</body>
-
+  <body>
+    <div class="box"></div>
+    <script>
+      (function (doc, win) {
+        var docEl = doc.documentElement,
+          resizeEvt =
+            "orientationchange" in window ? "orientationchange" : "resize",
+          recalc = function () {
+            var clientWidth = docEl.clientWidth;
+            if (!clientWidth) return;
+            docEl.style.fontSize = 100 * (clientWidth / 750) + "px";
+          };
+        if (!doc.addEventListener) return;
+        win.addEventListener(resizeEvt, recalc, false);
+        doc.addEventListener("DOMContentLoaded", recalc, false);
+      })(document, window);
+    </script>
+  </body>
 </html>
 ```
 

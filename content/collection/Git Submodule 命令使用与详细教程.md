@@ -1,6 +1,6 @@
 ---
 author: juejin.cn
-originalLink: 'https://juejin.cn/post/6948251963133788196'
+originalLink: "https://juejin.cn/post/6948251963133788196"
 title: Git Submodule 命令使用与详细教程
 uid: 2533274791187627
 archived: false
@@ -9,8 +9,8 @@ categories: []
 tags:
   - 计算机/工程化/Git
   - 计算机/项目管理/Git
-createTime: '2024-04-22 10:48:19'
-updateTime: '2024-04-22 10:48:19'
+createTime: "2024-04-23 00:07:33"
+updateTime: "2024-04-23 00:07:33"
 ---
 
 # Git Submodule 命令使用与详细教程
@@ -23,9 +23,9 @@ updateTime: '2024-04-22 10:48:19'
 
 1. 当子项目是公有项目时，为了方便引用，子项目会单领出一个仓库来。这样就牵扯到多仓库的问题，即主项目是一个仓库，子项目是另外一个仓库，这里就存在仓库嵌套管理的问题了
 2. 如果直接使用仓库嵌套的方式，那么就存在以下几个问题与预期
-    - 希望通过主项目本身，就能知道子项目的地址，而不是额外记录
-    - 希望主项目能够关联子项目的提交版本，以便主项目切换不同分支时，保证对应的子项目提交版本正确，避免切换分支后无法运行，以及子项目更新后，能够正常运行
-    - 希望主项目能够关联子项目的提交分支：额，这点仔细考虑后，有待磋商
+   - 希望通过主项目本身，就能知道子项目的地址，而不是额外记录
+   - 希望主项目能够关联子项目的提交版本，以便主项目切换不同分支时，保证对应的子项目提交版本正确，避免切换分支后无法运行，以及子项目更新后，能够正常运行
+   - 希望主项目能够关联子项目的提交分支：额，这点仔细考虑后，有待磋商
 3. 如果使用仓库直接嵌套的方式，那么就必须额外记录上述提到的子项目仓库地址以及提交版本信息
 4. 而使用 git submodule，则主项目仓库本身就记录了上述信息，这也是为啥要用的原因
 
@@ -162,8 +162,8 @@ git submodule update [submodule 名称]
 - 没有好办法，所有的方法，本质都是先删除，再重新添加
 - 之所以说本质，是因为都要执行 `git rm -r --cached subA` 命令，以及 `git submodule add` 命令
 - 以下操作是错误的：
-    - 直接修改【.gitmodules】、【.git/config】内容
-    - 直接删除【.git/modules】目录下对应 submodule 目录
+  - 直接修改【.gitmodules】、【.git/config】内容
+  - 直接删除【.git/modules】目录下对应 submodule 目录
 
 其他合作伙伴更新
 
@@ -198,10 +198,10 @@ git submodule update [submodule 名称]
 - 主项目并不会记录子模块的对应的分支，只记录子模块的提交版本
 - 所以 `git submodule update` 检出时，保证检出的版本与主项目匹配，但子 module 会创建临时分支
 - 主项目切换分支时，多余的子模块并不会被删除（原因是删除目录失败），这点在提交时会体现，需要注意。此时
-    - 【.gitmodules】文件正确，没有多余的子模块信息
-    - 【.git/config】文件、【.git/modules】依然保留另一个子模块信息。一方面说明这种切换分支不影响本地仓库，另一方也提高切换这种分支时的效率
+  - 【.gitmodules】文件正确，没有多余的子模块信息
+  - 【.git/config】文件、【.git/modules】依然保留另一个子模块信息。一方面说明这种切换分支不影响本地仓库，另一方也提高切换这种分支时的效率
 - 一般建议添加 submodule 时不另指定名字，这个是为了起到以下作用
-    - 切换分支后，误把多余子模块上传时，重新添加相同 submodule 时，报目录已存在错误
+  - 切换分支后，误把多余子模块上传时，重新添加相同 submodule 时，报目录已存在错误
 
 ## submodule 相关文件说明
 
@@ -484,10 +484,10 @@ drwxrwxr-x+ 1 Administrator None 0 4月   2 15:41 subB/
 
 - 解释：因为从添加 submodule 的结果可知，远程仓库的 submodule 记录仅取决于【.gitmodules】文件内容，与其他无关，所以该方式可行
 - 步骤：
-    1. 修改【.gitmodules】文件内容：去除被删除的 submodule 内容
-    2. 删除对应 submodule 文件夹，这个是防止重新 clone 时多出一个空文件夹
-    3. 重新提交并推送远程仓库
-    4. 使用 `git clone` 新开一个本地仓库
+  1. 修改【.gitmodules】文件内容：去除被删除的 submodule 内容
+  2. 删除对应 submodule 文件夹，这个是防止重新 clone 时多出一个空文件夹
+  3. 重新提交并推送远程仓库
+  4. 使用 `git clone` 新开一个本地仓库
 
 ```plain
 # 原【.gitmodules】内容
@@ -509,102 +509,102 @@ drwxrwxr-x+ 1 Administrator None 0 4月   2 15:41 subB/
 方式二：本地仓库正常删除 submodule，然后推送远程仓库，原本地仓库依然可以使用
 
 - 本地仓库按以下 5 个步骤执行，完成后推送到远程仓库即可
-    - 注：除了第 1 步必须先执行，后续步骤随意
+  - 注：除了第 1 步必须先执行，后续步骤随意
 
 1. 必须，清除 submodule 缓存记录
-    
-    - **执行前需要保证所有修改都已提交**（这也是必须第一个执行该步骤的原因，同时也是其他人的本地仓库基本完蛋的原因）
-    - 执行该命令不影响任何文件内容
-    - 不想删除，还原可以使用 `git reset --hard HEAD` 命令，再次强调所有修改都已提交再操作
-    - 该步骤成功的验证方式：`git submodule` 结果没有要删除的
 
-    ```plain
-    $ git rm -r --cached subA
-    rm 'subA'
-    
-    # 上述命令结果验证
-    $ git submodule
-     5ae8df5a1fd55d31b0fc7e8bdf7d02fb7591f4bd subA (heads/master)
-    
-    
-    ```
+   - **执行前需要保证所有修改都已提交**（这也是必须第一个执行该步骤的原因，同时也是其他人的本地仓库基本完蛋的原因）
+   - 执行该命令不影响任何文件内容
+   - 不想删除，还原可以使用 `git reset --hard HEAD` 命令，再次强调所有修改都已提交再操作
+   - 该步骤成功的验证方式：`git submodule` 结果没有要删除的
+
+   ```plain
+   $ git rm -r --cached subA
+   rm 'subA'
+
+   # 上述命令结果验证
+   $ git submodule
+    5ae8df5a1fd55d31b0fc7e8bdf7d02fb7591f4bd subA (heads/master)
+
+
+   ```
 
 2. 必须，删除 submodule 文件夹，即 subA 文件夹，对应命令如下，不过建议手动删除
 
-    ```plain
-    $ rm -rf subA/
-    
-    
-    ```
+   ```plain
+   $ rm -rf subA/
+
+
+   ```
 
 3. 必须，修改【.gitmodules】文件内容：去除被删除的 submodule 内容
 
-    ```plain
-    # 原内容
-    [submodule "subA"]
-    	path = subA
-    	url = /cygdrive/e/submodule/repo/subA.git
-    [submodule "subB"]
-    	path = subB
-    	url = /cygdrive/e/submodule/repo/subB.git
-    
-    # 删除后内容
-    [submodule "subA"]
-    	path = subA
-    	url = /cygdrive/e/submodule/repo/subA.git
-    
-    
-    ```
+   ```plain
+   # 原内容
+   [submodule "subA"]
+   	path = subA
+   	url = /cygdrive/e/submodule/repo/subA.git
+   [submodule "subB"]
+   	path = subB
+   	url = /cygdrive/e/submodule/repo/subB.git
+
+   # 删除后内容
+   [submodule "subA"]
+   	path = subA
+   	url = /cygdrive/e/submodule/repo/subA.git
+
+
+   ```
 
 4. 非必须，修改【.git/config】文件内容：去除被删除的 submodule 内容
-    
-    - 不删除也行，只影响本地，不影响远程仓库。也就在重复添加相同 submodule 时，可能存在问题
 
-    ```plain
-    # 原内容
-    [core]
-    	repositoryformatversion = 0
-    	filemode = true
-    	bare = false
-    	logallrefupdates = true
-    	ignorecase = true
-    [submodule]
-    	active = .
-    [remote "origin"]
-    	url = /cygdrive/e/submodule/repo/main.git
-    	fetch = +refs/heads/*:refs/remotes/origin/*
-    [branch "master"]
-    	remote = origin
-    	merge = refs/heads/master
-    [submodule "subA"]
-    	url = /cygdrive/e/submodule/repo/subA.git
-    [submodule "subB"]
-    	url = /cygdrive/e/submodule/repo/subB.git
-    
-    # 删除后内容
-    [core]
-    	repositoryformatversion = 0
-    	filemode = true
-    	bare = false
-    	logallrefupdates = true
-    	ignorecase = true
-    [submodule]
-    	active = .
-    [remote "origin"]
-    	url = /cygdrive/e/submodule/repo/main.git
-    	fetch = +refs/heads/*:refs/remotes/origin/*
-    [branch "master"]
-    	remote = origin
-    	merge = refs/heads/master
-    [submodule "subA"]
-    	url = /cygdrive/e/submodule/repo/subA.git
-    
-    
-    ```
+   - 不删除也行，只影响本地，不影响远程仓库。也就在重复添加相同 submodule 时，可能存在问题
+
+   ```plain
+   # 原内容
+   [core]
+   	repositoryformatversion = 0
+   	filemode = true
+   	bare = false
+   	logallrefupdates = true
+   	ignorecase = true
+   [submodule]
+   	active = .
+   [remote "origin"]
+   	url = /cygdrive/e/submodule/repo/main.git
+   	fetch = +refs/heads/*:refs/remotes/origin/*
+   [branch "master"]
+   	remote = origin
+   	merge = refs/heads/master
+   [submodule "subA"]
+   	url = /cygdrive/e/submodule/repo/subA.git
+   [submodule "subB"]
+   	url = /cygdrive/e/submodule/repo/subB.git
+
+   # 删除后内容
+   [core]
+   	repositoryformatversion = 0
+   	filemode = true
+   	bare = false
+   	logallrefupdates = true
+   	ignorecase = true
+   [submodule]
+   	active = .
+   [remote "origin"]
+   	url = /cygdrive/e/submodule/repo/main.git
+   	fetch = +refs/heads/*:refs/remotes/origin/*
+   [branch "master"]
+   	remote = origin
+   	merge = refs/heads/master
+   [submodule "subA"]
+   	url = /cygdrive/e/submodule/repo/subA.git
+
+
+   ```
 
 5. 非必须，删除【.git/modules】目录下对应 submodule 目录
-    
-    - 不删除也行，只影响本地，不影响远程仓库。也就在重复添加相同 submodule 时，可能存在问题
+
+   - 不删除也行，只影响本地，不影响远程仓库。也就在重复添加相同 submodule 时，可能存在问题
 
 ### 重命名 submodule 文件夹
 
@@ -923,13 +923,13 @@ $ git push
 
 - 主项目下 `git pull` 只会更新主项目，不会更新子模块，反过来也是如此
 - 更新子模块方式一：`git submodule update`
-    - 说明：遍历子模块，依次检出
-    - 优点：子模块的提交版本是正确的
-    - 缺点：子模块创建临时分支，不影响子模块原有分支
+  - 说明：遍历子模块，依次检出
+  - 优点：子模块的提交版本是正确的
+  - 缺点：子模块创建临时分支，不影响子模块原有分支
 - 更新子模块方式二：`git submodule foreach git pull`
-    - 说明：遍历子模块，依次执行 `git pull` 操作
-    - 优点：子模块不会创建临时分支
-    - 缺点：只会更新到最新，导致子模块的版本不一定与主项目使用的版本一致
+  - 说明：遍历子模块，依次执行 `git pull` 操作
+  - 优点：子模块不会创建临时分支
+  - 缺点：只会更新到最新，导致子模块的版本不一定与主项目使用的版本一致
 - 一般来讲，子模块是单分支，使用方式二，多分支，看情况吧
 - 造成上述结果的原因在于主项目只记录子模块的提交版本，不记录子模块的提交分支
 
@@ -1125,8 +1125,8 @@ $ git submodule add /cygdrive/e/submodule/repo/subB.git
 - 子模块 subA 两个分支：master、subOther
 - 子模块的两个分支指向不同的提交版本
 - 主项目分支对应
-    - master 对应子模块的 master
-    - other 对应子模块的 subOther
+  - master 对应子模块的 master
+  - other 对应子模块的 subOther
 
 ```plain
 # 背景：主项目两个分支，以及分支指向的提交记录（other 指向 31287e4）

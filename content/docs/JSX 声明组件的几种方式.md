@@ -10,8 +10,8 @@ tags:
   - 计算机/前端/JavaScript
   - JSX
   - 计算机/前端/组件
-createTime: '2024-04-22 10:48:19'
-updateTime: '2024-04-22 10:48:19'
+createTime: "2024-04-23 00:07:33"
+updateTime: "2024-04-23 00:07:33"
 ---
 
 # JSX 声明组件的几种方式
@@ -19,18 +19,18 @@ updateTime: '2024-04-22 10:48:19'
 ## `defineComponent` 声明组件
 
 ```tsx
-import { defineComponent } from 'vue'
+import { defineComponent } from "vue";
 
 export default defineComponent({
-  name: 'Home',
+  name: "Home",
   setup(props) {
-    return () => <div>Home</div>
+    return () => <div>Home</div>;
   },
-})
+});
 ```
 
 ## 箭头函数声明组件
 
 ```tsx
-export default () => <div>Home</div>
+export default () => <div>Home</div>;
 ```

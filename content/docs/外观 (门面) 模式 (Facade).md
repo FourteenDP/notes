@@ -6,8 +6,8 @@ aliases: []
 categories: []
 tags:
   - 计算机/设计模式/GoF设计模式/结构型模式
-createTime: '2024-04-22 10:48:19'
-updateTime: '2024-04-22 10:48:19'
+createTime: "2024-04-23 00:07:33"
+updateTime: "2024-04-23 00:07:33"
 ---
 
 # 外观 (门面) 模式 (Facade)

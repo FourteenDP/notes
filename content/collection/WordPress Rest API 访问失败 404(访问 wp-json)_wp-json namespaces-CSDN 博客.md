@@ -1,14 +1,14 @@
 ---
 author: blog.csdn.net
-originalLink: 'https://blog.csdn.net/my466879168/article/details/107169245'
+originalLink: "https://blog.csdn.net/my466879168/article/details/107169245"
 title: WordPress Rest API 访问失败 404(访问 wp-json)_wp-json namespaces-CSDN 博客
 uid: 3377699721319602
 archived: false
 aliases: []
 categories: []
 tags: []
-createTime: '2024-04-22 10:48:19'
-updateTime: '2024-04-22 10:48:19'
+createTime: "2024-04-23 00:07:33"
+updateTime: "2024-04-23 00:07:33"
 ---
 
 ### 访问 / wp-json 报 404 错误
@@ -17,17 +17,16 @@ updateTime: '2024-04-22 10:48:19'
 
 #### 1. 修改固定链接
 
-在 WordPress 设置中的固定连接设置中将固定链接设置改为除朴素外任意一种，最好还是数字型  
+在 WordPress 设置中的固定连接设置中将固定链接设置改为除朴素外任意一种，最好还是数字型
 
 ![](https://img-blog.csdnimg.cn/20200706220856430.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L215NDY2ODc5MTY4,size_16,color_FFFFFF,t_70#pic_center)
 
 #### 2. 修改 [nginx](https://so.csdn.net/so/search?q=nginx&spm=1001.2101.3001.7020).conf 文件
 
-使用 ps -ef | [grep](https://so.csdn.net/so/search?q=grep&spm=1001.2101.3001.7020) nginx 查看 nginx 所在的位置和 conf 文件所在的位置，然后编辑 conf 文件  
+使用 ps -ef | [grep](https://so.csdn.net/so/search?q=grep&spm=1001.2101.3001.7020) nginx 查看 nginx 所在的位置和 conf 文件所在的位置，然后编辑 conf 文件
 
 ![](https://img-blog.csdnimg.cn/20200706220923872.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L215NDY2ODc5MTY4,size_16,color_FFFFFF,t_70#pic_center)
 
-  
 在 server 中插入以下几句话来进行[重定向](https://so.csdn.net/so/search?q=%E9%87%8D%E5%AE%9A%E5%90%91&spm=1001.2101.3001.7020)
 
 ```plain
@@ -50,11 +49,10 @@ rewrite /wp-admin$ $scheme://$host$uri/ permanent;
 #### 3. 重启 nginx 服务器
 
 修改完之后首先查看 nginx.conf 文件的可用性  
-`/usr/sbin/nginx -t`  
+`/usr/sbin/nginx -t`
 
 ![](https://img-blog.csdnimg.cn/20200706220954416.png#pic_center)
 
-  
 看到上面两句话那就证明是正确的  
 然后重启 nginx 服务  
 `/usr/sbin/nginx -s reload`  

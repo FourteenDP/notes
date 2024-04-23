@@ -6,8 +6,8 @@ aliases: []
 categories: []
 tags:
   - 计算机/前端/工程化
-createTime: '2024-04-22 10:48:19'
-updateTime: '2024-04-22 10:48:19'
+createTime: "2024-04-23 00:07:33"
+updateTime: "2024-04-23 00:07:33"
 ---
 
 # Vite 全局样式注入
@@ -26,7 +26,7 @@ updateTime: '2024-04-22 10:48:19'
 css: {
   preprocessorOptions: {
     scss: {
-      additionalData: `@import "./src/assets/styles/global.scss";`
+      additionalData: `@import "./src/assets/styles/global.scss";`;
     }
   }
 }

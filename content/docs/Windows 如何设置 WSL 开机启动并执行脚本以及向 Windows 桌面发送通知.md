@@ -10,8 +10,8 @@ tags:
   - 开机启动
   - 执行脚本
   - 发送通知
-createTime: '2024-04-22 10:48:19'
-updateTime: '2024-04-22 10:48:19'
+createTime: "2024-04-23 00:07:33"
+updateTime: "2024-04-23 00:07:33"
 ---
 
 # Windows 如何设置 WSL 开机启动并执行脚本以及向 Windows 桌面发送通知
@@ -31,7 +31,7 @@ updateTime: '2024-04-22 10:48:19'
 ```vbs
 ' 获取执行对象
 Set ws = CreateObject("Wscript.Shell")
-' 执行命令 
+' 执行命令
 ' 直接使用执行对象执行命令有权限限制，所以这里使用powershell执行wsl命令
 ' -d 指定wsl发行版本 -u 指定登录执行的账户, 账户后面可以直接添加需要执行的命令
 ' 如：wsl -d Debian -u root /etc/init.d/wsl [start|stop|status]
@@ -48,7 +48,7 @@ ws.Run "powershell.exe -Command ""wsl -d Debian -u admin""", vbhide
 
 - 用管理员的方式打开 `PowerShell` 安装 [BurntToast](https://github.com/Windos/BurntToast),执行 `Install-Module -Name BurntToast` 现在你可以尝试，在 `PowerShell` 里向桌面发送通知啦
 - `New-BurntToastNotification`,更多示例请看文档 [BurntToast](https://github.com/Windos/BurntToast)
-![[Pasted image 20230520221203.png]]
+  ![[Pasted image 20230520221203.png]]
 
 下面只需要在 WSL 里执行 `PowerShell` 命令就可以啦
 

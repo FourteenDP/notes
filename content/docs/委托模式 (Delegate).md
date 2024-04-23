@@ -6,8 +6,8 @@ aliases: []
 categories: []
 tags:
   - 计算机/设计模式/非GoF设计模式
-createTime: '2024-04-22 10:48:19'
-updateTime: '2024-04-22 10:48:19'
+createTime: "2024-04-23 00:07:33"
+updateTime: "2024-04-23 00:07:33"
 ---
 
 # 委托模式 (Delegate)

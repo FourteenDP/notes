@@ -7,8 +7,8 @@ categories: []
 tags:
   - 计算机/语言
   - 计算机/语言/TypeScript
-createTime: '2024-04-22 10:48:19'
-updateTime: '2024-04-22 10:48:19'
+createTime: "2024-04-23 00:07:33"
+updateTime: "2024-04-23 00:07:33"
 ---
 
 # void 和 never 区别
@@ -29,13 +29,13 @@ let unusable: void = undefined;
 // let unusable: void = null; // Error
 // let unusable: void = 0; // Error
 
-let ner: never
+let ner: never;
 // ner = 0; // Error
 // ner = undefined; // Error
 // ner = null; // Error
 
 function add(a: number, b: number): void {
-  if(!a || !b) return undefined;
+  if (!a || !b) return undefined;
 }
 
 function error(message: string): never {

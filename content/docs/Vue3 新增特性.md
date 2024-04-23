@@ -9,8 +9,8 @@ tags:
   - 计算机/前端/Vue3
   - 计算机/前端/JavaScript
   - 新特性
-createTime: '2024-04-22 10:48:19'
-updateTime: '2024-04-22 10:48:19'
+createTime: "2024-04-23 00:07:33"
+updateTime: "2024-04-23 00:07:33"
 ---
 
 # Vue3 新增特性
@@ -25,9 +25,9 @@ updateTime: '2024-04-22 10:48:19'
 
 ```html
 <script setup>
-import { ref, onMounted } from 'vue'
-const count = ref(0)
-// ...
+  import { ref, onMounted } from "vue";
+  const count = ref(0);
+  // ...
 </script>
 ```
 
@@ -54,26 +54,25 @@ const count = ref(0)
 
 ```html
 <script setup>
-import { ref, onMounted } from 'vue'
+  import { ref, onMounted } from "vue";
 
-// 响应式状态
-const count = ref(0)
+  // 响应式状态
+  const count = ref(0);
 
-// 更改状态、触发更新的函数
-function increment() {
-  count.value++
-}
+  // 更改状态、触发更新的函数
+  function increment() {
+    count.value++;
+  }
 
-// 生命周期钩子
-onMounted(() => {
-  console.log(`计数器初始值为 ${count.value}。`)
-})
+  // 生命周期钩子
+  onMounted(() => {
+    console.log(`计数器初始值为 ${count.value}。`);
+  });
 </script>
 
 <template>
   <button @click="increment">点击了：{{ count }} 次</button>
 </template>
-
 ```
 
 ![[Pasted image 20221212145551.png]]
@@ -118,15 +117,15 @@ onMounted(() => {
 </template>
 
 <script setup>
-import { emit } from 'vue'
+  import { emit } from "vue";
 
-const onClick = () => {
-  emit('click')
-}
+  const onClick = () => {
+    emit("click");
+  };
 
-export default {
-  emits: ['click']
-}
+  export default {
+    emits: ["click"],
+  };
 </script>
 ```
 
@@ -140,19 +139,19 @@ export default {
 </template>
 
 <script>
-export default {
-  data() {
-    return {
-      color: 'red'
-    }
-  }
-}
+  export default {
+    data() {
+      return {
+        color: "red",
+      };
+    },
+  };
 </script>
 
 <style>
-.text {
-  color: v-bind(color);
-}
+  .text {
+    color: v-bind(color);
+  }
 </style>
 ```
 
@@ -160,9 +159,9 @@ export default {
 
 ```html
 <script setup>
-const theme = {
-  color: 'red'
-}
+  const theme = {
+    color: "red",
+  };
 </script>
 
 <template>
@@ -170,9 +169,9 @@ const theme = {
 </template>
 
 <style scoped>
-p {
-  color: v-bind('theme.color');
-}
+  p {
+    color: v-bind("theme.color");
+  }
 </style>
 ```
 

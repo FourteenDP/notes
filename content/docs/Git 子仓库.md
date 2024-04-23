@@ -7,8 +7,8 @@ categories: []
 tags:
   - 计算机/工程化/Git
   - 计算机/项目管理/Git
-createTime: '2024-04-22 10:48:19'
-updateTime: '2024-04-22 10:48:19'
+createTime: "2024-04-23 00:07:33"
+updateTime: "2024-04-23 00:07:33"
 ---
 
 # Git 子仓库
@@ -16,13 +16,14 @@ updateTime: '2024-04-22 10:48:19'
 在进行项目开发和管理的过程中，您可能会遇到这种情况：您自己的 A 项目需要引用另一个 B 项目中的内容，直接将 B 项目中的文件克隆合并到 A 项目中显得臃肿，不能保证两者的独立性；此外，直接克隆合并的方法也无法记录对于 B 项目的改动信息。
 
 > Tips: 其他项目管理方式
+>
 > - 将子项目上传至 npm 库或者上传至私有 npm 库
 > - Monorepo 模式
 
 ## 目前 Git 添加子仓库的方式有两种
 
 - [Git Submodule](https://link.juejin.cn?target=http%3A%2F%2Fgit-scm.com%2Fdocs%2Fgit-submodule "http://git-scm.com/docs/git-submodule")：
-- [Git Subtree]( https://link.juejin.cn?target=https%3A%2F%2Fmedium.com%2F%40porteneuve%2Fmastering-git-Subtrees-943d29a798ec " https://medium.com/@porteneuve/mastering-git-Subtrees-943d29a798ec" )：从 [GIT 1.5.2]( https://lwn.net/Articles/235109/ ) 新增
+- [Git Subtree](https://link.juejin.cn?target=https%3A%2F%2Fmedium.com%2F%40porteneuve%2Fmastering-git-Subtrees-943d29a798ec " https://medium.com/@porteneuve/mastering-git-Subtrees-943d29a798ec")：从 [GIT 1.5.2](https://lwn.net/Articles/235109/) 新增
 
 ![[Pasted image 20230204210622.png]]
 
@@ -61,7 +62,7 @@ git config -f .gitmodules --remove-section submodule.<path>
 
 ## `git subtree`
 
- - 不像 `git submodule`，子项目不是一个独立的仓库，而是作为父项目的一个目录
+- 不像 `git submodule`，子项目不是一个独立的仓库，而是作为父项目的一个目录
 - 添加子项目时，会将子项目作为一个分支添加到父项目中
 - 完全像拉取一个分支一样，合并子项目到父项目中
 - 没有 `.gitmodules` 文件，记录子项目信息，完全不知道子项目的存在

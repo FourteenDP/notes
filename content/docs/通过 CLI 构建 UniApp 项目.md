@@ -8,8 +8,8 @@ tags:
   - 计算机/前端/UniApp
   - 计算机/前端/Vue3
   - 计算机/工程化/npm
-createTime: '2024-04-22 10:48:19'
-updateTime: '2024-04-22 10:48:19'
+createTime: "2024-04-23 00:07:33"
+updateTime: "2024-04-23 00:07:33"
 ---
 
 # 通过 CLI 构建 UniApp 项目
