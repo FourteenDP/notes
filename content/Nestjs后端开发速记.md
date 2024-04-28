@@ -118,7 +118,6 @@ export class AppService {
 
 灵活运用这些 provider 类型，就可以利用 Nest 的 IOC 容器中注入任何对象。
 
-
 ## 如何调试 NestJS
 
 NestJS 项目的调试和普通的 Node.js 项目一样，可以通过 VSCode 或 浏览器的开发者工具来调试。
@@ -170,4 +169,48 @@ npm run start:debug
 
 ## AOP
 
-![](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/7b3b3b3b3b3b4b3b8)
+![](https://liushuaiyang.oss-cn-shanghai.aliyuncs.com/nest-docs/image/%E7%AC%AC09%E7%AB%A0-3.png)
+
+其实 Express 的中间件的洋葱模型也是一种 AOP 的实现，因为你可以透明的在外面包一层，加入一些逻辑，内层感知不到。
+
+而 Nest 实现 AOP 的方式更多，一共有五种，包括 Middleware、Guard、Pipe、Interceptor、ExceptionFilter。
+
+Middleware: 中间件，是一种 AOP 的实现，可以在请求到达 Controller 之前或者之后，做一些通用的逻辑处理。
+
+Guard: 守卫，是一种 AOP 的实现，可以在请求到达 Controller 之前，做一些权限校验。
+
+Pipe: 管道，是一种 AOP 的实现，可以在请求到达 Controller 之前，做一些参数校验。
+
+Interceptor: 拦截器，是一种 AOP 的实现，可以在请求到达 Controller 之前或者之后，做一些通用的逻辑处理。
+
+ExceptionFilter: 异常过滤器，是一种 AOP 的实现，可以在请求到达 Controller 之前或者之后，做一些异常处理。
+
+这五种 AOP 的实现方式，可以在请求到达 Controller 之前或者之后，做一些通用的逻辑处理，比如日志、权限校验、参数校验、异常处理等。
+
+## 常用装饰器
+
+- @Module： 声明 Nest 模块
+- @Controller：声明模块里的 controller
+- @Injectable：声明模块里可以注入的 provider
+- @Inject：通过 token 手动指定注入的 provider，token 可以是 class 或者 string
+- @Optional：声明注入的 provider 是可选的，可以为空
+- @Global：声明全局模块
+- @Catch：声明 exception filter 处理的 exception 类型
+- @UseFilters：路由级别使用 exception filter
+- @UsePipes：路由级别使用 pipe
+- @UseInterceptors：路由级别使用 interceptor
+- @SetMetadata：在 class 或者 handler 上添加 metadata
+- @Get、@Post、@Put、@Delete、@Patch、@Options、@Head：声明 get、post、put、delete、patch、options、head 的请求方式
+- @Param：取出 url 中的参数，比如 /aaa/:id 中的 id
+- @Query: 取出 query 部分的参数，比如 /aaa?name=xx 中的 name
+- @Body：取出请求 body，通过 dto class 来接收
+- @Headers：取出某个或全部请求头
+- @Session：取出 session 对象，需要启用 express-session 中间件
+- @HostParm： 取出 host 里的参数
+- @Req、@Request：注入 request 对象
+- @Res、@Response：注入 response 对象，一旦注入了这个 Nest 就不会把返回值作为响应了，除非指定 passthrough 为true
+- @Next：注入调用下一个 handler 的 next 方法
+- @HttpCode： 修改响应的状态码
+- @Header：修改响应头
+- @Redirect：指定重定向的 url
+- @Render：指定渲染用的模版引擎
