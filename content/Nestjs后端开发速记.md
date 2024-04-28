@@ -214,3 +214,6 @@ ExceptionFilter: 异常过滤器，是一种 AOP 的实现，可以在请求到�
 - @Header：修改响应头
 - @Redirect：指定重定向的 url
 - @Render：指定渲染用的模版引擎
+
+## 整体流程
+![](https://liushuaiyang.oss-cn-shanghai.aliyuncs.com/nest-docs/image/%E7%AC%AC22%E7%AB%A0-6.png)
